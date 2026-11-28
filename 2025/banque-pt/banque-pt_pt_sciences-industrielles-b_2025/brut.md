@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 6 h, sans calculatrice ni document. Support : table à rouleaux d'une ligne de laminage à chaud (transfert des brames du four au laminoir réversible). Les 50 questions sont traitées dans l'ordre ; les tracés demandés sur le cahier réponse sont redessinés dans des figures originales.
 
 Notations abrégées : $P_e = P_{b,\text{élém}}$ (poids d'une brame élémentaire), $L_i = L_{inter}$ (entraxe de deux rouleaux voisins). Données principales : $g = 10\ \mathrm{m\cdot s^{-2}}$, $\rho_a = 7800\ \mathrm{kg\cdot m^{-3}}$, $f = 0{,}17$, $D_r = 356\ \mathrm{mm}$, $L_r = 2000\ \mathrm{mm}$, brames de $6$ à $10\ \mathrm{m}$ de long, $0{,}9$ à $1{,}9\ \mathrm{m}$ de large, $0{,}24\ \mathrm{m}$ d'épaisseur.
@@ -80,9 +82,9 @@ F\times\frac{L_i}{2} &= 2{,}5\,P_e\times 1{,}25\,L_i\\
 F &= 6{,}25\,P_e
 \end{aligned}$$
 
-$$\boxed{K_{ba} = 6{,}25 \approx 6}$$
+$$\boxed{K_{ba} = 6{,}25}$$
 
-Remarque : le simple produit des deux coefficients précédents ($2{,}25\times1{,}5\approx3{,}4$) sous-estime ce cas, car le bras de levier du poids s'allonge en même temps que le poids augmente. La valeur retenue dépend du modèle articulé, très pénalisant puisqu'il ignore la rigidité de la brame.
+Remarque : le simple produit des deux coefficients précédents ($2{,}25\times1{,}5\approx3{,}4$) sous-estime ce cas, car le bras de levier du poids s'allonge en même temps que le poids augmente. La valeur retenue dépend du modèle articulé, très pénalisant puisqu'il ignore la rigidité de la brame. La partie II, indépendante, fournit directement $P_{b\,\text{él}\,max} = 47{,}5\ \mathrm{kN}$ sans donner $L_{inter}$ : cette donnée ne permet ni de retrouver ni d'infirmer la valeur de $K_{ba}$.
 
 ### Question 8 — Angle et coefficient d'adhérence
 
@@ -506,6 +508,8 @@ Dans l'annexe E, on retient le premier moteur dont le couple maximal $T_{max}$ d
 $$\boxed{\text{M3RP280 MC}\quad(18{,}5\ \mathrm{kW},\ T_{max} = 2490\ \mathrm{N\cdot m},\ N = 340\ \mathrm{min^{-1}})}$$
 
 Sa vitesse ($340\ \mathrm{min^{-1}}$) couvre les $320\ \mathrm{min^{-1}}$ nécessaires. Le critère porte sur $T_{max}$ parce que le couple calculé n'est demandé que pendant les quelques secondes d'accélération ; le maintien de la vitesse demande beaucoup moins.
+
+Remarque : un choix sur le couple nominal ($T_n\geq2085\ \mathrm{N\cdot m}$) conduirait au M3RP400 MA ; la donnée $C_{MN} = 1700\ \mathrm{N\cdot m}$ de la sous-partie C correspond au couple transmis à la brame ($T_{b\,\text{él}\,max}D_r/2\approx1691\ \mathrm{N\cdot m}$), non au couple nominal du moteur retenu ici ($520\ \mathrm{N\cdot m}$).
 
 ### Question 45 — Défauts d'alignement
 

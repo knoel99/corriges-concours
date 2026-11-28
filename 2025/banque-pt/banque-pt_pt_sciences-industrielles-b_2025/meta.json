@@ -120,6 +120,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions pour les 50 questions à partir du sujet, du cahier réponse, des annexes et du rapport du jury. Applications numériques recalculées et sept figures originales produites pour les tracés du cahier réponse."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application de la relecture indépendante, chaque défaut revérifié sur le sujet et le rapport du jury. Guidé : attribution au jury corrigée sur la partie IV (présentation, question 49, bilan) ; les 21 encadrés JURY contrôlés un par un, commentaires du rédacteur retirés ou déplacés en encadré METHODE (questions 3, 24, 32, 42, 48), terme du rapport rétabli à la question 4. Brut et guidé : question 7 sans arrondi de K_ba et précision sur la donnée de la partie II ; question 44, remarque sur C_MN = 1700 N·m. Figures 1, 2, 3 et 5 retouchées (vecteurs à leur point d'application, rouleaux « plus de contact », courbe de déplacement atteignant 52 m à 32 s, étiquettes de la vue en bout). Aucun résultat numérique modifié."
     }
   ]
 }

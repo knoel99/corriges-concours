@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Support.** Une ligne de laminage à chaud transforme des brames d'acier (jusqu'à $10\ \mathrm{m}\times1{,}9\ \mathrm{m}\times0{,}24\ \mathrm{m}$, soit près de 36 tonnes) en tôle. Entre le four et le premier laminoir (le « réversible »), les brames roulent sur des tables à rouleaux motorisés et passent par un poste de décalaminage. Le bureau d'études propose de rapprocher ce poste du four et de motoriser chaque rouleau individuellement, pour transférer les brames plus vite, donc plus chaudes, et abaisser la consigne du four.
@@ -26,7 +28,7 @@ L'énoncé conseille 30 minutes de lecture préalable.
 **Notations abrégées.** $P_e = P_{b,\text{élém}}$ et $L_i = L_{inter}$.
 
 > [!JURY]
-> Le rapport 2025 juge le sujet long mais sans difficulté de compréhension, chaque question ayant été réussie intégralement par plusieurs candidats. Il regrette que des connaissances de base ne soient pas maîtrisées, que la fin de la partie III et la partie IV soient souvent délaissées, et que certains détaillent leurs calculs dans les cadres au détriment de la lisibilité. Il demande de respecter les notations de l'énoncé, de distinguer expression littérale et application numérique, de donner les unités et de mener les applications numériques à la main, avec une tolérance de quelques pourcents.
+> Le rapport 2025 juge le sujet long mais sans difficulté de compréhension, chaque question ayant été réussie intégralement par plusieurs candidats. Il regrette que des connaissances de base ne soient pas maîtrisées, que certains candidats ne traitent pas du tout la fin de la partie III et la partie IV, et que certains détaillent leurs calculs dans les cadres au détriment de la lisibilité. Il demande de respecter les notations de l'énoncé, de distinguer expression littérale et application numérique, de donner les unités et de mener les applications numériques à la main ; une tolérance de quelques pourcents est appliquée à certains résultats numériques.
 
 **Sources officielles.** [Sujet](https://www.banquept.fr/documents/2025/si_b_2025_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_si_b_ecrit_2025.pdf)
 
@@ -74,7 +76,7 @@ $$\boxed{\vec P_{b,\text{élém}} + \vec F_{M\,r/b} = \vec 0}$$
 Système isolé : la brame élémentaire. Théorème : résultante statique (principe fondamental de la statique). Hypothèse : équilibre dans le référentiel du bâti supposé galiléen, sans action des tronçons voisins sur le tronçon isolé (rouleau loin des bords).
 
 > [!JURY]
-> Le rapport indique que les trois quarts des candidats réussissent les deux premières questions. Les difficultés commencent avec la justification des relations.
+> Le rapport indique que les trois quarts des candidats réussissent les deux premières questions.
 
 ### Question 4
 
@@ -88,7 +90,7 @@ $$\boxed{\vec F_{M\,b/r} = -\vec F_{M\,r/b}}$$
 Justification : principe des actions réciproques (ou mutuelles). On en déduit $\vec F_{M\,b/r} = \vec P_{b,\text{élém}}$.
 
 > [!JURY]
-> D'après le rapport, la moitié seulement des candidats cite ici les actions réciproques (question numérotée 3 dans le rapport) et 40 % invoquent à tort le principe fondamental de la dynamique.
+> D'après le rapport, la moitié seulement des candidats cite ici les actions réciproques (question numérotée 3 dans le rapport) et 40 % identifient « maladroitement » le principe fondamental de la dynamique.
 
 > [!PIEGE]
 > Les questions 3 et 4 ne se justifient pas de la même façon : la première est un théorème appliqué à un système isolé, la seconde un principe valable sans isolement, même en mouvement.
@@ -156,10 +158,10 @@ F\times\frac{L_i}{2} &= 2{,}5\,P_e\times 1{,}25\,L_i\\
 F &= 6{,}25\,P_e
 \end{aligned}$$
 
-$$\boxed{K_{ba} = 6{,}25 \approx 6}$$
+$$\boxed{K_{ba} = 6{,}25}$$
 
 > [!PIEGE]
-> Multiplier les deux coefficients précédents ($2{,}25\times1{,}5\approx3{,}4$) sous-estime ce cas : le poids et son bras de levier augmentent ensemble. La question demande de « proposer » une valeur ; ce qui compte est de la justifier par le schéma.
+> Multiplier les deux coefficients précédents ($2{,}25\times1{,}5\approx3{,}4$) sous-estime ce cas : le poids et son bras de levier augmentent ensemble. La question demande de « proposer » une valeur ; ce qui compte est de la justifier par le schéma. La partie II, indépendante, fournit directement $P_{b\,\text{él}\,max} = 47{,}5\ \mathrm{kN}$ sans donner $L_{inter}$ : cette donnée ne permet ni de retrouver ni d'infirmer la valeur de $K_{ba}$.
 
 ### Question 8
 
@@ -401,7 +403,10 @@ Le freinage commence à $40{,}3\ \mathrm{m}$. Palier à $6\ \mathrm{m\cdot s^{-1
 $$\boxed{\text{Gain} = T_{a-f} - T_{p-w} = 32 - 22 = 10\ \mathrm{s}}$$
 
 > [!JURY]
-> Cette soustraction de deux valeurs fournies n'est réussie que par 52 % des candidats selon le rapport : une question à ne pas abandonner même si les tracés précédents n'ont pas abouti.
+> Cette soustraction de deux valeurs fournies n'est réussie que par 52 % des candidats selon le rapport.
+
+> [!METHODE]
+> Cette question ne dépend pas des tracés : elle se traite même s'ils n'ont pas abouti.
 
 ---
 
@@ -553,7 +558,10 @@ Valeurs extrêmes : $T_y = \mp31{,}75\ \mathrm{kN}$ aux roulements, nul en $O$ ;
 ![Figure 6 — Diagrammes de N, Ty, Tz, Mt, Mfy et Mfz le long du rouleau, avec la nature de chaque portion de courbe](figures/q32-diagrammes-cohesion.svg)
 
 > [!JURY]
-> Le rapport juge cette sous-partie un peu longue, mais plus des trois quarts des candidats y prennent des points : seules l'allure et les proportions sont évaluées, il ne faut pas la sauter.
+> Le rapport juge cette sous-partie un peu longue, mais plus des trois quarts des candidats y prennent des points.
+
+> [!METHODE]
+> L'énoncé précise que seules l'allure et les proportions approximatives sont évaluées : la question rapporte des points même sans calcul complet.
 
 ### Question 33
 
@@ -717,7 +725,7 @@ $$\boxed{Nb_{JR} = \frac{L_{10\,C}\times10^6}{Nb_{t/J}}\approx10^6\ \text{jours}
 Conclusion : la durée de vie calculée dépasse de très loin les 2 mois à 3 ans conseillés. Le roulement convient ; il est surdimensionné en fatigue parce que son alésage est imposé par l'arbre. Sa durée de vie réelle dépendra de la lubrification, de la pollution et de la température.
 
 > [!JURY]
-> 20 % seulement des candidats produisent des résultats acceptables pour la durée de vie, selon le rapport. Le jury demande aussi de s'interroger sur la plausibilité d'un résultat : ici, le nombre obtenu est surprenant mais s'explique, et il faut le dire.
+> 20 % seulement des candidats produisent des résultats acceptables pour la durée de vie, selon le rapport. Le jury demande aussi de s'interroger sur la plausibilité d'un résultat.
 
 > [!PIEGE]
 > $L_{10}$ s'exprime en millions de tours : ne pas oublier le facteur $10^6$ en passant aux jours. L'exposant 3 est celui des roulements à billes.
@@ -762,6 +770,8 @@ Le M3RP280 MB ($T_{max} = 1920\ \mathrm{N\cdot m}$) est insuffisant ; le suivant
 $$\boxed{\text{M3RP280 MC}\quad(18{,}5\ \mathrm{kW},\ T_{max} = 2490\ \mathrm{N\cdot m},\ N = 340\ \mathrm{min^{-1}})}$$
 
 Sa vitesse couvre les $320\ \mathrm{min^{-1}}$ nécessaires. Le couple calculé n'est demandé que pendant les quelques secondes d'accélération, ce qui justifie le critère sur $T_{max}$.
+
+Remarque : un choix sur le couple nominal ($T_n\geq2085\ \mathrm{N\cdot m}$) conduirait au M3RP400 MA ; la donnée $C_{MN} = 1700\ \mathrm{N\cdot m}$ de la sous-partie C correspond au couple transmis à la brame ($T_{b\,\text{él}\,max}D_r/2\approx1691\ \mathrm{N\cdot m}$), non au couple nominal du moteur retenu ici ($520\ \mathrm{N\cdot m}$).
 
 ### Question 45
 
@@ -834,7 +844,7 @@ $$\boxed{T_{consigne} = 1300 - 10\times0{,}5 = 1295\ \mathrm{°C}}$$
 $$\boxed{\text{réduction de consommation spécifique} = 1{,}27\ \%}$$
 
 > [!JURY]
-> 25 % des candidats obtiennent les points de cette question d'après le rapport, alors qu'elle ne demande qu'une multiplication et une lecture de tableau.
+> 25 % des candidats obtiennent les points de cette question d'après le rapport ; le rapport parle de raisonnements simples et d'applications numériques faciles pour cette partie.
 
 ### Question 49
 
@@ -856,7 +866,7 @@ $$\boxed{\text{réduction de consommation spécifique} = 1{,}27\ \%}$$
 | Gain annuel envisagé ($\mathrm{CO_2}$) | $0{,}0127\times108\,000$ | $\approx1370$ | t/an |
 
 > [!JURY]
-> 30 % des candidats prennent des points ici selon le rapport, qui rappelle que la partie IV ne présente aucune difficulté scientifique et qu'elle est trop souvent abandonnée.
+> 30 % des candidats prennent des points ici selon le rapport, qui précise que la partie IV ne présentait pas de réelle difficulté scientifique ou technologique, qu'elle a été abordée par de très nombreux candidats et que 16 % seulement n'y obtiennent aucun point.
 
 ### Question 50
 
@@ -882,7 +892,7 @@ Réserves : refroidissement supposé linéaire, production maximale 20 h sur 24 
 - Énergie : $\tfrac12 J\omega^2$ et $\tfrac12 m v^2$, avec $\omega = 2v/D$ ; un gain relatif se rapporte à la situation de référence complète.
 - Composants : $L_{10} = (C/P)^{10/3}$ en millions de tours pour des rouleaux, moment dynamique autour de l'axe pour le couple moteur, lecture critère par critère d'un catalogue.
 
-**Ce que le rapport 2025 retient.** La partie I est la mieux réussie, la partie II un peu moins, la partie III beaucoup moins (20 % des candidats n'y prennent aucun point) et la partie IV, pourtant simple, est souvent délaissée. Les points les plus discriminants sont la statique du tronçon d'extrémité (question 5), les tracés des questions 19 à 23, les représentations sur trois vues (question 29), la durée de vie (question 42) et le couple moteur (question 43). Le jury attend des réponses lisibles, limitées au résultat dans le cadre, avec les notations de l'énoncé et les unités.
+**Ce que le rapport 2025 retient.** La partie I est la mieux réussie, la partie II un peu moins, la partie III beaucoup moins (20 % des candidats n'y prennent aucun point) et la partie IV, sans réelle difficulté, est abordée par de très nombreux candidats (16 % n'y prennent aucun point). Les points les plus discriminants sont la statique du tronçon d'extrémité (question 5), les tracés des questions 19 à 23, les représentations sur trois vues (question 29), la durée de vie (question 42) et le couple moteur (question 43). Le jury attend des réponses lisibles, limitées au résultat dans le cadre, avec les notations de l'énoncé et les unités.
 
 **Prérequis à revoir.** Liaisons rotule et linéaire annulaire, charges réparties et leur résultante, lois de Coulomb, torseur de cohésion et sollicitations simples, contrainte équivalente et coefficient de sécurité, durée de vie des roulements, défauts d'alignement et accouplements.
 
