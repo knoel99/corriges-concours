@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 **Production et caractérisation d’impulsions laser attosecondes.** La notation $q^2=e^2/(4\pi\varepsilon_0)$ des questions atomiques désigne une constante coulombienne. Dans les questions spectrales, $q$ désigne le rang entier d’une harmonique.
 
 Le rapport du jury insiste sur le tracé des asymptotes, la justification quantitative des approximations optiques et la distinction entre parité temporelle et sélection des ordres harmoniques.
@@ -37,6 +39,9 @@ La longueur d'onde $800\ \mathrm{nm}=0{,}8\ \mu\mathrm m$ se situe dans le proch
 
 $T=\lambda/c=2{,}67\times10^{-15}\ \mathrm s$, soit environ $3\ \mathrm{fs}$ à un chiffre significatif. Il faut $T/n<T_e$, soit $n>17{,}8$ en gardant les chiffres intermédiaires. Le plus petit entier est **18**. Si seules les harmoniques impaires sont émises, comme on l'établira, le premier ordre présent satisfaisant cette condition est 19.
 
+> [!JURY]
+> Le rapport relève des périodes de l'ordre de $10^{+17}$ : $8\times10^{-7}$ divisé par $3\times10^{8}$ donne quelques $10^{-15}\ \mathrm s$. Une période optique vaut quelques femtosecondes ; tout autre ordre de grandeur doit alerter.
+
 ### Question 4 — Longueur de Rayleigh
 
 > [!INDICATION]
@@ -44,7 +49,7 @@ $T=\lambda/c=2{,}67\times10^{-15}\ \mathrm s$, soit environ $3\ \mathrm{fs}$ à 
 
 #### Solution
 
-$z_R=\pi w_0^2/\lambda=\pi(4\times10^{-3})^2/(8\times10^{-7})\simeq63\ \mathrm m$. Pour $|z|\le1\ \mathrm m$, $w/w_0=\sqrt{1+(z/z_R)^2}\simeq1+z^2/(2z_R^2)$. La variation relative du rayon est au plus $1{,}3\times10^{-4}$ environ. Le faisceau peut être considéré comme cylindrique sur cette longueur.
+$z_R=\pi w_0^2/\lambda=\pi(4\times10^{-3})^2/(8\times10^{-7})\simeq63\ \mathrm m$, soit $6\times10^{1}\ \mathrm m$ à un chiffre significatif. Pour $|z|\le1\ \mathrm m$, $w/w_0=\sqrt{1+(z/z_R)^2}\simeq1+z^2/(2z_R^2)$. La variation relative du rayon est au plus $1{,}3\times10^{-4}$ environ, soit $1\times10^{-4}$ à un chiffre. Le faisceau peut être considéré comme cylindrique sur cette longueur.
 
 ### Question 5 — Conditions de Gauss
 
@@ -54,6 +59,9 @@ $z_R=\pi w_0^2/\lambda=\pi(4\times10^{-3})^2/(8\times10^{-7})\simeq63\ \mathrm m
 #### Solution
 
 Le faisceau est centré sur l'axe de la lentille et sa divergence incidente vaut $\lambda/(\pi w_0)\simeq6\times10^{-5}\ \mathrm{rad}$. Après la lentille, un rayon typique situé à $w_0$ de l'axe est dévié de $w_0/f=4\times10^{-3}\ \mathrm{rad}\ll1$. Les rayons qui portent l'essentiel de l'énergie restent paraxiaux.
+
+> [!JURY]
+> Énoncer les conditions de Gauss ne suffit pas, il faut vérifier qu'elles sont satisfaites. « Petit » doit être comparé à quelque chose : ici $w_0=4\ \mathrm{mm}\ll f=1\ \mathrm m$, donc des angles de $4\times10^{-3}\ \mathrm{rad}$. Dire que le faisceau est centré sur l'axe ne prouve rien à lui seul.
 
 ### Question 6 — Waist du faisceau focalisé
 
@@ -75,6 +83,9 @@ Le faisceau converge vers un nouveau waist voisin du foyer, puis diverge. Pour $
 
 La puissance de l'impulsion est de l'ordre de $E_L/T_L=2{,}5\times10^{10}\ \mathrm W$. Sur l'aire $\pi w_0'^2$ elle donne $P_L\sim E_L/(T_L\pi w_0'^2)\simeq2\times10^{18}\ \mathrm{W\,m^{-2}}$. Un calcul strictement axial du maximum pour le profil spatial gaussien introduit un facteur 2, et la forme temporelle intervient aussi quant au maximum exact.
 
+> [!PIEGE]
+> La surface à utiliser est celle du faisceau au foyer, $\pi w_0'^2$, pas celle du faisceau incident $\pi w_0^2$ : l'écart est un facteur $(w_0/w_0')^2\simeq4\times10^{3}$. Le résultat est une puissance surfacique, en $\mathrm{W\,m^{-2}}$ ; le jury a trouvé des réponses en watts.
+
 ### Question 8 — Amplitude du champ
 
 > [!INDICATION]
@@ -91,7 +102,10 @@ Pour une onde localement plane, $B=E/c$ et $\langle\Pi\rangle=E_0^2/(2\mu_0 c)$ 
 
 #### Solution
 
-Le flux solaire au sommet de l'atmosphère est de l'ordre de $10^3\ \mathrm{W\,m^{-2}}$. Les amplitudes variant comme la racine du flux, $E_0\sim700\sqrt{P_L/(10^3\ \mathrm{W\,m^{-2}})}\sim3\times10^{10}\ \mathrm{V\,m^{-1}}$. L'expression de la question 8 donne environ $4\times10^{10}\ \mathrm{V\,m^{-1}}$ avec la valeur représentative de $P_L$.
+Le flux solaire au sommet de l'atmosphère est de l'ordre de $10^3\ \mathrm{W\,m^{-2}}$ ($1{,}4\ \mathrm{kW\,m^{-2}}$ plus précisément). Le flux variant comme le carré de l'amplitude, $E_0\sim700\sqrt{P_L/(10^3\ \mathrm{W\,m^{-2}})}\sim3\times10^{10}\ \mathrm{V\,m^{-1}}$. L'expression de la question 8 donne $4\times10^{10}\ \mathrm{V\,m^{-1}}$ : l'écart vient de ce qu'une amplitude de $700\ \mathrm{V\,m^{-1}}$ correspond, par cette même formule, à $650\ \mathrm{W\,m^{-2}}$ et non à $10^3$. Les deux estimations s'accordent sur l'ordre de grandeur, quelques $10^{10}\ \mathrm{V\,m^{-1}}$.
+
+> [!JURY]
+> Le flux solaire reçu par la Terre hors atmosphère, de l'ordre de $1{,}4\ \mathrm{kW\,m^{-2}}$, relève du programme ; le rapport note que très peu de candidats en donnent l'ordre de grandeur. Il n'y a aucun waist à attribuer au Soleil : seul le rapport des flux surfaciques intervient.
 
 ### Question 10 — Champ atomique
 
@@ -116,6 +130,9 @@ $$V(x)=-\frac{q^2}{|x|}-eE_0x.$$
 Il tend vers $-\infty$ des deux côtés de l'origine. À grande distance son asymptote oblique est $-eE_0x$, donc il monte vers $+\infty$ à gauche et descend vers $-\infty$ à droite. À droite un maximum sépare le puits coulombien de la région d'échappement.
 
 ![Figure 2 — Le potentiel diverge vers le bas des deux côtés du noyau. À droite, le niveau lié figuré rencontre une barrière avant la région d’échappement.](figures/barriere.svg)
+
+> [!JURY]
+> Le jury dit avoir été « extrêmement surpris » par les difficultés de tracé : la courbe est la somme d'un terme en $-1/|x|$ et d'un terme linéaire. Faire figurer l'asymptote verticale en $x=0$ (les deux branches plongent), l'asymptote oblique $-eE_0x$, le maximum local à droite, et orienter les axes. Sans barrière à droite, la réponse « effet tunnel » de la question 13 n'a plus de support.
 
 ### Question 12 — Disparition classique de la barrière
 
@@ -144,6 +161,9 @@ L'effet tunnel permet à une fonction d'onde d'avoir une amplitude transmise au-
 
 Le champ du laser donne une force $+eE_0\sin\omega t$ et l'attraction nucléaire ramène vers zéro. Pour $x>0$, $m\ddot x=-q^2/x^2+eE_0\sin\omega t$. Pour $x<0$, $m\ddot x=+q^2/x^2+eE_0\sin\omega t$. La singularité ponctuelle en zéro signale la limite du modèle classique.
 
+> [!JURY]
+> Le rapport regrette que trop de copies ne confrontent pas ces équations au potentiel de la question 11. Le contrôle tient en une ligne : la force totale doit valoir $-\mathrm dV/\mathrm dx$ de chaque côté du noyau.
+
 ### Question 15 — Symétrie de demi-période
 
 > [!INDICATION]
@@ -162,6 +182,9 @@ Notons $F_C(x)$ la force coulombienne impaire. Puisque $F_C(-x)=-F_C(x)$ et $\si
 
 La composante complexe $c_ne^{in\omega t}$ est multipliée par $(-1)^n$ après une demi-période. La condition $(-1)^nc_n=-c_n$ annule le terme continu et tous les coefficients pairs. Il reste les rangs impairs, quelle que soit la parité ordinaire du signal autour de $t=0$.
 
+> [!PIEGE]
+> Ne pas confondre parité de la fonction et parité du rang des harmoniques, confusion que le rapport signale. Une fonction impaire peut contenir des harmoniques paires ($\sin2\omega t$). C'est l'antisymétrie de demi-période $x(t+T/2)=-x(t)$ qui supprime les rangs pairs.
+
 ### Question 17 — Mouvement libéré du noyau
 
 > [!INDICATION]
@@ -170,6 +193,9 @@ La composante complexe $c_ne^{in\omega t}$ est multipliée par $(-1)^n$ après u
 #### Solution
 
 Posons $a_0=eE_0/m$ et $x_0=a_0/\omega^2$. De $\ddot x=a_0\sin\omega t$ on tire $\dot x=-(a_0/\omega)\cos\omega t+v_d$ puis $x=-x_0\sin\omega t+v_dt+x_c$. Les deux constantes fixent la dérive et l'origine de position.
+
+> [!JURY]
+> Erreur fréquente selon le rapport : se contenter d'une primitive du second membre. La solution générale d'une équation du second ordre porte deux constantes, ici la vitesse de dérive $v_d$ et la position $x_c$.
 
 ### Question 18 — Énergie pondéromotrice
 
@@ -201,6 +227,9 @@ Les deux conditions initiales se retrouvent en remplaçant $u$ par $u_i$.
 Pour $t_i=0$, $x/x_0=u-\sin u$ croît, avec tangente horizontale à chaque période entière. Pour $t_i=T/4$, $x/x_0=1-\sin u$ oscille entre 0 et 2 et retrouve zéro à $5T/4$. Pour $t_i=T/2$, $x/x_0=-(u-\pi)-\sin u$ décroît. Chaque courbe commence à son propre instant $t_i$, où la vitesse s'annule.
 
 ![Figure 3 — Trajectoires pour les trois phases imposées à la question 20. Chaque trace commence quand l’électron quitte l’origine avec une vitesse nulle.](figures/trois-departs.svg)
+
+> [!JURY]
+> Il ne fallait pas recopier la figure 1. Les trois courbes demandées sont distinctes : chacune part de son propre $t_i/T$ (0 ; 0,25 ; 0,5), avec une tangente horizontale, et va jusqu'à $t/T=1{,}5$.
 
 ### Question 21 — Premier retour
 
@@ -256,7 +285,7 @@ La courbe s'obtient en faisant varier $t_i$, en résolvant la question 21 pour l
 
 #### Solution
 
-Les pics sont espacés de deux fréquences laser, aux ordres impairs. Après la décroissance initiale, une série de pics d'ordres supérieurs forme un plateau approximatif, suivi d'une coupure rapide vers les rangs 29 à 33 sur cette mesure. Les ordres 19 et supérieurs satisfont la condition de la question 3. Le plus grand photon possible correspond au maximum du graphe de retour, $E_{c,\max}\simeq3{,}17U_P$. La loi de coupure est donc $n_{\max}\simeq(I_P+3{,}17U_P)/(\hbar\omega)$, avec les pics effectivement permis situés aux entiers impairs.
+Les pics sont espacés de deux fréquences laser, aux ordres impairs : c'est la sélection établie à la question 16, le rayonnement suivant le mouvement de l'électron. Après la décroissance initiale, une série de pics d'ordres supérieurs forme un plateau approximatif, suivi d'une coupure rapide vers les rangs 29 à 33 sur cette mesure. Les ordres 19 et supérieurs satisfont la condition de la question 3. Le plus grand photon possible correspond au maximum du graphe de retour, $E_{c,\max}\simeq3{,}17U_P$. La loi de coupure est donc $n_{\max}\simeq(I_P+3{,}17U_P)/(\hbar\omega)$, avec les pics effectivement permis situés aux entiers impairs.
 
 ## Durée et phases des impulsions
 
@@ -271,6 +300,9 @@ Pour le signal complexe $A(t)=\sum_q A_qe^{i(q\omega t+\phi_q)}$, la puissance d
 $$|A(t)|^2=\sum_q A_q^2+2\sum_{q<q'}A_qA_{q'}\cos[(q'-q)\omega t+\phi_{q'}-\phi_q].$$
 Le produit avec le conjugué élimine toute phase commune. Cette intensité est l'enveloppe optique mesurée après élimination des oscillations de porteuse aux fréquences sommes.
 
+> [!JURY]
+> Le produit $AA^\star=|A|^2$ est réel : en prendre la partie réelle, $\mathrm{Re}(AA^\star)$, est inutile, et le rapport invite les candidats à s'en apercevoir.
+
 ### Question 28 — Pics de N harmoniques successives
 
 > [!INDICATION]
@@ -278,9 +310,12 @@ Le produit avec le conjugué élimine toute phase commune. Cette intensité est 
 
 #### Solution
 
-Pour des amplitudes $A$ et phases identiques, la série géométrique donne $I(t)\propto A^2[\sin(N\omega t/2)/\sin(\omega t/2)]^2$. La valeur limite est $N^2 A^2$ aux instants $t=kT$. De part et d'autre, les premiers zéros sont à $kT\pm T/N$. La demi-largeur jusqu'au premier zéro vaut donc $T/N$. Si « demi-largeur » désigne celle à mi-hauteur, $[\sin x/x]^2=1/2$ donne $x\simeq1{,}392$, donc une demi-largeur $0{,}443T/N$ pour $N\gg1$. Les pics sont séparés de $T$.
+Pour des amplitudes $A$ et phases identiques, la série géométrique donne $I(t)\propto A^2[\sin(N\omega t/2)/\sin(\omega t/2)]^2$. La valeur limite est $N^2 A^2$ aux instants $t=kT$. De part et d'autre, les premiers zéros sont à $kT\pm T/N$. La demi-largeur jusqu'au premier zéro vaut donc $T/N$. Si « demi-largeur » désigne celle à mi-hauteur, $[\sin x/x]^2=1/2$ donne $x\simeq1{,}392$, donc une demi-largeur $0{,}443T/N$ pour $N\gg1$. Les pics sont séparés de $T$. C'est la fonction d'interférences à $N$ ondes d'un réseau, le temps jouant le rôle de l'angle.
 
-![Figure 5 — À phases alignées, un peigne de rangs impairs produit deux pics par période laser. Les deux exemples utilisent des amplitudes identiques.](figures/peignes.svg)
+![Figure 5 — À phases alignées, dix ordres successifs donnent un pic par période laser (question 28) ; cinq ordres impairs en donnent deux (question 35). Amplitudes identiques dans les deux cas.](figures/peignes.svg)
+
+> [!JURY]
+> C'est le calcul de l'intensité derrière un réseau à $N$ fentes, explicitement au programme : même somme géométrique, même fonction $[\sin(N\varphi/2)/\sin(\varphi/2)]^2$. Le rapport s'étonne que de très rares candidats aient fait le rapprochement.
 
 ### Question 29 — Phases en progression arithmétique
 
@@ -329,7 +364,7 @@ Le carré du module vaut à une constante près $P(\tau)\propto1+\cos[2\omega\ta
 
 #### Solution
 
-Les lignes impaires de 17 à 25 sont brillantes et peu sensibles au retard. Elles correspondent aux photons harmoniques absorbés directement. Les bandes intermédiaires paires proviennent des deux transitions de la question 31. Leurs maxima se répètent environ tous les $1{,}3\ \mathrm{fs}$, soit environ 22 à 23 oscillations sur la trentaine de femtosecondes représentée. On retrouve $T\simeq2{,}6$ à $2{,}7\ \mathrm{fs}$, compatible avec $800\ \mathrm{nm}$.
+Les lignes impaires 17 à 23 sont brillantes et pratiquement indépendantes du retard ; la ligne 25, plus faible, laisse voir une légère modulation. Elles correspondent aux photons harmoniques absorbés directement, seuls présents sur la figure 3. Les bandes intermédiaires paires proviennent des deux transitions de la question 31. Leurs maxima se répètent environ tous les $1{,}3\ \mathrm{fs}$, soit environ 22 à 23 oscillations sur la trentaine de femtosecondes représentée. On retrouve $T\simeq2{,}6$ à $2{,}7\ \mathrm{fs}$, compatible avec $800\ \mathrm{nm}$.
 
 ### Question 34 — Test de l’alignement des phases
 
@@ -347,7 +382,7 @@ Pour le canal intermédiaire, le maximum est à $2\omega\tau=\phi_{q+2}-\phi_q\p
 
 #### Solution
 
-Les ordres visibles 17, 19, 21, 23 et 25 constituent environ $N=5$ harmoniques impaires séparées de $2\omega$. Si leurs phases ont un incrément constant et que leurs amplitudes sont comparables, les pics se répètent toutes les $T/2$. En remplaçant $T$ par $T/2$ dans la question 28, la demi-largeur jusqu'au premier zéro vaut $T/(2N)\simeq0{,}27\ \mathrm{fs}$. La largeur totale à mi-hauteur est d'environ $0{,}886\,T/(2N)\simeq0{,}24\ \mathrm{fs}$, soit **quelques centaines d'attosecondes**. Les amplitudes réelles et la bande effectivement transmise modifient le chiffre précis.
+Les ordres visibles 17, 19, 21, 23 et 25 constituent environ $N=5$ harmoniques impaires séparées de $2\omega$. Si leurs phases ont un incrément constant et que leurs amplitudes sont comparables, les pics se répètent toutes les $T/2$. En remplaçant $T$ par $T/2$ dans la question 28, la demi-largeur jusqu'au premier zéro vaut $T/(2N)\simeq0{,}27\ \mathrm{fs}$. La largeur totale à mi-hauteur est d'environ $0{,}886\,T/(2N)\simeq0{,}24\ \mathrm{fs}$, soit **quelques centaines d'attosecondes** (à un chiffre significatif, $3\times10^{-16}\ \mathrm s$ jusqu'au premier zéro et $2\times10^{-16}\ \mathrm s$ à mi-hauteur). Les amplitudes réelles et la bande effectivement transmise modifient le chiffre précis.
 
 ## Spectromètre magnétique
 
@@ -378,6 +413,9 @@ Au centre du cercle, le rayon et la quantité de mouvement sont perpendiculaires
 
 La composante $v_\parallel=v\cos\theta$ est uniforme, tandis que $v_\perp=v\sin\theta$ détermine la giration. Le rayon est $r=mv\sin\theta/(eB)$. Il tend vers zéro pour une entrée parallèle au champ et vers le résultat circulaire pour une entrée perpendiculaire.
 
+> [!METHODE]
+> Reprendre la question 36 avec $v_\perp=v\sin\theta$, puis contrôler les limites : $\theta\to0$ donne $r\to0$ (pas de giration), $\theta=\pi/2$ redonne le cercle. Le rapport indique que ce contrôle aurait aidé à critiquer les résultats proposés.
+
 ### Question 39 — Variation axiale du champ
 
 > [!INDICATION]
@@ -396,7 +434,7 @@ Sur la figure 5, un même tube de lignes s'élargit de l'entrée à la sortie pu
 
 La force magnétique ne travaille pas, donc $v$ est constant. L'invariant admis vaut $J=eBr^2=m^2v^2\sin^2\theta/(eB)$. Il en résulte
 $$\sin^2\theta_f=(B_f/B_i)\sin^2\theta_i.$$
-Lorsque le champ décroît, le mouvement se rapproche de la direction de la ligne de champ. Le cercle de giration peut pourtant s'élargir, car sa fréquence cyclotron diminue.
+Lorsque le champ décroît, le mouvement se rapproche de la direction de la ligne de champ. Le cercle de giration s'élargit pourtant : $J=eBr^2$ constant donne $r_f=r_i\sqrt{B_i/B_f}$.
 
 ### Question 41 — Incertitude due à l’angle final
 
@@ -408,5 +446,13 @@ Lorsque le champ décroît, le mouvement se rapproche de la direction de la lign
 Dans la longue portion uniforme, $\Delta t\simeq L/(v\cos\theta_f)$. Estimer $v$ par $L/\Delta t$ donne $v_{\rm mes}=v\cos\theta_f$, donc un biais par défaut. En valeur relative par rapport à la vitesse vraie,
 $$\frac{v-v_{\rm mes}}{v}=1-\sqrt{1-(B_f/B_i)\sin^2\theta_i}\le1-\sqrt{1-B_f/B_i}\simeq\frac{B_f}{2B_i}.$$
 Cette borne correspond au cas d'une vitesse initiale presque transverse, pour $B_f/B_i\ll1$. Une normalisation par la vitesse mesurée donne la même borne au premier ordre.
+
+## Bilan
+
+**Méthodes à retenir.** Vérifier une approximation par un nombre sans dimension (questions 4 et 5). Tracer une courbe à partir de ses asymptotes et de ses extremums, puis la confronter aux équations du mouvement (11, 12, 14). Lire une sélection d'harmoniques sur une symétrie du signal, ici l'antisymétrie de demi-période (15, 16). Intégrer une équation du second ordre avec ses deux constantes et les fixer par les conditions initiales (17 à 19). Contrôler un résultat par ses cas limites (38).
+
+**Prérequis à revoir.** Faisceau gaussien et conditions de Gauss ; vecteur de Poynting et ordre de grandeur du flux solaire ; effet tunnel ; séries de Fourier ; interférences à $N$ ondes et réseau ; mouvement d'une charge dans un champ magnétique uniforme.
+
+**Questions transposables.** L'abaissement d'une barrière coulombienne par un champ (12) se retrouve dans l'émission par effet de champ. La somme géométrique de la question 28 sert pour tout peigne de fréquences, dont le laser à modes bloqués. La conservation de $J$ (40) est le principe de la bouteille et du miroir magnétiques.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Physique%20B%20PC.pdf) · [Rapport du jury](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_PC_Physique_B%20OK.pdf)

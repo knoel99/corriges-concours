@@ -15,7 +15,7 @@
     "sujet_sha256": "15fd4c0f78709a63ddf78f4c24c384e0f928c26103f5310667a1cfe842e07735",
     "rapport_sha256": "c0131637bca2323804d232df859a706aeb342ea84af19fa5de1a98715a371e67"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-28",
   "figures": [
     {
       "numero": 1,
@@ -45,7 +45,7 @@
       "numero": 5,
       "question": "28",
       "fichier": "figures/peignes.svg",
-      "legende": "À phases alignées, un peigne de rangs impairs produit deux pics par période laser. Les deux exemples utilisent des amplitudes identiques."
+      "legende": "À phases alignées, dix ordres successifs donnent un pic par période laser (question 28) ; cinq ordres impairs en donnent deux (question 35). Amplitudes identiques dans les deux cas."
     },
     {
       "numero": 6,
@@ -65,6 +65,18 @@
       "perimetre": "Rédaction intégrale des deux éditions sur les 41 questions du sujet officiel et le rapport du jury. Lecture des figures de recollision, de spectre et du spectrogramme. Contrôle numérique des quatre retours, des largeurs de pic et du biais du spectromètre. Six illustrations originales.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application de la seconde relecture, contrôlée contre le sujet et le rapport du jury. Brut et guidé : précision de l'écart entre les deux estimations de E0 (question 9), lecture de la ligne 25 de la figure 4 (question 33), élargissement du cercle de giration (question 40), lien avec la question 16 (question 26), rapprochement avec le réseau (question 28), arrondis à un chiffre significatif (questions 4 et 35), légende de la figure 5. Figure 4 (retours.svg) : courbe rééchantillonnée et prolongée jusqu'à 1,25. Guidé seul : douze encadrés jury, piège et méthode appuyés sur le rapport 2025 (questions 3, 5, 7, 9, 11, 14, 16, 17, 20, 27, 28, 38) et bilan final."
     }
   ],
   "couverture": {

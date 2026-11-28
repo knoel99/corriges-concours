@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 **Production et caractérisation d’impulsions laser attosecondes.** La notation $q^2=e^2/(4\pi\varepsilon_0)$ des questions atomiques désigne une constante coulombienne. Dans les questions spectrales, $q$ désigne le rang entier d’une harmonique.
 
 ## Échelles atomiques et focalisation
@@ -22,7 +24,7 @@ $T=\lambda/c=2{,}67\times10^{-15}\ \mathrm s$, soit environ $3\ \mathrm{fs}$ à 
 
 ### Question 4 — Longueur de Rayleigh
 
-$z_R=\pi w_0^2/\lambda=\pi(4\times10^{-3})^2/(8\times10^{-7})\simeq63\ \mathrm m$. Pour $|z|\le1\ \mathrm m$, $w/w_0=\sqrt{1+(z/z_R)^2}\simeq1+z^2/(2z_R^2)$. La variation relative du rayon est au plus $1{,}3\times10^{-4}$ environ. Le faisceau peut être considéré comme cylindrique sur cette longueur.
+$z_R=\pi w_0^2/\lambda=\pi(4\times10^{-3})^2/(8\times10^{-7})\simeq63\ \mathrm m$, soit $6\times10^{1}\ \mathrm m$ à un chiffre significatif. Pour $|z|\le1\ \mathrm m$, $w/w_0=\sqrt{1+(z/z_R)^2}\simeq1+z^2/(2z_R^2)$. La variation relative du rayon est au plus $1{,}3\times10^{-4}$ environ, soit $1\times10^{-4}$ à un chiffre. Le faisceau peut être considéré comme cylindrique sur cette longueur.
 
 ### Question 5 — Conditions de Gauss
 
@@ -44,7 +46,7 @@ Pour une onde localement plane, $B=E/c$ et $\langle\Pi\rangle=E_0^2/(2\mu_0 c)$ 
 
 ### Question 9 — Comparaison solaire
 
-Le flux solaire au sommet de l'atmosphère est de l'ordre de $10^3\ \mathrm{W\,m^{-2}}$. Les amplitudes variant comme la racine du flux, $E_0\sim700\sqrt{P_L/(10^3\ \mathrm{W\,m^{-2}})}\sim3\times10^{10}\ \mathrm{V\,m^{-1}}$. L'expression de la question 8 donne environ $4\times10^{10}\ \mathrm{V\,m^{-1}}$ avec la valeur représentative de $P_L$.
+Le flux solaire au sommet de l'atmosphère est de l'ordre de $10^3\ \mathrm{W\,m^{-2}}$ ($1{,}4\ \mathrm{kW\,m^{-2}}$ plus précisément). Le flux variant comme le carré de l'amplitude, $E_0\sim700\sqrt{P_L/(10^3\ \mathrm{W\,m^{-2}})}\sim3\times10^{10}\ \mathrm{V\,m^{-1}}$. L'expression de la question 8 donne $4\times10^{10}\ \mathrm{V\,m^{-1}}$ : l'écart vient de ce qu'une amplitude de $700\ \mathrm{V\,m^{-1}}$ correspond, par cette même formule, à $650\ \mathrm{W\,m^{-2}}$ et non à $10^3$. Les deux estimations s'accordent sur l'ordre de grandeur, quelques $10^{10}\ \mathrm{V\,m^{-1}}$.
 
 ### Question 10 — Champ atomique
 
@@ -124,7 +126,7 @@ La courbe s'obtient en faisant varier $t_i$, en résolvant la question 21 pour l
 
 ### Question 26 — Peigne et coupure
 
-Les pics sont espacés de deux fréquences laser, aux ordres impairs. Après la décroissance initiale, une série de pics d'ordres supérieurs forme un plateau approximatif, suivi d'une coupure rapide vers les rangs 29 à 33 sur cette mesure. Les ordres 19 et supérieurs satisfont la condition de la question 3. Le plus grand photon possible correspond au maximum du graphe de retour, $E_{c,\max}\simeq3{,}17U_P$. La loi de coupure est donc $n_{\max}\simeq(I_P+3{,}17U_P)/(\hbar\omega)$, avec les pics effectivement permis situés aux entiers impairs.
+Les pics sont espacés de deux fréquences laser, aux ordres impairs : c'est la sélection établie à la question 16, le rayonnement suivant le mouvement de l'électron. Après la décroissance initiale, une série de pics d'ordres supérieurs forme un plateau approximatif, suivi d'une coupure rapide vers les rangs 29 à 33 sur cette mesure. Les ordres 19 et supérieurs satisfont la condition de la question 3. Le plus grand photon possible correspond au maximum du graphe de retour, $E_{c,\max}\simeq3{,}17U_P$. La loi de coupure est donc $n_{\max}\simeq(I_P+3{,}17U_P)/(\hbar\omega)$, avec les pics effectivement permis situés aux entiers impairs.
 
 ## Durée et phases des impulsions
 
@@ -136,9 +138,9 @@ Le produit avec le conjugué élimine toute phase commune. Cette intensité est 
 
 ### Question 28 — Pics de N harmoniques successives
 
-Pour des amplitudes $A$ et phases identiques, la série géométrique donne $I(t)\propto A^2[\sin(N\omega t/2)/\sin(\omega t/2)]^2$. La valeur limite est $N^2 A^2$ aux instants $t=kT$. De part et d'autre, les premiers zéros sont à $kT\pm T/N$. La demi-largeur jusqu'au premier zéro vaut donc $T/N$. Si « demi-largeur » désigne celle à mi-hauteur, $[\sin x/x]^2=1/2$ donne $x\simeq1{,}392$, donc une demi-largeur $0{,}443T/N$ pour $N\gg1$. Les pics sont séparés de $T$.
+Pour des amplitudes $A$ et phases identiques, la série géométrique donne $I(t)\propto A^2[\sin(N\omega t/2)/\sin(\omega t/2)]^2$. La valeur limite est $N^2 A^2$ aux instants $t=kT$. De part et d'autre, les premiers zéros sont à $kT\pm T/N$. La demi-largeur jusqu'au premier zéro vaut donc $T/N$. Si « demi-largeur » désigne celle à mi-hauteur, $[\sin x/x]^2=1/2$ donne $x\simeq1{,}392$, donc une demi-largeur $0{,}443T/N$ pour $N\gg1$. Les pics sont séparés de $T$. C'est la fonction d'interférences à $N$ ondes d'un réseau, le temps jouant le rôle de l'angle.
 
-![Figure 5 — À phases alignées, un peigne de rangs impairs produit deux pics par période laser. Les deux exemples utilisent des amplitudes identiques.](figures/peignes.svg)
+![Figure 5 — À phases alignées, dix ordres successifs donnent un pic par période laser (question 28) ; cinq ordres impairs en donnent deux (question 35). Amplitudes identiques dans les deux cas.](figures/peignes.svg)
 
 ### Question 29 — Phases en progression arithmétique
 
@@ -162,7 +164,7 @@ Le carré du module vaut à une constante près $P(\tau)\propto1+\cos[2\omega\ta
 
 ### Question 33 — Lecture de la carte RABITT
 
-Les lignes impaires de 17 à 25 sont brillantes et peu sensibles au retard. Elles correspondent aux photons harmoniques absorbés directement. Les bandes intermédiaires paires proviennent des deux transitions de la question 31. Leurs maxima se répètent environ tous les $1{,}3\ \mathrm{fs}$, soit environ 22 à 23 oscillations sur la trentaine de femtosecondes représentée. On retrouve $T\simeq2{,}6$ à $2{,}7\ \mathrm{fs}$, compatible avec $800\ \mathrm{nm}$.
+Les lignes impaires 17 à 23 sont brillantes et pratiquement indépendantes du retard ; la ligne 25, plus faible, laisse voir une légère modulation. Elles correspondent aux photons harmoniques absorbés directement, seuls présents sur la figure 3. Les bandes intermédiaires paires proviennent des deux transitions de la question 31. Leurs maxima se répètent environ tous les $1{,}3\ \mathrm{fs}$, soit environ 22 à 23 oscillations sur la trentaine de femtosecondes représentée. On retrouve $T\simeq2{,}6$ à $2{,}7\ \mathrm{fs}$, compatible avec $800\ \mathrm{nm}$.
 
 ### Question 34 — Test de l’alignement des phases
 
@@ -170,7 +172,7 @@ Pour le canal intermédiaire, le maximum est à $2\omega\tau=\phi_{q+2}-\phi_q\p
 
 ### Question 35 — Durée d’une impulsion
 
-Les ordres visibles 17, 19, 21, 23 et 25 constituent environ $N=5$ harmoniques impaires séparées de $2\omega$. Si leurs phases ont un incrément constant et que leurs amplitudes sont comparables, les pics se répètent toutes les $T/2$. En remplaçant $T$ par $T/2$ dans la question 28, la demi-largeur jusqu'au premier zéro vaut $T/(2N)\simeq0{,}27\ \mathrm{fs}$. La largeur totale à mi-hauteur est d'environ $0{,}886\,T/(2N)\simeq0{,}24\ \mathrm{fs}$, soit **quelques centaines d'attosecondes**. Les amplitudes réelles et la bande effectivement transmise modifient le chiffre précis.
+Les ordres visibles 17, 19, 21, 23 et 25 constituent environ $N=5$ harmoniques impaires séparées de $2\omega$. Si leurs phases ont un incrément constant et que leurs amplitudes sont comparables, les pics se répètent toutes les $T/2$. En remplaçant $T$ par $T/2$ dans la question 28, la demi-largeur jusqu'au premier zéro vaut $T/(2N)\simeq0{,}27\ \mathrm{fs}$. La largeur totale à mi-hauteur est d'environ $0{,}886\,T/(2N)\simeq0{,}24\ \mathrm{fs}$, soit **quelques centaines d'attosecondes** (à un chiffre significatif, $3\times10^{-16}\ \mathrm s$ jusqu'au premier zéro et $2\times10^{-16}\ \mathrm s$ à mi-hauteur). Les amplitudes réelles et la bande effectivement transmise modifient le chiffre précis.
 
 ## Spectromètre magnétique
 
@@ -194,7 +196,7 @@ Sur la figure 5, un même tube de lignes s'élargit de l'entrée à la sortie pu
 
 La force magnétique ne travaille pas, donc $v$ est constant. L'invariant admis vaut $J=eBr^2=m^2v^2\sin^2\theta/(eB)$. Il en résulte
 $$\sin^2\theta_f=(B_f/B_i)\sin^2\theta_i.$$
-Lorsque le champ décroît, le mouvement se rapproche de la direction de la ligne de champ. Le cercle de giration peut pourtant s'élargir, car sa fréquence cyclotron diminue.
+Lorsque le champ décroît, le mouvement se rapproche de la direction de la ligne de champ. Le cercle de giration s'élargit pourtant : $J=eBr^2$ constant donne $r_f=r_i\sqrt{B_i/B_f}$.
 
 ### Question 41 — Incertitude due à l’angle final
 
