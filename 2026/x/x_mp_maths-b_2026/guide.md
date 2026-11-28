@@ -12,6 +12,8 @@
 
 **Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 5)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le sujet étudie la répartition des valeurs propres de grandes matrices symétriques à travers la statistique
@@ -267,7 +269,7 @@ $$\int_0^1f(2\cos\pi t)\,\mathrm dt=\frac1\pi\int_0^\pi f(2\cos\theta)\,\mathrm 
 $$\boxed{\mathbb E\!\left(f\!\left(2\cos\frac{\pi U_n}{n+1}\right)\right)\xrightarrow[n\to\infty]{}\frac1\pi\int_{-2}^2\frac{f(x)}{\sqrt{4-x^2}}\,\mathrm dx.}$$
 
 > [!JURY]
-> Le rapport 2026 attend la formule de transfert, puis la question 2 via un changement de variable linéaire (85 % de réussite). Il rappelle à propos des résultats admis ou réutilisés : « Il faut alors veiller à vérifier soigneusement toutes les hypothèses requises pour appliquer un tel résultat. » Ici : $h$ est bien continue sur $[0,1]$, et $f$ n'est évaluée que sur $[-2,2]$.
+> Le rapport 2026 attend la formule de transfert, puis un retour à un résultat antérieur « via un changement de variable linéaire » (85 % de réussite). Il écrit « la question préliminaire », mais c'est la question 2 qui sert ici. Il rappelle à propos des résultats admis ou réutilisés : « Il faut alors veiller à vérifier soigneusement toutes les hypothèses requises pour appliquer un tel résultat. » Ici : $h$ est bien continue sur $[0,1]$, et $f$ n'est évaluée que sur $[-2,2]$.
 
 ### Question 4b
 
@@ -581,7 +583,7 @@ Le signe se vérifie déjà en dimension un avec le déterminant $X-a$. La trans
 $$\boxed{\mathrm{Sp}(T_n(a,b,c))=\{(\lambda+a,\,m_\lambda)\ :\ (\lambda,m_\lambda)\in\mathrm{Sp}(T_n(0,b,c))\}.}$$
 
 > [!PIEGE]
-> Attention au sens de la translation : c'est $\chi_{T_n(0,b,c)}(X-a)$, et non $(X+a)$. Contrôle immédiat : pour $b=c=0$, la seule valeur propre est $a$.
+> Attention au sens de la translation : c'est $\chi_{T_n(0,b,c)}(X-a)$, et non $(X+a)$. Contrôle immédiat : pour $b=c=0$, la seule valeur propre est $a$. Le rapport 2026 imprime la relation avec $X+a$ : avec la définition de l'énoncé, $\chi_n(X)=\det(XI_n-T_n)$, c'est bien $X-a$ qu'il faut écrire.
 
 > [!JURY]
 > Rapport 2026 : « La préservation de la multiplicité par translation n'a été que rarement justifiée. » La factorisation par $(X-\lambda)^m$ ci-dessus suffit. Taux de réussite : 64 %.
@@ -693,7 +695,7 @@ $$\boxed{\lim_{n\to\infty}S_f(T_n(a,b,c))=\frac1\pi\int_{-2}^2\frac{f(a+\sqrt{bc
 > Écrire la condition $\lambda_k\le y$ comme une condition sur $k$, en utilisant la monotonie de $\cos$ sur $[0,\pi]$.
 
 > [!INDICATION]
-> Selon la position de $y$ par rapport à $a\pm2\sqrt{bc}$, il y a trois régimes. Une limite $L>0$ pour $q_n(y)/n$ donne l’équivalent $nL$. Au bord inférieur du spectre, calculez directement $q_n(y)$.
+> Selon la position de $y$ par rapport à $a\pm2\sqrt{bc}$, il y a trois régimes. Une limite $L>0$ pour $q_n(y)/n$ donne l’équivalent $nL$. Au bord inférieur du spectre, calculer directement $q_n(y)$.
 
 #### Solution
 
@@ -911,7 +913,7 @@ vérifie $|f-P|\le\varepsilon$ sur $[-1,1]$. Ici, $a_i$ et $c_i$ sont construits
 
 On montre que, pour la matrice de Wigner $X_n$, la probabilité que $S_n(f)$ s'écarte de $\Sigma(f)$ tend vers $0$. La méthode des moments fournit l'hypothèse $(H_k)$ (admise pour $k\ge3$). Les inégalités de Markov et de Bienaymé-Tchebychev donnent la concentration, et le théorème de Weierstrass permet de passer des polynômes aux fonctions continues.
 
-Remarque préalable : les coefficients de $X_n^k$ sont des polynômes en les $W_{i,j}$. Un produit de variables ayant des moments de tout ordre est intégrable, par l'inégalité arithmético-géométrique $|Z_1\cdots Z_p|\le\frac1p\sum|Z_i|^p$. Toutes les espérances écrites ci-dessous sont donc finies.
+Remarque préalable : les $W_{i,j}$ sont à valeurs dans $\mathbb Z$, donc $X_n$ ne prend qu'un nombre au plus dénombrable de valeurs. Pour toute fonction $f$ de $\mathbb R$ dans $\mathbb R$, $S_n(f)=S_f(X_n)$ est donc une variable aléatoire discrète. Par ailleurs, les coefficients de $X_n^k$ sont des polynômes en les $W_{i,j}$. Un produit de variables ayant des moments de tout ordre est intégrable, par l'inégalité arithmético-géométrique $|Z_1\cdots Z_p|\le\frac1p\sum|Z_i|^p$. Toutes les espérances écrites ci-dessous sont donc finies.
 
 ### Question 13a
 

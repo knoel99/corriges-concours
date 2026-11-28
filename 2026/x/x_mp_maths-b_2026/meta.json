@@ -49,7 +49,7 @@
       "legende": "Le carré d’un coefficient diagonal intervient une fois dans la trace de X₃². Le carré d’un coefficient hors diagonale y intervient deux fois."
     }
   ],
-  "date_revision": "2026-11-26",
+  "date_revision": "2026-11-28",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -137,6 +137,18 @@
       "agent": "x_maths_b_recentes",
       "modifications": true,
       "perimetre": "Vérification des 30 repères du sujet MP-MPI et des sept figures. Contrôle des valeurs aux bords, des coefficients du déterminant, des moments, des deux lois limites et de la troncature polynomiale en 17. Précision sur la translation du polynôme caractéristique en 8a, traitement explicite de P nul en 17b et correction du bilan des taux du jury."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 5,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des quatre défauts mineurs d'une seconde relecture indépendante des 30 questions, vérifiés avec le sujet et le rapport 2026. Guidé : signalement en 8a que le rapport imprime X + a alors que la définition de l'énoncé donne X − a, citation exacte du rapport en 4a (« question préliminaire », lue comme la question 2), infinitif dans l'indication de 9b. Brut et guidé : en tête de la quatrième partie, justification que S_n(f) est une variable aléatoire discrète (W_{i,j} à valeurs dans ℤ). Aucune démonstration ni figure modifiée."
     }
   ],
   "couverture": {

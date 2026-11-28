@@ -12,6 +12,8 @@
 
 **Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 5)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 4 heures, calculatrice interdite. Thème : répartition des valeurs propres de matrices tridiagonales (loi de l'arcsinus), théorème de Weierstrass, loi du demi-cercle pour les matrices de Wigner. Trente questions, de 1 à 17b.
 
 Notations utilisées dans tout le corrigé : pour $f$ continue sur $[-2,2]$, $I(f)=\dfrac1\pi\displaystyle\int_{-2}^2\frac{f(x)}{\sqrt{4-x^2}}\,\mathrm dx$, et $f_k(x)=x^k$.
@@ -561,7 +563,7 @@ vérifie $|f-P|\le\varepsilon$ sur $[-1,1]$. Ici, $a_i$ et $c_i$ sont construits
 
 ## Quatrième partie
 
-Dans toute la partie, $X_n(\omega)$ est symétrique réelle. Ses coefficients sont des polynômes en des variables aléatoires ayant des moments de tout ordre. Donc $\operatorname{Tr}(X_n^k)$ et $\operatorname{Tr}(X_n^k)^2$ sont d'espérance finie : un produit $Z_1\cdots Z_p$ de telles variables est intégrable, car $|Z_1\cdots Z_p|\le\frac1p\sum_i|Z_i|^p$ (inégalité arithmético-géométrique).
+Dans toute la partie, $X_n(\omega)$ est symétrique réelle. Les $W_{i,j}$ sont à valeurs dans $\mathbb Z$, donc $X_n$ ne prend qu'un nombre au plus dénombrable de valeurs : pour toute fonction $f$ de $\mathbb R$ dans $\mathbb R$, $S_n(f)=S_f(X_n)$ est une variable aléatoire discrète. Les coefficients de $X_n$ sont des polynômes en des variables aléatoires ayant des moments de tout ordre. Donc $\operatorname{Tr}(X_n^k)$ et $\operatorname{Tr}(X_n^k)^2$ sont d'espérance finie : un produit $Z_1\cdots Z_p$ de telles variables est intégrable, car $|Z_1\cdots Z_p|\le\frac1p\sum_i|Z_i|^p$ (inégalité arithmético-géométrique).
 
 ### Question 13a
 
