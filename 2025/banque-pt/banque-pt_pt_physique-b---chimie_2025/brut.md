@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, sur l'extraction et la transformation de l'uranium : 32 questions en cinq parties indépendantes, deux annexes à rendre (diagramme E-pH, courbes i-E). Les 32 questions sont traitées. Les valeurs lues sur les annexes et sur le graphique de cinétique sont signalées à l'endroit où elles servent. Les applications numériques emploient les valeurs approchées fournies par l'énoncé.
 
 [Sujet officiel](https://www.banquept.fr/documents/2025/ph_b_ch_2025_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_phys_b_ecrit_2025.pdf)
@@ -73,7 +75,7 @@ $$a \approx \frac{4\times 238}{1{,}7} = \frac{952}{1{,}7}$$
 
 $$\boxed{a \approx 5{,}6\cdot 10^{2}\ \mathrm{pm}}$$
 
-(avec $\sqrt3 = 1{,}732$ on trouve 550 pm.) Contrôle : les anions voisins sont distants de $a/2 \approx 280\ \mathrm{pm}$, supérieur à $2\,r(\mathrm{O^{2-}}) = 248\ \mathrm{pm}$, et les cations voisins de $a\sqrt2/2 \approx 390\ \mathrm{pm}$, supérieur à $2\,r(\mathrm{U^{4+}}) = 228\ \mathrm{pm}$ : les ions de même signe ne se touchent pas, le modèle est cohérent.
+(avec $\sqrt3 = 1{,}732$ on trouve 550 pm.) Contrôle : les anions voisins sont distants de $a/2 \approx 280\ \mathrm{pm}$, supérieur à $2\,r(\mathrm{O^{2-}}) = 248\ \mathrm{pm}$, et les cations voisins de $a\sqrt2/2 \approx 0{,}7\,a \approx 390\ \mathrm{pm}$, supérieur à $2\,r(\mathrm{U^{4+}}) = 228\ \mathrm{pm}$ : les ions de même signe ne se touchent pas, le modèle est cohérent.
 
 ## Partie B — Concentration des minerais
 
@@ -435,7 +437,7 @@ $$n(\mathrm{F_2}) = \frac{m}{M(\mathrm{F_2})}$$
 
 $$t = \frac{2\,m\,\mathcal F}{\eta\,I\,M(\mathrm{F_2})}$$
 
-Application numérique avec $m = 1{,}0\cdot 10^{3}\ \mathrm g$, $M(\mathrm{F_2}) = 2\times 18 = 36\ \mathrm{g\cdot mol^{-1}}$ (donnée de l'énoncé), $\mathcal F = 1\cdot 10^{5}\ \mathrm{C\cdot mol^{-1}}$, $\eta = 0{,}9$ et $I = 10\ \mathrm A$ :
+Application numérique avec $m = 1{,}0\cdot 10^{3}\ \mathrm g$, $M(\mathrm{F_2}) = 2\times 18 = 36\ \mathrm{g\cdot mol^{-1}}$ (valeur du tableau de l'énoncé ; la valeur réelle, $19\ \mathrm{g\cdot mol^{-1}}$ par atome, donnerait 6,8 jours, soit la même conclusion), $\mathcal F = 1\cdot 10^{5}\ \mathrm{C\cdot mol^{-1}}$, $\eta = 0{,}9$ et $I = 10\ \mathrm A$ :
 
 $$t = \frac{2\times 10^{3}\times 10^{5}}{0{,}9\times 10\times 36} = \frac{2\cdot 10^{8}}{324} \approx 6{,}2\cdot 10^{5}\ \mathrm s$$
 
@@ -443,4 +445,4 @@ Un jour dure $86\,400\ \mathrm s$, donc
 
 $$\boxed{t \approx 7\ \text{jours}}$$
 
-**Remarque sur les données.** L'énoncé de cette question fixe $I = 10\ \mathrm A$ pour des électrodes de $1\ \mathrm{m^2}$, et c'est la valeur retenue ici ; elle correspond à une densité de courant de $0{,}1\ \mathrm{A\cdot dm^{-2}}$ seulement. Avec la densité de courant de la question 31 ($10\ \mathrm{A\cdot dm^{-2}}$ sur $100\ \mathrm{dm^2}$, soit $1\,000\ \mathrm A$), la durée serait cent fois plus courte, environ $6{,}2\cdot 10^{3}\ \mathrm s$, soit 1,7 h. La demande d'un résultat en jours confirme que la valeur attendue est celle obtenue avec 10 A.
+**Remarque sur les données.** L'énoncé de cette question fixe $I = 10\ \mathrm A$ pour des électrodes de $1\ \mathrm{m^2}$, et c'est la valeur retenue ici ; elle correspond à une densité de courant de $0{,}1\ \mathrm{A\cdot dm^{-2}}$ seulement. Avec la densité de courant de la question 31 ($10\ \mathrm{A\cdot dm^{-2}}$ sur $100\ \mathrm{dm^2}$, soit $1\,000\ \mathrm A$), la durée serait cent fois plus courte, environ $6{,}2\cdot 10^{3}\ \mathrm s$, soit 1,7 h. La demande d'un résultat en jours plaide pour la valeur obtenue avec 10 A ; la donnée de la surface, inutile dans ce cas, plaide à l'inverse pour $1\,000\ \mathrm A$. L'énoncé ne permet pas de trancher et le rapport du jury ne commente pas cette question : sur une copie, annoncer l'hypothèse retenue.

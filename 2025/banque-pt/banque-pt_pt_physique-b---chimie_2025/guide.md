@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Extraction et transformation de l'uranium, du minerai au combustible nucléaire. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 32 questions réparties en cinq parties indépendantes, avec deux annexes à compléter et à rendre.
@@ -16,7 +18,7 @@
 
 **Notions mobilisées.** Structure de l'atome, cristaux ioniques, diagrammes potentiel-pH, relation de Nernst, loi de Hess, approximation d'Ellingham, loi de Van't Hoff, quotient de réaction et déplacement d'équilibre, loi de vitesse, schéma de Lewis, interactions intermoléculaires, courbes intensité-potentiel, loi de Faraday.
 
-**Difficulté.** Le sujet reste proche du cours et couvre les deux années. Les points se gagnent sur la rigueur des justifications et sur les calculs menés à la main : préparer chaque application numérique avec les valeurs approchées fournies ($\sqrt3 \approx 1{,}7$, $\sqrt5 \approx 2{,}2$, $R \approx 8{,}3$, $\mathcal F \approx 10^5$). Les questions les plus discriminantes d'après le rapport sont les questions 3, 7, 10, 16 à 20 et l'ensemble des courbes i-E (questions 26 à 32).
+**Difficulté.** Le sujet reste proche du cours et couvre les deux années. Les points se gagnent sur la rigueur des justifications et sur les calculs menés à la main : préparer chaque application numérique avec les valeurs approchées fournies ($\sqrt3 \approx 1{,}7$, $\sqrt5 \approx 2{,}2$, $R \approx 8{,}3$, $\mathcal F \approx 10^5$). Le rapport signale des erreurs fréquentes aux questions 3, 7, 10 et 15 à 20 (la partie D est la moins bien traitée), juge le traitement des courbes i-E (questions 26 à 29) particulièrement discriminant et note que les questions 30 à 32 ont rarement été abordées.
 
 **Gestion du temps.** Environ 15 minutes pour la partie A, 20 pour la partie B, 30 pour la partie C, 10 pour la partie D et 40 pour la partie E, qui regroupe douze questions dont plusieurs de cours (21 à 25, 28, 30) rapides à traiter. Les parties étant indépendantes, ne pas s'attarder sur une question bloquante. Penser à rendre les deux annexes complétées (questions 9, 26 et 29).
 
@@ -138,7 +140,7 @@ $$a \approx \frac{4\times 238}{1{,}7} = \frac{952}{1{,}7}$$
 
 $$\boxed{a \approx 5{,}6\cdot 10^{2}\ \mathrm{pm}}$$
 
-(avec $\sqrt3 = 1{,}732$ on trouve 550 pm.) Contrôle : les anions voisins sont distants de $a/2 \approx 280\ \mathrm{pm}$, supérieur à $2\,r(\mathrm{O^{2-}}) = 248\ \mathrm{pm}$, et les cations voisins de $a\sqrt2/2 \approx 390\ \mathrm{pm}$, supérieur à $2\,r(\mathrm{U^{4+}}) = 228\ \mathrm{pm}$ : les ions de même signe ne se touchent pas, le modèle est cohérent.
+(avec $\sqrt3 = 1{,}732$ on trouve 550 pm.) Contrôle : les anions voisins sont distants de $a/2 \approx 280\ \mathrm{pm}$, supérieur à $2\,r(\mathrm{O^{2-}}) = 248\ \mathrm{pm}$, et les cations voisins de $a\sqrt2/2 \approx 0{,}7\,a \approx 390\ \mathrm{pm}$, supérieur à $2\,r(\mathrm{U^{4+}}) = 228\ \mathrm{pm}$ : les ions de même signe ne se touchent pas, le modèle est cohérent.
 
 > [!PIEGE]
 > Écrire la tangence cation-cation sur la diagonale d'une face ($a\sqrt2/2 = 2\,r$) est l'erreur signalée par le jury : ce contact est celui d'un métal cubique faces centrées, pas d'un cristal ionique.
@@ -412,7 +414,10 @@ $$\boxed{\alpha = \frac{4\,\xi}{n_0}}$$
 En fonction de $\alpha$ : $n(\mathrm{HF}) = n_0(1-\alpha)$, $n(\mathrm{H_2O}) = n_0\,\alpha/2$ et $n_{\mathrm{gaz}} = n_0\,(1 - \alpha/2)$.
 
 > [!JURY]
-> Le tableau est en général correct, mais l'expression de $\alpha$ a été source d'erreurs (oubli du coefficient 4), ce qui bloque toute la question suivante.
+> Le tableau est en général correct, mais l'expression de $\alpha$ a été source d'erreurs, ce qui pose nécessairement problème à la question suivante.
+
+> [!PIEGE]
+> Ne pas oublier le coefficient 4 : écrire $\alpha = \xi/n_0$ fausse la quantité totale de gaz et la relation de la question 16.
 
 ### Question 16
 
@@ -766,7 +771,7 @@ Cette tension est très supérieure au minimum thermodynamique de 3,17 V : l'éc
 > Ne pas répondre $3{,}05 + 0{,}12 = 3{,}17\ \mathrm V$ : cette valeur ignore les surtensions, que les courbes i-E servent justement à lire. Ne pas oublier non plus d'ajouter la chute ohmique.
 
 > [!JURY]
-> Les questions 30 à 32 ont rarement été abordées : elles sont pourtant courtes et rapportent des points à qui garde quelques minutes pour la fin du sujet.
+> Le rapport note seulement que les questions 30 à 32 ont rarement été abordées. Elles sont pourtant courtes : garder quelques minutes pour la fin du sujet.
 
 ### Question 32
 
@@ -788,7 +793,7 @@ $$n(\mathrm{F_2}) = \frac{m}{M(\mathrm{F_2})}$$
 
 $$t = \frac{2\,m\,\mathcal F}{\eta\,I\,M(\mathrm{F_2})}$$
 
-Application numérique avec $m = 1{,}0\cdot 10^{3}\ \mathrm g$, $M(\mathrm{F_2}) = 2\times 18 = 36\ \mathrm{g\cdot mol^{-1}}$ (donnée de l'énoncé), $\mathcal F = 1\cdot 10^{5}\ \mathrm{C\cdot mol^{-1}}$, $\eta = 0{,}9$ et $I = 10\ \mathrm A$ :
+Application numérique avec $m = 1{,}0\cdot 10^{3}\ \mathrm g$, $M(\mathrm{F_2}) = 2\times 18 = 36\ \mathrm{g\cdot mol^{-1}}$ (valeur du tableau de l'énoncé ; la valeur réelle, $19\ \mathrm{g\cdot mol^{-1}}$ par atome, donnerait 6,8 jours, soit la même conclusion), $\mathcal F = 1\cdot 10^{5}\ \mathrm{C\cdot mol^{-1}}$, $\eta = 0{,}9$ et $I = 10\ \mathrm A$ :
 
 $$t = \frac{2\times 10^{3}\times 10^{5}}{0{,}9\times 10\times 36} = \frac{2\cdot 10^{8}}{324} \approx 6{,}2\cdot 10^{5}\ \mathrm s$$
 
@@ -796,7 +801,7 @@ Un jour dure $86\,400\ \mathrm s$, donc
 
 $$\boxed{t \approx 7\ \text{jours}}$$
 
-**Remarque sur les données.** L'énoncé de cette question fixe $I = 10\ \mathrm A$ pour des électrodes de $1\ \mathrm{m^2}$, et c'est la valeur retenue ici ; elle correspond à une densité de courant de $0{,}1\ \mathrm{A\cdot dm^{-2}}$ seulement. Avec la densité de courant de la question 31 ($10\ \mathrm{A\cdot dm^{-2}}$ sur $100\ \mathrm{dm^2}$, soit $1\,000\ \mathrm A$), la durée serait cent fois plus courte, environ $6{,}2\cdot 10^{3}\ \mathrm s$, soit 1,7 h. La demande d'un résultat en jours confirme que la valeur attendue est celle obtenue avec 10 A.
+**Remarque sur les données.** L'énoncé de cette question fixe $I = 10\ \mathrm A$ pour des électrodes de $1\ \mathrm{m^2}$, et c'est la valeur retenue ici ; elle correspond à une densité de courant de $0{,}1\ \mathrm{A\cdot dm^{-2}}$ seulement. Avec la densité de courant de la question 31 ($10\ \mathrm{A\cdot dm^{-2}}$ sur $100\ \mathrm{dm^2}$, soit $1\,000\ \mathrm A$), la durée serait cent fois plus courte, environ $6{,}2\cdot 10^{3}\ \mathrm s$, soit 1,7 h. La demande d'un résultat en jours plaide pour la valeur obtenue avec 10 A ; la donnée de la surface, inutile dans ce cas, plaide à l'inverse pour $1\,000\ \mathrm A$. L'énoncé ne permet pas de trancher et le rapport du jury ne commente pas cette question : sur une copie, annoncer l'hypothèse retenue.
 
 > [!PIEGE]
 > Le rendement faradique allonge la durée : il se place au dénominateur. Ne pas oublier le facteur 2 (deux électrons par molécule de difluor) ni la masse molaire de la molécule $\mathrm{F_2}$, double de celle de l'atome.

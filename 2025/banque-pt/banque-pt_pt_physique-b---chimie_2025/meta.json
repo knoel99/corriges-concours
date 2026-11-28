@@ -87,6 +87,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 32 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées et lectures des annexes contrôlées sur le PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des défauts mineurs confirmés de la relecture indépendante, vérifiés sur le sujet et le rapport : question 5 (contrôle des distances mené avec a = 560 pm), question 32 (masse molaire du tableau de l'énoncé signalée, remarque sur l'intensité rendue prudente), brut et guidé ; guidé : rubrique Difficulté alignée sur le rapport, encadré JURY de la question 15 ramené au texte du rapport et mise en garde déplacée en encadré PIEGE, encadré JURY des questions 30 à 32 reformulé ; les 21 encadrés JURY contrôlés un par un sur le rapport. Figures : annotation de la figure des courbes i-E raccourcie, frontière C/E du diagramme E-pH replacée à −0,64 V (mesure sur l'annexe 1)."
     }
   ]
 }
