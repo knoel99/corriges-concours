@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, sur la géothermie domestique : 25 questions (1.1 à 3.7.d) en trois parties indépendantes. Les 25 questions sont traitées. Le sujet ne comporte aucun diagramme thermodynamique à lire : les enthalpies massiques du R407C viennent du tableau de la page 6 de l'énoncé, et les valeurs $\ln 5 = 1{,}6$, $\sqrt{1/0{,}3} = 1{,}8$ et $\ln 0{,}03 = -3{,}5$ sont fournies.
 
 [Sujet officiel](https://www.banquept.fr/documents/2016/ph_b_th_2016_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_phys_b_ecrit_2016.pdf)
@@ -343,7 +345,7 @@ $$\boxed{e_C = \frac{T_c}{T_c - T_f}}$$
 
 Avec $T_c = 60\ \mathrm{°C} = 333$ K et $T_f = 5\ \mathrm{°C} = 278$ K : $e_C = 333/55 \approx 6{,}1$, valeur donnée par l'énoncé.
 
-*Comparaison.* On a bien $e = 5{,}6 < e_C = 6{,}1$, conformément au second principe : l'efficacité de Carnot est une borne supérieure, atteinte seulement par un cycle réversible. Le cycle étudié ne l'est pas : la détente isenthalpique dans le détendeur est irréversible, et la vapeur surchauffée à 70 °C se refroidit au contact d'une source plus froide. L'écart reste faible ($e/e_C \approx 0{,}92$) parce que le modèle est idéalisé : dans une machine réelle, il faut des écarts de température entre le fluide et les sources dans les échangeurs et la compression est irréversible, de sorte que l'efficacité est nettement plus basse (typiquement 3 à 4).
+*Comparaison.* On a bien $e = 5{,}6 < e_C = 6{,}1$, conformément au second principe : l'efficacité de Carnot est une borne supérieure, atteinte seulement par un cycle réversible. Le cycle étudié ne l'est pas : la détente isenthalpique dans le détendeur est irréversible, et la vapeur surchauffée à 70 °C se refroidit au contact d'une source plus froide. L'écart est faible ($e/e_C \approx 0{,}92$) avec les données de l'énoncé, qui dit seulement que la compression est adiabatique : dans une machine réelle, il faut des écarts de température entre le fluide et les sources dans les échangeurs et la compression est irréversible, de sorte que l'efficacité est nettement plus basse (de l'ordre de 3 à 4, ordre de grandeur usuel qui ne figure pas dans l'énoncé).
 
 ### Question 3.7.b — Puissance électrique du compresseur
 
@@ -363,7 +365,7 @@ Le logement a toujours besoin de $E = 7000$ kWh de chaleur par an. Avec le chauf
 
 $$\boxed{E_{\text{élec}} = \frac{E}{\eta\,e} = \frac{7000}{4{,}2} \approx 1{,}7\times 10^{3}\ \mathrm{kWh}}$$
 
-La consommation électrique annuelle est divisée par 4,2. La différence, environ 5300 kWh, est prélevée dans le sol (et, pour une faible part, perdue dans le moteur).
+La consommation électrique annuelle est divisée par 4,2. Le sol fournit $E\,q_f/|q_c| = 7000\times 115/140 \approx 5{,}8\times 10^{3}$ kWh et le fluide reçoit du compresseur $E/e = 1250$ kWh de travail (total : 7000 kWh). L'économie d'électricité, environ 5300 kWh, est un peu plus faible que la chaleur prise au sol, car un quart de l'électricité consommée (environ 420 kWh sur 1667 kWh) est perdu dans le moteur.
 
 ### Question 3.7.d — Gain annuel
 
@@ -373,4 +375,4 @@ $$\boxed{G = (E - E_{\text{élec}})\times 0{,}15 \approx 5{,}3\times 10^{3}\time
 
 La facture de chauffage passe de $7000\times 0{,}15 = 1050$ euros à environ 250 euros par an.
 
-*Commentaire.* L'ordre de grandeur est raisonnable : quelques centaines d'euros par an. Il faut le comparer au coût de l'installation (pompe à chaleur, terrassement et pose de 400 m de tuyaux enterrés), de l'ordre de dix mille euros ou davantage : le temps de retour sur investissement dépasse la dizaine d'années au prix actuel du kilowattheure. Le gain augmente si ce prix monte, ce que l'énoncé envisage. Le calcul est par ailleurs optimiste : il suppose une efficacité de 5,6 en toutes circonstances et ignore la consommation des pompes de circulation et l'entretien. L'intérêt n'est pas seulement financier : les trois quarts de la chaleur fournie au logement proviennent du sol, source gratuite et renouvelable.
+*Commentaire.* L'ordre de grandeur est raisonnable : quelques centaines d'euros par an. Il faut le comparer au coût de l'installation (pompe à chaleur, terrassement et pose de 400 m de tuyaux enterrés), que l'énoncé ne donne pas : en le supposant de l'ordre de dix mille euros (ordre de grandeur courant, extérieur au sujet), le temps de retour sur investissement est de $10\,000/800 \approx 12$ ans au prix actuel du kilowattheure. Le gain augmente si ce prix monte, ce que l'énoncé envisage. Le calcul est par ailleurs optimiste : il suppose une efficacité de 5,6 en toutes circonstances et ignore la consommation des pompes de circulation et l'entretien. L'intérêt n'est pas seulement financier : environ 80 % de la chaleur fournie au logement ($q_f/|q_c| = 115/140 \approx 0{,}82$) proviennent du sol, source gratuite et renouvelable.

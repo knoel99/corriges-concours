@@ -10,10 +10,10 @@
 <text x="380" y="223" text-anchor="middle">cycle récepteur</text>
 <text x="380" y="243" text-anchor="middle">ditherme</text>
 <line x1="380" y1="338" x2="380" y2="282" stroke="#1f4e9c" stroke-width="3" marker-end="url(#fb)"/>
-<text x="394" y="308" fill="#1f4e9c">Q_f &gt; 0 : chaleur prise au sol</text>
+<text x="394" y="308" fill="#1f4e9c">Q<tspan dy="4" font-size="10">f</tspan><tspan dy="-4" dx="4">&gt; 0 : chaleur prise au sol</tspan></text>
 <text x="394" y="326" fill="#1f4e9c" font-size="12">(évaporateur, 5 °C, 6 bar)</text>
 <line x1="380" y1="151" x2="380" y2="95" stroke="#b00020" stroke-width="3" marker-end="url(#fr)"/>
-<text x="394" y="118" fill="#b00020">Q_c &lt; 0 : chaleur cédée à l'eau de chauffage</text>
+<text x="394" y="118" fill="#b00020">Q<tspan dy="4" font-size="10">c</tspan><tspan dy="-4" dx="4">&lt; 0 : chaleur cédée à l'eau de chauffage</tspan></text>
 <text x="394" y="136" fill="#b00020" font-size="12">(condenseur, 60 °C, 27 bar)</text>
 <rect x="30" y="180" width="170" height="70" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
 <text x="115" y="208" text-anchor="middle" font-weight="bold">Compresseur</text>
@@ -21,6 +21,6 @@
 <line x1="202" y1="215" x2="313" y2="215" stroke="#2e7d32" stroke-width="3" marker-end="url(#fg)"/>
 <text x="258" y="203" text-anchor="middle" fill="#2e7d32">W &gt; 0</text>
 <text x="600" y="205" text-anchor="middle">Sur un cycle :</text>
-<text x="600" y="227" text-anchor="middle">W + Q_c + Q_f = 0</text>
-<text x="600" y="249" text-anchor="middle">|Q_c| = Q_f + W</text>
+<text x="600" y="227" text-anchor="middle">W + Q<tspan dy="4" font-size="10">c</tspan><tspan dy="-4" dx="4">+ Q</tspan><tspan dy="4" font-size="10">f</tspan><tspan dy="-4" dx="4">= 0</tspan></text>
+<text x="600" y="249" text-anchor="middle">|Q<tspan dy="4" font-size="10">c</tspan><tspan dy="-4">| = Q</tspan><tspan dy="4" font-size="10">f</tspan><tspan dy="-4" dx="4">+ W</tspan></text>
 </svg>

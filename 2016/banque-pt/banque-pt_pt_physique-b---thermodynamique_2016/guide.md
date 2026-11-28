@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** La géothermie domestique. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 25 questions (numérotées 1.1 à 3.7.d) réparties en trois parties indépendantes. Trois valeurs numériques sont fournies pour les calculs à la main : $\ln 5 = 1{,}6$, $\sqrt{1/0{,}3} = 1{,}8$ et $\ln 0{,}03 = -3{,}5$. L'énoncé demande un ou deux chiffres significatifs.
@@ -19,7 +21,7 @@
 **Gestion du temps.** Environ 35 minutes pour la partie 1, 40 pour la partie 2 et 45 pour la partie 3. Les questions 1.2, 1.4, 1.5, 2.1, 3.1 à 3.4 et 3.5.b sont rapides et ne doivent pas être laissées de côté.
 
 > [!JURY]
-> Le rapport 2016 relève des difficultés sur la compréhension des phénomènes, sur l'énoncé des hypothèses avant d'utiliser une formule, sur les calculs numériques et sur le commentaire des résultats. Pour obtenir tous les points d'une application numérique, il faut poser le calcul, le mener et donner le résultat final avec son unité. Les résultats numériques sont rarement commentés, alors que certains sont aberrants (une puissance de l'ordre du gigawatt pour le puits, une économie d'un million d'euros pour la pompe à chaleur). Les conditions d'emploi du premier principe sont très rarement précisées : système ouvert ou fermé, écoulement stationnaire ou non. Enfin, beaucoup de copies arrivent au résultat donné par l'énoncé à partir d'équations inadéquates, ce qui dispose mal le correcteur.
+> Le rapport 2016 relève des difficultés sur la compréhension des phénomènes, sur l'énoncé des hypothèses avant d'utiliser une formule, sur les calculs numériques et sur le commentaire des résultats. Pour obtenir tous les points d'une application numérique, il faut poser le calcul, le mener et donner le résultat final avec son unité. Les résultats numériques ne sont pas commentés, alors que certains sont aberrants (une puissance de l'ordre du gigawatt pour le puits, une économie d'un million d'euros pour la pompe à chaleur). Les conditions d'emploi du premier principe sont très rarement précisées : système ouvert ou fermé, écoulement stationnaire ou non. Enfin, beaucoup de copies arrivent au résultat donné par l'énoncé à partir d'équations inadéquates, ce qui dispose mal le correcteur.
 
 [Sujet officiel](https://www.banquept.fr/documents/2016/ph_b_th_2016_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_phys_b_ecrit_2016.pdf)
 
@@ -133,7 +135,7 @@ $\delta$ est une longueur, appelée **épaisseur de peau thermique** ou profonde
 $\delta$ diminue quand la pulsation augmente : les variations rapides pénètrent moins que les variations lentes.
 
 > [!JURY]
-> Le rapport 2016 signale des réponses fantaisistes et précise qu'il ne suffit pas de nommer la grandeur : il faut dire ce qu'elle représente.
+> Le rapport 2016 signale des réponses fantaisistes et précise qu'il ne suffit pas d'indiquer la grandeur.
 
 ### Question 1.5
 
@@ -420,7 +422,7 @@ Le transfert de chaleur du froid vers le chaud n'est pas spontané (second princ
 > La source chaude est ce que l'on chauffe (l'intérieur du logement), la source froide est le milieu extérieur où l'on puise la chaleur (ici le sol). Les signes se donnent du point de vue du fluide.
 
 > [!JURY]
-> D'après le rapport 2016, trop de candidats n'ont pas compris le principe d'une pompe à chaleur ; pour une part non négligeable d'entre eux, la source chaude est le milieu extérieur.
+> D'après le rapport 2016, trop de candidats n'ont pas compris le principe d'une pompe à chaleur ; pour une partie non négligeable d'entre eux, la source chaude est l'air extérieur.
 
 ### Question 3.2
 
@@ -470,7 +472,7 @@ La puissance maximale retenue, 7 kW, vaut environ **4,4 fois la puissance moyenn
 Cet écart est justifié. Le besoin de chauffage n'est pas constant : il est proportionnel à l'écart entre la température intérieure et la température extérieure, faible en automne et au printemps, élevé lors des jours les plus froids. L'installation doit être dimensionnée pour **la pointe** (vague de froid, remise en température après une absence), et non pour la moyenne, sans quoi la température de consigne ne serait pas tenue ces jours-là. En contrepartie, la machine ne fonctionne à pleine puissance qu'une petite partie du temps : fournir 7000 kWh à 7 kW ne demande que 1000 heures, soit moins du quart de la saison de chauffe. Le reste du temps, elle fonctionne par intermittence ou à puissance réduite. Un surdimensionnement excessif serait inutile et coûteux (machine et circuit capteur plus grands).
 
 > [!JURY]
-> D'après le rapport 2016, beaucoup de candidats se contentent d'une comparaison : un commentaire est attendu.
+> D'après le rapport 2016, beaucoup de candidats se contentent d'une comparaison.
 
 ### Question 3.5.a
 
@@ -611,7 +613,7 @@ $$\boxed{e_C = \frac{T_c}{T_c - T_f}}$$
 
 Avec $T_c = 60\ \mathrm{°C} = 333$ K et $T_f = 5\ \mathrm{°C} = 278$ K : $e_C = 333/55 \approx 6{,}1$, valeur donnée par l'énoncé.
 
-*Comparaison.* On a bien $e = 5{,}6 < e_C = 6{,}1$, conformément au second principe : l'efficacité de Carnot est une borne supérieure, atteinte seulement par un cycle réversible. Le cycle étudié ne l'est pas : la détente isenthalpique dans le détendeur est irréversible, et la vapeur surchauffée à 70 °C se refroidit au contact d'une source plus froide. L'écart reste faible ($e/e_C \approx 0{,}92$) parce que le modèle est idéalisé : dans une machine réelle, il faut des écarts de température entre le fluide et les sources dans les échangeurs et la compression est irréversible, de sorte que l'efficacité est nettement plus basse (typiquement 3 à 4).
+*Comparaison.* On a bien $e = 5{,}6 < e_C = 6{,}1$, conformément au second principe : l'efficacité de Carnot est une borne supérieure, atteinte seulement par un cycle réversible. Le cycle étudié ne l'est pas : la détente isenthalpique dans le détendeur est irréversible, et la vapeur surchauffée à 70 °C se refroidit au contact d'une source plus froide. L'écart est faible ($e/e_C \approx 0{,}92$) avec les données de l'énoncé, qui dit seulement que la compression est adiabatique : dans une machine réelle, il faut des écarts de température entre le fluide et les sources dans les échangeurs et la compression est irréversible, de sorte que l'efficacité est nettement plus basse (de l'ordre de 3 à 4, ordre de grandeur usuel qui ne figure pas dans l'énoncé).
 
 > [!PIEGE]
 > Les températures de la formule de Carnot sont des températures absolues. Avec des degrés Celsius on trouverait $60/55 \approx 1{,}1$.
@@ -656,7 +658,7 @@ Le logement a toujours besoin de $E = 7000$ kWh de chaleur par an. Avec le chauf
 
 $$\boxed{E_{\text{élec}} = \frac{E}{\eta\,e} = \frac{7000}{4{,}2} \approx 1{,}7\times 10^{3}\ \mathrm{kWh}}$$
 
-La consommation électrique annuelle est divisée par 4,2. La différence, environ 5300 kWh, est prélevée dans le sol (et, pour une faible part, perdue dans le moteur).
+La consommation électrique annuelle est divisée par 4,2. Le sol fournit $E\,q_f/|q_c| = 7000\times 115/140 \approx 5{,}8\times 10^{3}$ kWh et le fluide reçoit du compresseur $E/e = 1250$ kWh de travail (total : 7000 kWh). L'économie d'électricité, environ 5300 kWh, est un peu plus faible que la chaleur prise au sol, car un quart de l'électricité consommée (environ 420 kWh sur 1667 kWh) est perdu dans le moteur.
 
 > [!JURY]
 > D'après le rapport 2016, cette question a été très peu traitée.
@@ -674,7 +676,7 @@ $$\boxed{G = (E - E_{\text{élec}})\times 0{,}15 \approx 5{,}3\times 10^{3}\time
 
 La facture de chauffage passe de $7000\times 0{,}15 = 1050$ euros à environ 250 euros par an.
 
-*Commentaire.* L'ordre de grandeur est raisonnable : quelques centaines d'euros par an. Il faut le comparer au coût de l'installation (pompe à chaleur, terrassement et pose de 400 m de tuyaux enterrés), de l'ordre de dix mille euros ou davantage : le temps de retour sur investissement dépasse la dizaine d'années au prix actuel du kilowattheure. Le gain augmente si ce prix monte, ce que l'énoncé envisage. Le calcul est par ailleurs optimiste : il suppose une efficacité de 5,6 en toutes circonstances et ignore la consommation des pompes de circulation et l'entretien. L'intérêt n'est pas seulement financier : les trois quarts de la chaleur fournie au logement proviennent du sol, source gratuite et renouvelable.
+*Commentaire.* L'ordre de grandeur est raisonnable : quelques centaines d'euros par an. Il faut le comparer au coût de l'installation (pompe à chaleur, terrassement et pose de 400 m de tuyaux enterrés), que l'énoncé ne donne pas : en le supposant de l'ordre de dix mille euros (ordre de grandeur courant, extérieur au sujet), le temps de retour sur investissement est de $10\,000/800 \approx 12$ ans au prix actuel du kilowattheure. Le gain augmente si ce prix monte, ce que l'énoncé envisage. Le calcul est par ailleurs optimiste : il suppose une efficacité de 5,6 en toutes circonstances et ignore la consommation des pompes de circulation et l'entretien. L'intérêt n'est pas seulement financier : environ 80 % de la chaleur fournie au logement ($q_f/|q_c| = 115/140 \approx 0{,}82$) proviennent du sol, source gratuite et renouvelable.
 
 > [!JURY]
 > D'après le rapport 2016, cette question a été très peu traitée. Le rapport cite, parmi les résultats aberrants non commentés, une économie d'un million d'euros obtenue en installant la pompe à chaleur.
