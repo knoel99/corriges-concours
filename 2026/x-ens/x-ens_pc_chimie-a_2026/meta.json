@@ -146,7 +146,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Relecture des 59 questions des deux éditions sur le sujet et le rapport 2026. Vérification des diagrammes de spéciation, des mesures de demande en oxygène, de la cinétique du traitement des eaux, des structures, de la RMN et des arguments de stéréochimie. Révision des graphiques et ajout du mécanisme d’addition aldolique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application d'une seconde relecture des 59 questions, chaque défaut revérifié sur le sujet. Q5 : lectures de la figure 2 refaites sur l'image du PDF (croisement à pH ≈ 5,7, tableau à pH 6,7 et 6,9, rapport à pH 6,5, seuil). Q30 : expérience d'oxydation du monoxyde de carbone seul, avec la condition de validité de la pente tardive. Q7 : fraction de dimère de la figure 2A (55 %). Q21 et Q23 : renvois et textes alternatifs des figures. Q34 : retrait du quotient DCO/DBO5 formé sur deux eaux différentes. Q47 et Q48 : formulation (groupe O–H, couplage H3–H4). Édition guidée seule : pages de données de la présentation, alertes des questions 47 et 52."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-28"
 }

@@ -10,9 +10,11 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
-**Thème.** Le sujet, intitulé « Eau et chimie : caractériser, traiter et prévenir la pollution organique », s'articule autour de la baignabilité de la Seine puis de la construction de fragments de l’antibiotique polyénique énacyloxine IIa. Il comporte deux problèmes indépendants et 59 questions, pour 4 heures sans calculatrice. Les données (potentiels, p$K_a$, table IR, table des groupes protecteurs, intervalles de constantes de couplage) occupent les quatre dernières pages : il faut les consulter systématiquement.
+**Thème.** Le sujet, intitulé « Eau et chimie : caractériser, traiter et prévenir la pollution organique », s'articule autour de la baignabilité de la Seine puis de la construction de fragments de l’antibiotique polyénique énacyloxine IIa. Il comporte deux problèmes indépendants et 59 questions, pour 4 heures sans calculatrice. Les données (potentiels, p$K_a$, table IR, table des groupes protecteurs, intervalles de constantes de couplage) occupent les trois dernières pages : il faut les consulter systématiquement.
 
 **Problème 1 (Q1–34), chimie générale et analytique, cinétique.**
 
@@ -139,22 +141,24 @@ Les échanges entre elles sont donc des réactions acido-basiques ou de condensa
 
 $\mathrm{CrO_4^{2-}}$ est majoritaire s'il est au moins dix fois plus concentré que $\mathrm{HCrO_4^-}$ et que $\mathrm{Cr_2O_7^{2-}}$.
 
-Ordre de grandeur : le croisement des courbes de $\mathrm{CrO_4^{2-}}$ et de $\mathrm{HCrO_4^-}$ donne un p$K_a$ apparent voisin de 6. Le rapport des concentrations vaut
+Ordre de grandeur : sur la figure 2A, les courbes de $\mathrm{CrO_4^{2-}}$ et de $\mathrm{HCrO_4^-}$ se croisent à pH ≈ 5,7 : c'est le p$K_a$ apparent du couple. Le rapport des concentrations vaut
 
 $$\frac{[\mathrm{CrO_4^{2-}}]}{[\mathrm{HCrO_4^-}]}=10^{\,\mathrm{pH}-\mathrm{p}K_a},$$
 
-et il atteint 10 pour pH ≈ p$K_a$ + 1 ≈ 7.
+et il atteint 10 pour pH ≈ p$K_a$ + 1 ≈ 6,7.
 
-Lecture quantitative des deux figures à pH 7 (concentrations en mmol/L) :
+Lecture quantitative des deux figures (concentrations en mmol/L) :
 
-| Figure | $[\mathrm{CrO_4^{2-}}]$ | $[\mathrm{HCrO_4^-}]$ | $[\mathrm{Cr_2O_7^{2-}}]$ | Rapport chromate / hydrogénochromate |
-|---|---|---|---|---|
-| 2A (8 mmol/L) | ≈ 7,3 | ≈ 0,6 | ≈ 0 | ≈ 12 |
-| 2B (40 mmol/L) | ≈ 35 | ≈ 3 | ≈ 1 | ≈ 12 |
+| Figure | pH | $[\mathrm{CrO_4^{2-}}]$ | $[\mathrm{HCrO_4^-}]$ | $[\mathrm{Cr_2O_7^{2-}}]$ | Rapport chromate / hydrogénochromate |
+|---|---|---|---|---|---|
+| 2A (8 mmol/L) | ≈ 6,7 | ≈ 7,2 | ≈ 0,7 | ≈ 0,1 | ≈ 10 |
+| 2A (8 mmol/L) | ≈ 6,9 | ≈ 7,5 | ≈ 0,5 | ≈ 0,1 | ≈ 15 |
+| 2B (40 mmol/L) | ≈ 6,7 | ≈ 35 | ≈ 3 | ≈ 1 | ≈ 12 |
+| 2B (40 mmol/L) | ≈ 6,95 | ≈ 38,5 | ≈ 1,8 | ≈ 0,7 | ≈ 20 |
 
-Le dimère est alors au moins trente fois moins concentré que le chromate. À pH 6,5, le rapport chromate / hydrogénochromate ne vaut encore qu'environ 3 : le critère n'est pas rempli.
+Le dimère est alors au moins trente fois moins concentré que le chromate. À pH 6,5, le rapport chromate / hydrogénochromate ne vaut encore qu'environ 7 sur la figure 2A : le critère n'est pas rempli.
 
-$$\boxed{\mathrm{CrO_4^{2-}}\text{ majoritaire pour pH} \gtrsim 7}$$
+$$\boxed{\mathrm{CrO_4^{2-}}\text{ majoritaire pour pH} \gtrsim 6{,}7\text{, soit environ }7}$$
 
 > [!PIEGE]
 > Lire le pH au croisement des courbes ne suffit pas : au croisement, les deux espèces sont en quantités égales. Le critère « dix fois plus » décale le seuil d'une unité de pH.
@@ -221,7 +225,7 @@ $$Q=\frac{\lambda\,[\mathrm{Cr_2O_7^{2-}}]\,c^\circ}{\lambda^2\,[\mathrm{HCrO_4^
 
 Le système évolue donc dans le sens direct, celui de la condensation, qui diminue le nombre de particules de soluté : il modère la hausse de concentration. Quand $C_{\text{tot}}$ augmente, $[\mathrm{Cr_2O_7^{2-}}]$ augmente, et sa part relative aussi.
 
-Vérification : de 2A à 2B ($C_{\text{tot}}\times5$), $[\mathrm{HCrO_4^-}]$ passe de ≈ 4 à ≈ 10 mmol/L (facteur 2,5) et $[\mathrm{Cr_2O_7^{2-}}]$ de ≈ 2 à ≈ 15 mmol/L (facteur ≈ 7). La fraction du chrome sous forme de dimère passe de ≈ 50 % à ≈ 75 %.
+Vérification : de 2A à 2B ($C_{\text{tot}}\times5$), $[\mathrm{HCrO_4^-}]$ passe de ≈ 4 à ≈ 10 mmol/L (facteur 2,5) et $[\mathrm{Cr_2O_7^{2-}}]$ de ≈ 2 à ≈ 15 mmol/L (facteur ≈ 7). La fraction du chrome sous forme de dimère passe de ≈ 55 % à ≈ 75 %.
 
 ![Fraction du chrome sous forme de dichromate dans le modèle dilué à pH acide. On lit environ 82 % pour la solution mère à 84 mmol/L et 62 % dans le tube dilué à 14 mmol/L.](figures/q07-q11-dimerisation-chrome.svg)
 
@@ -524,11 +528,11 @@ Limites asymptotiques :
 
 Le palier vaut $\mathrm{DBO}_\infty=[\mathrm{O_2}]_0-[\mathrm{O_2}]_\infty$ pour le milieu dont on trace les courbes. Pour exprimer une mesure sur le flacon dilué en demande par litre d’eau usée, il faut d’abord retrancher le témoin, puis appliquer la dilution de Q20. Le facteur 30 multiplie aussi le palier et laisse inchangé le rapport $\mathrm{DBO}_t/\mathrm{DBO}_\infty$.
 
-Représentations (figure 2) : $[\mathrm{O_2}]$ décroît exponentiellement vers l'asymptote horizontale $[\mathrm{O_2}]_\infty$. $\mathrm{DBO}_t$ croît de 0 vers le palier $\mathrm{DBO}_\infty$. Les deux courbes sont symétriques, puisque $[\mathrm{O_2}]+\mathrm{DBO}_t=[\mathrm{O_2}]_0$.
+Représentations (figure ci-dessous) : $[\mathrm{O_2}]$ décroît exponentiellement vers l'asymptote horizontale $[\mathrm{O_2}]_\infty$. $\mathrm{DBO}_t$ croît de 0 vers le palier $\mathrm{DBO}_\infty$. Les deux courbes sont symétriques, puisque $[\mathrm{O_2}]+\mathrm{DBO}_t=[\mathrm{O_2}]_0$.
 
 La tangente à l'origine coupe l'asymptote en $\tau=1/(k_T\ln10)\approx2{,}2$ jours, temps caractéristique. À $t=5$ jours, $10^{-k_Tt}=0{,}1$ : 90 % du palier est atteint.
 
-![Figure 2 — Cinétique d'ordre 1 (kT = 0,2 j⁻¹) : la concentration en O₂ décroît vers son asymptote, DBOt croît vers DBO∞ ; la tangente à l'origine coupe l'asymptote en τ ≈ 2,2 j, et DBO₅ = 0,9 DBO∞](figures/q21-cinetique-dbo.svg)
+![Cinétique d'ordre 1 (kT = 0,2 j⁻¹) : la concentration en O₂ décroît vers son asymptote, DBOt croît vers DBO∞ ; la tangente à l'origine coupe l'asymptote en τ ≈ 2,2 j, et DBO₅ = 0,9 DBO∞](figures/q21-cinetique-dbo.svg)
 
 > [!METHODE]
 > Une équation $\mathrm{d}y/\mathrm{d}t=-k(y-y_\infty)$ se résout en posant $u=y-y_\infty$. Ici le facteur $\ln 10$ vient de l'écriture en base 10.
@@ -561,7 +565,7 @@ Diagramme de phases, puis cinétique de réactions parallèles et successives (d
 
 #### Solution
 
-![Figure 3 — Diagramme (P, T) de l'eau, non à l'échelle : fusion de pente négative, vaporisation arrêtée au point critique C, zone supercritique T > Tc et P > Pc hachurée](figures/q23-diagramme-phases-eau.svg)
+![Diagramme (P, T) de l'eau, non à l'échelle : fusion de pente négative, vaporisation arrêtée au point critique C, zone supercritique T > Tc et P > Pc hachurée](figures/q23-diagramme-phases-eau.svg)
 
 - Trois courbes concourantes au **point triple** $T$ (0,01 °C ; 6 mbar) : la sublimation (solide/vapeur), la vaporisation (liquide/vapeur), qui s'arrête au **point critique** $C$ (374 °C ; 221 bar), et la fusion (solide/liquide), de pente **négative** pour l'eau.
 - Le domaine supercritique, à hachurer, est la région $T>T_c$ et $P>P_c$.
@@ -684,7 +688,13 @@ Les constantes $k'_1$ et $k'_2$ ne sont pas accessibles séparément par le seul
 
 #### Solution
 
-On peut prolonger le suivi infrarouge de l’effluent initial à 450 °C. On choisit une portion tardive où le COT est devenu suffisamment faible au regard du CO résiduel pour que sa contribution à la formation de CO soit négligeable. À partir d’un instant $t_0$ de cette plage, $\ln[C_{\rm CO}(t)/C_{\rm CO}(t_0)]\simeq-k_3^\prime(t-t_0)$. La pente donne $-k_3^\prime$. On vérifie que la pente reste stable lorsqu’on décale $t_0$ et que le signal de CO dépasse la limite de quantification. Si les deux contributions se recouvrent, un ajustement simultané des suivis de COT et de CO à la loi complète de Q28 permet de les distinguer.
+On isole l'étape 3 en supprimant sa source : on introduit dans le réacteur, à 450 °C, à la même pression et avec le même excès de dioxygène, du **monoxyde de carbone seul**, sans matière organique. Les étapes 1 et 2 n'ont alors pas lieu et le bilan de Q27 se réduit à $\mathrm{d}C_{\mathrm{CO}}/\mathrm{d}t=-k'_3\,C_{\mathrm{CO}}$, soit
+
+$$\ln\frac{C_{\mathrm{CO}}}{C_{\mathrm{CO},0}}=-k'_3\,t.$$
+
+On suit $C_{\mathrm{CO}}$ par infrarouge (bande à 2 140 cm$^{-1}$, Q26) et l'on trace $\ln(C_{\mathrm{CO}}/C_{\mathrm{CO},0})$ en fonction de $t$ : la droite obtenue confirme l'ordre 1 apparent et sa pente vaut $-k'_3$. Il faut garder la même quantité de dioxygène que dans l'expérience de la figure 4, puisque $k'_3$ l'intègre (Q25).
+
+Sans nouvelle expérience, la fin du suivi de CO de l'expérience complète donne aussi $k'_3$, mais seulement si $k'_3<k'_1+k'_2$ : d'après Q28, $C_{\mathrm{CO}}$ décroît alors aux temps longs comme $e^{-k'_3t}$. Dans le cas contraire, la pente tardive donne $k'_1+k'_2$.
 
 ### Question 31
 
@@ -779,7 +789,7 @@ valeur atteinte vers 470–475 °C. Pour une minéralisation complète (CO lui a
 
 $$\boxed{T\approx475\text{–}500\ \text{°C}}$$
 
-Conclusion : l'oxydation hydrothermale détruit la matière organique en quelques secondes, contre plusieurs jours pour l'autoépuration biologique (DBO), soit un gain d'un facteur de l'ordre de $10^4$. Elle traite aussi la fraction non biodégradable ($\mathrm{DCO}/\mathrm{DBO_5}\approx5{,}5$ ici). Le prix à payer est élevé : plus de 221 bar et environ 500 °C, d'où un coût énergétique important et des matériaux résistant à la corrosion. Le procédé présente ainsi un intérêt particulier pour des effluents industriels concentrés ou réfractaires. La DCO et la DBO donnent deux mesures différentes de la charge oxydable : leur quotient ne démontre pas à lui seul un rendement de traitement.
+Conclusion : l'oxydation hydrothermale détruit la matière organique en quelques secondes, contre plusieurs jours pour l'autoépuration biologique (DBO), soit un gain d'un facteur de l'ordre de $10^4$. Elle traite aussi la fraction non biodégradable, que la DCO compte mais que la DBO ignore. Le prix à payer est élevé : plus de 221 bar et environ 500 °C, d'où un coût énergétique important et des matériaux résistant à la corrosion. Le procédé présente ainsi un intérêt particulier pour des effluents industriels concentrés ou réfractaires.
 
 > [!PIEGE]
 > Confondre la disparition du COT et la minéralisation complète : le CO intermédiaire n'est pas encore du CO$_2$.
@@ -1062,12 +1072,12 @@ $$\boxed{\begin{aligned}
 &2)\ \mathrm{NH_4Cl}\ \text{aq.}
 \end{aligned}}$$
 
-L'acétonide et le chlorure vinylique ne réagissent pas avec l'organomagnésien, et **10** ne porte plus aucun H acide.
+L'acétonide et le chlorure vinylique ne réagissent pas avec l'organomagnésien, et **10** ne porte plus de groupe O–H : l'organomagnésien n'est pas détruit par réaction acido-basique.
 
 L'hydrolyse doit rester douce, car l'acétonide est un acétal sensible aux acides. La liaison ondulée de **11** laisse la configuration de ce nouveau centre non spécifiée. Les deux épimères sont possibles, sans que leur proportion soit donnée. Cette indétermination est sans conséquence puisqu'il sera ensuite oxydé en cétone.
 
 > [!PIEGE]
-> Un organomagnésien est aussi une base : il n'est compatible ici que parce qu'il ne reste aucun H acide (OH libre) dans **10**.
+> Un organomagnésien est aussi une base : il n'est compatible ici que parce qu'il ne reste aucun groupe O–H libre dans **10**.
 
 > [!JURY]
 > Rapport 2026 : « Conditions opératoires pour la préparation d’un organométallique. » Le jury attend la préparation elle-même (halogénure, magnésium, solvant anhydre, atmosphère inerte), pas seulement le nom du réactif.
@@ -1088,7 +1098,7 @@ Constantes de couplage (vicinal, allylique, cis/trans) et attribution complète 
 
 **5** : $\mathrm{C^1H_3{-}C^2H{=}C^3H{-}C^4H(OH){-}C^5H_2{-}O{-}C^6H_2{-}Ar}$.
 - Signal $c$ (5,65 ppm) : doublet ($J=11{,}0$ Hz) de quadruplets ($J=7{,}0$ Hz). Le couplage $^3J=7$ Hz avec les 3 H du méthyle voisin désigne **H2**.
-- Signal $d$ (5,37 ppm) : doublet ($J=11{,}0$ Hz) de quadruplets ($J=1{,}8$ Hz). Le petit couplage allylique $^4J$ avec le méthyle à travers la double liaison désigne **H3**.
+- Signal $d$ (5,37 ppm) : doublet ($J=11{,}0$ Hz) de quadruplets ($J=1{,}8$ Hz). Le petit couplage allylique $^4J$ avec le méthyle à travers la double liaison désigne **H3**. H3 est aussi couplé à H4, ce que l'énoncé ne détaille pas : le signal reste décrit comme un multiplet.
 
 La constante commune $J=11{,}0$ Hz est le couplage $^3J$ entre H2 et H3. Elle tombe dans l'intervalle cis (6–11 Hz) et hors de l'intervalle trans (12–17 Hz) :
 
@@ -1190,7 +1200,7 @@ Le PMB est stable aux bases, aux organométalliques et aux conditions de couplag
 > Choisir un groupe protecteur, c'est vérifier une matrice : chaque étape à venir × chaque groupe candidat, plus l'orthogonalité avec les autres protections présentes.
 
 > [!PIEGE]
-> Choisir l'acétate parce qu'il « se pose et s'ôte facilement » : il ne résiste ni aux hydrures ni aux organolithiens, utilisés ensuite. C'est l'erreur de la copie IA source.
+> Choisir l'acétate parce qu'il « se pose et s'ôte facilement » : il ne résiste pas à l'hydrure d'aluminium employé à la question 57. C'est l'erreur de la copie IA source.
 
 ### Question 53
 
