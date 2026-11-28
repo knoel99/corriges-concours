@@ -1,0 +1,101 @@
+{
+  "slug": "banque-pt_pt_physique-b---chimie_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Chimie",
+    "annee": 2020
+  },
+  "questions": 41,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/ph_b_ch_2020_pt.pdf",
+    "sujet_sha256": "3f27ca5f452e7cd44c357eced6ad528dd8c6225e5d46bfd440ae40fe16f3590e",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_phys_b_ecrit_2020.pdf",
+    "rapport_sha256": "8c76071ee96aee945eb7567bdffad6ba5cfdc4ea06ba06bc9e9979b141e5d5b3"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "precision": "Sujet de 8 pages PDF lu en entier (garde p. 1, données p. 2, énoncé p. 3 à 7, p. 8 blanche) ; 41 questions numérotées de Q.1 à Q.41, toutes traitées. Rapport commun à Physique B de 4 pages, partie chimie p. 1. Lectures graphiques : diagramme potentiel-pH de la question 15 (point de concours vers pH 5 et 0,55 V, alors que les potentiels arrondis des données donnent pH voisin de 6), courbe de titrage de la question 31 (équivalence à 14,0 mL, pH lu à 11,1 à 0,1 près). Question 34 : conclusion nuancée, 32,7 % mesurés contre 34,4 % annoncés, concordance au gramme près."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lewis-nh3-no-no2.svg",
+      "question": "9",
+      "legende": "Représentations de Lewis de l'ammoniac, du monoxyde d'azote et du dioxyde d'azote, avec l'électron célibataire porté par l'azote dans les deux oxydes."
+    },
+    {
+      "fichier": "figures/situation-degres-oxydation-azote.svg",
+      "question": "14",
+      "legende": "Schéma de situation : degré d'oxydation de l'azote en ordonnée, pH en abscisse, frontière acido-basique à pH = 3,3 pour le degré III."
+    },
+    {
+      "fichier": "figures/diagramme-e-ph-azote.svg",
+      "question": "15",
+      "legende": "Diagramme potentiel-pH de l'azote reproduit d'après celui du sujet, avec les espèces attribuées aux zones I, II et III."
+    },
+    {
+      "fichier": "figures/maille-nitrure-titane.svg",
+      "question": "21",
+      "legende": "Maille du nitrure de titane : titane aux sommets et aux centres des faces, azote dans les sites octaédriques (centre du cube et milieux des arêtes)."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 41 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées et lectures des deux graphiques contrôlées sur le PDF."
+    }
+  ]
+}
