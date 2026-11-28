@@ -1,0 +1,50 @@
+{
+  "slug": "banque-pt_pt_physique-c---thermodynamique_2014",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Thermodynamique",
+    "annee": 2014
+  },
+  "questions": 33,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2014/ph_c_2014_pt.zip",
+    "sujet_sha256": "09e3301c49cefc6f4255213e78b06a4d848e41bad34dde3082a268e30a897569",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_phys_c_ecrit_2014.pdf",
+    "rapport_sha256": "8c9105961b425e35e51d5492d029f6c2995feffe7de45c6498a4e266ef8167ec",
+    "precision": "Le sujet est publié dans une archive ZIP qui réunit les deux parties de Physique C (SHA-256 de l'archive : 09e3301c49cefc6f4255213e78b06a4d848e41bad34dde3082a268e30a897569). La partie thermodynamique est le fichier interne ph_c_2014_pt_th.pdf, identifié par sa page de garde « Epreuve de Physique C - Thermodynamique », 10 pages (SHA-256 : 8c88cc148cc380c274fdc583e74d7f914dc2ebb869eb67b7e9c0d842b55f9e1f) ; l'autre fichier, ph_c_2014_pt_ch.pdf, est la partie chimie et n'est pas traité ici. Les deux empreintes et celle du rapport sont identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": ["1", "2", "3.1", "3.2", "4.1", "4.2", "5.1", "5.2", "6.1", "6.2.1", "6.2.2", "6.2.3", "7", "8", "9.1", "9.2", "10", "11.1", "11.2", "11.3", "11.4", "12.1", "12.2", "12.3", "12.4", "13.1", "13.2", "14.1", "14.2", "15", "16", "17", "18"],
+    "precision": "Sujet de 10 pages PDF (page de garde, énoncé p. 2 à 8, feuille annexe à rendre p. 9, verso vide p. 10), lues en image, le texte du PDF n'étant pas extractible ; 18 questions numérotées de 1 à 18, soit 33 réponses demandées en comptant les sous-questions, toutes traitées. Rapport commun à Physique C de 5 pages, partie thermodynamique sur les pages imprimées 15 à 17. Le sujet ne contient ni table ni abaque : toutes les valeurs numériques viennent du texte de l'énoncé ; les seules figures exploitées sont les diagrammes à compléter de la feuille annexe (f.9 et f.10 à la question 8, f.11 à la question 9.2), reproduits dans les deux figures du corrigé. L'énoncé ne chiffre pas le coefficient gamma : les applications numériques n'en dépendent pas, et la valeur 1,40 utilisée pour les contrôles (questions 4.1 et 5.1) et pour tracer les figures est déduite des données (T2/T1 et taux de compression). Question 9.2 : la position des états irréversibles sur leur isobare est un choix d'illustration, l'énoncé ne chiffrant pas l'irréversibilité. Les vitesses d'éjection et les poussées citées aux questions 6.2.1, 11.2, 16 et 18 sont des compléments calculés par le corrigé, non demandés par l'énoncé. Programme appliqué : celui de PTSI et PT antérieur à la réforme (session 2014)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/cycle-reversible-clapeyron-entropique.svg",
+      "question": "8",
+      "legende": "Chemin réversible de 1 à 5 dans le diagramme de Clapeyron et dans le diagramme entropique, tracé à l'échelle avec les valeurs du sujet (isothermes et isobares de la feuille annexe)."
+    },
+    {
+      "fichier": "figures/cycle-irreversible-entropique.svg",
+      "question": "9.2",
+      "legende": "Allure du chemin de 1 à 5 dans le diagramme entropique lorsque le compresseur et la turbine sont irréversibles, comparée au chemin réversible."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (33 réponses) à partir du sujet lu en image et du rapport du jury ; applications numériques refaites par calcul et recoupées avec les valeurs fournies par l'énoncé (P4, T5, T7, tableau de la question 16), deux figures créées par calcul, encadrés du jury relus contre le rapport."
+    }
+  ]
+}
