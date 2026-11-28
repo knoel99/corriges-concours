@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## I.A — Modèle de Drude en courant continu
 
 ### Q1 — Quels porteurs circulent ?
@@ -34,7 +36,7 @@ La continuité donne $i\omega\rho+\nabla\cdot\vec j=0$, la loi de Gauss $\nabla\
 
 ### Q7 — Ordres de grandeur du cuivre
 
-Pour un espacement atomique de quelques dixièmes de nanomètre, prenons $d\sim 2\times10^{-10}$ m. Un électron par volume atomique donne $n\sim d^{-3}\sim10^{29}\ \mathrm{m^{-3}}$. Avec $m=m_e$ et $\gamma_0=6\times10^7\ \mathrm{S\,m^{-1}}$, $\tau=m\gamma_0/(ne^2)\sim2\times10^{-14}$ s et $\omega_p\sim2\times10^{16}\ \mathrm{rad\,s^{-1}}$. Le choix de la structure cristalline modifierait le facteur numérique.
+Le paramètre de maille d’un métal est de quelques dixièmes de nanomètre, $3\times10^{-10}$ m en ordre de grandeur. Une maille cubique contenant quelques atomes, le volume par atome est $d^3$ avec $d\sim2\times10^{-10}$ m. Un électron par volume atomique donne $n\sim d^{-3}\sim10^{29}\ \mathrm{m^{-3}}$. Avec $m=m_e$ et $\gamma_0=6\times10^7\ \mathrm{S\,m^{-1}}$, $\tau=m\gamma_0/(ne^2)\sim2\times10^{-14}$ s et $\omega_p\sim2\times10^{16}\ \mathrm{rad\,s^{-1}}$. Le choix de la structure cristalline modifierait le facteur numérique.
 
 ### Q8 — Amortissement et neutralité du volume
 
@@ -52,7 +54,7 @@ Le rapport des amplitudes du courant de déplacement et du courant de conduction
 
 ### Q11 — Résistance et profondeur de peau
 
-La figure 2 montre que le courant total se concentre près du bord lorsque la pulsation croît. Utilisons la longueur du sujet $\delta=1/\sqrt{\mu_0\gamma_0\omega}$ et un profil uniforme dans la seule couronne active de largeur $d_s=\min(a,\delta)$. Alors $R_{\rm eff}\simeq\ell/[\gamma_0\pi(2a d_s-d_s^2)]$. Si $\delta\geq a$, on retrouve $R_{\rm el}$. Si $\delta\ll a$, $R_{\rm eff}\simeq\ell/(2\pi a\gamma_0\delta)\propto\sqrt\omega$. Le modèle en marche fixe un préfacteur approximatif. La profondeur exponentielle usuelle d’un milieu plan est $\sqrt2\,\delta$ avec la convention donnée ici.
+La figure 2 montre que le courant total se concentre près du bord lorsque la pulsation croît. Utilisons la longueur du sujet $\delta=1/\sqrt{\mu_0\gamma_0\omega}$ et un profil uniforme dans la seule couronne active de largeur $d_s=\min(a,\delta)$. Alors $R_{\rm eff}\simeq\ell/[\gamma_0\pi(2a d_s-d_s^2)]$. Si $\delta\geq a$, on retrouve $R_{\rm el}$. Si $\delta\ll a$, $R_{\rm eff}\simeq\ell/(2\pi a\gamma_0\delta)\propto\sqrt\omega$. Le modèle en marche fixe un préfacteur approximatif. Avec l’équation (3) et le $\delta$ de l’énoncé, la profondeur exponentielle d’un milieu plan est $\sqrt2\,\delta$ ; la planche ci-dessous est calculée ainsi et donne 5,2 au bord pour $\delta=a/10$. La figure 2 du sujet y atteint 7,2 : elle correspond à une profondeur exponentielle égale à $\delta$. Les deux tracés conduisent à la même conclusion qualitative.
 
 ![Profils harmoniques calculés pour un cylindre uniforme. À courant total fixé, la densité près de la surface croît avec la pulsation.](figures/effet-de-peau.svg)
 
@@ -108,7 +110,7 @@ En orientant la puissance transportée $\Phi$ de 1 vers 2, $\Phi=-\lambda A_s\pa
 
 ### Q24 — Échelles de temps des réservoirs
 
-Le temps d’homogénéisation interne de chaque réservoir doit être court devant le temps de variation sensible de sa température moyenne en raison de l’échange à travers le barreau. Avec les désignations de la question, la hiérarchie suffisante est $\tau_{\rm therm}\ll\tau_{\rm ech}$ : l’équilibre interne précède l’échange par le barreau. Pour employer en outre le profil quasi stationnaire dans le barreau, son temps de diffusion doit aussi être court devant la relaxation des deux masses. Cette seconde comparaison est chiffrée en Q28.
+Le temps d’homogénéisation interne de chaque réservoir doit être court devant le temps de variation sensible de sa température moyenne en raison de l’échange à travers le barreau. Avec les désignations de la question, on demande $\tau_{\rm therm}\ll\tau_{\rm ech}$ : chaque réservoir s’homogénéise plus vite que le barreau ne lui apporte ou ne lui retire de la chaleur. Comme l’approximation quasi stationnaire exige de son côté que $\tau_{\rm ech}$, temps de diffusion dans le barreau, soit court devant le temps de relaxation $R_{\rm th}C/2$ des deux masses (Q28), la hiérarchie complète est $\tau_{\rm therm}\ll\tau_{\rm ech}\ll R_{\rm th}C/2$.
 
 ### Q25 — Bilan des deux solides finis
 
@@ -146,9 +148,9 @@ Le flux d’entropie entrant en $x$ vaut $\Phi(x)/T(x)$ et le flux sortant vaut 
 
 ### Q33 — Onde thermique dans le platine
 
-La figure 4 montre une oscillation de période 10 s autour de 50 °C. En s’éloignant du bord forcé, l’amplitude diminue et le maximum est retardé. Le flux oscille aussi, avec un déphasage car il dépend du gradient. Les axes de sa figure fixent son orientation. Avec $D_T\simeq80/(2,1\times10^4\times130)=2,9\times10^{-5}\ \mathrm{m^2/s}$ et $\omega=2\pi\times0,1\ \mathrm{s^{-1}}$, une longueur est $\sqrt{D_T/\omega}\simeq6,8$ mm. La solution semi-infinie donne la profondeur exponentielle $\delta_T=\sqrt{2D_T/\omega}\simeq9,7$ mm. Sur la figure, l’amplitude passe approximativement de 15 K à $x=\ell/10=2$ mm à 5 K à $x=\ell/2=10$ mm. Le modèle exponentiel donne $8/\ln3\simeq7,3$ mm. L’accord en ordre de grandeur est satisfaisant pour ce barreau fini dont le bord droit est thermostaté.
+La figure 4 montre une oscillation de période 10 s autour de 50 °C. En s’éloignant du bord forcé, l’amplitude diminue et le maximum est retardé. Le flux oscille autour de zéro, la moyenne étant nulle puisque les deux extrémités ont la même température moyenne. Il s’atténue et se retarde comme la température. En un point donné, $-\lambda\pi a^2\partial_xT$ est en avance d’un huitième de période, 1,25 s, sur la température. La courbe 4(b) vaut environ $-0,7$ W à $t=0$ en $\ell/10$ : elle correspond au flux compté vers les $x$ décroissants. Avec $D_T\simeq80/(2,1\times10^4\times130)=2,9\times10^{-5}\ \mathrm{m^2/s}$ et $\omega=2\pi\times0,1\ \mathrm{s^{-1}}$, une longueur est $\sqrt{D_T/\omega}\simeq6,8$ mm. La solution semi-infinie donne la profondeur exponentielle $\delta_T=\sqrt{2D_T/\omega}\simeq9,7$ mm. Sur la figure, les amplitudes valent environ 15, 10, 5 et 2 K en $x=2$, 5, 10 et 15 mm. Une décroissance $e^{-x/L}$ donne $L\simeq8/\ln3\simeq7,3$ mm entre 2 et 10 mm et $13/\ln7,5\simeq6,5$ mm sur l’ensemble des sondes, soit $L\approx7$ mm. Cette valeur coïncide avec la longueur dimensionnelle $\sqrt{D_T/\omega}\simeq6,8$ mm : l’expression proposée est compatible avec la figure. Les retards des maxima, environ 0,5 s à 2 mm et 2,3 s à 10 mm, redonnent la même longueur par $x/(\omega L)$, et l’amplitude du flux en $\ell/10$, 0,77 W, s’accorde avec $\lambda\pi a^2\sqrt2\times15\ \mathrm K/L$. La longueur lue est en revanche plus courte, d’un facteur proche de $\sqrt2$, que la profondeur $\delta_T$ de la solution exacte. Le caractère fini du barreau n’explique pas cet écart : la solution exacte avec $T(\ell)$ imposée donne 16 K et 7,5 K à 2 et 10 mm, comme le montre la planche ci-dessous.
 
-![Solution de diffusion à 0,1 Hz avec une extrémité imposée à 50 °C. Le modèle semi-infini surestime l’amplitude près de cette extrémité.](figures/onde-thermique.svg)
+![Solution exacte de l’équation de la chaleur à 0,1 Hz, extrémité droite à 50 °C. À droite, ses amplitudes dépassent celles lues sur la figure 4 du sujet, qui suivent la longueur √(D/ω).](figures/onde-thermique.svg)
 
 ### Q34 — Uniformité sur une section
 
@@ -204,7 +206,7 @@ Notons $P$ et $N$ les nœuds centraux haut et bas du générateur, avec $V_P-V_N
 
 ### Q46 — Sensibilité du montage passif
 
-La dérivée vaut $\sigma_\theta=-EA/(2+A\theta)^2$. Le signal est non linéaire et sa sensibilité en valeur absolue décroît avec $\theta$. Il faut inverser ou étalonner la loi. Le signal différentiel est faible pour les petits écarts, avec $|\sigma_0|=EA/4\simeq9,8$ mV/K pour $E=10$ V. La mesure dépend en outre de la stabilité de l’alimentation. À haute température, la tension s’approche en module de $E/2$ et résout moins bien les écarts.
+La dérivée vaut $\sigma_\theta=-EA/(2+A\theta)^2$. Le signal est non linéaire et sa sensibilité en valeur absolue décroît avec $\theta$. Il faut inverser ou étalonner la loi. Le signal différentiel est faible pour les petits écarts, avec $|\sigma_0|=EA/4\simeq9,8$ mV/K pour $E=10$ V. La mesure dépend en outre de la stabilité de l’alimentation. La tension est bornée en module par $E/2$ : à 850 °C elle n’atteint que $0,31\,E$ et la sensibilité est tombée à environ 1,4 mV/K, sept fois moins qu’à 0 °C.
 
 ### Q47 — Rôle du deuxième amplificateur
 

@@ -4,6 +4,18 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
+## Présentation du sujet
+
+L’épreuve dure quatre heures, sans calculatrice, et compte 54 questions sur les phénomènes de transport dans les métaux : transport de charge, transferts thermiques, puis leur couplage thermoélectrique et son emploi en thermométrie. Les applications numériques se font à la main, avec deux chiffres significatifs au plus et un seul pour les ordres de grandeur.
+
+Les deux parties sont indépendantes. La partie I (Q1 à Q41) modélise le transport. I.A (Q1 à Q4) établit la loi d’Ohm locale et la résistance d’un barreau par le modèle de Drude. I.B (Q5 à Q16) passe au régime variable : conductivité complexe, relaxation de la charge volumique, effet de peau lu sur la figure 2, puis lignes à constantes réparties RC et LC. I.C (Q17 à Q34) traite la conduction thermique entre deux réservoirs : loi de Fourier, résistance thermique, relaxation de deux solides finis, bilan et création d’entropie, onde thermique de la figure 4. I.D (Q35 à Q41) introduit les effets thermoélectriques jusqu’au coefficient d’une jonction. La partie II (Q42 à Q54) porte sur la mesure de température : sonde de platine en pont de Wheatstone puis montage à deux amplificateurs linéaires intégrés (II.A), thermocouples (II.B).
+
+Notions mobilisées : modèle de Drude, équations de Maxwell dans un conducteur et approximation des régimes quasi stationnaires, équation de diffusion et équation de d’Alembert, relation de dispersion, loi de Fourier et résistance thermique, second principe et bilans d’entropie, pont diviseur de tension, amplificateur linéaire intégré en régime linéaire.
+
+Le sujet est long : le rapport 2025 donne une moyenne de 10,5 et un écart-type de 3,3. Beaucoup de résultats sont fournis par l’énoncé, ce qui permet de repartir après une question manquée. Les questions abordables à ne pas laisser passer sont Q2 à Q4, Q12 à Q14, Q21 à Q23, Q25 à Q27 et Q42 à Q44. La partie II, indépendante, mérite au moins une demi-heure : Q45 à Q49 ne demandent que des lois de nœuds et des ponts diviseurs, à condition de respecter les flèches des figures 6 et 7.
+
 Le jury insiste sur les signes des courants, les différences de temps de relaxation et l’interprétation de la production d’entropie. Les flèches des figures 5 à 8 permettent de préciser la polarité de chaque mesure.
 
 ## I.A — Modèle de Drude en courant continu
@@ -46,6 +58,9 @@ Posons $A_s=\pi a^2$ et orientons $I$ de 1 vers 2, le long des $x$ croissants. E
 
 ## I.B — Transport variable et propagation
 
+> [!JURY]
+> Le rapport 2025 constate que les conventions d’orientation étaient très rarement rappelées en Q4, d’où des problèmes de signe ensuite passés sous silence. Annoncer le sens de $I$ et la différence de potentiel choisie avant tout calcul.
+
 ### Q5 — Conductivité complexe
 
 > [!INDICATION]
@@ -71,7 +86,7 @@ La continuité donne $i\omega\rho+\nabla\cdot\vec j=0$, la loi de Gauss $\nabla\
 
 #### Solution
 
-Pour un espacement atomique de quelques dixièmes de nanomètre, prenons $d\sim 2\times10^{-10}$ m. Un électron par volume atomique donne $n\sim d^{-3}\sim10^{29}\ \mathrm{m^{-3}}$. Avec $m=m_e$ et $\gamma_0=6\times10^7\ \mathrm{S\,m^{-1}}$, $\tau=m\gamma_0/(ne^2)\sim2\times10^{-14}$ s et $\omega_p\sim2\times10^{16}\ \mathrm{rad\,s^{-1}}$. Le choix de la structure cristalline modifierait le facteur numérique.
+Le paramètre de maille d’un métal est de quelques dixièmes de nanomètre, $3\times10^{-10}$ m en ordre de grandeur. Une maille cubique contenant quelques atomes, le volume par atome est $d^3$ avec $d\sim2\times10^{-10}$ m. Un électron par volume atomique donne $n\sim d^{-3}\sim10^{29}\ \mathrm{m^{-3}}$. Avec $m=m_e$ et $\gamma_0=6\times10^7\ \mathrm{S\,m^{-1}}$, $\tau=m\gamma_0/(ne^2)\sim2\times10^{-14}$ s et $\omega_p\sim2\times10^{16}\ \mathrm{rad\,s^{-1}}$. Le choix de la structure cristalline modifierait le facteur numérique.
 
 ### Q8 — Amortissement et neutralité du volume
 
@@ -83,6 +98,9 @@ Pour un espacement atomique de quelques dixièmes de nanomètre, prenons $d\sim 
 Le coefficient canonique de $\dot\rho$ est $\omega_p/Q$. Donc $Q=\omega_p\tau$, de l’ordre de plusieurs centaines. En posant $\Omega=\sqrt{\omega_p^2-1/(4\tau^2)}$, les conditions initiales imposent $\rho=\rho_0e^{-t/(2\tau)}[\cos(\Omega t)+\sin(\Omega t)/(2\tau\Omega)]$. Le tracé démarre horizontalement puis oscille sous les enveloppes d’une exponentielle décroissante. Pour un signal de période grande devant $\tau$, ces transitoires internes s’éteignent bien avant une variation notable de l’excitation. Le volume du métal est alors pratiquement neutre, sans interdire les charges de surface nécessaires aux conditions aux limites.
 
 ![La forme près de l’origine et la relaxation à long terme demandent des échelles distinctes. Q = 300 pour la représentation.](figures/charge-et-neutralite.svg)
+
+> [!JURY]
+> D’après le rapport 2025, la forme canonique de l’équation différentielle est trop peu reconnue, et le lien entre la valeur de $Q$ et la forme de la solution n’est pas acquis pour bon nombre de candidats. Pour Q7, il relève des ordres de grandeur parfois fantaisistes.
 
 ### Q9 — Dépendance spatiale du courant
 
@@ -102,6 +120,9 @@ Lorsque $\partial_t\rho$ est négligeable, $\nabla\cdot\vec j=0$. Pour le couran
 
 Le rapport des amplitudes du courant de déplacement et du courant de conduction est $\varepsilon_0\omega/\gamma_0=\omega\tau/Q^2\ll1$. Ainsi $\nabla\times\vec B\simeq\mu_0\vec j$. En prenant le rotationnel de $\nabla\times\vec E=-\partial_t\vec B$, l’identité du double rotationnel et $\nabla\cdot\vec E\simeq0$ donnent $\Delta\vec E=\mu_0\partial_t\vec j$. Comme $\vec j\simeq\gamma_0\vec E$, $\Delta j_x=\mu_0\gamma_0\partial_tj_x$. C’est une équation de diffusion avec $D_m=1/(\mu_0\gamma_0)$, en $\mathrm{m^2/s}$.
 
+> [!JURY]
+> Le rapport 2025 note que le caractère négligeable du courant de déplacement est très rarement justifié convenablement : il faut former le rapport sans dimension et le chiffrer.
+
 ### Q11 — Résistance et profondeur de peau
 
 > [!INDICATION]
@@ -109,7 +130,7 @@ Le rapport des amplitudes du courant de déplacement et du courant de conduction
 
 #### Solution
 
-La figure 2 montre que le courant total se concentre près du bord lorsque la pulsation croît. Utilisons la longueur du sujet $\delta=1/\sqrt{\mu_0\gamma_0\omega}$ et un profil uniforme dans la seule couronne active de largeur $d_s=\min(a,\delta)$. Alors $R_{\rm eff}\simeq\ell/[\gamma_0\pi(2a d_s-d_s^2)]$. Si $\delta\geq a$, on retrouve $R_{\rm el}$. Si $\delta\ll a$, $R_{\rm eff}\simeq\ell/(2\pi a\gamma_0\delta)\propto\sqrt\omega$. Le modèle en marche fixe un préfacteur approximatif. La profondeur exponentielle usuelle d’un milieu plan est $\sqrt2\,\delta$ avec la convention donnée ici.
+La figure 2 montre que le courant total se concentre près du bord lorsque la pulsation croît. Utilisons la longueur du sujet $\delta=1/\sqrt{\mu_0\gamma_0\omega}$ et un profil uniforme dans la seule couronne active de largeur $d_s=\min(a,\delta)$. Alors $R_{\rm eff}\simeq\ell/[\gamma_0\pi(2a d_s-d_s^2)]$. Si $\delta\geq a$, on retrouve $R_{\rm el}$. Si $\delta\ll a$, $R_{\rm eff}\simeq\ell/(2\pi a\gamma_0\delta)\propto\sqrt\omega$. Le modèle en marche fixe un préfacteur approximatif. Avec l’équation (3) et le $\delta$ de l’énoncé, la profondeur exponentielle d’un milieu plan est $\sqrt2\,\delta$ ; la planche ci-dessous est calculée ainsi et donne 5,2 au bord pour $\delta=a/10$. La figure 2 du sujet y atteint 7,2 : elle correspond à une profondeur exponentielle égale à $\delta$. Les deux tracés conduisent à la même conclusion qualitative.
 
 ![Profils harmoniques calculés pour un cylindre uniforme. À courant total fixé, la densité près de la surface croît avec la pulsation.](figures/effet-de-peau.svg)
 
@@ -131,6 +152,9 @@ Avec $I$ orienté vers $+x$, $V(x,t)-V(x+dx,t)=\mathcal R\,dx\,I(x,t)+O(dx^2)$. 
 
 La charge du condensateur de longueur $dx$ augmente du courant entrant moins le courant sortant. Donc $\partial_xI=-\Gamma\partial_tV$. Dériver le résultat de Q12 en $x$ donne $\partial_tV=D\partial_x^2V$, $D=1/(\mathcal R\Gamma)$ en $\mathrm{m^2/s}$. En effet $[\mathcal R\Gamma]=\mathrm{s/m^2}$.
 
+> [!METHODE]
+> Ligne à constantes réparties : une loi des mailles et une loi des nœuds sur un tronçon $dx$, passage à la limite, puis élimination de l’une des deux grandeurs par dérivation croisée. Seule la relation de l’élément série change entre Q13 et Q14.
+
 ### Q14 — Ligne inductive et capacitive sans pertes
 
 > [!INDICATION]
@@ -149,6 +173,9 @@ Le bilan des nœuds reste le même. La chute de tension vérifie désormais $\pa
 
 Dans la convention $e^{i(\omega t-kx)}$, la ligne RC donne $k^2=-i\omega/D$. Pour la solution dirigée et décroissante vers $+x$, $k=(1-i)\sqrt{\omega/(2D)}$. Pour la ligne LC, $k=\pm\omega\sqrt{\Lambda\Gamma}$, le signe positif correspondant à la propagation vers la droite.
 
+> [!PIEGE]
+> $k^2=-i\omega/D$ a deux racines opposées. Avec la convention $e^{i(\omega t-kx)}$, celle qui décroît vers $+x$ a une partie imaginaire négative : le vérifier en développant l’exponentielle, et non en choisissant le signe au jugé.
+
 ### Q16 — Atténuation et dispersion
 
 > [!INDICATION]
@@ -157,6 +184,9 @@ Dans la convention $e^{i(\omega t-kx)}$, la ligne RC donne $k^2=-i\omega/D$. Pou
 #### Solution
 
 Dans la ligne RC, les parties réelle et imaginaire de $k$ sont toutes deux non nulles. Après une distance $x$, la phase retarde de $x\sqrt{\omega/(2D)}$ et le module est multiplié par $e^{-x\sqrt{\omega/(2D)}}$. Le déphasage dépend non linéairement de la fréquence, d’où dispersion. La résistance dissipe par effet Joule. Il s’agit d’une onde de diffusion atténuée, avec progression de phase. Pour la ligne LC idéale $k$ est réel et linéaire en $\omega$ : célérité constante, sans dispersion ni dissipation dans ce modèle.
+
+> [!JURY]
+> Le rapport 2025 dit apprécier la relation de dispersion écrite sous la forme $k(\omega)$ et regrette le manque d’interprétation, avec de nombreuses confusions entre absorption, onde évanescente et dispersion.
 
 ## I.C — Transferts de chaleur
 
@@ -230,7 +260,7 @@ En orientant la puissance transportée $\Phi$ de 1 vers 2, $\Phi=-\lambda A_s\pa
 
 #### Solution
 
-Le temps d’homogénéisation interne de chaque réservoir doit être court devant le temps de variation sensible de sa température moyenne en raison de l’échange à travers le barreau. Avec les désignations de la question, la hiérarchie suffisante est $\tau_{\rm therm}\ll\tau_{\rm ech}$ : l’équilibre interne précède l’échange par le barreau. Pour employer en outre le profil quasi stationnaire dans le barreau, son temps de diffusion doit aussi être court devant la relaxation des deux masses. Cette seconde comparaison est chiffrée en Q28.
+Le temps d’homogénéisation interne de chaque réservoir doit être court devant le temps de variation sensible de sa température moyenne en raison de l’échange à travers le barreau. Avec les désignations de la question, on demande $\tau_{\rm therm}\ll\tau_{\rm ech}$ : chaque réservoir s’homogénéise plus vite que le barreau ne lui apporte ou ne lui retire de la chaleur. Comme l’approximation quasi stationnaire exige de son côté que $\tau_{\rm ech}$, temps de diffusion dans le barreau, soit court devant le temps de relaxation $R_{\rm th}C/2$ des deux masses (Q28), la hiérarchie complète est $\tau_{\rm therm}\ll\tau_{\rm ech}\ll R_{\rm th}C/2$.
 
 ### Q25 — Bilan des deux solides finis
 
@@ -249,6 +279,9 @@ Avec $C_{\rm th}=C$, $C\dot T_1=-(T_1-T_2)/R_{\rm th}$ et $C\dot T_2=(T_1-T_2)/R
 #### Solution
 
 La somme $T_1+T_2$ est constante. En posant $\bar T=(T_{10}+T_{20})/2$ et $\Delta_0=T_{10}-T_{20}$, on a $\dot\Delta=-\Delta/\tau_r$, puis $T_1=\bar T+(\Delta_0/2)e^{-t/\tau_r}$ et $T_2=\bar T-(\Delta_0/2)e^{-t/\tau_r}$. L’ensemble est calorifugé.
+
+> [!METHODE]
+> Pour deux équations couplées symétriques, former la somme, qui donne la grandeur conservée, et la différence, qui relaxe seule. Le temps de relaxation de la différence est la moitié de $R_{\rm th}C$.
 
 ### Q27 — Tracer la thermalisation
 
@@ -297,6 +330,9 @@ La dérivée de $\Delta S/C$ est $(\eta-1)/[\eta(1+\eta)]$. La courbe décroît 
 
 Le flux d’entropie entrant en $x$ vaut $\Phi(x)/T(x)$ et le flux sortant vaut $\Phi(x+dx)/T(x+dx)$. Donc $\delta S_e=-\partial_x(\Phi/T)\,dx\,dt$. Avec $\partial_x\Phi\simeq0$ et $\Phi=-\lambda A_s\partial_xT$, il vient $\delta S_e=-\lambda A_s(\partial_xT)^2dx\,dt/T^2$. Ainsi $f(T)=-\lambda A_s/T^2$. La quasi-stationnarité annule la dérivée du flux et conserve le terme en carré du gradient.
 
+> [!JURY]
+> Le rapport 2025 signale de nombreuses confusions entre $(\partial_xT)^2$ et $\partial_x^2T$ pour arriver à la forme proposée, et rappelle que les arrangements de calcul vers un résultat donné sont sévèrement sanctionnés.
+
 ### Q32 — Création locale d’entropie
 
 > [!INDICATION]
@@ -313,9 +349,12 @@ Le flux d’entropie entrant en $x$ vaut $\Phi(x)/T(x)$ et le flux sortant vaut 
 
 #### Solution
 
-La figure 4 montre une oscillation de période 10 s autour de 50 °C. En s’éloignant du bord forcé, l’amplitude diminue et le maximum est retardé. Le flux oscille aussi, avec un déphasage car il dépend du gradient. Les axes de sa figure fixent son orientation. Avec $D_T\simeq80/(2,1\times10^4\times130)=2,9\times10^{-5}\ \mathrm{m^2/s}$ et $\omega=2\pi\times0,1\ \mathrm{s^{-1}}$, une longueur est $\sqrt{D_T/\omega}\simeq6,8$ mm. La solution semi-infinie donne la profondeur exponentielle $\delta_T=\sqrt{2D_T/\omega}\simeq9,7$ mm. Sur la figure, l’amplitude passe approximativement de 15 K à $x=\ell/10=2$ mm à 5 K à $x=\ell/2=10$ mm. Le modèle exponentiel donne $8/\ln3\simeq7,3$ mm. L’accord en ordre de grandeur est satisfaisant pour ce barreau fini dont le bord droit est thermostaté.
+La figure 4 montre une oscillation de période 10 s autour de 50 °C. En s’éloignant du bord forcé, l’amplitude diminue et le maximum est retardé. Le flux oscille autour de zéro, la moyenne étant nulle puisque les deux extrémités ont la même température moyenne. Il s’atténue et se retarde comme la température. En un point donné, $-\lambda\pi a^2\partial_xT$ est en avance d’un huitième de période, 1,25 s, sur la température. La courbe 4(b) vaut environ $-0,7$ W à $t=0$ en $\ell/10$ : elle correspond au flux compté vers les $x$ décroissants. Avec $D_T\simeq80/(2,1\times10^4\times130)=2,9\times10^{-5}\ \mathrm{m^2/s}$ et $\omega=2\pi\times0,1\ \mathrm{s^{-1}}$, une longueur est $\sqrt{D_T/\omega}\simeq6,8$ mm. La solution semi-infinie donne la profondeur exponentielle $\delta_T=\sqrt{2D_T/\omega}\simeq9,7$ mm. Sur la figure, les amplitudes valent environ 15, 10, 5 et 2 K en $x=2$, 5, 10 et 15 mm. Une décroissance $e^{-x/L}$ donne $L\simeq8/\ln3\simeq7,3$ mm entre 2 et 10 mm et $13/\ln7,5\simeq6,5$ mm sur l’ensemble des sondes, soit $L\approx7$ mm. Cette valeur coïncide avec la longueur dimensionnelle $\sqrt{D_T/\omega}\simeq6,8$ mm : l’expression proposée est compatible avec la figure. Les retards des maxima, environ 0,5 s à 2 mm et 2,3 s à 10 mm, redonnent la même longueur par $x/(\omega L)$, et l’amplitude du flux en $\ell/10$, 0,77 W, s’accorde avec $\lambda\pi a^2\sqrt2\times15\ \mathrm K/L$. La longueur lue est en revanche plus courte, d’un facteur proche de $\sqrt2$, que la profondeur $\delta_T$ de la solution exacte. Le caractère fini du barreau n’explique pas cet écart : la solution exacte avec $T(\ell)$ imposée donne 16 K et 7,5 K à 2 et 10 mm, comme le montre la planche ci-dessous.
 
-![Solution de diffusion à 0,1 Hz avec une extrémité imposée à 50 °C. Le modèle semi-infini surestime l’amplitude près de cette extrémité.](figures/onde-thermique.svg)
+![Solution exacte de l’équation de la chaleur à 0,1 Hz, extrémité droite à 50 °C. À droite, ses amplitudes dépassent celles lues sur la figure 4 du sujet, qui suivent la longueur √(D/ω).](figures/onde-thermique.svg)
+
+> [!PIEGE]
+> Deux longueurs diffèrent d’un facteur $\sqrt2$ : $\sqrt{D_T/\omega}$, obtenue par analyse dimensionnelle, et $\sqrt{2D_T/\omega}$, profondeur de la solution exacte. La question demande la première. Une amplitude se lit par rapport à la valeur moyenne, 50 °C, et non par rapport à l’axe.
 
 ### Q34 — Uniformité sur une section
 
@@ -364,6 +403,9 @@ Remplaçons $-\gamma\nabla V$ par $\vec j+\alpha\gamma\nabla T$ dans (8). Il vie
 
 Dans (12), remplacer $\vec j_s$ par son expression de Q37 et $-\nabla V$ par $\vec j/\gamma+\alpha\nabla T$. Les deux termes en $\vec j\cdot\nabla T$ se compensent exactement. On obtient $\partial_ts_c=\kappa|\nabla T|^2/T^2+|\vec j|^2/(T\gamma)\geq0$. Le premier terme vient de la conduction thermique irréversible, le second de la dissipation Joule. Les termes couplés de transport thermoélectrique sont réversibles dans ce cadre linéaire. Le dispositif complet garde les deux dissipations. Dans la terminologie thermodynamique usuelle l’effet Thomson est le chauffage ou refroidissement distribué d’un matériau parcouru par un courant dans un gradient thermique.
 
+> [!JURY]
+> Pour Q35 à Q38, le rapport 2025 juge les calculs raisonnablement traités mais les commentaires physiques très souvent absents ou erronés : nommer l’origine de chaque terme de la production d’entropie.
+
 ### Q39 — Mesure de f.é.m.
 
 > [!INDICATION]
@@ -381,6 +423,9 @@ L’impédance d’entrée du voltmètre est très grande devant la résistance 
 #### Solution
 
 Sur la figure 5 le matériau 1 va de A à B, le matériau 2 de C à A et de B à D. En allant de C vers D, additionnons $V_C-V_A=-\alpha_2(T_C-T_A)$, $V_A-V_B=-\alpha_1(T_A-T_B)$ et $V_B-V_D=-\alpha_2(T_B-T_D)$. Pour $T_C=T_D$, $V_C-V_D=(\alpha_2-\alpha_1)(T_A-T_B)$. Avec la **polarité de la figure 5**, $S_{12}=\alpha_2-\alpha_1$.
+
+> [!PIEGE]
+> Le signe de $S_{12}$ dépend de la borne choisie comme référence. Suivre le circuit de C vers D en notant le matériau de chaque segment, puis conserver la même polarité en Q50.
 
 ### Q41 — Étalonner un matériau
 
@@ -401,6 +446,9 @@ Former la jonction avec le matériau inconnu en position 1 et une référence d�
 #### Solution
 
 $\rho_0=\rho(0\,°\mathrm C)$, valeur à la référence Celsius. Comparons les termes de même dimension par $|B|\theta/A$. Il vaut environ 1,5 % à 100 °C, et 13 % à 850 °C. À 850 °C le terme quadratique vaut environ $-0,42$ dans $\rho/\rho_0$, contre $1+A\theta\simeq4,32$. L’écart à la loi exacte est donc proche de 11 % relativement à cette dernière à l’extrémité haute. L’approximation affine est surtout pertinente en bas de gamme ou à précision modérée. Utilisons-la dans la suite, comme demandé.
+
+> [!JURY]
+> Le rapport 2025 trouve l’argumentation très souvent incomplète et relève des copies qui comparent $A$ et $B$, deux grandeurs qui n’ont pas la même dimension. On compare $A\theta$ et $B\theta^2$.
 
 ### Q43 — Sensibilité de la thermorésistance
 
@@ -429,6 +477,9 @@ Si la géométrie est prise constante, $R_0=\rho_0\ell/S$ et $R'=R-R_0=R_0A\thet
 
 Notons $P$ et $N$ les nœuds centraux haut et bas du générateur, avec $V_P-V_N=E$. À droite le diviseur donne $V_d-V_N=E/2$, à gauche $V_g-V_N=E(R_0+R')/(2R_0+R')$. La flèche $U$ de la figure 6 va de gauche à droite. Donc $U=V_d-V_g=-ER'/[2(2R_0+R')]=-EA\theta/[2(2+A\theta)]$. La tension s’annule à 0 °C et est négative pour $\theta>0$ avec les bornes fournies.
 
+> [!JURY]
+> Le rapport 2025 fait état de beaucoup de difficultés sur cette question, le pont diviseur de tension étant souvent mal utilisé. Le rôle du second amplificateur, en Q47, était très rarement identifié.
+
 ### Q46 — Sensibilité du montage passif
 
 > [!INDICATION]
@@ -436,7 +487,7 @@ Notons $P$ et $N$ les nœuds centraux haut et bas du générateur, avec $V_P-V_N
 
 #### Solution
 
-La dérivée vaut $\sigma_\theta=-EA/(2+A\theta)^2$. Le signal est non linéaire et sa sensibilité en valeur absolue décroît avec $\theta$. Il faut inverser ou étalonner la loi. Le signal différentiel est faible pour les petits écarts, avec $|\sigma_0|=EA/4\simeq9,8$ mV/K pour $E=10$ V. La mesure dépend en outre de la stabilité de l’alimentation. À haute température, la tension s’approche en module de $E/2$ et résout moins bien les écarts.
+La dérivée vaut $\sigma_\theta=-EA/(2+A\theta)^2$. Le signal est non linéaire et sa sensibilité en valeur absolue décroît avec $\theta$. Il faut inverser ou étalonner la loi. Le signal différentiel est faible pour les petits écarts, avec $|\sigma_0|=EA/4\simeq9,8$ mV/K pour $E=10$ V. La mesure dépend en outre de la stabilité de l’alimentation. La tension est bornée en module par $E/2$ : à 850 °C elle n’atteint que $0,31\,E$ et la sensibilité est tombée à environ 1,4 mV/K, sept fois moins qu’à 0 °C.
 
 ### Q47 — Rôle du deuxième amplificateur
 
@@ -513,5 +564,14 @@ Les courbes B et S s’étendent jusqu’à des températures supérieures à ce
 #### Solution
 
 Un générateur Seebeck placé entre une source chaude et une source froide peut alimenter un capteur à partir de chaleur dissipée, par exemple sur un circuit de refroidissement de centre de données. Il faut une différence durable de température et des échangeurs capables d’entretenir le flux. Dans l’autre sens, un courant dans un module Peltier peut pomper la chaleur d’une petite charge vers un dissipateur, pour stabiliser la température d’un composant optique. Le refroidissement d’un côté exige l’évacuation de la chaleur de l’autre et de la puissance électrique dissipée.
+
+## Bilan
+
+- Fixer les orientations avant d’écrire : sens de $I$ et différence de potentiel en Q4 et Q12, sens du flux thermique en Q23, flèche de $U$ en Q45, polarité des jonctions en Q40 et Q50. Un signe se justifie par la figure.
+- Reconnaître les trois équations du sujet : oscillateur amorti sous forme canonique (Q8), diffusion (Q10, Q13, Q21), d’Alembert (Q14). Pour une onde, écrire $k(\omega)$ puis lire séparément la partie réelle, la partie imaginaire et la dépendance en fréquence (Q15, Q16).
+- Avant de négliger un terme, former un rapport sans dimension et le chiffrer : courant de déplacement (Q10), temps de diffusion devant temps de relaxation (Q24, Q28), terme quadratique de la résistivité (Q42).
+- Bilan d’entropie sur une tranche : entropie échangée $\Phi/T$ aux deux faces, création par différence, terme en carré du gradient (Q31, Q32). Le résultat intégré redonne la variation globale de Q29.
+- Lecture de courbes : mesurer une amplitude autour de la valeur moyenne, comparer deux positions connues, recouper par le retard de phase (Q33). Les figures 2 et 4 du sujet suivent des longueurs qui diffèrent d’un facteur $\sqrt2$ de celles des équations (3) et de la chaleur : dire avec quelle convention on compare.
+- Montages à amplificateur linéaire intégré : potentiels égaux aux deux entrées, courants d’entrée nuls, puis loi des nœuds (Q47, Q48). À revoir aussi : pont diviseur, loi de Wiedemann–Franz, ordres de grandeur de la maille et de la densité électronique d’un métal.
 
 [Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Sujets/2025_PSI_Ep4_Physique_XSR_14022025_NB.pdf) · [Rapport du jury](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Rapports/2025_PSI_Rapport_Physique_XSR_Ecrit.pdf)

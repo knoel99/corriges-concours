@@ -24,6 +24,18 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction intégrale des éditions brute et guidée à partir du PDF original et du rapport. Les 54 questions sont résolues avec leurs conventions de signe, les lectures des figures, les estimations numériques et cinq planches de calcul. Le rapport du jury a été confronté à chaque partie."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application de la seconde relecture, chaque défaut revérifié contre le sujet (courbes des figures 2 et 4 relues dans le PDF vectoriel, calculs refaits). Q33 : l’écart entre longueur lue et profondeur de la solution exacte n’est plus attribué au barreau fini ; la figure 4 du sujet suit exp(−x/L) avec L ≈ 6,9 mm, soit √(D/ω), en amplitude, en phase et en flux ; commentaire du flux précisé (avance d’un huitième de période, orientation de la courbe 4(b)) ; légende et planche onde-thermique.svg refaites (solution exacte du barreau fini, milieu semi-infini, loi en √(D/ω), lectures du sujet). Q11 : écart entre la planche, calculée avec l’équation (3), et la figure 2 du sujet signalé. Q24 : τ_ech employé au sens de l’énoncé et de Q28. Q7 : paramètre de maille nommé. Q46 : valeur à 850 °C et sensibilité chiffrées. Le doute de Q34 n’est pas appliqué. Édition guidée : ajout de la présentation du sujet, d’encadrés jury, piège et méthode (remarques du jury vérifiées dans le rapport 2025) et du bilan. Aucun résultat des autres questions n’est modifié."
     }
   ],
   "figures": [
@@ -49,7 +61,7 @@
       "numero": 4,
       "question": "Q33",
       "fichier": "figures/onde-thermique.svg",
-      "legende": "Solution de diffusion à 0,1 Hz avec une extrémité imposée à 50 °C. Le modèle semi-infini surestime l’amplitude près de cette extrémité."
+      "legende": "Solution exacte de l’équation de la chaleur à 0,1 Hz, extrémité droite à 50 °C. À droite, ses amplitudes dépassent celles lues sur la figure 4 du sujet, qui suivent la longueur √(D/ω)."
     },
     {
       "numero": 5,
@@ -117,5 +129,6 @@
       "Q53",
       "Q54"
     ]
-  }
+  },
+  "date_revision": "2026-11-28"
 }
