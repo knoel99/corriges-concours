@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 
 ## Première partie · Les zéolithes : des solides microporeux
 
@@ -328,7 +330,7 @@ $$\boxed{\mathrm{p}K_{Ak}=D+\frac{N_A\,\Delta W_k}{RT\ln 10}}$$
 
 $$\boxed{\Delta W_k=W_k-W_{k-1}}$$
 
-où $D=\alpha+\beta N_AW_e$ est invariant.
+où $D=\alpha+\beta N_AW_e$ est invariant dans la famille ; pour qu’un même polyacide donne une droite quand $k$ varie, il faut de plus admettre que $\alpha$ ne dépend pas de $k$ (différence des enthalpies de solvatation et entropie de réaction identiques d’une acidité à la suivante), hypothèse forte que la figure 3 met à l’épreuve.
 
 **Expression en fonction de $n$ et $k$.** Dans la base $[\mathrm{X(O)}_{n+k}\mathrm{(OH)}_{p-k}]^{k-}$, la charge $-ke$ est répartie sur les $n+k$ oxygènes non hydroxylés et sur X, soit $n+k+1$ atomes ; dans l’acide $[\mathrm{X(O)}_{n+k-1}\mathrm{(OH)}_{p-k+1}]^{(k-1)-}$, la charge $-(k-1)e$ est répartie sur $n+k$ atomes. Comme à la question 15 :
 
@@ -362,7 +364,7 @@ Abscisses calculées avec le résultat de la question 18, $x_k=k^2/\sqrt[3]{n+k+
 
 **(b) Droites confondues.** $\mathrm{H_2SO_3=SO(OH)_2}$, $\mathrm{H_3AsO_4=AsO(OH)_3}$ et $\mathrm{H_3PO_4=PO(OH)_3}$ ont tous $n=1$. Dans le modèle, le $\mathrm{p}K_{Ak}$ ne dépend que de $n$ et de $k$, et non de la nature de X ni de $p$ : mêmes abscisses, mêmes ordonnées prévues, donc **droites quasiment confondues**. Le tableau 1 le confirme : 1,8 ; 2,2 ; 2,1 pour la première acidité et 7,2 ; 7,0 ; 7,2 pour la deuxième.
 
-**(c) Acide sulfurique.** $\mathrm{H_2SO_4=SO_2(OH)_2}$ a $n=2$. La charge de chaque anion est répartie sur un atome de plus que pour $n=1$ : les anions sont plus stables, les abscisses sont un peu plus faibles (0,63 et 1,71) et surtout les $\mathrm{p}K_A$ sont plus bas d’environ cinq unités ($-3$ et 2 contre 2 et 7), en accord avec la règle empirique de la question 4. La droite est donc **parallèle aux précédentes (même pente $C$) mais située en dessous**. On remarque que l’abaissement observé est plus grand que ce que donnerait le seul glissement des abscisses le long d’une droite unique : le terme $D$ n’est pas rigoureusement indépendant de $n$.
+**(c) Acide sulfurique.** $\mathrm{H_2SO_4=SO_2(OH)_2}$ a $n=2$. La charge de chaque anion est répartie sur un atome de plus que pour $n=1$ : les anions sont plus stables, les abscisses sont un peu plus faibles (0,63 et 1,71) et surtout les $\mathrm{p}K_A$ sont plus bas d’environ cinq unités ($-3$ lu sur la figure 3, alors que le tableau 1 donne $-2$, et 2, contre 2 et 7), en accord avec la règle empirique de la question 4. La droite est donc **parallèle aux précédentes (même pente $C$) mais située en dessous**. On remarque que l’abaissement observé est plus grand que ce que donnerait le seul glissement des abscisses le long d’une droite unique : le terme $D$ n’est pas rigoureusement indépendant de $n$.
 
 **(d) Acide phosphoreux.** Les points de $\mathrm{H_3PO_3}$ (2,0 et 6,7) se placent sur les droites des acides à $n=1$, et l’acide n’a que deux acidités. Il s’écrit donc $\mathrm{HPO(OH)_2}$ ($n=1$, $p=2$) : le phosphore, tétraédrique, porte une liaison double $\mathrm{P{=}O}$, **une liaison P–H** (non acide) et deux groupes hydroxyle ; chaque oxygène porte deux doublets libres et le phosphore aucun. La formule $\mathrm{P(OH)_3}$ ($n=0$) donnerait trois acidités et un premier $\mathrm{p}K_A$ voisin de 8.
 
@@ -514,25 +516,25 @@ $$s_{\mathrm{cyl}}=\pi\times 540\times 338\ \mathrm{pm^2}\approx 5{,}7\times 10^
 
 $$\boxed{s_{\mathrm{cyl}}\approx 0{,}57\ \mathrm{nm^2}}$$
 
-**Surface recouverte sur une surface plane.** Dans une monocouche compacte, les atomes forment un réseau hexagonal ; chaque atome occupe un losange de côté $2r$ et d’angle $60^\circ$, d’aire :
+**Surface recouverte sur une surface plane.** L’énoncé ne précise pas le modèle. Sur un plan, on attribue à chaque atome d’argon un carré de côté égal à son diamètre :
 
-$$s_{\mathrm{plan}}=(2r)^2\cos 30^\circ=2\sqrt{3}\,r^2$$
+$$s_{\mathrm{plan}}=(2r)^2$$
 
-$$s_{\mathrm{plan}}=2\times 1{,}7\times 188^2\ \mathrm{pm^2}\approx 1{,}2\times 10^{5}\ \mathrm{pm^2}$$
+$$s_{\mathrm{plan}}=376^2\ \mathrm{pm^2}\approx 1{,}4\times 10^{5}\ \mathrm{pm^2}$$
 
-$$\boxed{s_{\mathrm{plan}}\approx 0{,}12\ \mathrm{nm^2}}$$
+$$\boxed{s_{\mathrm{plan}}\approx 0{,}14\ \mathrm{nm^2}}$$
 
-(le simple disque $\pi r^2$ donnerait $0{,}11\ \mathrm{nm^2}$). Dans le canal, un atome d’argon « couvre » donc une surface de paroi environ **4,7 fois plus grande** que sur un plan : la courbure et l’étroitesse du canal empêchent de tapisser la paroi d’une monocouche compacte.
+Cette valeur est proche de l’aire attribuée par convention à l’atome d’argon dans les mesures d’adsorption. (Un pavage hexagonal compact donnerait $2\sqrt{3}\,r^2\approx 0{,}12\ \mathrm{nm^2}$, le simple disque $\pi r^2\approx 0{,}11\ \mathrm{nm^2}$.) Dans le canal, un atome d’argon « couvre » donc une surface de paroi environ **4 fois plus grande** que sur un plan ($0{,}57/0{,}14\approx 4{,}1$) : la courbure et l’étroitesse du canal empêchent de tapisser la paroi d’une monocouche.
 
 **Surface spécifique mesurée.** La mesure compte les atomes adsorbés et attribue à chacun l’aire $s_{\mathrm{plan}}$, alors que chacun représente en réalité $s_{\mathrm{cyl}}$ de paroi :
 
 $$S_{\mathrm{mes}}=S'\,\frac{s_{\mathrm{plan}}}{s_{\mathrm{cyl}}}$$
 
-$$S_{\mathrm{mes}}\approx\frac{1{,}7\times 10^{3}}{4{,}7}\ \mathrm{m^2\,g^{-1}}$$
+$$S_{\mathrm{mes}}\approx\frac{1{,}7\times 10^{3}}{4{,}1}\ \mathrm{m^2\,g^{-1}}$$
 
-$$\boxed{S_{\mathrm{mes}}\approx 3{,}6\times 10^{2}\ \mathrm{m^2\,g^{-1}}}$$
+$$\boxed{S_{\mathrm{mes}}\approx 4{,}1\times 10^{2}\ \mathrm{m^2\,g^{-1}}}$$
 
-(on trouverait $3{,}9\times 10^{2}\ \mathrm{m^2\,g^{-1}}$ à partir de la valeur sans croisement de la question 23). Le résultat est du même ordre que la valeur expérimentale, $420\pm 20\ \mathrm{m^2\,g^{-1}}$ : l’écart d’un facteur 4 entre l’estimation structurale et la mesure s’explique pour l’essentiel par le mode de remplissage des canaux. L’écart résiduel, d’environ 15 %, est compatible avec la rusticité du modèle (canaux parfaitement cylindriques, rayon de van der Waals pris comme rayon de contact).
+(on trouverait $4{,}5\times 10^{2}\ \mathrm{m^2\,g^{-1}}$ à partir de la valeur sans croisement de la question 23, et $3{,}6\times 10^{2}\ \mathrm{m^2\,g^{-1}}$ avec l’aire du pavage hexagonal, hors de l’intervalle expérimental). Le résultat tombe dans l’intervalle expérimental, $420\pm 20\ \mathrm{m^2\,g^{-1}}$ : l’écart d’un facteur 4 entre l’estimation structurale et la mesure s’explique par le mode de remplissage des canaux. Cet accord reste celui d’un modèle rustique (canaux parfaitement cylindriques, rayon de van der Waals pris comme rayon de contact).
 
 ## III. Les zéolithes : des solides poreux · III.C Tamis moléculaires
 

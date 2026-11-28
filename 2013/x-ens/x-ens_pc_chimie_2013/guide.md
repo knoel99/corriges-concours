@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 
 ## Présentation du sujet
 
@@ -390,7 +392,7 @@ $$\frac{4}{3}\pi R_1^3=(n+2)\,v$$
 $$\boxed{R_1=\left(\frac{3\,(n+2)\,v}{4\pi}\right)^{1/3}}$$
 
 > [!JURY]
-> Le jury demande la cohérence avec la question précédente : c’est bien $N=n+2$, et non $n+1$, qui intervient ici (19 %).
+> Le jury demande la cohérence avec la réponse apportée à la question précédente, qui a manqué dans de nombreuses copies (19 %).
 
 ### Question 16 — Énergie électrostatique et affinité électronique
 
@@ -517,7 +519,7 @@ $$\boxed{\mathrm{p}K_{Ak}=D+\frac{N_A\,\Delta W_k}{RT\ln 10}}$$
 
 $$\boxed{\Delta W_k=W_k-W_{k-1}}$$
 
-où $D=\alpha+\beta N_AW_e$ est invariant.
+où $D=\alpha+\beta N_AW_e$ est invariant dans la famille ; pour qu’un même polyacide donne une droite quand $k$ varie, il faut de plus admettre que $\alpha$ ne dépend pas de $k$ (différence des enthalpies de solvatation et entropie de réaction identiques d’une acidité à la suivante), hypothèse forte que la figure 3 met à l’épreuve.
 
 **Expression en fonction de $n$ et $k$.** Dans la base $[\mathrm{X(O)}_{n+k}\mathrm{(OH)}_{p-k}]^{k-}$, la charge $-ke$ est répartie sur les $n+k$ oxygènes non hydroxylés et sur X, soit $n+k+1$ atomes ; dans l’acide $[\mathrm{X(O)}_{n+k-1}\mathrm{(OH)}_{p-k+1}]^{(k-1)-}$, la charge $-(k-1)e$ est répartie sur $n+k$ atomes. Comme à la question 15 :
 
@@ -541,7 +543,7 @@ Pour $k=1$, on retrouve $\mathrm{p}K_{A1}=C/\sqrt[3]{n+2}+D$, c’est-à-dire la
 > Vérifier un résultat général sur le cas particulier déjà traité ($k=1$) et sur les abscisses d’un graphe du sujet : pour $\mathrm{H_3PO_4}$ ($n=1$), la parenthèse vaut 0,69 ; 1,83 ; 2,74, ce qui correspond aux trois points de la figure 3.
 
 > [!JURY]
-> « Une justification rigoureuse de chaque étape du calcul était attendue » ; moins de 1 % des candidats l’ont apportée.
+> « Une justification rigoureuse de chaque étape du calcul était néanmoins attendue » ; moins de 1 % des candidats l’ont apportée.
 
 ### Question 19 — Discussion du modèle sur les polyacides
 
@@ -565,7 +567,7 @@ Abscisses calculées avec le résultat de la question 18, $x_k=k^2/\sqrt[3]{n+k+
 
 **(b) Droites confondues.** $\mathrm{H_2SO_3=SO(OH)_2}$, $\mathrm{H_3AsO_4=AsO(OH)_3}$ et $\mathrm{H_3PO_4=PO(OH)_3}$ ont tous $n=1$. Dans le modèle, le $\mathrm{p}K_{Ak}$ ne dépend que de $n$ et de $k$, et non de la nature de X ni de $p$ : mêmes abscisses, mêmes ordonnées prévues, donc **droites quasiment confondues**. Le tableau 1 le confirme : 1,8 ; 2,2 ; 2,1 pour la première acidité et 7,2 ; 7,0 ; 7,2 pour la deuxième.
 
-**(c) Acide sulfurique.** $\mathrm{H_2SO_4=SO_2(OH)_2}$ a $n=2$. La charge de chaque anion est répartie sur un atome de plus que pour $n=1$ : les anions sont plus stables, les abscisses sont un peu plus faibles (0,63 et 1,71) et surtout les $\mathrm{p}K_A$ sont plus bas d’environ cinq unités ($-3$ et 2 contre 2 et 7), en accord avec la règle empirique de la question 4. La droite est donc **parallèle aux précédentes (même pente $C$) mais située en dessous**. On remarque que l’abaissement observé est plus grand que ce que donnerait le seul glissement des abscisses le long d’une droite unique : le terme $D$ n’est pas rigoureusement indépendant de $n$.
+**(c) Acide sulfurique.** $\mathrm{H_2SO_4=SO_2(OH)_2}$ a $n=2$. La charge de chaque anion est répartie sur un atome de plus que pour $n=1$ : les anions sont plus stables, les abscisses sont un peu plus faibles (0,63 et 1,71) et surtout les $\mathrm{p}K_A$ sont plus bas d’environ cinq unités ($-3$ lu sur la figure 3, alors que le tableau 1 donne $-2$, et 2, contre 2 et 7), en accord avec la règle empirique de la question 4. La droite est donc **parallèle aux précédentes (même pente $C$) mais située en dessous**. On remarque que l’abaissement observé est plus grand que ce que donnerait le seul glissement des abscisses le long d’une droite unique : le terme $D$ n’est pas rigoureusement indépendant de $n$.
 
 **(d) Acide phosphoreux.** Les points de $\mathrm{H_3PO_3}$ (2,0 et 6,7) se placent sur les droites des acides à $n=1$, et l’acide n’a que deux acidités. Il s’écrit donc $\mathrm{HPO(OH)_2}$ ($n=1$, $p=2$) : le phosphore, tétraédrique, porte une liaison double $\mathrm{P{=}O}$, **une liaison P–H** (non acide) et deux groupes hydroxyle ; chaque oxygène porte deux doublets libres et le phosphore aucun. La formule $\mathrm{P(OH)_3}$ ($n=0$) donnerait trois acidités et un premier $\mathrm{p}K_A$ voisin de 8.
 
@@ -655,7 +657,7 @@ Ordres de grandeur raisonnables : la zéolithe est moins dense que le quartz (2,
 > Les erreurs viennent des unités : $1\ \mathrm{nm^3}=10^{-21}\ \mathrm{cm^3}$. Poser l’opération avec les puissances de dix séparées avant de simplifier.
 
 > [!JURY]
-> « Les applications numériques sont très souvent des échecs » (5 % de réussite), alors que les expressions littérales étaient souvent justes.
+> Selon le rapport, « les applications numériques sont très souvent des échecs » (5 % de réussite), alors que les expressions littérales étaient souvent justes.
 
 ### Question 23 — Surface spécifique pour des canaux droits sans croisement
 
@@ -793,7 +795,7 @@ $$\boxed{h=2\sqrt{R\,(2r-R)}\approx 3{,}4\times 10^{2}\ \mathrm{pm}}$$
 > La surface de paroi associée à un atome est celle d’un tronçon de cylindre de longueur $h$.
 
 > [!INDICATION]
-> Sur une surface plane, une monocouche compacte attribue à chaque atome l’aire d’un hexagone ; la donnée $\cos 30^\circ$ sert ici. La mesure sous-estime la surface réelle dans le rapport des deux aires.
+> Sur une surface plane, attribuer à chaque atome un carré de côté égal à son diamètre. La mesure sous-estime la surface réelle dans le rapport des deux aires.
 
 #### Solution
 
@@ -805,28 +807,28 @@ $$s_{\mathrm{cyl}}=\pi\times 540\times 338\ \mathrm{pm^2}\approx 5{,}7\times 10^
 
 $$\boxed{s_{\mathrm{cyl}}\approx 0{,}57\ \mathrm{nm^2}}$$
 
-**Surface recouverte sur une surface plane.** Dans une monocouche compacte, les atomes forment un réseau hexagonal ; chaque atome occupe un losange de côté $2r$ et d’angle $60^\circ$, d’aire :
+**Surface recouverte sur une surface plane.** L’énoncé ne précise pas le modèle. Sur un plan, on attribue à chaque atome d’argon un carré de côté égal à son diamètre :
 
-$$s_{\mathrm{plan}}=(2r)^2\cos 30^\circ=2\sqrt{3}\,r^2$$
+$$s_{\mathrm{plan}}=(2r)^2$$
 
-$$s_{\mathrm{plan}}=2\times 1{,}7\times 188^2\ \mathrm{pm^2}\approx 1{,}2\times 10^{5}\ \mathrm{pm^2}$$
+$$s_{\mathrm{plan}}=376^2\ \mathrm{pm^2}\approx 1{,}4\times 10^{5}\ \mathrm{pm^2}$$
 
-$$\boxed{s_{\mathrm{plan}}\approx 0{,}12\ \mathrm{nm^2}}$$
+$$\boxed{s_{\mathrm{plan}}\approx 0{,}14\ \mathrm{nm^2}}$$
 
-(le simple disque $\pi r^2$ donnerait $0{,}11\ \mathrm{nm^2}$). Dans le canal, un atome d’argon « couvre » donc une surface de paroi environ **4,7 fois plus grande** que sur un plan : la courbure et l’étroitesse du canal empêchent de tapisser la paroi d’une monocouche compacte.
+Cette valeur est proche de l’aire attribuée par convention à l’atome d’argon dans les mesures d’adsorption. (Un pavage hexagonal compact donnerait $2\sqrt{3}\,r^2\approx 0{,}12\ \mathrm{nm^2}$, le simple disque $\pi r^2\approx 0{,}11\ \mathrm{nm^2}$.) Dans le canal, un atome d’argon « couvre » donc une surface de paroi environ **4 fois plus grande** que sur un plan ($0{,}57/0{,}14\approx 4{,}1$) : la courbure et l’étroitesse du canal empêchent de tapisser la paroi d’une monocouche.
 
 **Surface spécifique mesurée.** La mesure compte les atomes adsorbés et attribue à chacun l’aire $s_{\mathrm{plan}}$, alors que chacun représente en réalité $s_{\mathrm{cyl}}$ de paroi :
 
 $$S_{\mathrm{mes}}=S'\,\frac{s_{\mathrm{plan}}}{s_{\mathrm{cyl}}}$$
 
-$$S_{\mathrm{mes}}\approx\frac{1{,}7\times 10^{3}}{4{,}7}\ \mathrm{m^2\,g^{-1}}$$
+$$S_{\mathrm{mes}}\approx\frac{1{,}7\times 10^{3}}{4{,}1}\ \mathrm{m^2\,g^{-1}}$$
 
-$$\boxed{S_{\mathrm{mes}}\approx 3{,}6\times 10^{2}\ \mathrm{m^2\,g^{-1}}}$$
+$$\boxed{S_{\mathrm{mes}}\approx 4{,}1\times 10^{2}\ \mathrm{m^2\,g^{-1}}}$$
 
-(on trouverait $3{,}9\times 10^{2}\ \mathrm{m^2\,g^{-1}}$ à partir de la valeur sans croisement de la question 23). Le résultat est du même ordre que la valeur expérimentale, $420\pm 20\ \mathrm{m^2\,g^{-1}}$ : l’écart d’un facteur 4 entre l’estimation structurale et la mesure s’explique pour l’essentiel par le mode de remplissage des canaux. L’écart résiduel, d’environ 15 %, est compatible avec la rusticité du modèle (canaux parfaitement cylindriques, rayon de van der Waals pris comme rayon de contact).
+(on trouverait $4{,}5\times 10^{2}\ \mathrm{m^2\,g^{-1}}$ à partir de la valeur sans croisement de la question 23, et $3{,}6\times 10^{2}\ \mathrm{m^2\,g^{-1}}$ avec l’aire du pavage hexagonal, hors de l’intervalle expérimental). Le résultat tombe dans l’intervalle expérimental, $420\pm 20\ \mathrm{m^2\,g^{-1}}$ : l’écart d’un facteur 4 entre l’estimation structurale et la mesure s’explique par le mode de remplissage des canaux. Cet accord reste celui d’un modèle rustique (canaux parfaitement cylindriques, rayon de van der Waals pris comme rayon de contact).
 
 > [!JURY]
-> La question « n’a été que très peu abordée, et jamais en intégralité » (0 %). Un raisonnement clair, même inachevé, y était donc très rentable.
+> La question « n’a été que très peu abordée, et jamais en intégralité » (0 %).
 
 ## III. Les zéolithes : des solides poreux · III.C Tamis moléculaires
 
@@ -863,10 +865,10 @@ Les carbones des méthyles sont à $(140+153)\sin 30^\circ\approx 147\ \mathrm{p
 $$\boxed{d_{para}\approx 505\ \mathrm{pm}<d_{ortho}\approx 572\ \mathrm{pm}}$$
 
 > [!PIEGE]
-> Calculer la plus grande dimension (d’un méthyle à l’autre pour le *para*, environ 0,9 nm) : c’est la plus petite section qui décide de l’entrée dans un pore.
+> Calculer la plus grande dimension (d’un méthyle à l’autre pour le *para*, environ 0,7 nm avec la même convention, 0,9 nm avec les rayons de van der Waals) : c’est la plus petite section qui décide de l’entrée dans un pore.
 
 > [!JURY]
-> « Très souvent, c’est le diamètre maximal qui a été calculé » ; moins de 1 % de réussite.
+> Le rapport note que « très souvent, c’est le diamètre maximal qui a été calculé » ; moins de 1 % de réussite.
 
 ### Question 29 — Choix de la zéolithe séparatrice
 
@@ -1134,7 +1136,7 @@ Le composé **6** ($\mathrm{C_{23}H_{28}O_2Si}$) possède 28 protons, somme des 
 Les 10 protons aromatiques apparaissent en deux massifs autour de 7,3 ppm, conformément à la donnée $\mathrm{C_6H_5{-}H}$. Le proton éthylénique, en α du carbonyle, n’a pas de voisin sur le carbone adjacent (C3 porte le méthyle) : il sort en singulet, éventuellement élargi par un faible couplage à longue distance.
 
 > [!JURY]
-> L’interprétation a été « souvent bien traitée, malgré quelques inversions dans l’attribution des signaux intégrant pour un proton » (51 %) : c’est le proton éthylénique qui est le plus déblindé des deux.
+> L’interprétation a été « souvent bien traitée, malgré quelques inversions dans l’attribution des signaux intégrant pour un proton » (51 %).
 
 ### Question 41 — Protonation de l’imidazole
 
@@ -1220,7 +1222,7 @@ L’iodométhane est un substrat idéal de $\mathrm{S_N2}$ : carbone non encombr
 **Intérêt du LDA.** Base très forte ($\mathrm{p}K_A\approx 36$), donc déprotonation totale et irréversible, et très encombrée, donc non nucléophile : on forme sélectivement et quantitativement l’énolate avant d’introduire l’électrophile.
 
 > [!JURY]
-> « Si la nucléophilie du butyllithium a souvent été identifiée comme limitante, le caractère trop faible de NaOH n’a pas toujours été invoqué » (9 %) : les deux arguments sont exigés.
+> « Si la nucléophilie du butyllithium a souvent été identifiée comme limitante, le caractère trop faible de NaOH n’a pas toujours été invoqué » (9 %).
 
 ### Question 46 — Synthèse de l’organomagnésien 8
 
@@ -1460,7 +1462,7 @@ On peut aussi envisager que la chlorocétone perde HCl à chaud pour donner la b
 **Rôle de l’acide *para*-toluènesulfonique.** C’est un acide fort soluble en milieu organique, utilisé en quantité catalytique : il catalyse l’équilibre céto-énolique (protonation du carbonyle) qui engendre le nucléophile. Il ne joue jamais le rôle de base.
 
 > [!JURY]
-> Le rapport précise que l’APTS « induit la tautomérie céto-énolique » et que la 4-chlorobutan-2-one présente un groupe partant permettant la substitution par l’énol ; l’APTS a été « assez fréquemment » proposé comme base, à tort (2 %).
+> Le rapport précise que l’APTS « induit la tautomérie céto-énolique » et que la 4-chlorobutan-2-one présente un groupe partant permettant la substitution par l’énol ; l’APTS a été assez fréquemment proposé comme base, à tort (2 %).
 
 ### Question 56 — Structure de 12
 
@@ -1515,7 +1517,7 @@ $$\mathrm{CH_2{=}SO_2+ROH\to RO{-}SO_2{-}CH_3}$$
 Bilan : $\mathrm{ROH+CH_3SO_2Cl+Et_3N=ROSO_2CH_3+Et_3NHCl}$, conforme à la figure 16. La liaison C–O de l’alcool n’est pas rompue : la configuration du carbone est conservée.
 
 > [!JURY]
-> Le rapport décrit la réaction de la triéthylamine sur le chlorure de méthanesulfonyle donnant un sulfène, sur lequel réagit ensuite l’alcool (1 %).
+> Le rapport décrit la réaction de la triéthylamine sur « le méthanesulfonyle », qui produit « un sulfolène » sur lequel réagit ensuite l’alcool (1 %) ; il faut comprendre le chlorure de méthanesulfonyle et un sulfène.
 
 ### Question 59 — Le mésylate, bon groupe partant
 
@@ -1657,7 +1659,7 @@ Sous contrôle orbitalaire, le recouvrement est maximal quand les atomes de plus
 > Associer d’emblée les plus gros coefficients d’orbitales choisies au hasard : il faut d’abord identifier le couple HO/BV le plus proche en énergie.
 
 > [!JURY]
-> « Il faut dans un premier temps identifier l’interaction dominante en calculant les deux écarts HO-BV possibles » (20 %).
+> Le rapport rappelle qu’« il faut dans un premier temps identifier l’interaction dominante en calculant les deux écarts HO-BV possibles » (20 %).
 
 ### Question 65 — Demande inverse
 
@@ -1679,7 +1681,7 @@ L’interaction dominante est donc **BV du diène–HO du diénophile** (écart 
 > « Demande inverse » ne signifie pas que la régiosélectivité ou le produit seraient inversés par rapport à une prévision : seuls les rôles des orbitales frontières sont échangés.
 
 > [!JURY]
-> Le jury a lu des copies affirmant que la demande inverse signifierait que l’on obtient l’inverse de ce qui était prévu ; l’expression désigne seulement le couple d’orbitales frontières qui gouverne la réaction (28 %).
+> Le rapport écrit que « la demande inverse ne signifie pas que l’on obtient l’inverse de ce que l’on a prévu... mais que l’interaction dominante expliquant la régiosélectivité est celle existant entre la HO du diène et la BV du diènophile » (28 %). Ce couple est pourtant celui de la demande normale : les énergies de l’énoncé donnent $1{,}08\,\lvert\beta\rvert$ pour BV du diène–HO du diénophile contre $1{,}78\,\lvert\beta\rvert$ pour HO du diène–BV du diénophile. Le calcul désigne donc l’interaction inverse de celle qu’écrit le rapport, où les deux partenaires ont probablement été intervertis.
 
 ### Question 66 — Modèle d’approche et stéréochimie de 14
 
@@ -1700,7 +1702,7 @@ L’interaction dominante est donc **BV du diène–HO du diénophile** (écart 
 Les trois nouveaux centres stéréogènes (les deux carbones de jonction porteurs d’un hydrogène et le carbone méthylé) sont ainsi contrôlés en une seule étape, par la différenciation des deux faces du diène et par l’orientation du diénophile.
 
 > [!JURY]
-> Le rapport retient « une approche du diénophile par la face arrière du diène » (2 %).
+> Le rapport retient une approche du diénophile par la face arrière du diène (2 %).
 
 ### Question 67 — Synthèse de l’ylure de phosphore
 
