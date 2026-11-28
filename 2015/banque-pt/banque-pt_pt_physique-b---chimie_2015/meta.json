@@ -1,0 +1,100 @@
+{
+  "slug": "banque-pt_pt_physique-b---chimie_2015",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Chimie",
+    "annee": 2015
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2015/ph_b_ch_2015_pt.pdf",
+    "sujet_sha256": "3466291ae835ce9488cf219cdd63883c427754fff53dcf8e06b6876346110054",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_phys_b_ecrit_2015.pdf",
+    "rapport_sha256": "e40090e318c3ccafb2f1d44353ef4730ab01e4a473502582ddc07d947da5802d"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.1",
+      "I.1.2",
+      "I.1.3",
+      "I.1.4",
+      "I.1.5",
+      "I.1.6",
+      "I.1.7",
+      "I.2.1",
+      "I.2.2",
+      "I.2.3",
+      "I.2.4",
+      "I.2.5",
+      "I.2.6",
+      "I.2.7",
+      "I.2.8",
+      "I.2.9",
+      "I.2.10",
+      "I.2.11",
+      "I.3.1",
+      "I.3.2",
+      "I.3.3",
+      "II.1.1",
+      "II.1.2",
+      "II.1.3",
+      "II.1.4",
+      "II.1.5",
+      "II.1.6",
+      "II.1.7",
+      "II.1.8",
+      "II.1.9",
+      "II.2.1",
+      "II.2.2",
+      "II.2.3",
+      "II.2.4",
+      "II.2.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5"
+    ],
+    "precision": "Sujet de 12 pages PDF lu en entier (énoncé p. 2 à 6, annexe 1 p. 7, annexe 2 p. 8, données p. 9, tableau périodique p. 10, deux dernières pages blanches) ; 40 questions numérotées de I.1.1 à III.5, toutes traitées. Rapport commun à Physique B de 4 pages, partie chimie p. 1. Lectures graphiques : annexe 1, ordonnées des courbes à 250 K et intersection vers 2 270 K, arrondie à 2,3·10³ K (question II.1.8) ; annexe 2, potentiel −2,42 V et pH 9,5 (questions III.2 et III.3). Question II.2.5 traitée avec la différence de potentiels de 2,5 V donnée par l'énoncé, pour l'équation à 12 électrons."
+  },
+  "figures": [
+    {
+      "fichier": "figures/pile-a-combustible.svg",
+      "question": "I.1.2",
+      "legende": "Cellule de pile à combustible : polarités des électrodes, sens des électrons, du courant et des anions oxyde, demi-équations."
+    },
+    {
+      "fichier": "figures/maille-zircone.svg",
+      "question": "I.2.4",
+      "legende": "Maille conventionnelle de la zircone : cations zirconium aux nœuds du réseau cubique à faces centrées, anions oxyde dans les huit sites tétraédriques."
+    },
+    {
+      "fichier": "figures/diagramme-ellingham.svg",
+      "question": "II.1.8",
+      "legende": "Reproduction de l'annexe 1 : enthalpies libres standard des réactions (1) et (2) pour une mole de dioxygène, rupture de pente à 930 K et température d'inversion."
+    },
+    {
+      "fichier": "figures/diagramme-e-ph-magnesium.svg",
+      "question": "III.1",
+      "legende": "Diagramme potentiel-pH du magnésium avec les domaines d'immunité, de corrosion et de passivation."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 40 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées, lectures des annexes 1 et 2 contrôlées sur le PDF, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
