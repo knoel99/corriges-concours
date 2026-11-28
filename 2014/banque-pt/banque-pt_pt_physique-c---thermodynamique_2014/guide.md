@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Étude de quelques modèles de turboréacteurs. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 18 questions numérotées de 1 à 18, dont plusieurs à sous-questions (33 réponses en tout), en quatre parties dont l'énoncé donne le poids.
@@ -162,7 +164,7 @@ $$T_2 = T_1 + \frac{w_{i,1\text{-}2}}{c_p} = 300 + \frac{279}{1{,}00} .$$
 
 $$\boxed{T_2 = 579\ \mathrm{K}}$$
 
-*Contrôle.* L'énoncé ne donne pas la valeur de $\gamma$. Les données l'imposent pourtant : la question 3.1 donne $\dfrac{\gamma-1}{\gamma} = \dfrac{\log(T_2/T_1)}{\log \tau_{1\text{-}2}} = \log(1{,}93) \approx 0{,}286$, soit $\gamma \approx 1{,}40$, valeur usuelle pour l'air.
+*Contrôle.* L'énoncé ne donne pas la valeur de $\gamma$. Les données l'imposent pourtant : la question 3.1 donne, en logarithmes décimaux ($\log \tau_{1\text{-}2} = \log 10 = 1$), $\dfrac{\gamma-1}{\gamma} = \dfrac{\log(T_2/T_1)}{\log \tau_{1\text{-}2}} = \log(1{,}93) \approx 0{,}286$, soit $\gamma \approx 1{,}40$, valeur usuelle pour l'air.
 
 > [!PIEGE]
 > $279\ \mathrm{kJ\cdot kg^{-1}}$ divisé par $1{,}00\ \mathrm{kJ\cdot kg^{-1}\cdot K^{-1}}$ donne bien $279\ \mathrm{K}$ : le quotient est simple parce que les deux grandeurs sont en kilojoules.
@@ -258,7 +260,7 @@ $$P_{cin,A} = 50{,}0\times 1{,}00\times 10^{3}\times(921 - 621) = 1{,}50\times 1
 
 $$\boxed{P_{cin,A} = 15{,}0\ \mathrm{MW}}$$
 
-Cela correspond à une vitesse d'éjection $c_5 = \sqrt{2\times 10^{3}\times 300} \approx 775\ \mathrm{m\cdot s^{-1}}$.
+*Complément non demandé.* Cela correspond à une vitesse d'éjection $c_5 = \sqrt{2\times 10^{3}\times 300} \approx 775\ \mathrm{m\cdot s^{-1}}$ (question 2, vitesse d'entrée négligée).
 
 ### Question 6.2.2 — Puissance thermique reçue en chambre de combustion (A)
 
@@ -293,7 +295,7 @@ $$\boxed{D_{k,A} = 0{,}621\ \mathrm{kg\cdot s^{-1}}}$$
 Ce débit est faible devant celui de l'air ($50{,}0\ \mathrm{kg\cdot s^{-1}}$), ce qui justifie d'assimiler le mélange à de l'air. On retrouve la valeur $0{,}62$ du tableau de la question 16.
 
 > [!JURY]
-> Le rapport demande de contrôler, voire de critiquer, chaque résultat numérique. Parmi les valeurs aberrantes relevées dans les copies : des débits massiques irréalistes et des puissances exprimées en gigawatts. Il reproche aussi de laisser les applications numériques sous forme de fraction et de malmener les unités (confusion entre joule et kilojoule, entre joule et watt, oubli du caractère massique).
+> Dans ses remarques générales, le rapport demande de contrôler, voire de critiquer, chaque résultat numérique. Parmi les valeurs aberrantes relevées dans les copies : des débits massiques irréalistes et des puissances exprimées en gigawatts.
 
 ### Question 7 — Rendement thermique (A)
 
@@ -309,7 +311,7 @@ $$\boxed{\eta_{th,A} \approx 0{,}48}$$
 *Contrôle.* Avec $T_4 = T_3 - T_2 + T_1$ et $T_5 = T_1T_3/T_2$, on trouve $T_4 - T_5 = (T_3 - T_2)(1 - T_1/T_2)$, donc $\eta_{th,A} = 1 - \dfrac{T_1}{T_2} = 1 - \dfrac{300}{579} \approx 0{,}48$ : le rendement ne dépend que du taux de compression. C'est la valeur du tableau de la question 16.
 
 > [!JURY]
-> Le rapport cite, parmi les résultats qui auraient dû alerter, des rendements pratiquement nuls ou supérieurs à l'unité (une valeur de 80, aussitôt rebaptisée 80 %), et des puissances cinétiques négatives.
+> Dans ses remarques générales, le rapport cite, parmi les résultats qui auraient dû alerter, des rendements pratiquement nuls ou astronomiques (une valeur de 80, aussitôt rebaptisée 80 %), et des puissances cinétiques négatives.
 
 ### Question 8 — Diagrammes de Clapeyron et entropique
 
@@ -385,11 +387,13 @@ Conséquence : $w_{i,1\text{-}2} = c_p\,(T_2 - T_1)$ est plus grand, le compress
 On garde les isobares $P_1$, $P_4$ et $P_2$ (pressions inchangées) et l'état (1).
 
 - **Compresseur 1-2, irréversible.** Trait pointillé partant de (1) et montant en s'inclinant vers la droite, jusqu'au point $2^{\text{irrév}}$ de l'isobare $P_2$, à droite et au-dessus de $2^{\text{rév}}$. Le tracé en pointillé rappelle que les états intermédiaires ne sont pas des états d'équilibre connus.
-- **Combustion 2-3, réversible.** Trait plein le long de l'isobare $P_2$, de $2^{\text{irrév}}$ jusqu'à (3), inchangé ($T_3 = 1200\ \mathrm{K}$ imposée).
+- **Combustion 2-3, réversible.** Trait plein le long de l'isobare $P_2$, de $2^{\text{irrév}}$ jusqu'à (3), que l'on garde ici à $T_3 = 1200\ \mathrm{K}$ (l'énoncé ne le précise pas).
 - **Turbine 3-4, irréversible.** Même argument qu'à la question 9.1 : $s_4 > s_3$, et l'état de sortie reste sur l'isobare $P_4$. Trait pointillé descendant de (3) en s'inclinant vers la droite, jusqu'à $4^{\text{irrév}}$, à droite de $4^{\text{rév}}$, donc à une température plus élevée : la turbine réelle refroidit moins le gaz.
 - **Tuyère 4-5, réversible.** Segment vertical en trait plein, de $4^{\text{irrév}}$ à l'isobare $P_1$ : le point $5^{\text{irrév}}$ est à droite de $5^{\text{rév}}$ et plus chaud.
 
 Sur la figure ci-dessous, le chemin réel est en rouge, avec la convention de l'énoncé (tirets pour les évolutions irréversibles 1-2 et 3-4, trait plein pour les évolutions réversibles 2-3 et 4-5) ; le chemin entièrement réversible de la question 8 est rappelé en trait fin bleu. La position exacte des points $2^{\text{irrév}}$ et $4^{\text{irrév}}$ sur leur isobare est un choix d'illustration : l'énoncé ne chiffre pas l'irréversibilité.
+
+*Remarque.* Ce tracé suit la consigne de l'énoncé : l'irréversibilité modifie les températures sans modifier, « en première approximation », les pressions. Avec $T_3$ inchangée, il n'est plus compatible avec le bilan sur l'arbre de la question 4.2 : le compresseur réel demande $c_p\,(T_2^{\text{irrév}} - T_1) > 279\ \mathrm{kJ\cdot kg^{-1}}$, alors que la turbine réelle, entre les mêmes pressions, ne cède que $c_p\,(T_3 - T_4^{\text{irrév}}) < 279\ \mathrm{kJ\cdot kg^{-1}}$, puisque $T_4^{\text{irrév}} > 921\ \mathrm{K}$. Pour que la turbine entraîne encore le compresseur, il faudrait que la détente s'y poursuive jusqu'à une pression $P_4$ plus basse, ou que $T_3$ soit plus élevée. L'allure du chemin (tirets inclinés vers la droite, isobare, verticale) resterait la même.
 
 ![Figure 2 — Allure du chemin de 1 à 5 dans le diagramme entropique lorsque le compresseur et la turbine sont irréversibles, comparée au chemin réversible](figures/cycle-irreversible-entropique.svg)
 
@@ -451,7 +455,7 @@ $$P_{cin,B} = 50{,}0\times 1{,}00\times 10^{3}\times(2000 - 1350) = 3{,}25\times
 
 $$\boxed{P_{cin,B} = 32{,}5\ \mathrm{MW}}$$
 
-La vitesse d'éjection passe à $c_7 = \sqrt{2\times 10^{3}\times 650} \approx 1{,}14\times 10^{3}\ \mathrm{m\cdot s^{-1}}$.
+*Complément non demandé.* La vitesse d'éjection passe à $c_7 = \sqrt{2\times 10^{3}\times 650} \approx 1{,}14\times 10^{3}\ \mathrm{m\cdot s^{-1}}$.
 
 ### Question 11.3 — Puissance thermique totale (B)
 
@@ -658,7 +662,7 @@ $$\boxed{\eta_{th,C} \approx 0{,}58}$$
 > Comparer les deux réacteurs ligne par ligne, avec des rapports chiffrés. La question porte sur les moteurs, pas sur les avions.
 
 > [!INDICATION]
-> Pour interpréter, comparer les débits d'air éjectés et les vitesses d'éjection, puis estimer la poussée par le produit débit × vitesse (avion presque à l'arrêt).
+> Pour interpréter : (A) a un taux de compression de 10, le flux primaire de (C) un taux global de 20. Où la chaleur est-elle apportée à la plus haute pression, et lequel rejette les gaz les plus chauds ?
 
 #### Solution
 
@@ -681,7 +685,9 @@ $$\boxed{\eta_{th,C} \approx 0{,}58}$$
 
 #### Solution
 
-Dans les réacteurs (A) et (B), les gaz sortent de la tuyère à une vitesse supérieure à celle du son dans le jet ($c/c_{son} > 1{,}50$) : l'écoulement est supersonique, il s'accompagne d'ondes de choc et d'un bruit très intense. Dans le réacteur (C), les jets sont subsoniques ($c/c_{son} < 1{,}00$) et plus lents, et le flux secondaire, froid, enveloppe le jet primaire chaud : le moteur est **beaucoup moins bruyant**.
+Dans les réacteurs (A) et (B), les gaz sortent de la tuyère à une vitesse supérieure à celle du son dans le jet ($c/c_{son} > 1{,}50$) : l'écoulement est supersonique, il s'accompagne d'ondes de choc et d'un bruit très intense. Dans le réacteur (C), l'énoncé annonce un rapport plus faible ($c/c_{son} < 1{,}00$) : les jets sont bien plus lents et le flux secondaire, froid, enveloppe le jet primaire chaud. Le moteur est **beaucoup moins bruyant**.
+
+*Complément non demandé.* Avec $c_{son} = \sqrt{(\gamma-1)\,c_p\,T}$ et $\gamma \approx 1{,}40$, les températures et les vitesses d'éjection de ce corrigé donnent $c/c_{son} \approx 775/498 \approx 1{,}55$ pour (A) et $1140/735 \approx 1{,}55$ pour (B). Pour (C), on trouve $430/475 \approx 0{,}9$ pour le jet primaire ($563\ \mathrm{K}$), mais $363/346 \approx 1{,}05$ pour le jet secondaire ($300\ \mathrm{K}$) : dans ce modèle, celui-ci est tout juste sonique, et non franchement subsonique comme l'annonce l'énoncé. La conclusion sur le bruit n'en dépend pas.
 
 La raison supplémentaire est donc la **réduction des nuisances sonores**, décisive pour des avions de transport qui décollent et atterrissent près de zones habitées, et pour le confort des passagers.
 
@@ -697,7 +703,7 @@ La raison supplémentaire est donc la **réduction des nuisances sonores**, déc
 
 Plusieurs raisons, liées aux résultats précédents :
 
-- **Vitesse d'éjection trop faible.** La poussée vient de l'accélération de l'air : elle diminue quand la vitesse de l'avion se rapproche de la vitesse d'éjection. Avec des jets subsoniques (de l'ordre de $400\ \mathrm{m\cdot s^{-1}}$), le réacteur (C) ne permet pas le vol supersonique que l'on exige d'un avion de chasse, alors que (A), et plus encore (B), éjectent les gaz à $775$ et $1140\ \mathrm{m\cdot s^{-1}}$.
+- **Vitesse d'éjection trop faible.** La poussée vient de l'accélération de l'air : elle diminue quand la vitesse de l'avion se rapproche de la vitesse d'éjection. Avec des jets lents (de l'ordre de $400\ \mathrm{m\cdot s^{-1}}$, calculés avion à l'arrêt), la poussée du réacteur (C) s'effondre aux grandes vitesses : il ne convient pas au vol supersonique que l'on exige d'un avion de chasse, alors que (A), et plus encore (B), éjectent les gaz à $775$ et $1140\ \mathrm{m\cdot s^{-1}}$.
 - **Encombrement.** Le taux de dilution de 4 impose une soufflante de grand diamètre (figures f.6 à f.8) : la section frontale, donc la traînée à grande vitesse, et la masse sont trop importantes pour un avion compact et maniable, dont les réacteurs sont logés dans le fuselage.
 - **Besoin de sur-poussée.** Le chasseur a besoin de pointes de poussée brèves (question 12.3), que fournit la post-combustion sur un réacteur à simple flux, à gaz chauds ; l'économie de carburant, point fort de (C), n'est pas son critère principal.
 
