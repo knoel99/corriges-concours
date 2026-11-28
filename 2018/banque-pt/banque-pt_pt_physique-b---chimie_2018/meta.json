@@ -1,0 +1,100 @@
+{
+  "slug": "banque-pt_pt_physique-b---chimie_2018",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Chimie",
+    "annee": 2018
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2018/ph_b_ch_2018_pt.pdf",
+    "sujet_sha256": "434c8334e887004e696b1cbb9d7085a2dfa7ac0316d0a6fa0352ea454e5a8d78",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_phys_b_ecrit_2018.pdf",
+    "rapport_sha256": "93986601d50e90a3228ef61dee8ca37c20bb78234cc8daf7ab70edbad6405fb1"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "precision": "Sujet de 14 pages PDF lu en entier (énoncé p. 2 à 7, annexes 1 et 2 p. 8, annexe 3 papier millimétré p. 13, autres pages blanches ou barrées) ; 40 questions numérotées Q1 à Q40, toutes traitées. Rapport commun à Physique B de 3 pages, partie chimie p. 1 et 2. Lectures graphiques : annexe 1 (1,43 V, 1,56 V, pH 2,2 et 7,5), graphique de la question 21 lu à 0,05 mol/L près. Question 17 : les données du protocole (2,0 mmol d'ions iodure) ne sont pas cohérentes avec l'excès annoncé par l'énoncé ; l'écart est signalé et l'énoncé est suivi. Question 30 : réponse thermodynamique attendue, complétée par la distinction avec l'argument cinétique."
+  },
+  "figures": [
+    {
+      "fichier": "figures/diagramme-e-ph-chlore.svg",
+      "question": "1",
+      "legende": "Diagramme E-pH du chlore avec les domaines des quatre espèces, les points A et B et les pentes des frontières."
+    },
+    {
+      "fichier": "figures/maille-nacl.svg",
+      "question": "8",
+      "legende": "Maille de NaCl : ions chlorure aux sommets et aux centres des faces, ions sodium au centre du cube et aux milieux des arêtes."
+    },
+    {
+      "fichier": "figures/profil-energetique-catalyse.svg",
+      "question": "32",
+      "legende": "Profil énergétique de la réaction avec et sans catalyseur : mêmes états initial et final, énergie d'activation abaissée."
+    },
+    {
+      "fichier": "figures/cinetique-ordre-1.svg",
+      "question": "37",
+      "legende": "Logarithme de la concentration en peroxyde d'hydrogène en fonction du temps : points alignés, pente opposée à la constante de vitesse, lecture du temps de demi-réaction."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 40 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées, lectures des annexes et du graphique contrôlées sur le PDF, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
