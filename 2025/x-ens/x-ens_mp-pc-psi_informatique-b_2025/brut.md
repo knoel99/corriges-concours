@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## I · Sauts et chemins
 
 ### Question 1 · Poids d’un chemin
@@ -72,13 +74,13 @@ def sauts_bien_formes(sauts, bonus):
 
 ### Question 5 · Plus long parcours
 
-La stricte croissance lexicographique borne le nombre de cases du chemin par $N^2$, donc le nombre de sauts par $N^2-1$. La borne est atteinte avec les deux sauts $(0,1)$ et $(1,-(N-1))$ : une fois la dernière colonne atteinte, le second saut mène à la première colonne de la ligne suivante. Pour $N=1$, le chemin se réduit à sa case initiale. Un horizon $N^2$ convient également pour la recherche intégrale, car seul le but peut arrêter avec succès une branche avant l’horizon.
+La stricte croissance lexicographique borne le nombre de cases du chemin par $N^2$, donc le nombre de sauts par $N^2-1$. Comme $L$ sert ensuite d’horizon, on retient $L=N^2-1$ sauts, soit $N^2$ cases. La borne est atteinte avec les deux sauts $(0,1)$ et $(1,-(N-1))$ : une fois la dernière colonne atteinte, le second saut mène à la première colonne de la ligne suivante. Pour $N=1$, le chemin se réduit à sa case initiale. Un horizon $N^2$ convient également pour la recherche intégrale, car seul le but peut arrêter avec succès une branche avant l’horizon.
 
 ### Question 6 · Recherche exhaustive bornée
 
 En cohérence avec la partie III, un segment s’arrête lorsqu’il atteint l’arrivée ou lorsqu’il a consommé l’horizon. Une impasse avant ces deux événements échoue. La formule « au plus » autorise donc les arrivées précoces. Autoriser en plus l’arrêt volontaire sur toute case rendrait possible un préfixe avantageux qui refuse toujours de payer la case d’arrivée. Les comparaisons entre successeurs portent sur leur coût, puisque la pénalité courante est commune à tous. En cas d’égalité le premier saut dans l’ordre de présentation est conservé.
 
-L’appel sans successeur admissible utilise le marqueur interne Python `None`. On évite ainsi toute addition d’une pénalité négative à la valeur entière `INFINI`. Par induction sur l’horizon, chaque candidat explore exactement un premier saut possible suivi de sa meilleure continuation admissible. La sélection minimale est exhaustive.
+L’appel sans successeur admissible utilise le marqueur interne Python `None`. On évite ainsi toute addition d’une pénalité négative à la valeur entière `INFINI`. Par induction sur l’horizon, chaque candidat explore exactement un premier saut possible suivi de sa meilleure continuation admissible. La sélection minimale est exhaustive. La récursion est portée par la fonction interne `chercher`, qui ajoute aux paramètres de l’énoncé l’horizon restant et la liste des sauts acquis sur la branche.
 
 Soit $A$ le nombre total d’entrées de sauts disponibles, en ajoutant toutes les listes, et $H=\min(\text{horizon},N^2)$. L’arbre contient au plus $S_H=1+A+\dots+A^H$ appels. À chacun on peut tester $A$ directions et copier des listes de sauts. Chaque amélioration reconstruit une route d’au plus $H$ éléments. Une borne simple est $O((1+A)(1+H)S_H)$ dans ce code. À branchement fixé supérieur à un, la recherche est exponentielle en l’horizon dans le pire cas. La profondeur de pile ne dépasse pas $H+1$.
 
@@ -123,7 +125,7 @@ Il y a au plus $N^2(H+1)2^b$ états. Avec transitions de masque préparées et a
 
 ### Question 8 · Tracer les horizons 2 et 3
 
-Notons $d=(0,1)$, $g=(1,-1)$, $r=(1,1)$ et $v=(1,0)$, activé en $(1,2)$. En départageant les égalités dans l’ordre du sujet, pour $k=2$ les blocs sont $(d,d)$, $(g,r)$, $(d,g)$ et $(d)$. Les cases sont $(0,0),(0,1),(0,2),(1,1),(2,2),(2,3),(3,2),(3,3)$, de poids $-5$. Le chemin optimal a le poids $-7$.
+Notons $d=(0,1)$, $g=(1,-1)$, $r=(1,1)$ et $v=(1,0)$, activé en $(1,2)$. En départageant les égalités dans l’ordre du sujet, pour $k=2$ les blocs sont $(d,d)$, $(g,r)$, $(d,g)$ et $(d)$. Les cases sont $(0,0),(0,1),(0,2),(1,1),(2,2),(2,3),(3,2),(3,3)$, de poids $-5$. La seule égalité est en $(2,2)$ : le bloc $(g,d)$, par $(3,1)$, coûte autant que $(d,g)$ et donne aussi $-5$. Le chemin optimal a le poids $-7$.
 
 Pour $k=3$, les blocs sont $(d,d,g)$, $(d,v,v)$ et $(d)$. La route visite $(1,2)$, puis $(2,2),(3,2),(3,3)$ : son poids est $-7$, optimal. Pour $k=4$, les blocs commencent par $(d,d,g,r)$, puis le meilleur achèvement est $(r)$, soit le chemin de la figure (b), de poids $-6$. Passer de l’horizon 3 à 4 a donc détérioré le résultat sur la même grille.
 
@@ -173,7 +175,7 @@ def code_bonus(masque_bonus):
 
 ### Question 11 · Équation de Bellman
 
-Soit $p=(i,j)$, $t=(N-1,N-1)$ et $M$ l’ensemble reçu **avant** activation en $p$. Poser $M'=M\cup\{k\}$ si $p$ est le bonus $k$, sinon $M'=M$. Les déplacements possibles sont $D(M')=\mathcal A\cup\bigcup_{k\in M'}\mathcal B_k$. Pour tout $M$, $V(t,M)=T[t]$. Ailleurs,
+Soit $p=(i,j)$, $t=(N-1,N-1)$ et $M$ l’ensemble des bonus de code $\langle b_0\dots b_{n-1}\rangle$, reçu **avant** activation en $p$. Noter $V(p,M)$ la valeur `poids_opt[i][j][code]`. Poser $M'=M\cup\{k\}$ si $p$ est le bonus $k$, sinon $M'=M$. Avec les notations de l’énoncé, les déplacements possibles sont $D(M')=\Gamma\cup\bigcup_{k\in M'}\Delta_k$. Pour tout $M$, $V(t,M)=T[t]$. Ailleurs,
 
 $$
 V(p,M)=T[p]+\min_{d\in D(M'),\ p+d\text{ dans la grille}} V(p+d,M').
@@ -229,9 +231,9 @@ def trouver_sauts_possibles(sauts, bonus_au_rang, masque_bonus):
 
 Dans l’ordre des sept blancs du **squelette imprimé**, placer (1) `2 ** nb_bonus`, (2) `0`, (3) `trouver_sauts_possibles(sauts, bonus_au_rang, bonus_actifs)`, (4) et (5) `N-1, -1, -1`, (6) `poids_opt_dest`, (7) `(delta_i, delta_j, code_bonus_dest)`. La dernière ligne ajoute exactement une fois la pénalité de la case, y compris celle d’arrivée. Le triplet conserve le déplacement et le masque au prochain état.
 
-Il faut corriger aussi une limite du squelette. Le sujet définit `INFINI` comme un entier. Si une impasse a un coût initial `INFINI` puis reçoit une pénalité négative par addition, une case ultérieure risque de la considérer comme atteignable. L’implémentation ci-dessous initialise directement l’arrivée à sa pénalité, conserve le triplet nul pour les échecs, et n’ajoute la pénalité que si un successeur atteint vraiment le but. Elle utilise les deux fonctions auxiliaires supposées fournies dans l’énoncé.
+Les sept réponses suffisent pour la question. Le squelette a toutefois une limite. Le sujet définit `INFINI` comme un entier. Une impasse garde le coût `INFINI`, puis reçoit sa pénalité : si elle est négative, le coût passe sous `INFINI` et une case amont peut enregistrer un saut vers cette impasse. Tant que `INFINI` dépasse largement tout poids de chemin, le poids optimal et le chemin reconstruit à la question 15 restent justes ; seules les valeurs des états sans issue sont faussées. La variante ci-dessous supprime ce défaut : elle initialise directement l’arrivée à sa pénalité, conserve le triplet nul pour les échecs, et n’ajoute la pénalité que si un successeur atteint vraiment le but. Elle utilise les deux fonctions auxiliaires supposées fournies dans l’énoncé.
 
-Les masques extérieurs sont parcourus en inclusion décroissante. Un successeur avec un masque plus grand est déjà prêt ; si le masque est le même, le successeur est strictement ultérieur en ordre lexicographique et a donc été calculé plus tôt dans les boucles descendantes. Les deux tableaux contiennent $N^2 2^b$ cases chacun. Avec $A$ entrées de saut au total, le coût est $O(2^b[(1+b+A)+N^2(1+A)])$ en supposant `ajouter_bonus` en temps constant (numéro et puissance de deux accessibles). Une fonction auxiliaire qui recopierait systématiquement un masque ajouterait $O(b)$ par état. La création et le stockage des masques ajoutent $O((1+b)2^b)$ en mémoire. Les tests d’indices ci-dessous sont des comparaisons constantes ; matérialiser une liste `range(N)` à chaque arête, sous la convention de coût du sujet, surchargerait artificiellement la boucle.
+Les masques extérieurs sont parcourus en inclusion décroissante. Un successeur avec un masque plus grand est déjà prêt ; si le masque est le même, le successeur est strictement ultérieur en ordre lexicographique et a donc été calculé plus tôt dans les boucles descendantes. Les deux tableaux contiennent $N^2 2^b$ cases chacun. Avec $A$ entrées de saut au total, le coût est $O(2^b[(1+b+A)+N^2(1+A)])$ en supposant `ajouter_bonus` en temps constant (numéro et puissance de deux accessibles). Une fonction auxiliaire qui recopierait systématiquement un masque ajouterait $O(b)$ par état. La création et le stockage des masques ajoutent $O((1+b)2^b)$ en mémoire. La borne en temps vaut pour le programme ci-dessous, dont les tests d’indices sont des comparaisons constantes. Le squelette imprimé teste `i_dest in range(N)` et `j_dest in range(N)` : selon les conventions du sujet, chaque test coûte $O(N)$, donc chaque saut examiné coûte $O(N)$ et la fonction du sujet est en $O(2^b[(1+b+A)+N^2(1+AN)])$, soit $O(2^b\,N^3A)$ dès que $A\geq1$, puisque $b\leq N^2$.
 
 ```python
 def trouve_dynamique(T, sauts, bonus):

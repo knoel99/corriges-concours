@@ -38,6 +38,18 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 15 questions du jeu de Röckse, y compris les sept blancs de Q14 et la reconstruction. Vérification sur le PDF et le rapport officiels, deux figures originales. Exécution des programmes Python des deux éditions, comparaison de la recherche et de la programmation dynamique à un énumérateur indépendant, vérification des horizons gloutons et du cas des pénalités négatives près d’une impasse."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Seconde relecture des 15 questions contre le sujet et le rapport officiels, six retouches de rédaction dans les deux éditions, sans changement de code ni de résultat. Q5 : valeur de L nommée. Q6 : phrase sur la fonction interne qui porte la récursion. Q8 : égalité de la case (2,2) située pour k = 2. Q11 : récurrence reliée à poids_opt et aux notations Γ et Δ_k de l’énoncé. Q14 : les sept réponses suffisent, limite du squelette décrite sans imposer de correction, complexité du squelette imprimé distinguée de celle de la variante. Édition guidée : ajout de la présentation du sujet, d’encadrés jury, piège et méthode (remarques du jury vérifiées dans le rapport 2025) et du bilan. Programmes des deux éditions réexécutés contre un énumérateur indépendant. Les quinze indications du guidé sont converties en blocs repliables."
     }
   ],
   "couverture": {
@@ -79,5 +91,6 @@
         "7"
       ]
     }
-  }
+  },
+  "date_revision": "2026-11-28"
 }
