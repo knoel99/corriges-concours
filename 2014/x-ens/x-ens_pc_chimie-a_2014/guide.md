@@ -6,6 +6,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
 
+**Révision (tour 3)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 Épreuve de quatre heures, sans calculatrice, formée de deux problèmes indépendants : 81 questions au total, 48 de chimie générale et 33 de chimie organique.
@@ -17,7 +19,7 @@
 **Difficulté et gestion du temps.** Le sujet est long ; aucune partie n'est bloquante et il faut aborder les deux problèmes. Les questions proches du cours rapportent vite : 1.1.1 à 1.1.5, 1.1.16, 1.2.3, 1.3.1 à 1.3.4, 1.3.21, 2.1.1 à 2.1.5, 2.2.6 à 2.2.9. La sous-partie 1.3 est très guidée : chaque question prépare la suivante et l'ensemble représente beaucoup de points pour qui avance avec méthode. En chimie organique, les questions marquées d'un astérisque exigent des formules de Lewis complètes (doublets non liants, formes mésomères) ; les questions 2.2.2 à 2.2.5 et 2.3.2 à 2.3.8 demandent une lecture très attentive des schémas.
 
 > [!JURY]
-> Le rapport 2014 (moyenne 9,07 ; écart-type 3,25) insiste sur trois points : de trop nombreuses erreurs sur des questions proches du cours ; des applications numériques en progrès mais des unités souvent absentes, notamment pour la constante de Henry ; un soin inégal dans l'écriture des formules de Lewis et des formes mésomères, pris en compte dans la notation. Les meilleures copies ont abordé les deux parties, gardé une vue d'ensemble pour rester cohérentes d'une question à l'autre, et suivi avec rigueur les guides de l'énoncé.
+> Le rapport 2014 (moyenne 9,07 ; écart-type 3,25) insiste sur trois points : de trop nombreuses erreurs sur des questions proches du cours ; des applications numériques en progrès mais des unités pas toujours précisées avec rigueur, très rarement pour la constante de Henry ; un soin inégal dans l'écriture des formules de Lewis et des formes mésomères, pris en compte dans la notation. Les meilleures copies ont abordé les deux parties, gardé une vue d'ensemble pour rester cohérentes d'une question à l'autre, et suivi avec rigueur les guides de l'énoncé.
 
 Documents officiels : [sujet](https://www.ens.psl.eu/IMG/file/concours/2014/PC/14_sujet_chimieA_PC.pdf) · [rapport du jury](https://www.ens.psl.eu/IMG/file/concours/2014/PC/14_pc_rap_ecrit_chi_A.pdf).
 
@@ -298,7 +300,7 @@ Deux bandes séparées, antisymétrique et symétrique, sont la signature de mol
 *Figure 2.* Les deux bandes croissent avec la durée d'exposition : le liquide ionique est **hygroscopique** et absorbe progressivement la vapeur d'eau de l'air ; la concentration d'eau dissoute augmente avec le temps.
 
 > [!JURY]
-> Le rapport 2014 précise qu'il est incorrect de dire que l'eau est « à l'état vapeur » dans le liquide ionique : la réponse attendue est « monomères, sans liaison hydrogène entre eux ».
+> Le rapport 2014 précise qu'il est incorrect de dire que l'eau est « à l'état vapeur » dans le liquide ionique : la réponse attendue est que les molécules d'eau y sont sous forme de monomères, sans liaison hydrogène entre elles.
 
 ### Question 1.1.14 — Allure des bandes et concentrations d'eau
 
@@ -1409,7 +1411,7 @@ La forte constante diélectrique affaiblit en outre l'attraction entre cation et
 - **L'ion chlorure, peu solvaté et séparé de son cation (anion « nu »), voit son caractère nucléophile exalté**, bien au-delà de ce qu'il est en solvant protique, où des liaisons hydrogène le stabilisent.
 
 > [!JURY]
-> Selon le rapport 2014, l'exaltation de la nucléophilie de l'ion chlorure a bien été vue, mais la diminution de l'électrophilie de l'ion lithium par solvatation n'a que rarement été citée : il faut traiter les deux ions.
+> Selon le rapport 2014, l'exaltation de la nucléophilie de l'ion chlorure a bien été vue, mais la diminution de l'électrophilie de l'ion lithium par chélation n'a que rarement été citée : il faut traiter les deux ions.
 
 ### Question 2.2.14 — Mécanisme de la déméthylation
 

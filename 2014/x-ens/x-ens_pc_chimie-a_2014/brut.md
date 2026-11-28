@@ -6,6 +6,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
 
+**Révision (tour 3)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Première partie — Dissolution des gaz dans les liquides ioniques
 
 ## 1.1 Dosages dans les liquides ioniques
