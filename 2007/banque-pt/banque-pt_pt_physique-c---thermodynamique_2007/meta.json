@@ -18,7 +18,7 @@
   "couverture": {
     "statut": "complet",
     "questions_entierement_traitees": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
-    "precision": "Fascicule de 12 pages PDF lues en image ; partie thermodynamique sur la garde 1/12 et les pages 7/12 à 12/12. 12 questions numérotées de 1 à 12, en six parties, toutes traitées. Rapport commun à Physique C de 4 pages PDF, partie physique lue sur les pages PDF 2 et 3. Aucune valeur n'est lue sur une figure : le diagramme de Watt du sujet n'est pas gradué. Applications numériques refaites par calcul avec les valeurs imposées par l'énoncé (Ma = 4,1 g, Mt = 4,4 g, Mc = 0,28 g) et contrôlées par l'équation d'état (états 2 et 5), par la seconde forme du travail isobare et par le rapport des puissances. Points signalés dans le texte : aux questions 4 à 6, la masse des états 3, 4 et 5 est Mt + Mc, comme l'indique le rapport, et l'échauffement 2-3 est écrit (Mt + Mc) cv (T3 - T2) = Q2-3, lecture de l'hypothèse de l'énoncé retenue par le corrigé ; l'arrondi Mt = 4,4 g imposé par l'énoncé (valeur calculée 4,39 g) laisse un écart de 0,3 % entre les deux façons d'obtenir P3 ; à la question 12, le débit volumique est évalué pour l'air ambiant à 293 K sous 1 bar, hypothèse du corrigé ; ordres de grandeur réels (rendement, température de combustion) ajoutés par le corrigé."
+    "precision": "Fascicule de 12 pages PDF lues en image ; partie thermodynamique sur la garde 1/12 et les pages 7/12 à 12/12. 12 questions numérotées de 1 à 12, en six parties, toutes traitées. Rapport commun à Physique C de 4 pages PDF, partie physique lue sur les pages PDF 2 et 3. Aucune valeur n'est lue sur une figure : le diagramme de Watt du sujet n'est pas gradué. Applications numériques refaites par calcul avec les valeurs imposées par l'énoncé (Ma = 4,1 g, Mt = 4,4 g, Mc = 0,28 g) et contrôlées par l'équation d'état (états 2 et 5), par la seconde forme du travail isobare et par le rapport des puissances. Points signalés dans le texte : aux questions 4 à 6, la masse des états 3, 4 et 5 est Mt + Mc, comme l'indique le rapport, et l'échauffement 2-3 est écrit (Mt + Mc) cv (T3 - T2) = Q2-3, lecture de l'hypothèse générale de l'énoncé retenue par le corrigé, que ni l'énoncé ni le rapport ne permettent de confirmer par une valeur ; la variante à masse variable (Mt + Mc) cv T3 - Mt cv T2 = Q2-3 (T3 = 1851 K, rendement 0,61, 177 kW) est donnée en remarque à la question 4 ; l'arrondi Mt = 4,4 g imposé par l'énoncé (valeur calculée 4,39 g) laisse un écart de 0,3 % entre les deux façons d'obtenir P3 ; à la question 12, le débit volumique est évalué pour l'air ambiant à 293 K sous 1 bar, hypothèse du corrigé ; ordres de grandeur réels (rendement, température de combustion) ajoutés par le corrigé."
   },
   "figures": [
     {
@@ -40,6 +40,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions (12 questions) à partir du fascicule lu en image et du rapport du jury ; applications numériques refaites par calcul, une figure tracée à partir des valeurs calculées, encadrés du jury relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application d'une relecture indépendante, chaque défaut revérifié contre le sujet (pages 8/12 et 10/12) et le rapport (pages 22 et 23) lus en image, dans le brut et le guidé. Question 4 : remarque sur le choix du modèle complétée par la variante à masse variable (Mt + Mc) cv T3 - Mt cv T2 = Q2-3, valeurs recalculées (T3 = 1851 K, P3 = 163 bar, T4 = 3509 K, V4 = 0,292 L, P5 = 10,3 bar, T5 = 1641 K, Wu = 7,06 kJ, rendement 0,61, 177 kW), phrase sur l'enthalpie du carburant négligée corrigée, écart de 0,3 % sur P3 dû à l'arrondi de Mt ajouté ; résultats principaux inchangés. Question 1 : interprétation des 0,3 g de gaz résiduels formulée avec réserve. Question 9 : rendement réel présenté comme ordre de grandeur extérieur à l'énoncé et au rapport. Guidé : onze encadrés du jury contrôlés contre le rapport, ceux des questions 4, 6 et 10 ramenés à ce que dit le rapport."
     }
   ]
 }

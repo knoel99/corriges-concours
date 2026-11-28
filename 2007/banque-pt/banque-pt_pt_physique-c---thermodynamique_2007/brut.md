@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Partie thermodynamique de l'épreuve de Physique C (4 heures pour les deux problèmes, chimie et thermodynamique, à barèmes identiques ; calculatrice autorisée) : étude d'un moteur Diesel quatre temps suralimenté par turbocompresseur, fonctionnant suivant le cycle mixte de Sabathé, en 12 questions numérotées de 1 à 12 et réparties en six parties. Les 12 questions sont traitées. Données de l'énoncé : $c_v = 760\ \mathrm{J\cdot kg^{-1}\cdot K^{-1}}$, $\gamma = 1{,}38$, $C_y = 2\ \mathrm{L}$, $\delta = 14$, $P_{ci} = 41\,500\ \mathrm{kJ\cdot kg^{-1}}$, $P_1 = 2{,}00\ \mathrm{bar}$, $T_1 = 340\ \mathrm{K}$, puis $M_a = 4{,}1\ \mathrm{g}$, $M_t = 4{,}4\ \mathrm{g}$ et $M_c = 0{,}28\ \mathrm{g}$ imposées à partir de la question 2. Le diagramme de Watt du sujet n'est pas gradué : aucune valeur n'y est lue. Conventions : les travaux $W$ et les chaleurs $Q$ sont comptés positivement quand ils sont reçus par le gaz ; les majuscules désignent des grandeurs relatives à la masse contenue dans le cylindre (en joules), les minuscules des grandeurs massiques (en $\mathrm{J\cdot kg^{-1}}$). On note $r = c_p - c_v$ la constante massique du gaz et $c_p = \gamma c_v$ sa capacité thermique massique à pression constante.
 
 [Sujet officiel (fascicule réunissant les deux parties de Physique C)](https://www.banquept.fr/documents/2007/phys_c_2007.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_phys_c_ecrit_2007.pdf)
@@ -36,7 +38,7 @@ $$M_t = \frac{2{,}00\times 10^{5}\times 2{,}154\times 10^{-3}}{288{,}8\times 340
 
 $$\boxed{M_t \approx 4{,}4\ \mathrm{g}}$$
 
-**Contrôle.** $M_t$ est supérieure à la masse d'air frais $M_a = 4{,}1\ \mathrm{g}$ donnée plus loin : l'écart, environ $0{,}3\ \mathrm{g}$, correspond aux gaz brûlés restés dans le volume mort $V_2$ à la fin du refoulement, qui se mélangent à l'air admis.
+**Contrôle.** $M_t$ est supérieure à la masse d'air frais $M_a = 4{,}1\ \mathrm{g}$ donnée plus loin : l'écart, environ $0{,}3\ \mathrm{g}$, s'interprète comme la masse de gaz brûlés restés dans le volume mort $V_2$ à la fin du refoulement, qui se mélangent à l'air admis ; l'énoncé ne le précise pas et ses valeurs arrondies ne permettent pas de le vérifier.
 
 ### Question 2 — Combustion stœchiométrique, pouvoir comburivore, chaleur dégagée
 
@@ -104,7 +106,7 @@ $$\boxed{Q_{2\text{-}3} \approx 3{,}49\ \mathrm{kJ} \qquad Q_{3\text{-}4} \appro
 
 $$M = M_t + M_c = 4{,}4 + 0{,}28 = 4{,}68\ \mathrm{g}$$
 
-Suivant l'hypothèse de l'énoncé, ce gaz de masse $M$, de mêmes $c_v$ et $\gamma$, s'échauffe comme s'il recevait $Q_{2\text{-}3}$ à volume constant, puis $Q_{3\text{-}4}$ à pression constante, l'enthalpie apportée par le carburant étant négligée.
+Suivant l'hypothèse générale de l'énoncé, ce gaz de masse $M$, de mêmes $c_v$ et $\gamma$, s'échauffe comme s'il recevait, sans réaction chimique, $Q_{2\text{-}3}$ à volume constant, puis $Q_{3\text{-}4}$ à pression constante : le carburant est compté dans la masse échauffée, à partir de la température $T_2$.
 
 **Évolution 2-3 (isochore).** Le volume ne varie pas, donc $W_{2\text{-}3} = 0$, et le premier principe appliqué au système fermé donne $\Delta U = Q_{2\text{-}3}$. Pour un gaz parfait, $\Delta U = M c_v\,(T_3 - T_2)$ :
 
@@ -120,7 +122,7 @@ $$P_3 = \frac{4{,}68\times 10^{-3}\times 288{,}8\times 1907}{0{,}1538\times 10^{
 
 $$\boxed{T_3 \approx 1907\ \mathrm{K} \qquad P_3 \approx 168\ \mathrm{bar}}$$
 
-La pression est multipliée par 2,2 entre 2 et 3, sous l'effet de l'échauffement (facteur $T_3/T_2 = 2{,}06$) et de l'augmentation de masse (facteur $M/M_t = 1{,}06$).
+La pression est multipliée par 2,2 entre 2 et 3, sous l'effet de l'échauffement (facteur $T_3/T_2 = 2{,}06$) et de l'augmentation de masse (facteur $M/M_t = 1{,}06$). Le produit $P_2\,(T_3/T_2)\,(M_t + M_c)/M_t$ donne 167,0 bar au lieu de 167,5 bar : cet écart de 0,3 % vient de l'arrondi $M_t = 4{,}4\ \mathrm{g}$ imposé par l'énoncé, la valeur calculée à la question 1 étant 4,39 g.
 
 **Évolution 3-4 (isobare).** À pression constante, le premier principe pour le système fermé s'écrit $\Delta H = Q_{3\text{-}4}$, avec $\Delta H = M c_p\,(T_4 - T_3)$ pour un gaz parfait, et $c_p = \gamma c_v = 1049\ \mathrm{J\cdot kg^{-1}\cdot K^{-1}}$ :
 
@@ -138,7 +140,7 @@ $$\boxed{T_4 \approx 3564\ \mathrm{K} \qquad P_4 = P_3 \approx 168\ \mathrm{bar}
 
 **Commentaire.** La température $T_4$ dépasse de loin ce que supporte un moteur réel : le modèle ignore les pertes thermiques aux parois, la dissociation des produits et la variation des capacités thermiques avec la température. Le rapport $V_4/V_2 = 1{,}87$ montre que la combustion isobare se termine tôt dans la course de détente.
 
-**Remarque sur le choix du modèle.** L'énoncé prête au gaz du cylindre, de masse $M_t + M_c$, l'échauffement qu'il aurait en recevant la chaleur de combustion sans réaction chimique ; c'est la lecture retenue ici. Une copie qui garderait la masse $M_t$ dans ce bilan trouverait $T_3 = 1969\ \mathrm{K}$ : l'écart vient uniquement de la masse associée aux états 3 et 4.
+**Remarque sur le choix du modèle.** L'énoncé prête au gaz du cylindre, de masse $M_t + M_c$, l'échauffement qu'il aurait en recevant la chaleur de combustion sans réaction chimique ; c'est la lecture retenue ici, et ni l'énoncé ni le rapport du jury ne donnent de valeur qui permette de la confirmer. Une autre lecture s'appuie sur l'hypothèse « on négligera l'enthalpie massique du carburant injecté » : le bilan d'énergie interne entre 2 et 3 s'écrit alors avec la masse qui varie, $(M_t + M_c)\,c_v\,T_3 - M_t\,c_v\,T_2 = Q_{2\text{-}3}$, ce qui donne $T_3 = 1851\ \mathrm{K}$, $P_3 = 163\ \mathrm{bar}$, $T_4 = 3509\ \mathrm{K}$, $V_4 = 0{,}292\ \mathrm{L}$, puis $P_5 = 10{,}3\ \mathrm{bar}$, $T_5 = 1641\ \mathrm{K}$, $W_u = 7{,}06\ \mathrm{kJ}$, $\eta_{th} = 0{,}61$ et une puissance de 177 kW. Les deux lectures associent bien la masse $M_t + M_c$ aux états 3, 4 et 5 ; elles diffèrent de 3 % sur $T_3$ et de 2 % sur le travail utile. En revanche, garder la masse $M_t$ dans le bilan ($T_3 = 1969\ \mathrm{K}$) revient à ne pas associer la masse $M_t + M_c$ à l'état 3, contrairement à ce que demande le rapport.
 
 ### Question 5 — État 5 en fin de détente
 
@@ -290,7 +292,7 @@ $$\eta_{th} = \frac{7198}{11\,620} = 0{,}62$$
 
 $$\boxed{\eta_{th} \approx 0{,}62}$$
 
-**Commentaire.** Cette valeur, comprise entre 0 et 1, est élevée : elle est celle d'un cycle idéal (évolutions réversibles, aucune perte thermique aux parois ni frottement, combustion complète). Un moteur Diesel suralimenté réel atteint plutôt 0,40 à 0,45.
+**Commentaire.** Cette valeur, comprise entre 0 et 1, est élevée : elle est celle d'un cycle idéal (évolutions réversibles, aucune perte thermique aux parois ni frottement, combustion complète). À titre d'ordre de grandeur, qui ne figure ni dans l'énoncé ni dans le rapport, le rendement effectif d'un moteur Diesel suralimenté d'automobile est de l'ordre de 0,40 à 0,45.
 
 ## Cinquième partie — Bilan global
 
