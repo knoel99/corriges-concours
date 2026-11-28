@@ -1,0 +1,140 @@
+{
+  "slug": "x-ens_pc_chimie_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie",
+    "annee": 2013
+  },
+  "questions": 70,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2013/PC/13_pc_chi_xeulc.pdf",
+    "sujet_sha256": "6ac5478fa7a5c58b0095877ced46fe7dd8336027ab892dd6db5f916ca18718a3",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2013/PC/13_pc_rap_echi.pdf",
+    "rapport_sha256": "c95602909e09afd1332c92efa08793bcd4711d84987c2386b42e330d5518df5b"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70"
+    ],
+    "precision": "Sujet de 16 pages lu en entier (figures, tableaux et données comprises) et rapport du jury de 8 pages. Les 70 questions numérotées sont traitées, la question 19 avec ses six items (a) à (f). Les questions 24, 27 et 28 reposent sur des modèles géométriques dont les hypothèses sont explicitées ; les valeurs lues sur les figures 1, 2, 3 et 12 du sujet sont des lectures graphiques."
+  },
+  "figures": [
+    {
+      "fichier": "figures/cycle-thermodynamique-acidite.svg",
+      "question": "9",
+      "legende": "Cycle thermodynamique reliant la dissociation de HA en solution aqueuse aux grandeurs de la phase gazeuse"
+    },
+    {
+      "fichier": "figures/argon-en-zigzag-dans-le-canal.svg",
+      "question": "26",
+      "legende": "Trois atomes d’argon en zigzag dans un canal de 540 pm de diamètre ; chaque atome touche la paroi et ses deux voisins"
+    },
+    {
+      "fichier": "figures/intermediaires-de-la-synthese.svg",
+      "question": "36",
+      "legende": "Structures proposées pour l’époxyde 3, l’alcool 5, la cétone méthylée 7, l’acétal 9, l’aldéhyde A, la dicétone 11 et le cétol tricyclique 12"
+    },
+    {
+      "fichier": "figures/montage-synthese-magnesienne.svg",
+      "question": "48",
+      "legende": "Montage de la synthèse magnésienne : ballon tricol, réfrigérant à eau surmonté d’une garde desséchante, ampoule de coulée isobare"
+    },
+    {
+      "fichier": "figures/profil-reactionnel-e1cb.svg",
+      "question": "61",
+      "legende": "Profil énergétique de l’élimination E1cB : énolate intermédiaire entre deux états de transition, première étape cinétiquement déterminante"
+    },
+    {
+      "fichier": "figures/orbitales-frontieres-diels-alder.svg",
+      "question": "64",
+      "legende": "Niveaux des orbitales frontières des modèles 15 et 16 ; l’interaction la plus proche en énergie associe la BV du diène à la HO du diénophile"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions pour les 70 questions à partir du sujet et du rapport du jury ; applications numériques refaites par calcul, géométrie du remplissage des canaux et largeurs des xylènes vérifiées numériquement ; six figures originales."
+    }
+  ]
+}
