@@ -1,0 +1,139 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-a_2014",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles A",
+    "annee": 2014
+  },
+  "questions": 54,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2014/si_a_2014_pt.pdf",
+    "sujet_sha256": "cb5c2f173cc2ad5a6fcf0375b3769d0fc30a6b664858c2af8cab3e048944ba3e",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_si_a_ecrit_2014.pdf",
+    "rapport_sha256": "e6e1684dcdec207b61a830d4883c74287811e7b8ad34eba6f953764d57e755ac"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54"
+    ],
+    "precision": "Les 54 pages du PDF ont été lues en image : énoncé (19 pages), 8 annexes et cahier réponse de 24 pages ; le rapport du jury (3 pages) a été lu. Le sujet pose 54 questions, toutes traitées. Les cadres à compléter (questions 1 à 3) sont donnés en tableaux ; les schémas blocs (questions 31, 35, 40, 41) et les tracés (questions 6, 14, 16, 44, 45, 48, 50 à 53) sont redessinés dans neuf figures originales, sans reprise des fonds de l'énoncé. Les valeurs des questions 32, 33, 34, 44, 48, 50, 52 et 54 reposent sur des lectures de courbes ; celle de la question 33 (27 Hz, soit 6 ms) est sensible à la lecture de la figure 11. La question 7 est une question ouverte, traitée par un choix argumenté."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q6-sollicitations-bras-oscillant.svg",
+      "question": "6",
+      "legende": "Bras oscillant isolé : efforts dans le plan de symétrie et déport latéral de la charge de la roue"
+    },
+    {
+      "fichier": "figures/q14-q16-figures-de-changement-de-base.svg",
+      "question": "14",
+      "legende": "Figures planes de changement de base pour les angles θ, α et β"
+    },
+    {
+      "fichier": "figures/q31-schema-bloc-du-train.svg",
+      "question": "31",
+      "legende": "Schéma bloc complété du comportement du train principal"
+    },
+    {
+      "fichier": "figures/q35-schema-bloc-amortisseur-pilote.svg",
+      "question": "35",
+      "legende": "Schéma bloc complété de l'amortisseur piloté"
+    },
+    {
+      "fichier": "figures/q40-q41-schemas-blocs-commande.svg",
+      "question": "40",
+      "legende": "Schémas blocs de la commande semi-active : schéma complété de la question 40 et forme simplifiée de la question 41"
+    },
+    {
+      "fichier": "figures/q44-identification-du-modele-simplifie.svg",
+      "question": "44",
+      "legende": "Constructions à reporter sur la réponse indicielle : premier dépassement et pseudo-période (courbe recalculée avec le modèle identifié)"
+    },
+    {
+      "fichier": "figures/q45-consigne-de-vitesse.svg",
+      "question": "45",
+      "legende": "Consigne de vitesse : rampe de pente égale à la décélération admissible, puis palier à la vitesse d'impact"
+    },
+    {
+      "fichier": "figures/q48-bode-hf-et-hbonc.svg",
+      "question": "48",
+      "legende": "Diagrammes de Bode de la boucle interne et de la boucle ouverte non corrigée, avec asymptotes et repères de lecture"
+    },
+    {
+      "fichier": "figures/q50-q53-bode-boucle-ouverte-corrigee.svg",
+      "question": "50",
+      "legende": "Boucle ouverte corrigée : double intégration seule puis avec avance de phase, marges de stabilité repérées"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Résolution des 54 questions et rédaction des deux éditions après lecture en image du sujet, des annexes, du cahier réponse et du rapport du jury ; applications numériques et marges de stabilité recalculées, neuf figures originales."
+    }
+  ]
+}
