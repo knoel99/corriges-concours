@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Les dérivés halogénés, des dihalogènes à l'eau de Javel. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 36 questions réparties en quatre parties indépendantes, avec une feuille annexe à compléter et à rendre.
@@ -669,7 +671,7 @@ La solution contient les espèces électroactives $\mathrm{I^-}$ (réducteur, $1
 
 - Branche anodique ($i > 0$), au-delà de 0,48 V : **oxydation** $3\,\mathrm{I^-} \to \mathrm{I_3^-} + 2\,e^-$. L'oxydation de l'eau en dioxygène ($E^\circ = 1{,}23\ \mathrm V$) se produirait bien plus à droite, hors du domaine tracé.
 - Branche cathodique ($i < 0$), entre 0,48 V et 0 V environ : **réduction** $\mathrm{I_3^-} + 2\,e^- \to 3\,\mathrm{I^-}$, avec un palier à $i \approx -20\ \mathrm{\mu A}$ (valeur lue sur la courbe).
-- En dessous de 0 V : **réduction** $2\,\mathrm{H^+} + 2\,e^- \to \mathrm{H_{2(g)}}$, qui s'ajoute à celle des ions triiodure (mur du solvant).
+- En dessous de 0 V : **réduction** $2\,\mathrm{H^+} + 2\,e^- \to \mathrm{H_{2(g)}}$, qui s'ajoute à celle des ions triiodure (mur du solvant). Le seuil est cohérent avec $E^\circ(\mathrm{H^+/H_2}) = 0\ \mathrm V$ en solution acidifiée, le couple étant rapide sur le platine.
 
 ![Figure 3 — Courbe intensité-potentiel sur platine avec les demi-réactions dans le sens où elles se produisent](figures/courbe-i-e-triiodure.svg)
 
@@ -745,7 +747,7 @@ Le couple étant rapide, la courbe est presque verticale en ce point, et les deu
 
 $$\boxed{\Delta E_{V=0} = E_a - E_c \approx 0\ \mathrm V\quad\text{(quelques millivolts)}}$$
 
-![Figure 4 — Annexe complétée : points de fonctionnement de l'anode et de la cathode sur les trois courbes pour un courant imposé de 1 microampère](figures/annexe-courbes-i-e-dosage.svg)
+![Figure 4 — Courbes de l'annexe redessinées d'après le sujet, avec les points de fonctionnement de l'anode et de la cathode pour un courant imposé de 1 microampère](figures/annexe-courbes-i-e-dosage.svg)
 
 > [!METHODE]
 > Potentiométrie à courant imposé avec deux électrodes identiques : sur la courbe intensité-potentiel de la solution, tracer les horizontales d'ordonnées opposées correspondant au courant imposé ; leurs intersections avec la courbe donnent les potentiels de l'anode et de la cathode, et leur écart est la tension mesurée.
@@ -767,13 +769,13 @@ $$\boxed{\Delta E_{V \le V_{\mathrm{éq}}} \approx 0\ \mathrm V}$$
 **Après l'équivalence** (courbe en trait plein). Il n'y a plus d'ions triiodure : la vague de réduction a disparu, et le courant reste nul entre 0 V et 0,44 V environ.
 
 - Anode : toujours $3\,\mathrm{I^-} \to \mathrm{I_3^-} + 2\,e^-$ ; l'ordonnée $+1\ \mathrm{\mu A}$ est atteinte pour $E_a \approx 0{,}45\ \mathrm V$ (lecture de l'annexe).
-- Cathode : faute d'ions triiodure, c'est le solvant acide qui est réduit, $2\,\mathrm{H^+} + 2\,e^- \to \mathrm{H_{2(g)}}$ ; l'ordonnée $-1\ \mathrm{\mu A}$ est atteinte pour $E_c \approx -0{,}01\ \mathrm V$ (lecture de l'annexe).
+- Cathode : faute d'ions triiodure, c'est le solvant acide qui est réduit, $2\,\mathrm{H^+} + 2\,e^- \to \mathrm{H_{2(g)}}$ ; l'ordonnée $-1\ \mathrm{\mu A}$ est atteinte pour $E_c \approx -0{,}02\ \mathrm V$ (lecture de l'annexe).
 
-$$\boxed{\Delta E_{V \ge V_{\mathrm{éq}}} \approx 0{,}45 - (-0{,}01) \approx 0{,}46\ \mathrm V\quad\text{soit environ } 0{,}5\ \mathrm V}$$
+$$\boxed{\Delta E_{V \ge V_{\mathrm{éq}}} \approx 0{,}45 - (-0{,}02) \approx 0{,}47\ \mathrm V\quad\text{soit environ } 0{,}5\ \mathrm V}$$
 
-**Allure de la courbe.** $\Delta E$ reste voisine de zéro tant qu'il y a des ions triiodure, puis augmente brutalement jusqu'à environ 0,46 V et garde ensuite cette valeur : l'équivalence est repérée par ce saut. Le saut se produit quand le courant limite de diffusion des ions triiodure devient inférieur au courant imposé, c'est-à-dire un peu avant l'équivalence ; il en est d'autant plus proche que le courant imposé est faible, d'où le choix d'un courant très faible.
+**Allure de la courbe.** $\Delta E$ reste voisine de zéro tant que le palier de diffusion des ions triiodure dépasse le courant imposé, puis augmente brutalement jusqu'à environ 0,47 V et garde ensuite cette valeur : l'équivalence est repérée par ce saut. Le saut se produit quand le courant limite de diffusion des ions triiodure, proportionnel à leur concentration, devient inférieur au courant imposé, c'est-à-dire avant l'équivalence : à $V = V_{\mathrm{éq}}$ exactement, $\Delta E$ a déjà sa valeur haute. Avec les allures de l'annexe (palier de $10\ \mathrm{\mu A}$ en valeur absolue à $V = 0$, de $5\ \mathrm{\mu A}$ à la demi-équivalence, pour un courant imposé de $1\ \mathrm{\mu A}$), ce serait lorsqu'il ne reste qu'un dixième des ions triiodure, soit vers $0{,}9\,V_{\mathrm{éq}}$ ; l'écart à l'équivalence est proportionnel au courant imposé, d'où le choix d'un courant très faible devant le courant limite initial. L'énoncé assimile le saut à l'équivalence ($V_{\mathrm{éq}} = 10{,}0\ \mathrm{mL}$), et la figure 5 le place juste avant.
 
-![Figure 5 — Allure de la différence de potentiel entre les deux électrodes en fonction du volume de thiosulfate versé](figures/delta-e-volume.svg)
+![Figure 5 — Allure de la différence de potentiel entre les deux électrodes en fonction du volume de thiosulfate versé ; le saut est placé juste avant l'équivalence](figures/delta-e-volume.svg)
 
 > [!JURY]
 > Le rapport indique que, du fait des difficultés rencontrées en électrochimie, le dosage des ions cuivre (II) par iodométrie a rarement été exploité.
@@ -823,8 +825,8 @@ soit $m_{\mathrm{Cu}} \approx 3{,}18\ \mathrm g$ de cuivre dans $15{,}9\ \mathrm
 - *Thermodynamique* : variance par dénombrement, en comptant les relations dues aux conditions initiales ; loi de Hess ; relation de Van't Hoff intégrée à enthalpie de réaction constante ; réacteur adiabatique isobare, variation d'enthalpie nulle sur un chemin fictif ; déplacement d'équilibre par comparaison du quotient de réaction à la constante.
 - *Courbes intensité-potentiel* : trois électrodes (travail, contre-électrode, référence) ; couple rapide, pas de surtension ; palier de diffusion proportionnel à la concentration ; potentiel à courant nul donné par Nernst ; à courant imposé, deux points d'ordonnées opposées sur la même courbe.
 
-**Résultats numériques.** $C_{\text{com}} = 0{,}80\ \mathrm{mol\cdot L^{-1}}$ ; $\alpha = 1$, $k_{app}^{(1)} = 2{,}20\cdot 10^{-3}\ \mathrm{s^{-1}}$ ; $\beta = 1$, $k = 2{,}75\cdot 10^{-2}\ \mathrm{L\cdot mol^{-1}\cdot s^{-1}}$ ; variance 2 ; $\Delta_r H^\circ = -116\ \mathrm{kJ\cdot mol^{-1}}$ ; $K^\circ(T_f) = 9/16$ ; $T_i = 5{,}0\cdot 10^{2}\ \mathrm K$ ; $E_{i=0} = 0{,}48\ \mathrm V$ ; $\Delta E \approx 0$ avant l'équivalence et environ $0{,}46\ \mathrm V$ après ; $w = 20{,}0\ \%$.
+**Résultats numériques.** $C_{\text{com}} = 0{,}80\ \mathrm{mol\cdot L^{-1}}$ ; $\alpha = 1$, $k_{app}^{(1)} = 2{,}20\cdot 10^{-3}\ \mathrm{s^{-1}}$ ; $\beta = 1$, $k = 2{,}75\cdot 10^{-2}\ \mathrm{L\cdot mol^{-1}\cdot s^{-1}}$ ; variance 2 ; $\Delta_r H^\circ = -116\ \mathrm{kJ\cdot mol^{-1}}$ ; $K^\circ(T_f) = 9/16$ ; $T_i = 5{,}0\cdot 10^{2}\ \mathrm K$ ; $E_{i=0} = 0{,}48\ \mathrm V$ ; $\Delta E \approx 0$ avant l'équivalence et environ $0{,}47\ \mathrm V$ après ; $w = 20{,}0\ \%$.
 
-**Erreurs les plus coûteuses d'après le jury.** Donner la configuration du brome au lieu de celle de l'iode ; confondre vitesse de réaction et pouvoir oxydant dans le protocole ; exploiter le volume équivalent sans bilan de quantité de matière ; ne pas savoir résoudre les équations différentielles de la cinétique ; oublier des relations dans le calcul de variance ; mal intégrer la relation de Van't Hoff ; ne pas connaître le montage à trois électrodes ; confondre couple rapide et couple lent, diffusion et surtension ; omettre les unités.
+**Erreurs relevées par le jury.** Donner la configuration du brome au lieu de celle de l'iode ; confondre vitesse de réaction et pouvoir oxydant dans le protocole ; exploiter le volume équivalent sans bilan de quantité de matière ; ne pas savoir résoudre les équations différentielles de la cinétique ; oublier des relations dans le calcul de variance ; mal intégrer la relation de Van't Hoff ; ne pas connaître le montage à trois électrodes ; confondre couple rapide et couple lent, diffusion et surtension ; omettre les unités.
 
 **Pour s'entraîner.** Refaire sans aide les questions 3, 8, 14 et 22, puis l'enchaînement 29 à 36 en reproduisant les constructions sur l'annexe.

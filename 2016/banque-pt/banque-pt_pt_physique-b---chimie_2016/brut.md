@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, autour des dérivés halogénés : 36 questions en quatre parties indépendantes, une feuille annexe à rendre (courbes intensité-potentiel du dosage). Les 36 questions sont traitées. Les valeurs lues sur les graphiques et sur l'annexe sont signalées à l'endroit où elles servent.
 
 [Sujet officiel](https://www.banquept.fr/documents/2016/ph_b_ch_2016_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_phys_b_ecrit_2016.pdf)
@@ -370,7 +372,7 @@ La solution contient les espèces électroactives $\mathrm{I^-}$ (réducteur, $1
 
 - Branche anodique ($i > 0$), au-delà de 0,48 V : **oxydation** $3\,\mathrm{I^-} \to \mathrm{I_3^-} + 2\,e^-$. L'oxydation de l'eau en dioxygène ($E^\circ = 1{,}23\ \mathrm V$) se produirait bien plus à droite, hors du domaine tracé.
 - Branche cathodique ($i < 0$), entre 0,48 V et 0 V environ : **réduction** $\mathrm{I_3^-} + 2\,e^- \to 3\,\mathrm{I^-}$, avec un palier à $i \approx -20\ \mathrm{\mu A}$ (valeur lue sur la courbe).
-- En dessous de 0 V : **réduction** $2\,\mathrm{H^+} + 2\,e^- \to \mathrm{H_{2(g)}}$, qui s'ajoute à celle des ions triiodure (mur du solvant).
+- En dessous de 0 V : **réduction** $2\,\mathrm{H^+} + 2\,e^- \to \mathrm{H_{2(g)}}$, qui s'ajoute à celle des ions triiodure (mur du solvant). Le seuil est cohérent avec $E^\circ(\mathrm{H^+/H_2}) = 0\ \mathrm V$ en solution acidifiée, le couple étant rapide sur le platine.
 
 ![Figure 3 — Courbe intensité-potentiel sur platine avec les demi-réactions dans le sens où elles se produisent](figures/courbe-i-e-triiodure.svg)
 
@@ -411,7 +413,7 @@ Le couple étant rapide, la courbe est presque verticale en ce point, et les deu
 
 $$\boxed{\Delta E_{V=0} = E_a - E_c \approx 0\ \mathrm V\quad\text{(quelques millivolts)}}$$
 
-![Figure 4 — Annexe complétée : points de fonctionnement de l'anode et de la cathode sur les trois courbes pour un courant imposé de 1 microampère](figures/annexe-courbes-i-e-dosage.svg)
+![Figure 4 — Courbes de l'annexe redessinées d'après le sujet, avec les points de fonctionnement de l'anode et de la cathode pour un courant imposé de 1 microampère](figures/annexe-courbes-i-e-dosage.svg)
 
 ### Question 35 — Évolution de ΔE et allure de la courbe
 
@@ -422,13 +424,13 @@ $$\boxed{\Delta E_{V \le V_{\mathrm{éq}}} \approx 0\ \mathrm V}$$
 **Après l'équivalence** (courbe en trait plein). Il n'y a plus d'ions triiodure : la vague de réduction a disparu, et le courant reste nul entre 0 V et 0,44 V environ.
 
 - Anode : toujours $3\,\mathrm{I^-} \to \mathrm{I_3^-} + 2\,e^-$ ; l'ordonnée $+1\ \mathrm{\mu A}$ est atteinte pour $E_a \approx 0{,}45\ \mathrm V$ (lecture de l'annexe).
-- Cathode : faute d'ions triiodure, c'est le solvant acide qui est réduit, $2\,\mathrm{H^+} + 2\,e^- \to \mathrm{H_{2(g)}}$ ; l'ordonnée $-1\ \mathrm{\mu A}$ est atteinte pour $E_c \approx -0{,}01\ \mathrm V$ (lecture de l'annexe).
+- Cathode : faute d'ions triiodure, c'est le solvant acide qui est réduit, $2\,\mathrm{H^+} + 2\,e^- \to \mathrm{H_{2(g)}}$ ; l'ordonnée $-1\ \mathrm{\mu A}$ est atteinte pour $E_c \approx -0{,}02\ \mathrm V$ (lecture de l'annexe).
 
-$$\boxed{\Delta E_{V \ge V_{\mathrm{éq}}} \approx 0{,}45 - (-0{,}01) \approx 0{,}46\ \mathrm V\quad\text{soit environ } 0{,}5\ \mathrm V}$$
+$$\boxed{\Delta E_{V \ge V_{\mathrm{éq}}} \approx 0{,}45 - (-0{,}02) \approx 0{,}47\ \mathrm V\quad\text{soit environ } 0{,}5\ \mathrm V}$$
 
-**Allure de la courbe.** $\Delta E$ reste voisine de zéro tant qu'il y a des ions triiodure, puis augmente brutalement jusqu'à environ 0,46 V et garde ensuite cette valeur : l'équivalence est repérée par ce saut. Le saut se produit quand le courant limite de diffusion des ions triiodure devient inférieur au courant imposé, c'est-à-dire un peu avant l'équivalence ; il en est d'autant plus proche que le courant imposé est faible, d'où le choix d'un courant très faible.
+**Allure de la courbe.** $\Delta E$ reste voisine de zéro tant que le palier de diffusion des ions triiodure dépasse le courant imposé, puis augmente brutalement jusqu'à environ 0,47 V et garde ensuite cette valeur : l'équivalence est repérée par ce saut. Le saut se produit quand le courant limite de diffusion des ions triiodure, proportionnel à leur concentration, devient inférieur au courant imposé, c'est-à-dire avant l'équivalence : à $V = V_{\mathrm{éq}}$ exactement, $\Delta E$ a déjà sa valeur haute. Avec les allures de l'annexe (palier de $10\ \mathrm{\mu A}$ en valeur absolue à $V = 0$, de $5\ \mathrm{\mu A}$ à la demi-équivalence, pour un courant imposé de $1\ \mathrm{\mu A}$), ce serait lorsqu'il ne reste qu'un dixième des ions triiodure, soit vers $0{,}9\,V_{\mathrm{éq}}$ ; l'écart à l'équivalence est proportionnel au courant imposé, d'où le choix d'un courant très faible devant le courant limite initial. L'énoncé assimile le saut à l'équivalence ($V_{\mathrm{éq}} = 10{,}0\ \mathrm{mL}$), et la figure 5 le place juste avant.
 
-![Figure 5 — Allure de la différence de potentiel entre les deux électrodes en fonction du volume de thiosulfate versé](figures/delta-e-volume.svg)
+![Figure 5 — Allure de la différence de potentiel entre les deux électrodes en fonction du volume de thiosulfate versé ; le saut est placé juste avant l'équivalence](figures/delta-e-volume.svg)
 
 ### Question 36 — Pourcentage massique en cuivre
 
