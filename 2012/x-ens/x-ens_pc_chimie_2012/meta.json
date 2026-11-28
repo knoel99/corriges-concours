@@ -1,0 +1,186 @@
+{
+  "slug": "x-ens_pc_chimie_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie",
+    "annee": 2012
+  },
+  "questions": 86,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/pc2012_sujet_chimie%5B1%5D.pdf",
+    "sujet_sha256": "2973139908c5696619b71649e085c6bb0cc1709e074e1c0f57a3e9a8865406a9",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/2012PC%20rapportChimieXEULC.pdf",
+    "rapport_sha256": "89979e75535c0ffaf1b7e770ed46c5c6745785995612ebfa561bf92865095174"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.1.1",
+      "I.1.1.2",
+      "I.1.1.3",
+      "I.1.1.4",
+      "I.1.1.5",
+      "I.1.1.6",
+      "I.1.1.7",
+      "I.1.1.8",
+      "I.1.2.1",
+      "I.1.2.2",
+      "I.1.2.3",
+      "I.1.2.4",
+      "I.1.2.5",
+      "I.1.2.6",
+      "I.1.2.7",
+      "I.1.2.8",
+      "I.1.2.9",
+      "I.1.2.10",
+      "I.1.2.11",
+      "I.2.1.1",
+      "I.2.1.2",
+      "I.2.1.3",
+      "I.2.2.1",
+      "I.2.2.2",
+      "I.2.2.3",
+      "I.2.2.4",
+      "I.2.3.1",
+      "I.2.3.2",
+      "I.2.3.3",
+      "I.2.3.4",
+      "I.2.3.5",
+      "I.2.3.6",
+      "I.2.4.1",
+      "I.2.4.2",
+      "I.2.4.3",
+      "I.2.4.4",
+      "I.2.4.5",
+      "I.2.4.6",
+      "I.2.4.7",
+      "I.2.4.8",
+      "I.2.4.9",
+      "I.2.4.10",
+      "I.2.5.1",
+      "I.2.5.2",
+      "I.2.5.3",
+      "I.2.5.4",
+      "I.2.5.5",
+      "I.2.5.6",
+      "I.2.5.7",
+      "I.2.5.8",
+      "I.2.5.9",
+      "II.1.1.1",
+      "II.1.1.2",
+      "II.1.1.3",
+      "II.1.2.1",
+      "II.1.2.2",
+      "II.1.2.3",
+      "II.1.2.4",
+      "II.1.2.5",
+      "II.1.2.6",
+      "II.1.2.7",
+      "II.1.3",
+      "II.2.1.1",
+      "II.2.1.2",
+      "II.2.1.3",
+      "II.2.1.4",
+      "II.2.1.5",
+      "II.2.1.6",
+      "II.2.2.1",
+      "II.2.2.2",
+      "II.2.2.3",
+      "II.2.2.4",
+      "II.2.2.5",
+      "II.3.1.1",
+      "II.3.1.2",
+      "II.3.1.3",
+      "II.3.2.1",
+      "II.3.2.2",
+      "II.3.2.3",
+      "II.3.2.4",
+      "II.3.2.5",
+      "II.3.2.6",
+      "II.3.2.7",
+      "II.3.2.8",
+      "II.3.2.9",
+      "II.3.2.10"
+    ],
+    "precision": "Les 15 pages du sujet et les 8 pages du rapport ont été lues. Les 86 questions sont traitées : 51 pour le premier problème (repères I.x) et 35 pour le second (repères II.x), la question 3.2.2 regroupant ses trois sous-questions a, b et c. Les valeurs d'absorbance sont lues sur la figure 4 du sujet à 0,05 près ; le spectre de F seul n'étant pas tracé, sa couleur est déduite des deux états photostationnaires."
+  },
+  "figures": [
+    {
+      "fichier": "figures/maille-orthorhombique-faces-centrees.svg",
+      "question": "I.1.1.2",
+      "legende": "Maille orthorhombique à faces centrées des cristaux de O, avec trois arêtes inégales ; en rouge la distance d de la question 1.1.4"
+    },
+    {
+      "fichier": "figures/orientations-des-dipoles.svg",
+      "question": "I.1.1.8",
+      "legende": "Orientations stables de deux dipôles et agencements correspondants de deux molécules O voisines"
+    },
+    {
+      "fichier": "figures/lewis-et-mecanisme-de-huisgen.svg",
+      "question": "II.1.1.1",
+      "legende": "Formes mésomères principales de l'azidométhane et mécanisme concerté de la cycloaddition dipolaire-1,3 (schéma de principe)"
+    },
+    {
+      "fichier": "figures/regioisomeres-azidomethane-propene.svg",
+      "question": "II.1.1.2",
+      "legende": "Les deux régioisomères issus de l'azidométhane et du propène"
+    },
+    {
+      "fichier": "figures/orbitales-pi-du-propene.svg",
+      "question": "II.1.2.3",
+      "legende": "Orbitales moléculaires π du propène : signes, tailles relatives des coefficients et remplissage"
+    },
+    {
+      "fichier": "figures/produits-majoritaires-azidobenzene.svg",
+      "question": "II.1.2.7",
+      "legende": "Produits majoritaires de l'azidobenzène avec les trois alcènes, et composé 2 de la partie 1.3"
+    },
+    {
+      "fichier": "figures/stereoisomeres-des-dibromodiols.svg",
+      "question": "II.2.1.3",
+      "legende": "Les six stéréoisomères de 3a et 3b en représentation de Cram : en haut les 2,5-dibromocyclohexane-1,4-diols, en bas les 4,6-dibromocyclohexane-1,3-diols"
+    },
+    {
+      "fichier": "figures/composes-5-et-6.svg",
+      "question": "II.2.2.1",
+      "legende": "Composés 5 et 6 en représentation de Cram, avec les descripteurs stéréochimiques"
+    },
+    {
+      "fichier": "figures/conformere-chaise-du-compose-6.svg",
+      "question": "II.2.2.4",
+      "legende": "Conformère chaise du composé 6 : un couple OH/triazolyle diéquatorial, l'autre diaxial"
+    },
+    {
+      "fichier": "figures/composes-12-a-b.svg",
+      "question": "II.3.1.2",
+      "legende": "Composé 12, diol A et acétal B"
+    },
+    {
+      "fichier": "figures/compose-16.svg",
+      "question": "II.3.2.1",
+      "legende": "Composé 16"
+    },
+    {
+      "fichier": "figures/catenane-22.svg",
+      "question": "II.3.2.10",
+      "legende": "Caténate de cuivre(I) 21 et caténane 22 : deux anneaux 19 entrelacés"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions pour les 86 questions, à partir du sujet et du rapport du jury. Applications numériques, racines du polynôme de Hückel, formules brutes et descripteurs stéréochimiques recalculés par programme ; douze figures originales contrôlées après rendu."
+    }
+  ]
+}

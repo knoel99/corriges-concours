@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 340" font-family="sans-serif" font-size="15">
+<rect x="0" y="0" width="770" height="340" fill="#ffffff"/>
+<defs><marker id="fl" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#b3261e"/></marker><marker id="fn" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#111111"/></marker><marker id="fb" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#1f4e9c"/></marker></defs>
+<text x="185.0" y="30.0" text-anchor="middle" fill="#111111" font-weight="bold">Deux dipôles : orientations stables</text>
+<line x1="60.0" y1="90.0" x2="150.0" y2="90.0" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#fb)"/>
+<line x1="210.0" y1="90.0" x2="300.0" y2="90.0" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#fb)"/>
+<text x="185.0" y="125.0" text-anchor="middle" fill="#111111">colinéaires, tête-à-queue (la plus stable)</text>
+<line x1="150.0" y1="250.0" x2="150.0" y2="170.0" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#fb)"/>
+<line x1="220.0" y1="170.0" x2="220.0" y2="250.0" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#fb)"/>
+<text x="185.0" y="285.0" text-anchor="middle" fill="#111111">parallèles, tête-bêche (antiparallèles)</text>
+<line x1="380.0" y1="15.0" x2="380.0" y2="330.0" stroke="#999999" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="570.0" y="30.0" text-anchor="middle" fill="#111111" font-weight="bold">Molécules O voisines dans le cristal</text>
+<path d="M425,265 L470,205 L515,265" stroke="#111111" stroke-width="2.4" fill="none"/>
+<line x1="470.0" y1="273.0" x2="470.0" y2="173.0" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#fb)"/>
+<path d="M425,165 L470,105 L515,165" stroke="#111111" stroke-width="2.4" fill="none"/>
+<line x1="470.0" y1="173.0" x2="470.0" y2="73.0" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#fb)"/>
+<text x="470.0" y="300.0" text-anchor="middle" fill="#111111">empilement en colonne</text>
+<text x="470.0" y="320.0" text-anchor="middle" fill="#111111">(dipôles alignés)</text>
+<path d="M575,230 L620,170 L665,230" stroke="#111111" stroke-width="2.4" fill="none"/>
+<line x1="620.0" y1="238.0" x2="620.0" y2="138.0" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#fb)"/>
+<path d="M655,140 L700,200 L745,140" stroke="#111111" stroke-width="2.4" fill="none"/>
+<line x1="700.0" y1="132.0" x2="700.0" y2="232.0" stroke="#1f4e9c" stroke-width="2.6" marker-end="url(#fb)"/>
+<text x="660.0" y="300.0" text-anchor="middle" fill="#111111">voisines tête-bêche</text>
+<text x="660.0" y="320.0" text-anchor="middle" fill="#111111">(dipôles antiparallèles)</text>
+</svg>
