@@ -1,0 +1,151 @@
+{
+  "slug": "ens_pc_chimie_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "ecoles_historiques": "ENS de Paris, Lyon et Cachan",
+    "filiere": "PC",
+    "matiere": "Chimie",
+    "annee": 2010
+  },
+  "questions": 80,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/PC/pc-sujet-chimie.pdf",
+    "sujet_sha256": "bb23edfa09887fe19d17601ca489428cd50160f0681c4ad7214e1c99a08aa8d0",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2010/PC/pc-ecrit-chimie.pdf",
+    "rapport_sha256": "3fe8466b76b51bf78bd48bee4507a695f65f689028397f7454409c0123f163b2"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "4.1.1",
+      "4.1.2",
+      "4.1.3",
+      "4.2.1",
+      "4.2.2",
+      "4.2.3",
+      "4.2.4",
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.2.1",
+      "5.2.2",
+      "5.2.3",
+      "5.2.4",
+      "5.3.1",
+      "5.3.2",
+      "5.3.3",
+      "5.4.1",
+      "5.4.2",
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4",
+      "6.5",
+      "6.6",
+      "6.7",
+      "6.8",
+      "6.9",
+      "7.1",
+      "7.2",
+      "7.3",
+      "7.4",
+      "7.5",
+      "7.6",
+      "7.7",
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5",
+      "8.6",
+      "8.7",
+      "8.8",
+      "8.9",
+      "9.1",
+      "9.2",
+      "9.3",
+      "9.4",
+      "9.5",
+      "9.6",
+      "9.7",
+      "9.8",
+      "9.9",
+      "9.10",
+      "10.1",
+      "10.2",
+      "10.3",
+      "10.4",
+      "10.5",
+      "10.6"
+    ],
+    "precision": "Sujet de 20 pages (19 imprimées) et rapport de 4 pages lus en entier. Les 80 questions sont traitées : 39 en physico-chimie des polymères (1.1 à 5.4.2), 41 en chimie organique (6.1 à 10.6). Deux choix de rédaction sont signalés à leur place : la normalisation de la loi gaussienne (3.1.4, 3.2.2, 4.1.1) et l'attribution d'un aldéhyde au composé 27 malgré le signal annoncé vers 12 ppm (10.2)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/conformations-chaine-selon-solvant.svg",
+      "question": "1.4",
+      "legende": "Une même chaîne de N motifs en bon solvant (pelote gonflée), en solvant thêta (pelote idéale) et en mauvais solvant (globule) ; tracés obtenus par marches aléatoires, à valeur de schéma"
+    },
+    {
+      "fichier": "figures/osmometrie-extrapolation-dilution-nulle.svg",
+      "question": "5.3.1",
+      "legende": "Extrapolation à dilution nulle des mesures du tableau du sujet dans le benzène et dans l'acétone ; les deux droites se rejoignent à l'origine, leurs pentes sont en 10⁻⁶ mol·L·g⁻²"
+    },
+    {
+      "fichier": "figures/intermediaires-3-a-11.svg",
+      "question": "6.1",
+      "legende": "Structures des composés 3, 4, 5, 6, 8, 9, 10 et 11 de la partie 6 ; coins pleins vers l'avant, hachurés vers l'arrière"
+    },
+    {
+      "fichier": "figures/intermediaires-14-a-20.svg",
+      "question": "7.3",
+      "legende": "Structures des composés 14, 15, 16, 17, 18 et 20 des parties 7 et 8 ; coins pleins vers l'avant, hachurés vers l'arrière"
+    },
+    {
+      "fichier": "figures/alkylation-enolate-orbitales-newman.svg",
+      "question": "8.6",
+      "legende": "À gauche, approche de CH₃–I sur le carbone de l'énolate modèle (recouvrement HO–BV) ; à droite, projection de Newman de 19 selon C13–C11 et approche menant à 20"
+    },
+    {
+      "fichier": "figures/intermediaires-21-a-28.svg",
+      "question": "9.1",
+      "legende": "Structures des composés 21, 23, 24, 26, 27 et 28 des parties 9 et 10 ; coins pleins vers l'avant, hachurés vers l'arrière"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions pour les 80 questions à partir du sujet et du rapport officiels. Calculs refaits numériquement (extrapolation osmométrique, rendement global), descripteurs stéréochimiques et formules brutes contrôlés par un modèle moléculaire informatique, six figures originales."
+    }
+  ]
+}
