@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Sur les 42 questions du sujet, 41 sont entièrement traitées et une l’est en partie : pour la question IV.7, les cinq fonctions sont conçues, justifiées et représentées par une coupe de principe, mais le tracé à l’échelle sur le dessin réponse A3 du sujet n’est pas reproduit. Les autres réponses graphiques (schéma cinématique II.6, croquis de moulage III.3, schémas d’usinage III.7, montage du Frangibolt IV.1) sont données par des figures originales ; le tableau II.10, les fiches GPS III.16 et la croix de IV.4 sont rendus par des tableaux ou par une description.
 
 Sujet : RETALT1, projet européen de lanceur orbital à premier étage réutilisable. Épreuve de six heures, sans calculatrice. [Sujet officiel](https://www.banquept.fr/documents/2024/si_c_2024_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_si_c_ecrit_2024.pdf)
@@ -169,7 +171,7 @@ On retrouve les valeurs $F_{sub}=180$ kN et $F_{super}=350$ kN de la ressource 1
 
 ### Question II.4 — Deux actionneurs pour l’axe 2
 
-**Déploiement (phase 5) : moteur électrique, pignon et roue dentée.** Il faut une grande course angulaire (90°), effectuée une seule fois, hors atmosphère donc sans effort aérodynamique : seul un faible couple est nécessaire (inertie de l’ailette, frottements). Un moteur électrique compact, réducté par le pignon (4) et la roue d’indexage, convient : il est léger, simple à commander, et sa course n’est pas limitée. Une fois l’indexage enclenché, il n’est plus sollicité.
+**Déploiement (phase 5) : moteur électrique, pignon et roue dentée.** Il faut une grande course angulaire (90°), effectuée une seule fois, hors atmosphère donc sans effort aérodynamique : seul un faible couple est nécessaire (inertie de l’ailette, frottements). Un moteur électrique compact, dont le couple est démultiplié par le pignon (4) et la roue d’indexage, convient : il est léger, simple à commander, et sa course n’est pas limitée. Une fois l’indexage enclenché, il n’est plus sollicité.
 
 **Utilisation (phase 7) : deux vérins hydrauliques.** La course est faible ($\pm20°$) mais le couple est très élevé (plusieurs dizaines de kilonewtons-mètres, question II.9) et doit être appliqué rapidement et tenu en permanence pour le pilotage. L’hydraulique offre la meilleure puissance massique, une grande raideur de maintien et une bonne dynamique. Les deux vérins, placés symétriquement, se partagent l’effort et limitent les efforts radiaux sur les paliers de l’axe 2.
 
@@ -404,7 +406,7 @@ Le creux le plus bas est en $z=0$ ($h=0$) et la crête, à l’intersection de d
 
 $$\boxed{R_z=h\!\left(\frac f2\right)=r_\varepsilon-\sqrt{r_\varepsilon^{\,2}-\frac{f^{2}}{4}}\ \approx\ \frac{f^{2}}{8\,r_\varepsilon}}$$
 
-Avec $f=0{,}21$ mm et $r_\varepsilon=0{,}2$ mm : $\sqrt{0{,}04-0{,}0108}\approx0{,}171$, donc
+Avec $f\approx0{,}208$ mm (valeur de III.9 avant arrondi) et $r_\varepsilon=0{,}2$ mm : $\sqrt{0{,}04-0{,}0108}\approx0{,}171$, donc
 
 $$\boxed{R_z\approx0{,}029\ \mathrm{mm}\approx29\ \mathrm{\mu m}}$$
 
@@ -425,6 +427,8 @@ Les indications de rugosité sont exprimées en micromètres. La valeur mesurée
 $$\boxed{R_a=7\ \mathrm{\mu m}>0{,}4\ \mathrm{\mu m}\ :\ \text{la spécification n’est pas respectée}}$$
 
 L’écart est d’un facteur 17 environ. La valeur mesurée est cohérente avec le profil théorique des questions précédentes (pour des arcs de cercle, $R_a\approx R_z/4$, soit environ 7 µm) : le défaut vient des conditions de coupe et non d’un incident. Même en réduisant l’avance, le tournage n’atteint pas économiquement 0,4 µm : il faut une opération de finition par abrasion.
+
+Le rapport du jury évoque, à propos du procédé de finition, une rugosité « Ra = 1.6 », alors que le dessin de la ressource 13 porte Ra 0,4 sur les deux portées. La conclusion est la même avec l’une ou l’autre valeur, puisque $7\ \mathrm{\mu m}>1{,}6\ \mathrm{\mu m}>0{,}4\ \mathrm{\mu m}$.
 
 ### Question III.14 — Procédé de finition
 
@@ -483,7 +487,7 @@ Repères de la figure : 1 goujon ; 2 écrou et rondelle ; 3 cylindre en alliage 
 
 **Après la rupture.** La partie filetée et la collerette restent vissées dans la traverse et partent avec l’ailette, que plus rien ne retient contre la douille. Le fût, l’écrou, la rondelle, le cylindre et le corps chauffant restent prisonniers entre la douille et le capot : aucune pièce n’est libre.
 
-**Montage.** Goujon vissé dans la traverse (collerette serrée à la clé) ; douille vissée sur le fuselage ; ailette repliée, le goujon traversant la douille ; depuis l’intérieur du lanceur, mise en place du Frangibolt, de la rondelle et de l’écrou, serrage au couple ; pose du capot.
+**Montage.** Goujon vissé dans la traverse (collerette serrée à la clé) ; douille engagée dans le perçage du fuselage ; ailette repliée, le goujon traversant la douille ; depuis l’intérieur du lanceur, mise en place du Frangibolt, de la rondelle et de l’écrou, serrage au couple ; pose du capot, dont les vis traversent le fuselage et fixent aussi la douille.
 
 ### Question IV.2 — Sollicitation de rupture du goujon
 
@@ -575,9 +579,9 @@ Les butées ne guident pas radialement : c’est bien une liaison plane. Le guid
 **5. Liaison pivot entre l’arbre de transmission de l’axe 2 et le bâti.**
 
 - *Choix.* Deux **roulements à rouleaux coniques** (11) montés en O sur la portée de Ø220,66 : ils acceptent de très fortes charges radiales (plus de 200 kN) combinées à des charges axiales (plus de 20 kN), et le montage en O écarte les centres de poussée, ce qui donne une bonne rigidité vis-à-vis du moment de flexion apporté par l’ailette.
-- *Bagues intérieures.* Montées serrées sur l’arbre (la tolérance de la portée, +0,01 à +0,05, donne du serrage), en appui sur l’épaulement de l’arbre d’un côté et arrêtées de l’autre par une **entretoise** (14) poussée par le support de l’axe 1 ; la longueur de l’entretoise, ajustée par cales, règle le jeu ou la précharge du montage.
-- *Arrêt axial des bagues extérieures.* Montées glissantes dans le bâti (H7), séparées par une bague entretoise, elles sont prises entre un épaulement du bâti et un **couvercle** (12) vissé, avec cales.
+- *Bagues intérieures.* Montées serrées sur l’arbre (la tolérance de la portée, +0,01 à +0,05, donne du serrage), en appui sur l’épaulement de l’arbre d’un côté et arrêtées de l’autre par une **entretoise** (14) poussée par le support de l’axe 1, qui serre l’empilement contre l’épaulement ; une bague intercalaire sépare les deux bagues intérieures, et le jeu ou la précharge du montage est fixé par la différence de largeur entre cette bague et celle qui sépare les bagues extérieures.
+- *Arrêt axial des bagues extérieures.* Montées glissantes dans le bâti (H7), séparées par la seconde bague intercalaire, elles sont prises entre un épaulement du bâti et un **couvercle** (12) vissé, avec cales.
 - *Étanchéité.* Deux **joints à lèvres radiaux** (13), l’un dans le bâti, l’autre dans le couvercle, frottent sur des portées lisses de l’arbre et de l’entretoise ; la lubrification se fait à la graisse.
 - Le montage symétrique de la seconde portée complète le pivot ; l’un des deux ensembles doit pouvoir glisser dans son logement pour ne pas contrarier la dilatation de l’arbre.
 
-**Montage.** Roulements, entretoises, joints et couvercle sur l’arbre et dans le bâti ; sous-ensemble du vérin préparé sur établi (écrou vissé sur la tige avec son lardon, vis engagée dans l’écrou, puis tige, écrou et vis introduits dans le corps par le côté du collet ; butée inférieure et manchon introduits par le côté moteur ; goupillage du manchon sur la vis à travers un perçage d’accès radial du corps ; butée supérieure, cale, chapeau inférieur, puis moteur claveté et vissé) ; introduction du vérin dans l’arbre par l’extrémité côté support, jusqu’à l’appui du collet ; chapeau supérieur avec son joint ; support de l’axe 1 et vis ; liaison de la tige à la biellette.
+**Montage.** Roulements, entretoises, joints et couvercle sur l’arbre et dans le bâti ; sous-ensemble du vérin préparé sur établi (écrou vissé sur la tige avec son lardon, puis tige et écrou introduits dans le corps par le côté du collet ; manchon goupillé sur la vis ; butée inférieure posée sur l’épaulement, puis vis et manchon introduits par le côté moteur et vis engagée dans l’écrou par rotation ; butée supérieure, cale, chapeau inférieur, puis moteur claveté et vissé) ; introduction du vérin dans l’arbre par l’extrémité côté support, jusqu’à l’appui du collet ; chapeau supérieur avec son joint ; support de l’axe 1 et vis ; liaison de la tige à la biellette.

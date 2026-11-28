@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Sur les 42 questions du sujet, 41 sont entièrement traitées et une l’est en partie : pour la question IV.7, les cinq fonctions sont conçues, justifiées et représentées par une coupe de principe, mais le tracé à l’échelle sur le dessin réponse A3 du sujet n’est pas reproduit. Les autres réponses graphiques (schéma cinématique II.6, croquis de moulage III.3, schémas d’usinage III.7, montage du Frangibolt IV.1) sont données par des figures originales ; le tableau II.10, les fiches GPS III.16 et la croix de IV.4 sont rendus par des tableaux ou par une description.
 
 ## Présentation du sujet
@@ -18,7 +20,7 @@ Le sujet comprend quatre parties indépendantes, 42 questions, quinze documents 
 - partie IV (7 questions, 40 %) : montage d’un dispositif de séparation Frangibolt, paliers lisses, puis dessin d’un vérin électrique et d’un palier très chargé.
 
 > [!JURY]
-> Le rapport juge le système plus complexe et plus atypique que les années précédentes, avec une moyenne en baisse. Il rappelle que beaucoup de réponses se trouvent dans les documents ressources, à lire avant de rédiger, que le principe fondamental de la statique est mal appliqué par de nombreux candidats (bilans d’actions incomplets), et que les valeurs aberrantes non commentées, les démonstrations arrangées et les dessins au tracé trop pâle sont pénalisés.
+> Le rapport juge le système plus complexe et plus atypique que les années précédentes, avec une moyenne en baisse. Il rappelle que beaucoup de réponses se trouvent dans les documents ressources, à lire avant de rédiger, que beaucoup de candidats ne maîtrisent pas le principe fondamental de la statique, que les valeurs déraisonnables non commentées sont déplorées, que les démonstrations arrangées exposent à un malus, et que les dessins doivent être tracés d’un trait ferme et suffisamment épais.
 
 [Sujet officiel](https://www.banquept.fr/documents/2024/si_c_2024_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_si_c_ecrit_2024.pdf)
 
@@ -129,7 +131,7 @@ $$\boxed{M\,\Delta\vec V=\vec V_E\,\Delta M}$$
 Le signe est cohérent : $\Delta M<0$ et $\vec V_E$ est opposé au mouvement, donc $\Delta\vec V$ est dans le sens de $\vec V$.
 
 > [!JURY]
-> Le résultat est donné : le jury signale de nombreuses démonstrations arrangées pour retomber sur la formule, sanctionnées dans la note de qualité. Il faut écrire le bilan terme à terme.
+> Le résultat est donné : le jury signale de très nombreux développements incorrects arrangés pour retomber sur la formule, et juge probable qu’ils aient valu un malus sur la qualité de la copie. Il faut écrire le bilan terme à terme.
 
 ### Question I.5 — Équation de Tsiolkovski
 
@@ -250,7 +252,7 @@ Plusieurs arguments, dont deux suffisent :
 Cette réponse suppose que les repères locaux des quatre ailettes se déduisent de celui de A4 par rotation autour de $\vec Z$, ce que suggère la ressource 7.
 
 > [!JURY]
-> Question sans calcul, jugée décevante par le jury : il attend un raisonnement sur la résultante **et** sur le moment créés par chaque configuration extrême, pas seulement « tout à 20° ».
+> Question sans calcul, jugée décevante par le jury : il attend un raisonnement sur la résultante **et** sur le moment créés par chaque configuration extrême, pas seulement l’affirmation que tous les angles valent 20°.
 
 ### Question II.3 — Effort normal sur une ailette
 
@@ -283,7 +285,7 @@ $$\boxed{F_{N,\,super}\approx350\ \mathrm{kN}}$$
 On retrouve les valeurs $F_{sub}=180$ kN et $F_{super}=350$ kN de la ressource 11, ce qui valide le bilan.
 
 > [!PIEGE]
-> Deux oublis signalés par le jury : le facteur 4 (quatre ailettes) et une partie des actions (la traînée du corps $F_T$ ou la composante $F_A$). Faire le bilan complet avant de projeter.
+> Deux oublis signalés par le jury : le nombre d’ailettes et une partie des actions mécaniques pourtant données. Ici, cela vise par exemple la traînée du corps $F_T$ ou la composante $F_A$. Faire le bilan complet avant de projeter.
 
 ### Question II.4 — Deux actionneurs pour l’axe 2
 
@@ -295,7 +297,7 @@ On retrouve les valeurs $F_{sub}=180$ kN et $F_{super}=350$ kN de la ressource 1
 
 #### Solution
 
-**Déploiement (phase 5) : moteur électrique, pignon et roue dentée.** Il faut une grande course angulaire (90°), effectuée une seule fois, hors atmosphère donc sans effort aérodynamique : seul un faible couple est nécessaire (inertie de l’ailette, frottements). Un moteur électrique compact, réducté par le pignon (4) et la roue d’indexage, convient : il est léger, simple à commander, et sa course n’est pas limitée. Une fois l’indexage enclenché, il n’est plus sollicité.
+**Déploiement (phase 5) : moteur électrique, pignon et roue dentée.** Il faut une grande course angulaire (90°), effectuée une seule fois, hors atmosphère donc sans effort aérodynamique : seul un faible couple est nécessaire (inertie de l’ailette, frottements). Un moteur électrique compact, dont le couple est démultiplié par le pignon (4) et la roue d’indexage, convient : il est léger, simple à commander, et sa course n’est pas limitée. Une fois l’indexage enclenché, il n’est plus sollicité.
 
 **Utilisation (phase 7) : deux vérins hydrauliques.** La course est faible ($\pm20°$) mais le couple est très élevé (plusieurs dizaines de kilonewtons-mètres, question II.9) et doit être appliqué rapidement et tenu en permanence pour le pilotage. L’hydraulique offre la meilleure puissance massique, une grande raideur de maintien et une bonne dynamique. Les deux vérins, placés symétriquement, se partagent l’effort et limitent les efforts radiaux sur les paliers de l’axe 2.
 
@@ -458,7 +460,7 @@ Contrôle avec $d_2=0{,}50$ m arrondi : $180\times0{,}40=72$ kN·m en subsonique
 | **Rôle du limiteur de pression** | Organe de sécurité monté en dérivation, normalement fermé : il s’ouvre vers le réservoir quand la pression dépasse sa valeur de tarage (vérin en butée, surcharge) et protège ainsi la pompe, les conduites et le vérin. |
 
 > [!JURY]
-> Les circuits hydrauliques, peu interrogés auparavant, sont mal maîtrisés selon le rapport. Débit pour la pompe, pression pour le limiteur, aiguillage pour le distributeur : ces trois mots doivent apparaître.
+> Les circuits hydrauliques, moins souvent interrogés par le passé, sont relativement peu maîtrisés selon le rapport. Débit pour la pompe, pression pour le limiteur, aiguillage pour le distributeur : ces trois mots doivent apparaître.
 
 ### Question II.11 — Composant à ajouter au circuit fermé
 
@@ -481,7 +483,7 @@ Il faut ajouter un **accumulateur hydraulique** (à vessie, à membrane, à pist
 L’accumulateur joue donc le rôle de réservoir pressurisé à volume variable.
 
 > [!JURY]
-> C’est la réponse la moins bien réussie de la partie II : le jury attendait un raisonnement sur les volumes, pas une restitution de cours.
+> C’est la réponse à la moyenne la plus faible de la partie II. Le rapport précise qu’il fallait un effort de raisonnement, en plus de compétences minimales en hydraulique, pour rendre le schéma fourni compatible avec l’application (une fusée).
 
 ## Partie III — Industrialisation de composants du mécanisme d’orientation
 
@@ -555,7 +557,7 @@ Repères de la figure : 1 masselotte ; 2 entonnoir et descente de coulée ; 3 ca
 **Étapes.** Serrage du sable sur chaque demi-modèle, retournement, extraction des demi-modèles perpendiculairement au plan de joint, pose du noyau, fermeture (remmoulage) et lestage du moule, coulée par gravité, solidification, décochage, tronçonnage des attaques, de la masselotte et de l’évent, ébarbage, traitement thermique puis usinage.
 
 > [!JURY]
-> Deux reproches du rapport : des croquis sans légende, et des candidats qui se trompent de pièce. Il s’agit bien de la pièce de liaison (2), pas du corps du moyeu, et chaque élément demandé par l’énoncé doit être fléché et nommé.
+> Le rapport juge la qualité des croquis de fonderie encore assez faible, note que les précisions demandées (habillage de la pièce, disposition optimale dans le moule, éléments constitutifs de la grappe) ont fait baisser la moyenne, et déplore que trop de candidats se soient trompés de pièce. Il s’agit bien de la pièce de liaison (2), pas du corps du moyeu.
 
 > [!PIEGE]
 > Placer la pièce debout, bride sur le plan de joint, oblige à sortir le trou transversal de la chape par un noyau horizontal dans un seul châssis et place la partie massive loin de toute masselotte commode.
@@ -579,7 +581,7 @@ Repères de la figure : 1 masselotte ; 2 entonnoir et descente de coulée ; 3 ca
 Autres défauts possibles : inclusions de sable (érosion du moule par le jet de métal), malvenues et reprises (métal trop froid, parois trop minces), déformations.
 
 > [!JURY]
-> Selon le rapport, les noms des défauts sont souvent connus mais pas le phénomène physique ni le remède. Les trois colonnes comptent.
+> Selon le rapport, les noms des défauts sont parfois bien listés, mais leur définition, le phénomène physique en cause et les moyens de les éviter sont très peu connus. Les trois colonnes comptent.
 
 ### Question III.5 — Avantage du modèle perdu
 
@@ -646,7 +648,7 @@ Sur le tour à commande numérique trois axes (X, Z et C), il faut disposer :
 - d’une **barre d’alésage longue antivibratoire** pour S2, et d’un mandrin adapté au diamètre (mors doux alésés).
 
 > [!JURY]
-> Question la moins bien notée de la partie III : le jury attendait explicitement la lunette et la tourelle à postes rotatifs.
+> Question la moins bien notée de la partie III selon le rapport, qui cite comme outillages spécifiques la lunette et la tourelle à postes rotatifs.
 
 ### Question III.9 — Avance par tour
 
@@ -698,7 +700,7 @@ Le creux le plus bas est en $z=0$ ($h=0$) et la crête, à l’intersection de d
 
 $$\boxed{R_z=h\!\left(\frac f2\right)=r_\varepsilon-\sqrt{r_\varepsilon^{\,2}-\frac{f^{2}}{4}}\ \approx\ \frac{f^{2}}{8\,r_\varepsilon}}$$
 
-Avec $f=0{,}21$ mm et $r_\varepsilon=0{,}2$ mm : $\sqrt{0{,}04-0{,}0108}\approx0{,}171$, donc
+Avec $f\approx0{,}208$ mm (valeur de III.9 avant arrondi) et $r_\varepsilon=0{,}2$ mm : $\sqrt{0{,}04-0{,}0108}\approx0{,}171$, donc
 
 $$\boxed{R_z\approx0{,}029\ \mathrm{mm}\approx29\ \mathrm{\mu m}}$$
 
@@ -718,7 +720,7 @@ $R_a$ est la moyenne arithmétique, sur la longueur de base $l$, des valeurs abs
 $$\boxed{R_a=\frac{1}{l}\int_{0}^{l}\left|H(z)\right|\,\mathrm dz}$$
 
 > [!JURY]
-> Seuls 2,2 % des candidats ont écrit cette expression. La valeur absolue est indispensable : sans elle l’intégrale est nulle, par définition de la ligne moyenne.
+> Selon le rapport, seuls 2,2 % des candidats ont établi cette expression. La valeur absolue est indispensable : sans elle l’intégrale est nulle, par définition de la ligne moyenne.
 
 ### Question III.13 — Conformité de la rugosité
 
@@ -733,6 +735,8 @@ $$\boxed{R_a=7\ \mathrm{\mu m}>0{,}4\ \mathrm{\mu m}\ :\ \text{la spécification
 
 L’écart est d’un facteur 17 environ. La valeur mesurée est cohérente avec le profil théorique des questions précédentes (pour des arcs de cercle, $R_a\approx R_z/4$, soit environ 7 µm) : le défaut vient des conditions de coupe et non d’un incident. Même en réduisant l’avance, le tournage n’atteint pas économiquement 0,4 µm : il faut une opération de finition par abrasion.
 
+Le rapport du jury évoque, à propos du procédé de finition, une rugosité « Ra = 1.6 », alors que le dessin de la ressource 13 porte Ra 0,4 sur les deux portées. La conclusion est la même avec l’une ou l’autre valeur, puisque $7\ \mathrm{\mu m}>1{,}6\ \mathrm{\mu m}>0{,}4\ \mathrm{\mu m}$.
+
 > [!JURY]
 > Le rapport note que l’unité normalisée des indications de rugosité n’est pas connue de tous : comparer 0,007 à 0,4 sans conversion conduit à la conclusion inverse.
 
@@ -746,6 +750,9 @@ L’écart est d’un facteur 17 environ. La valeur mesurée est cohérente avec
 **La rectification cylindrique extérieure.** L’outil est une meule : des grains abrasifs très durs (corindon, nitrure de bore cubique) tenus par un liant, qui enlèvent chacun un copeau microscopique. La meule tourne à grande vitesse (de l’ordre de 30 m/s en périphérie) ; la pièce, montée entre pointes ou en mandrin avec lunette, tourne lentement en sens tel que les vitesses s’opposent au contact. La meule balaie la portée par une translation suivant l’axe (rectification en chariotage) ou plonge radialement (rectification en plongée), avec des passes de quelques micromètres à quelques centièmes de millimètre, sous arrosage abondant pour évacuer la chaleur.
 
 Le procédé donne couramment $R_a$ de 0,2 à 0,8 µm et des qualités dimensionnelles IT5 à IT6, compatibles avec la tolérance de Ø220,66 ; il s’applique aux surfaces durcies et se place donc après le traitement thermique de la question III.15. Autres procédés possibles : galetage, superfinition.
+
+> [!JURY]
+> Le rapport note que peu de candidats proposent et décrivent un procédé de finition adapté, autre que le tournage.
 
 ### Question III.15 — Durcissement superficiel des portées
 
@@ -790,7 +797,7 @@ Sur la ressource 13, A désigne l’alésage de Ø155 ± 0,01 d’une extrémit�
 | **Condition de conformité** | La face réelle doit être tout entière entre les deux plans | Les deux lignes médianes réelles doivent être contenues ensemble dans le même cylindre | Chaque axe réel doit être contenu dans son cylindre |
 
 > [!JURY]
-> Le rapport relève des confusions persistantes entre éléments réels, éléments tolérancés et zone de tolérance, et un modificateur CZ mal connu : sans CZ, chaque portée aurait sa propre zone et rien ne lierait les deux portées entre elles.
+> Le rapport relève que les notions de référence spécifiée, d’élément tolérancé et de zone de tolérance, ainsi que les critères d’association, ne sont pas assimilées par trop de candidats, et que le modificateur CZ est mal connu : sans CZ, chaque portée aurait sa propre zone et rien ne lierait les deux portées entre elles.
 
 > [!METHODE]
 > Remplir les fiches dans l’ordre du haut vers le bas : on ne parle d’éléments idéaux (plans, droites, cylindres associés) qu’à partir de la ligne des références spécifiées.
@@ -836,10 +843,10 @@ Repères de la figure : 1 goujon ; 2 écrou et rondelle ; 3 cylindre en alliage 
 
 **Après la rupture.** La partie filetée et la collerette restent vissées dans la traverse et partent avec l’ailette, que plus rien ne retient contre la douille. Le fût, l’écrou, la rondelle, le cylindre et le corps chauffant restent prisonniers entre la douille et le capot : aucune pièce n’est libre.
 
-**Montage.** Goujon vissé dans la traverse (collerette serrée à la clé) ; douille vissée sur le fuselage ; ailette repliée, le goujon traversant la douille ; depuis l’intérieur du lanceur, mise en place du Frangibolt, de la rondelle et de l’écrou, serrage au couple ; pose du capot.
+**Montage.** Goujon vissé dans la traverse (collerette serrée à la clé) ; douille engagée dans le perçage du fuselage ; ailette repliée, le goujon traversant la douille ; depuis l’intérieur du lanceur, mise en place du Frangibolt, de la rondelle et de l’écrou, serrage au couple ; pose du capot, dont les vis traversent le fuselage et fixent aussi la douille.
 
 > [!JURY]
-> Un tiers des candidats n’a pas traité ce dessin et beaucoup n’ont pas compris le Frangibolt malgré la ressource 15. Le jury constate aussi que le mot goujon est mal connu : c’est une tige filetée à ses deux extrémités, implantée dans une pièce et recevant un écrou de l’autre côté.
+> Environ un tiers des candidats n’a pas traité ce dessin et beaucoup n’ont pas compris le Frangibolt malgré le document ressource rédigé à cet effet. Le jury constate aussi que très peu savent ce qu’est un goujon ou le représenter correctement : c’est une tige filetée à ses deux extrémités, implantée dans une pièce et recevant un écrou de l’autre côté.
 
 > [!PIEGE]
 > Si le cylindre est serré entre l’écrou et le fuselage, ou si la gorge est du mauvais côté de la collerette, l’effort de rupture traverse le fuselage ou l’ailette, ou bien l’ailette reste attachée après la rupture.
@@ -876,7 +883,7 @@ $$\boxed{d_{max}\approx7{,}7\ \mathrm{mm}}$$
 On retient par exemple $d=7{,}5$ mm. Il reste à vérifier, hors du cadre de la question, que cette section tient la précontrainte de montage et les efforts du lancement (sa charge de rupture nominale vaut $600\times\pi\times7{,}5^2/4\approx26$ kN).
 
 > [!PIEGE]
-> Le coefficient de sécurité sert ici à garantir la rupture, pas la tenue : il multiplie $R_m$. Diviser $R_m$ par $k$ donnerait un diamètre trop grand (9,4 mm) et une rupture incertaine.
+> Le coefficient de sécurité sert ici à garantir la rupture, pas la tenue : il multiplie $R_m$. Diviser $R_m$ par $k$ donnerait un diamètre trop grand (11,6 mm, contre 9,4 mm sans coefficient) et une rupture incertaine.
 
 ### Question IV.4 — Emplacement du système de désengagement
 
@@ -988,15 +995,15 @@ Les butées ne guident pas radialement : c’est bien une liaison plane. Le guid
 **5. Liaison pivot entre l’arbre de transmission de l’axe 2 et le bâti.**
 
 - *Choix.* Deux **roulements à rouleaux coniques** (11) montés en O sur la portée de Ø220,66 : ils acceptent de très fortes charges radiales (plus de 200 kN) combinées à des charges axiales (plus de 20 kN), et le montage en O écarte les centres de poussée, ce qui donne une bonne rigidité vis-à-vis du moment de flexion apporté par l’ailette.
-- *Bagues intérieures.* Montées serrées sur l’arbre (la tolérance de la portée, +0,01 à +0,05, donne du serrage), en appui sur l’épaulement de l’arbre d’un côté et arrêtées de l’autre par une **entretoise** (14) poussée par le support de l’axe 1 ; la longueur de l’entretoise, ajustée par cales, règle le jeu ou la précharge du montage.
-- *Arrêt axial des bagues extérieures.* Montées glissantes dans le bâti (H7), séparées par une bague entretoise, elles sont prises entre un épaulement du bâti et un **couvercle** (12) vissé, avec cales.
+- *Bagues intérieures.* Montées serrées sur l’arbre (la tolérance de la portée, +0,01 à +0,05, donne du serrage), en appui sur l’épaulement de l’arbre d’un côté et arrêtées de l’autre par une **entretoise** (14) poussée par le support de l’axe 1, qui serre l’empilement contre l’épaulement ; une bague intercalaire sépare les deux bagues intérieures, et le jeu ou la précharge du montage est fixé par la différence de largeur entre cette bague et celle qui sépare les bagues extérieures.
+- *Arrêt axial des bagues extérieures.* Montées glissantes dans le bâti (H7), séparées par la seconde bague intercalaire, elles sont prises entre un épaulement du bâti et un **couvercle** (12) vissé, avec cales.
 - *Étanchéité.* Deux **joints à lèvres radiaux** (13), l’un dans le bâti, l’autre dans le couvercle, frottent sur des portées lisses de l’arbre et de l’entretoise ; la lubrification se fait à la graisse.
 - Le montage symétrique de la seconde portée complète le pivot ; l’un des deux ensembles doit pouvoir glisser dans son logement pour ne pas contrarier la dilatation de l’arbre.
 
-**Montage.** Roulements, entretoises, joints et couvercle sur l’arbre et dans le bâti ; sous-ensemble du vérin préparé sur établi (écrou vissé sur la tige avec son lardon, vis engagée dans l’écrou, puis tige, écrou et vis introduits dans le corps par le côté du collet ; butée inférieure et manchon introduits par le côté moteur ; goupillage du manchon sur la vis à travers un perçage d’accès radial du corps ; butée supérieure, cale, chapeau inférieur, puis moteur claveté et vissé) ; introduction du vérin dans l’arbre par l’extrémité côté support, jusqu’à l’appui du collet ; chapeau supérieur avec son joint ; support de l’axe 1 et vis ; liaison de la tige à la biellette.
+**Montage.** Roulements, entretoises, joints et couvercle sur l’arbre et dans le bâti ; sous-ensemble du vérin préparé sur établi (écrou vissé sur la tige avec son lardon, puis tige et écrou introduits dans le corps par le côté du collet ; manchon goupillé sur la vis ; butée inférieure posée sur l’épaulement, puis vis et manchon introduits par le côté moteur et vis engagée dans l’écrou par rotation ; butée supérieure, cale, chapeau inférieur, puis moteur claveté et vissé) ; introduction du vérin dans l’arbre par l’extrémité côté support, jusqu’à l’appui du collet ; chapeau supérieur avec son joint ; support de l’axe 1 et vis ; liaison de la tige à la biellette.
 
 > [!JURY]
-> Le jury a noté une réelle difficulté sur la liaison plane à éléments roulants : très peu de dessins avec des butées à billes ou à rouleaux, et des efforts rarement repris correctement sur le manchon. Il signale aussi que le mot lardon est mal connu et que beaucoup de formes proposées ne sont pas réalisables par les procédés imposés.
+> Le jury a noté une réelle difficulté sur la liaison plane à éléments roulants : très peu de dessins avec des butées à billes ou à rouleaux et, même avec des roulements à contact oblique, des efforts transmis au manchon rarement repris correctement. Il signale aussi que le lardon est mal connu ou mal représenté, et que bon nombre de propositions comportent des formes difficilement réalisables ou ne respectent pas les règles de tracé des pièces usinées.
 
 > [!METHODE]
 > Sur un dessin d’ensemble, vérifier chaque liaison par trois questions : par quelles surfaces les pièces se positionnent-elles, qu’est-ce qui les maintient, et comment l’outil puis les pièces accèdent-ils. Indiquer les ajustements sur le dessin, comme le demande l’énoncé.
