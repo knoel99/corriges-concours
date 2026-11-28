@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 
 ## Présentation du sujet
 
@@ -76,7 +78,7 @@ $$\mathrm{[2]}+\mathrm{(CH_3)_2C(OCH_3)_2}\;\rightleftharpoons\;\mathrm{[3]}+2\,
 
 soit, en formules brutes, $\mathrm{C_6H_{10}O_6+C_5H_{12}O_2\rightleftharpoons C_9H_{14}O_6+2\,CH_4O}$ (bilan équilibré en C, H et O).
 
-**Structure de [3].** C’est l’acétal cyclique (acétonide) du diol : un cycle 1,3-dioxolane à cinq chaînons $\mathrm{O{-}C(CH_3)_2{-}O{-}CH{-}CH}$, dont le carbone 2 porte les deux méthyles et dont les carbones 4 et 5 portent chacun un groupe $\mathrm{CO_2CH_3}$. Les liaisons C–O des deux carbones asymétriques ne sont pas rompues : leur configuration est conservée, et les deux groupes ester sont en *trans* sur le cycle, comme les deux groupes $\mathrm{CH_2OH}$ dans le diol [4] de l’énoncé. La molécule garde son axe $C_2$.
+**Structure de [3].** C’est l’acétal cyclique (acétonide) du diol : un cycle 1,3-dioxolane à cinq chaînons $\mathrm{O{-}C(CH_3)_2{-}O{-}CH{-}CH}$, dont le carbone 2 porte les deux méthyles et dont les carbones 4 et 5 portent chacun un groupe $\mathrm{CO_2CH_3}$. Les liaisons C–O des deux carbones asymétriques ne sont pas rompues : leur configuration est conservée, et les deux groupes ester sont en *trans* sur le cycle, comme les deux groupes $\mathrm{CH_2OH}$ dans le diol [4] de l’énoncé. La molécule garde son axe $C_2$. Sur le dessin de l’énoncé, l’ester [2] est de configuration $(2S,3S)$ ; [3] est donc le $(4S,5S)$-2,2-diméthyl-1,3-dioxolane-4,5-dicarboxylate de diméthyle, et le diol [4] dessiné est $(4R,5R)$ : la géométrie n’a pas changé, mais le groupe $\mathrm{CH_2OH}$ passe après le carbone voisin du cycle dans l’ordre des priorités, alors que $\mathrm{CO_2CH_3}$ passait avant.
 
 **Mécanisme** (transacétalisation en catalyse acide ; $\mathrm{H^+}$ désigne le proton apporté par l’APTS ; dans les formules de Lewis, chaque oxygène neutre porte deux doublets non liants, chaque oxygène tricoordonné chargé $+$ en porte un seul).
 
@@ -193,7 +195,7 @@ On termine par un court reflux, puis on utilise la solution sans isoler le réac
 
 #### Solution
 
-Le ditosylate (10 mmol) est en **large excès**, cinq équivalents pour un équivalent d’organomagnésien (2 mmol), qui est le réactif limitant. La raison est la sélectivité : [5] porte deux groupes $\mathrm{CH_2OTs}$ équivalents (axe $C_2$) et de même réactivité. Après une première substitution, le monotosylate [6] reste électrophile et pourrait réagir une seconde fois pour donner le produit de double alkylation. En maintenant le ditosylate en grand excès, un organomagnésien rencontre presque toujours une molécule de [5] intacte plutôt qu’une molécule de [6] : **on favorise statistiquement la monosubstitution.** L’excès de [5], réactif préparé en deux étapes à partir d’un produit bon marché, se récupère par chromatographie.
+Le ditosylate (10 mmol) est en **large excès**, cinq équivalents pour un équivalent d’organomagnésien (2 mmol), qui est le réactif limitant. La raison est la sélectivité : [5] porte deux groupes $\mathrm{CH_2OTs}$ équivalents (axe $C_2$) et de même réactivité. Après une première substitution, le monotosylate [6] reste électrophile et pourrait réagir une seconde fois pour donner le produit de double alkylation. En maintenant le ditosylate en grand excès, un organomagnésien rencontre presque toujours une molécule de [5] intacte plutôt qu’une molécule de [6] : **on favorise statistiquement la monosubstitution.** L’excès de [5], réactif préparé en trois étapes à partir de l’ester tartrique [2], bon marché, se récupère par chromatographie.
 
 Le rendement de 51 % est rapporté à l’organomagnésien : on isole $0{,}51\times 2\approx 1{,}0$ mmol de [6].
 
@@ -422,7 +424,7 @@ $$K=10^{\,11{,}2-5{,}3}=10^{5{,}9}\approx 8\cdot 10^{5}$$
 
 #### Solution
 
-Le proton acide est porté par le carbone C2, situé entre les deux groupes carbonyle. L’anion obtenu est décrit par trois formes mésomères :
+Le proton acide est porté par le carbone 2 de la dione (numérotation propre à la dione), situé entre les deux groupes carbonyle. L’anion obtenu est décrit par trois formes mésomères :
 
 $$\mathrm{O{=}C{-}\overset{-}{\overline{C}}H{-}C{=}O}\;\longleftrightarrow\;\mathrm{{}^{-}|\overline{\underline{O}}{-}C{=}CH{-}C{=}O}\;\longleftrightarrow\;\mathrm{O{=}C{-}CH{=}C{-}\overline{\underline{O}}|^{-}}$$
 
@@ -438,7 +440,7 @@ La charge négative est **délocalisée sur cinq atomes** ($\mathrm{O{-}C{-}C{-}
 
 #### Solution
 
-L’énolate réagit par son carbone central C2 (forme mésomère carbanionique), qui porte un doublet non liant. Ce doublet attaque le carbone électrophile du groupe carbonyle de l’aldéhyde [9] ; le doublet $\pi$ de la liaison $\mathrm{C{=}O}$ bascule sur l’oxygène, qui porte alors trois doublets non liants et la charge négative :
+L’énolate réagit par son carbone central, le carbone 2 de la dione (forme mésomère carbanionique), qui porte un doublet non liant. Ce doublet attaque le carbone électrophile du groupe carbonyle de l’aldéhyde [9] ; le doublet $\pi$ de la liaison $\mathrm{C{=}O}$ bascule sur l’oxygène, qui porte alors trois doublets non liants et la charge négative :
 
 $$\mathrm{R{-}CH{=}O}+\mathrm{{}^{-}CH(CO)_2}\;\longrightarrow\;\mathrm{R{-}CH(O^-){-}CH(CO)_2}$$
 
@@ -486,7 +488,7 @@ $$\mathrm{(CO)_2CH^-}+\mathrm{R{-}CH{=}C(CO)_2}\;\longrightarrow\;\mathrm{(CO)_2
 On obtient un nouvel énolate, stabilisé par les deux carbonyles du premier motif. L’étape 6 le protone ; les deux motifs dione passent ensuite sous forme énol (tautomérie), ce qui donne [11].
 
 > [!JURY]
-> Même remarque du rapport qu’à la question 1.2.3 : l’électrophilie du carbone en $\beta$ se justifie par une forme mésomère écrite complètement, pas par une simple flèche.
+> Même remarque du rapport qu’à la question 1.2.3 (formes mésomères complètes). Ici, c’est l’électrophilie du carbone en $\beta$ qu’il faut justifier par une forme mésomère écrite complètement.
 
 ### Question 1.2.7 — Bilan de [11] → [12a]
 
@@ -613,7 +615,7 @@ L’ordre des deux additions peut être inversé (cycle à cinq chaînons d’ab
 
 #### Solution
 
-**Diastéréoisomères.** [13] et [13b] ont la même formule développée plane et ne diffèrent que par l’arrangement spatial : ce sont des stéréoisomères de configuration. Les carbones C15 et C16, hérités de l’acide tartrique, ont **la même configuration** dans les deux. Les deux centres créés par la cyclisation, C13 (carbone du cétal) et C7 (qui devient stéréogène dès que les deux motifs dione ne sont plus équivalents), ont en revanche des configurations **opposées** : [13] et [13b] correspondent à la cétalisation de l’un ou de l’autre des deux carbonyles de [12c]. Deux stéréoisomères qui diffèrent par une partie seulement de leurs centres ne sont pas images l’un de l’autre dans un miroir : ce sont des **diastéréoisomères**.
+**Diastéréoisomères.** [13] et [13b] ont la même formule développée plane et ne diffèrent que par l’arrangement spatial : ce sont des stéréoisomères de configuration. Les carbones C15 et C16, hérités de l’acide tartrique, ont **la même configuration** dans les deux. Le carbone du cétal, C13, est créé par la cyclisation, mais sa configuration n’est pas libre : C13 et C15 sont les deux têtes de pont du petit système bicyclique formé par le cétal (cycle à six chaînons et dioxolane accolés), et la configuration de C15 impose celle de C13. Elle est donc **la même** dans les deux composés, comme le montre le dessin de l’énoncé, où le motif cétal est tracé à l’identique. La différence porte sur **C7**, qui devient stéréogène dès que les deux motifs dione ne sont plus équivalents : selon que le diol cétalise l’un ou l’autre des deux carbonyles de [12c], C7 prend l’une ou l’autre configuration. [13] et [13b] ont donc les mêmes configurations en C13, C15 et C16 et des configurations opposées en C7 : deux stéréoisomères qui diffèrent par une partie seulement de leurs centres ne sont pas images l’un de l’autre dans un miroir, ce sont des **diastéréoisomères** (ici des épimères en C7).
 
 **Argument des auteurs.** Le cycle à six chaînons du cétal adopte une conformation **chaise** dans [13] et une conformation **bateau** dans [13b], imposée par le système polycyclique. Or la chaise est la conformation la plus stable d’un cycle à six chaînons : toutes les liaisons y sont décalées. Dans le bateau, quatre liaisons sont éclipsées (tension de torsion) et les substituants en positions « mât » se gênent (tension stérique) ; l’écart est de l’ordre de 25 $\mathrm{kJ\cdot mol^{-1}}$ pour le cyclohexane. [13] serait donc plus stable.
 
@@ -630,7 +632,7 @@ Toutes les étapes de la cétalisation acido-catalysée sont **renversables**. E
 
 $$\mathrm{[13b]}+\mathrm{H_2O}\;\rightleftharpoons\;\mathrm{[12c]}\;\rightleftharpoons\;\mathrm{[13]}+\mathrm{H_2O}$$
 
-Le diol [12c] est l’intermédiaire commun : ses deux carbonyles sont constitutionnellement équivalents et C7 n’y est pas stéréogène, de sorte que l’information sur les deux nouveaux centres est effacée à chaque passage. Les deux diastéréoisomères sont donc en équilibre dans les conditions de la réaction, ce qui rend possible le contrôle thermodynamique invoqué.
+Le diol [12c] est l’intermédiaire commun : ses deux carbonyles sont constitutionnellement équivalents et C7 n’y est pas stéréogène, de sorte que l’information sur la configuration de C7 est effacée à chaque passage. Les deux diastéréoisomères sont donc en équilibre dans les conditions de la réaction, ce qui rend possible le contrôle thermodynamique invoqué.
 
 ## Première partie · 1.3 Fonctionnalisations du polycycle — Obtention du Trichodermatide A
 
@@ -701,7 +703,10 @@ Le soufre échange deux doubles liaisons $\mathrm{S{=}O}$ (chaque oxygène termi
 Vérification : $+1+6+3\times(-2)+2\times(-1)=-1$. Le caractère oxydant de l’ion vient des oxygènes au degré $-\mathrm{I}$, comme dans le peroxyde d’hydrogène.
 
 > [!JURY]
-> L’écriture de Lewis des ions polyatomiques, « tel l’ion persulfate de l’énoncé », est citée par le rapport parmi les points à revoir. L’erreur classique est d’attribuer $+\mathrm{VIII}$ au soufre en oubliant le pont peroxo : le soufre n’a que six électrons de valence.
+> L’écriture de Lewis des ions polyatomiques, « tel l’ion persulfate dans l’énoncé », est citée par le rapport parmi les points à revoir.
+
+> [!PIEGE]
+> L’erreur classique est d’attribuer $+\mathrm{VIII}$ au soufre en oubliant le pont peroxo : le soufre n’a que six électrons de valence.
 
 ### Question 1.3.4 — Stéréosélectivité de la formation du réactif de Davis
 
@@ -1355,7 +1360,7 @@ $$\int_0^tY\,dt=Y_{eq}\,t+\frac{y_0}{\omega}\left(1-\cos\omega t\right)$$
 
 $$G(t)=\gamma\,\Delta_rG^\circ\,V_S\left[Y_{eq}\,t+\frac{y_0}{\omega}\left(1-\cos\omega t\right)\right]$$
 
-$G(t)$ est la somme d’un terme **linéaire** en temps, de pente $\gamma\Delta_rG^\circ V_SY_{eq}$, et d’une petite **ondulation** de période $T=4$ s, qui s’annule à chaque fin de cycle. Comme $Y>0$ à tout instant, $G$ est monotone ; la réaction se faisant spontanément, $\Delta_rG^\circ<0$ et **$G$ décroît**. La pente est la plus forte en valeur absolue quand $Y$ est maximal ($t=1$ s, puis 5 s) et la plus faible quand $Y$ est minimal ($t=3$ s, puis 7 s). Aux instants $t=4$ s et $t=8$ s, la courbe repasse exactement sur la droite moyenne :
+$G(t)$ est la somme d’un terme **linéaire** en temps, de pente $\gamma\Delta_rG^\circ V_SY_{eq}$, et d’une petite **ondulation** de période $T=4$ s, qui s’annule à chaque fin de cycle. Comme $Y>0$ à tout instant, $G$ est monotone ; la réaction se fait spontanément ($\Delta_rG<0$) ; en l’assimilant comme plus haut à $\Delta_rG^\circ$, supposé négatif, **$G$ décroît**. La pente est la plus forte en valeur absolue quand $Y$ est maximal ($t=1$ s, puis 5 s) et la plus faible quand $Y$ est minimal ($t=3$ s, puis 7 s). Aux instants $t=4$ s et $t=8$ s, la courbe repasse exactement sur la droite moyenne :
 
 $$G(T)=\gamma\,\Delta_rG^\circ\,V_S\,Y_{eq}\,T\qquad\qquad G(2T)=2\,G(T)$$
 
@@ -1659,7 +1664,7 @@ D’après la question précédente, $D_M$ est une fonction décroissante de $C_
 
 - **Avant la CMC** ($C_1<C^*$, soit $\Theta_0<1$) : $D_M=D_1$, palier horizontal. Il n’y a que des surfactants libres.
 - **Au voisinage de la CMC** : chute brutale, d’autant plus raide que $p$ est grand. Le milieu de la marche, $D_M=(D_1+D_p)/2$, est atteint pour $p^2\Theta_0^{\,p-1}=1$, soit $\Theta_0=p^{-2/(p-1)}$, très peu inférieur à 1 (0,87 pour $p=60$).
-- **À l’apparition des micelles**, en $C_1=C^*=K_M$ ($\Theta_0=1$) :
+- **À l’apparition des micelles**, en $C_1=C^*\simeq K_M$ (on prend $\Theta_0=1$) :
 
    $$\boxed{D^*=\frac{D_1+p^2D_p}{1+p^2}\simeq D_p}$$
 

@@ -143,6 +143,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions pour les 82 questions à partir du sujet et du rapport du jury officiels ; applications numériques et figures 2 à 5 recalculées par script, formes contrôlées par scripts/verifier.py."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des corrections d’une relecture indépendante, chacune vérifiée sur le sujet, dans les deux éditions : 1.2.13 (seul C7 diffère entre [13] et [13b], C13 étant imposé comme tête de pont du cétal bicyclique) et 1.2.14 par cohérence ; 1.1.3 (descripteurs de [2], [3], [4] lus sur le dessin) ; 1.1.9 (trois étapes pour [5]) ; 1.2.3 et 1.2.4 (numérotation du carbone 2 de la dione) ; 2.2.7 ii (signe de l’enthalpie libre de réaction) ; 2.3.14 et figure 5 (C* ≈ K_M, étiquette). Les dix encadrés du jury du guidé ont été contrôlés sur le rapport : une citation rétablie mot pour mot (1.3.3), une remarque requalifiée en piège (1.3.3), une reformulée (1.2.6)."
     }
   ]
 }
