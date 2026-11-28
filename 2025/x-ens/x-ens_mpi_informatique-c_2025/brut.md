@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## I · Algorithme d’Edmonds
 
 ### Question 1 · Différence de listes
@@ -56,7 +58,7 @@ Dans le dessin de droite, le couplage contient $\{0,2\},\{4,6\},\{5,7\}$. Les so
 
 ### Question 8 · Effet de la différence symétrique
 
-Les deux arêtes extrêmes du chemin (éventuellement la même) sont hors du couplage, car leurs extrémités sont libres. Sur un chemin alternant et élémentaire, chaque sommet intérieur touche une arête couplée et une arête libre du chemin. La bascule les échange ; aucune arête couplée extérieure ne touche ce sommet. Chacune des deux extrémités reçoit une unique arête, et les sommets hors du chemin gardent leurs incidences. C’est bien un couplage. Si le chemin a $2q+1$ arêtes, on en retire $q$ et on en ajoute $q+1$ : le cardinal augmente exactement de un. Le cas $q=0$ couvre Q7.
+Les deux arêtes extrêmes du chemin (éventuellement la même) sont hors du couplage, car leurs extrémités sont libres. Sur un chemin alternant et élémentaire, chaque sommet intérieur touche une arête couplée et une arête libre du chemin. La bascule les échange ; aucune arête couplée extérieure ne touche ce sommet. Chacune des deux extrémités reçoit une unique arête, et les sommets hors du chemin gardent leurs incidences. C’est bien un couplage. La première et la dernière arête sont hors du couplage et les arêtes alternent : le chemin a donc un nombre impair $2q+1$ d’arêtes, dont $q$ dans le couplage et $q+1$ en dehors. On en retire $q$ et on en ajoute $q+1$ : le cardinal augmente exactement de un. Le cas $q=0$ couvre Q7.
 
 ### Question 9 · Séparer les arêtes alternées
 
@@ -253,15 +255,15 @@ Pour une suite, la longueur totale doit être exactement 3 et les têtes doivent
 
 ### Question 26 · Cinq arcs à ajouter sur la figure
 
-En notant $[p,h,u,i]$ les quadruplets de la planche, il manque exactement :
+En notant $\langle p,h,u,i\rangle$ les quadruplets de la planche comme dans le sujet (parenthèses sur la figure), il manque exactement :
 
 | Origine | Destination | Poids |
 |---|---|---:|
-| $s$ | $[0,0,0,0]$ | $1$ |
-| $[0,0,0,0]$ | $[0,0,1,1]$ | $3$ |
-| $[0,0,0,0]$ | $[1,1,1,1]$ | $2$ |
-| $[0,0,1,1]$ | $t_1$ | $-2$ |
-| $[1,1,1,1]$ | $t_0$ | $1$ |
+| $s$ | $\langle 0,0,0,0\rangle$ | $1$ |
+| $\langle 0,0,0,0\rangle$ | $\langle 0,0,1,1\rangle$ | $3$ |
+| $\langle 0,0,0,0\rangle$ | $\langle 1,1,1,1\rangle$ | $2$ |
+| $\langle 0,0,1,1\rangle$ | $t_1$ | $-2$ |
+| $\langle 1,1,1,1\rangle$ | $t_0$ | $1$ |
 
 En particulier, le troisième arc ferme la boucle en 0 puis commence à la tête 1. Les chemins de poids $2$ vers $t_0$ et $-6$ vers $t_1$ donnent bien $2-(-6)=8$, le déterminant de la matrice de Q23.
 
@@ -269,13 +271,13 @@ En particulier, le troisième arc ferme la boucle en 0 puis commence à la tête
 
 ### Question 27 · D’une suite positive à un chemin vers t₀
 
-Dans $C=h,u_1,\dots,u_m,h$, chaque $u_j$ est strictement supérieur à $h$, et chaque arc utilisé a un coefficient non nul. Les transitions de type (2) relient donc successivement $[p,h,h,i]$ à $[p,h,u_1,i+1]$, puis jusqu’à $[p,h,u_m,i+m]$, sans modifier $p$. Les indices de couche satisfont les bornes de l’énoncé. Pour une boucle ($m=0$), ce segment ne comporte aucun arc.
+Dans $C=h,u_1,\dots,u_m,h$, chaque $u_j$ est strictement supérieur à $h$, et chaque arc utilisé a un coefficient non nul. Les transitions de type (2) relient donc successivement $\langle p,h,h,i\rangle$ à $\langle p,h,u_1,i+1\rangle$, puis jusqu’à $\langle p,h,u_m,i+m\rangle$, sans modifier $p$. Ces $m$ arcs partent des couches $i,\dots,i+m-1$, toutes au plus égales à $n-2$ puisque $i\leq n-1-m$ : la condition « couche de départ $<n-1$ » des arcs de type (2) est remplie. Pour une boucle ($m=0$), ce segment ne comporte aucun arc.
 
-Pour une suite à $k$ marches, partir de $s$ par l’arc de type (1) vers sa première tête, avec $p=n\bmod2$. Entre marches successives, l’arc final $u_m\to h$ existe et la tête suivante est strictement supérieure : la transition (3) ferme la marche, change de tête et inverse la parité. Après $n-1$ arcs consommés, il reste exactement la fermeture de la dernière marche par (4), qui inverse une dernière fois la parité. L’indice de la sortie est $(n+k)\bmod2$, donc 0 pour une suite positive. Le produit des poids est conservé, l’unique arc supplémentaire depuis $s$ ayant poids 1.
+Pour une suite à $k$ marches, partir de $s$ par l’arc de type (1) vers sa première tête, avec $p=n\bmod2$. Entre marches successives, l’arc final $u_m\to h$ existe et la tête suivante est strictement supérieure : la transition (3) ferme la marche, change de tête et inverse la parité. Elle part d’une couche au plus égale à $n-2$, car la marche suivante a encore au moins un arc à parcourir. Après $n-1$ arcs consommés, il reste exactement la fermeture de la dernière marche par (4), qui inverse une dernière fois la parité. L’indice de la sortie est $(n+k)\bmod2$, donc 0 pour une suite positive. Le produit des poids est conservé, l’unique arc supplémentaire depuis $s$ ayant poids 1.
 
 ### Question 28 · Sommes de chemins par couche
 
-Écrire $F_i(p,h,v)=F_A([p,h,v,i])$. Pour $i\geq1$ et $v>h$,
+Écrire $F_i(p,h,v)=F_A(\langle p,h,v,i\rangle)$. Pour $i\geq1$ et $v>h$,
 
 $$
 F_i(p,h,v)=\sum_{w=h}^{n-1}F_{i-1}(p,h,w)A_{wv}.
@@ -287,11 +289,11 @@ $$
 F_i(p,h,h)=\sum_{h'=0}^{h-1}\sum_{w=h'}^{n-1}F_{i-1}(1-p,h',w)A_{wh'}.
 $$
 
-Le cas $w=h'$ est indispensable pour fermer une boucle de longueur 1. Les coefficients nuls peuvent rester dans les sommes. On additionne des produits, car chaque chemin s’obtient de façon unique en ajoutant son dernier arc à un chemin de la couche précédente.
+Le cas $w=h'$ est indispensable pour fermer une boucle de longueur 1 : la règle (3) du sujet autorise $u=h$. Le rapport du jury écrit cette seconde somme avec $w>h'$, ce qui semble être une coquille. Les coefficients nuls peuvent rester dans les sommes. On additionne des produits, car chaque chemin s’obtient de façon unique en ajoutant son dernier arc à un chemin de la couche précédente.
 
 ### Question 29 · Initialiser la couche zéro
 
-La fonction `create` fournit une table nulle. Les seuls arcs de la source ont poids 1 et conduisent aux sommets $[n\bmod2,h,h,0]$. La création en $O(n^3)$ domine les $n$ écritures.
+La fonction `create` fournit une table nulle. Les seuls arcs de la source ont poids 1 et conduisent aux sommets $\langle n\bmod2,h,h,0\rangle$. La création en $O(n^3)$ domine les $n$ écritures.
 
 ```c
 Fourtable *initialise(int n) {
@@ -334,7 +336,7 @@ Fourtable *remplit(int n, int *A) {
 
 ### Question 31 · Fermer la dernière marche et calculer le déterminant
 
-Le poids vers $t_0$ provient de $p=1$, et celui vers $t_1$ de $p=0$. Multiplier par $A_{vh}$ pour fermer la marche, puis soustraire les contributions vers $t_1$. Les $O(n^2)$ termes terminaux et la libération de la table s’ajoutent au coût $O(n^4)$ du remplissage. Pour $n=1$, on retrouve $A_{00}$. Les calculs numériques de la partie C supposent que coefficients et intermédiaires sont représentables, comme dans le modèle arithmétique de l’épreuve.
+Le poids vers $t_0$ provient de $p=1$, et celui vers $t_1$ de $p=0$. Multiplier par $A_{vh}$ pour fermer la marche, puis soustraire les contributions vers $t_1$. Les $O(n^2)$ termes terminaux et la libération de la table s’ajoutent au coût $O(n^4)$ du remplissage. Pour $n=1$, on retrouve $A_{00}$. Les calculs en C des parties II et III supposent que coefficients et intermédiaires sont représentables par un `int`, comme dans le modèle arithmétique de l’épreuve.
 
 ```c
 int determinant(int n, int *A) {
@@ -379,47 +381,20 @@ int tirage_tutte(int n, int *A) {
 
 Si le graphe n’a aucun couplage parfait, le polynôme de Tutte est identiquement nul et chaque essai renvoie zéro. Sinon, c’est un polynôme non nul de degré total au plus $n$ par la formule des permutations. Pour $n\geq2$, la probabilité d’un zéro accidentel est au plus $n/(n^2+1)<1/n$. Avec $r$ essais indépendants, la probabilité d’une réponse fausse est donc strictement inférieure à $n^{-r}$. Un seul essai non nul certifie la réponse positive. Pour $n$ impair, répondre immédiatement faux.
 
-Pour $p\geq1$, prendre $b=\lfloor\log_2 n\rfloor$ et $r=\lceil p/b\rceil$ donne $n^{-r}\leq2^{-p}$. La solution usuelle répète simplement Q32, en temps $O(n^4\lceil p/b\rceil)$. Le plafond compte si $p$ peut rester petit et $n$ croître : pour obtenir uniformément la borne demandée $O(pn^4/\log_2 n)$ avec les deux paramètres, le code emploie un seul déterminant cubique lorsque $p<b$. Dans cette branche un seul tirage suffit et $n^3=O(pn^4/\log_2 n)$. Pour $p\geq b$, $r\leq2p/b$ et Q32 convient. L’option $p=0$ effectue encore un essai et satisfait la borne probabiliste stricte.
+Prendre $b=\lfloor\log_2 n\rfloor\geq1$ et $r=\max(1,\lceil p/b\rceil)$ essais, chacun étant un appel à `tirage_tutte`. Comme $n\geq2^b$, on a $n^{-r}\leq2^{-br}\leq2^{-p}$ : la probabilité d’erreur est strictement inférieure à $2^{-p}$. L’erreur n’est possible que dans un sens : la réponse « vrai » est toujours exacte.
 
-Le test cubique utilise l’élimination entière de Bareiss : à chaque pivot non nul, l’identité des mineurs donne le nouveau coefficient $(a_{kk}a_{ij}-a_{ik}a_{kj})/d$, où $d$ est le pivot précédent, initialement 1. La division est exacte. Un échange de lignes permet de choisir un pivot ; son effet sur le signe est indifférent au test de non-nullité. Une colonne sans pivot prouve la singularité. En C à entiers bornés, l’arithmétique exacte de l’exercice demanderait des entiers de précision adaptée pour de grandes matrices.
+Chaque essai coûte $O(n^4)$ par Q32, le calcul de $b$ coûte $O(\log n)$. Comme $b\geq\frac12\log_2 n$, on a $r\leq1+p/b\leq1+2p/\log_2 n$, d’où un temps $O\big(n^4(1+p/\log_2 n)\big)$, soit $O(pn^4/\log_2 n)$ dès que $p\geq\log_2 n$. Pour $p<\log_2 n$, un seul essai suffit et coûte $O(n^4)$ : la borne de l’énoncé se lit alors à un essai près. Une élimination de Gauss sans fraction (algorithme de Bareiss), en $O(n^3)$, donnerait la borne pour tout $p\geq1$, mais elle est hors programme et n’est pas attendue ici.
 
 ```c
-/* Test de non-nullité par élimination entière de Bareiss.
-   Les opérations sont exactes dans le modèle de l'énoncé. */
-bool tirage_rapide(int n, int *A) {
-    int t[n*n];
-    remplir_tutte(n, A, t);
-    int precedent = 1;
-    for (int k = 0; k < n-1; ++k) {
-        int r = k;
-        while (r < n && t[r*n+k] == 0) ++r;
-        if (r == n) return false;
-        if (r != k)
-            for (int j = k; j < n; ++j) {
-                int temporaire = t[k*n+j];
-                t[k*n+j] = t[r*n+j];
-                t[r*n+j] = temporaire;
-            }
-        int pivot = t[k*n+k];
-        for (int i = k+1; i < n; ++i)
-            for (int j = k+1; j < n; ++j)
-                t[i*n+j] = (pivot*t[i*n+j] - t[i*n+k]*t[k*n+j])
-                            / precedent;
-        precedent = pivot;
-    }
-    return t[(n-1)*n+n-1] != 0;
-}
-
 bool parfait(int n, int *A, int p) {
-    if (n % 2 != 0) return false;
-    int bits = 0;
+    if (n % 2 != 0) return false;   /* nombre impair de sommets */
+    int bits = 0;                   /* partie entière de log2(n) */
     for (int v = n; v > 1; v /= 2) ++bits;
-    /* n est non nul par hypothèse, donc ici n >= 2. */
-    if (p < bits) return tirage_rapide(n, A);
+    /* n est pair et non nul, donc n >= 2 et bits >= 1. */
     int repetitions = p/bits + (p%bits != 0);
     if (repetitions == 0) repetitions = 1;
     for (int r = 0; r < repetitions; ++r)
-        if (tirage_tutte(n,A) != 0) return true;
+        if (tirage_tutte(n, A) != 0) return true;
     return false;
 }
 ```

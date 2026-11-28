@@ -4,15 +4,20 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
-## Repères
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
 
-Un chemin augmentant part et arrive sur des sommets découverts. Dans la partie II, distinguer les coefficients de la matrice, les poids des chemins et la parité avant la dernière fermeture. Dans la partie III, un déterminant non nul est un certificat, tandis qu’un zéro peut dépendre du tirage.
+## Présentation du sujet
+
+Le sujet porte sur les couplages dans les graphes non orientés. La partie I (OCaml, 21 questions) construit l’algorithme d’Edmonds : chemins d’augmentation, contraction des bourgeons, recherche dans une forêt alternée, puis itération jusqu’à un couplage de cardinal maximum. La partie II (C, 10 questions) implémente le déterminant sans division de Mahajan et Vinay, par programmation dynamique sur un graphe en couches, en $O(n^4)$. La partie III (C, 2 questions) en déduit un test probabiliste d’existence d’un couplage parfait, par la matrice de Tutte et le lemme de Schwartz-Zippel.
+
+Les questions de programmation dominent ; les preuves demandées (Q8, Q12, Q16, Q27) sont courtes mais exigent des invariants énoncés proprement. Les cinq questions les plus lourdes au barème publié par le rapport 2025 sont Q11, Q16, Q19, Q30 et Q33 ; les questions de compréhension (Q3, Q5 à Q7, Q22 à Q26) se traitent vite et ne doivent pas être laissées. Un chemin d’augmentation part et arrive sur des sommets non couverts. Dans la partie II, distinguer les coefficients de la matrice, les poids des chemins et la parité avant la dernière fermeture. Dans la partie III, un déterminant non nul est un certificat, tandis qu’un zéro peut dépendre du tirage.
 
 ## I · Algorithme d’Edmonds
 
 ### Question 1 · Différence de listes
 
-**Indication.** Parcourir seulement la première liste par récursion.
+> [!INDICATION]
+> Parcourir seulement la première liste par récursion.
 
 #### Solution
 
@@ -26,9 +31,13 @@ let rec del xs ys =
   | x :: suite -> x :: del suite ys
 ```
 
+> [!JURY]
+> Le préambule fixe la liste des fonctions de bibliothèque autorisées. Le rapport 2025 signale des points retirés pour `List.filter`, `List.iter` ou `List.fold_left`, et demande des noms de variables explicites, ainsi que des commentaires pour un code de plus d’une page.
+
 ### Question 2 · Clés d’une liste d’association
 
-**Indication.** La clé est le premier champ de chaque paire.
+> [!INDICATION]
+> La clé est le premier champ de chaque paire.
 
 #### Solution
 
@@ -40,7 +49,8 @@ let keys associations = List.map (fun (cle, _) -> cle) associations
 
 ### Question 3 · Reconnaître un couplage sur le dessin
 
-**Indication.** Vérifier d’abord l’existence de chaque arête, puis l’unicité de chaque extrémité.
+> [!INDICATION]
+> Vérifier d’abord l’existence de chaque arête, puis l’unicité de chaque extrémité.
 
 #### Solution
 
@@ -48,7 +58,8 @@ let keys associations = List.map (fun (cle, _) -> cle) associations
 
 ### Question 4 · Liste des sommets couverts
 
-**Indication.** La précondition de couplage garantit déjà l’absence de doublons.
+> [!INDICATION]
+> La précondition de couplage garantit déjà l’absence de doublons.
 
 #### Solution
 
@@ -60,9 +71,13 @@ let rec couverts = function
   | (a,b) :: reste -> a :: b :: couverts reste
 ```
 
+> [!PIEGE]
+> Un couplage n’a pas de sommet répété : appeler `join` pour retirer des doublons est inutile et risque de dégrader la complexité, ce que le rapport 2025 a pénalisé.
+
 ### Question 5 · Autre couplage de cardinal maximum
 
-**Indication.** Une borne absolue se lit sur le nombre de sommets.
+> [!INDICATION]
+> Une borne absolue se lit sur le nombre de sommets.
 
 #### Solution
 
@@ -70,7 +85,8 @@ Choisir $\{0,5\},\{1,2\},\{3,4\}$. Ces trois arêtes couvrent les six sommets. U
 
 ### Question 6 · Augmenter le couplage du graphe (1)
 
-**Indication.** Les deux extrémités à libérer sont 1 et 3.
+> [!INDICATION]
+> Les deux extrémités à libérer sont 1 et 3.
 
 #### Solution
 
@@ -80,7 +96,8 @@ Le chemin $(1,2,4,3)$ alterne une arête libre, l’arête couplée $\{2,4\}$ et
 
 ### Question 7 · Augmentation en un seul pas
 
-**Indication.** Une arête entre deux sommets découverts est déjà un chemin augmentant.
+> [!INDICATION]
+> Une arête entre deux sommets découverts est déjà un chemin augmentant.
 
 #### Solution
 
@@ -88,15 +105,20 @@ Dans le dessin de droite, le couplage contient $\{0,2\},\{4,6\},\{5,7\}$. Les so
 
 ### Question 8 · Effet de la différence symétrique
 
-**Indication.** Compter séparément les incidences des deux extrémités et de chaque sommet intérieur.
+> [!INDICATION]
+> Compter séparément les incidences des deux extrémités et de chaque sommet intérieur.
 
 #### Solution
 
-Les deux arêtes extrêmes du chemin (éventuellement la même) sont hors du couplage, car leurs extrémités sont libres. Sur un chemin alternant et élémentaire, chaque sommet intérieur touche une arête couplée et une arête libre du chemin. La bascule les échange ; aucune arête couplée extérieure ne touche ce sommet. Chacune des deux extrémités reçoit une unique arête, et les sommets hors du chemin gardent leurs incidences. C’est bien un couplage. Si le chemin a $2q+1$ arêtes, on en retire $q$ et on en ajoute $q+1$ : le cardinal augmente exactement de un. Le cas $q=0$ couvre Q7.
+Les deux arêtes extrêmes du chemin (éventuellement la même) sont hors du couplage, car leurs extrémités sont libres. Sur un chemin alternant et élémentaire, chaque sommet intérieur touche une arête couplée et une arête libre du chemin. La bascule les échange ; aucune arête couplée extérieure ne touche ce sommet. Chacune des deux extrémités reçoit une unique arête, et les sommets hors du chemin gardent leurs incidences. C’est bien un couplage. La première et la dernière arête sont hors du couplage et les arêtes alternent : le chemin a donc un nombre impair $2q+1$ d’arêtes, dont $q$ dans le couplage et $q+1$ en dehors. On en retire $q$ et on en ajoute $q+1$ : le cardinal augmente exactement de un. Le cas $q=0$ couvre Q7.
+
+> [!PIEGE]
+> Un chemin d’augmentation peut n’avoir qu’une arête, hors du couplage (Q7). Une preuve qui suppose une arête couplée sur le chemin est incomplète. Le rapport 2025 note aussi que la seconde moitié de la question (le cardinal augmente) est souvent oubliée.
 
 ### Question 9 · Séparer les arêtes alternées
 
-**Indication.** La première arête n’est pas couplée ; la suivante l’est.
+> [!INDICATION]
+> La première arête n’est pas couplée ; la suivante l’est.
 
 #### Solution
 
@@ -115,9 +137,13 @@ let separer chemin =
   in visiter false [] [] chemin
 ```
 
+> [!JURY]
+> Erreurs relevées par le rapport 2025 : arêtes non ordonnées en (min, max), chemin traité comme une liste d’arêtes, rôles de `lstin` et `lstout` échangés, arêtes perdues parce qu’un sommet intérieur appartient à deux arêtes. Un test sur un chemin à deux ou trois sommets les révèle.
+
 ### Question 10 · Calculer le couplage augmenté
 
-**Indication.** La liste des arêtes retirées et celle des arêtes ajoutées ne jouent pas le même rôle.
+> [!INDICATION]
+> La liste des arêtes retirées et celle des arêtes ajoutées ne jouent pas le même rôle.
 
 #### Solution
 
@@ -131,7 +157,8 @@ let augmente cpl chemin =
 
 ### Question 11 · Contracter un ensemble de sommets
 
-**Indication.** Construire aussi la liste d’adjacence du nouveau sommet.
+> [!INDICATION]
+> Construire aussi la liste d’adjacence du nouveau sommet.
 
 #### Solution
 
@@ -151,15 +178,20 @@ let contracteG graphe bourgeon w =
 
 ### Question 12 · Validité de la contraction du couplage
 
-**Indication.** Combien de sommets du cycle peuvent encore être appariés à l’extérieur ?
+> [!INDICATION]
+> Combien de sommets du cycle peuvent encore être appariés à l’extérieur ?
 
 #### Solution
 
 Sur le bourgeon à $2m+1$ sommets, les $m$ arêtes couplées internes couvrent exactement $2m$ sommets distincts. Seule la base peut être incidente à une arête du couplage qui sort du bourgeon. Le nouveau sommet $w$ est donc incident à au plus une arête du couplage contracté. À chaque sommet extérieur, les incidences sont conservées avec éventuellement un voisin renommé ; chaque sommet reste incident à au plus une arête. Toutes les arêtes retenues existent dans le graphe contracté.
 
+> [!JURY]
+> Le point décisif, d’après le rapport 2025 : au plus une arête du couplage relie le bourgeon à l’extérieur. Une vérification directe de la définition est plus sûre qu’un raisonnement par l’absurde.
+
 ### Question 13 · Contracter les paires du couplage
 
-**Indication.** Après renommage, une boucle correspond à une arête avalée.
+> [!INDICATION]
+> Après renommage, une boucle correspond à une arête avalée.
 
 #### Solution
 
@@ -179,7 +211,8 @@ let contracteC cpl bourgeon w =
 
 ### Question 14 · Retrouver une étiquette dans une forêt
 
-**Indication.** Après l’échec dans les enfants d’une racine, explorer les arbres frères.
+> [!INDICATION]
+> Après l’échec dans les enfants d’une racine, explorer les arbres frères.
 
 #### Solution
 
@@ -199,9 +232,13 @@ let rec find foret v =
         | None -> find suivants v
 ```
 
+> [!JURY]
+> Le rapport 2025 relève l’oubli du constructeur `N`, une syntaxe `None`/`Some` mal maîtrisée, l’oubli du sommet cherché dans le chemin, et l’arrêt de la recherche après le premier arbre alors qu’il faut poursuivre dans les suivants.
+
 ### Question 15 · Ajouter un enfant aux occurrences de u
 
-**Indication.** Recopier aussi les descendants des nœuds qui correspondent au test.
+> [!INDICATION]
+> Recopier aussi les descendants des nœuds qui correspondent au test.
 
 #### Solution
 
@@ -217,7 +254,8 @@ let rec extend foret u v =
 
 ### Question 16 · Pourquoi relier deux arbres donne un chemin augmentant
 
-**Indication.** Établir l’invariant de la forêt depuis les racines découvertes.
+> [!INDICATION]
+> Établir l’invariant de la forêt depuis les racines découvertes.
 
 #### Solution
 
@@ -225,9 +263,13 @@ Au départ les racines sont les sommets non couverts, toutes distinctes. Une ext
 
 Deux arbres distincts ont donc des chemins racine–sommet disjoints. Leurs extrémités paires, si elles sont autres que les racines, sont atteintes par une arête couplée. L’arête $uv$ qui joint les deux arbres est nécessairement libre car tout partenaire d’un nœud couvert appartient au même arbre. Concaténer le premier chemin, $uv$ et le second chemin en sens inverse donne un chemin élémentaire alternant, de longueur positive, entre deux racines libres.
 
+> [!JURY]
+> Le rapport 2025 attend deux propriétés : tout chemin d’un nœud à sa racine est alternant et se termine à la racine par une arête hors du couplage ; un sommet figure au plus une fois dans la forêt. La seconde, qui donne le caractère élémentaire, est souvent oubliée.
+
 ### Question 17 · Ligne 15 de la figure 1
 
-**Indication.** La longueur de la liste des sommets est égale à la profondeur augmentée de un.
+> [!INDICATION]
+> La longueur de la liste des sommets est égale à la profondeur augmentée de un.
 
 #### Solution
 
@@ -239,7 +281,8 @@ aux_voisins u tl
 
 ### Question 18 · Lignes 17 et 18
 
-**Indication.** Les chemins fournis par find sont tous deux dirigés depuis leur racine.
+> [!INDICATION]
+> Les chemins fournis par find sont tous deux dirigés depuis leur racine.
 
 #### Solution
 
@@ -249,9 +292,13 @@ Les deux arbres sont distincts et l’arête $uv$ est implicite entre le dernier
 Some (cu @ List.rev cv)
 ```
 
+> [!PIEGE]
+> Deux oublis pénalisés d’après le rapport 2025 : le constructeur `Some` et le renversement de `cv`.
+
 ### Question 19 · Extraire le bourgeon
 
-**Indication.** La base est le dernier ancêtre commun des deux sommets.
+> [!INDICATION]
+> La base est le dernier ancêtre commun des deux sommets.
 
 #### Solution
 
@@ -270,9 +317,13 @@ let extrait cu cv =
   | _ -> []  (* Appel exclu pour les chemins de la figure 1. *)
 ```
 
+> [!PIEGE]
+> Les deux chemins peuvent partager bien plus que la racine : la base du bourgeon est leur dernier sommet commun, et la racine de l’arbre n’appartient pas forcément au bourgeon. Le rapport 2025 signale cette confusion comme une erreur lourdement pénalisée et conseille de faire un dessin.
+
 ### Question 20 · Lignes 24 à 26
 
-**Indication.** La recherche récursive travaille sur des noms contractés.
+> [!INDICATION]
+> La recherche récursive travaille sur des noms contractés.
 
 #### Solution
 
@@ -286,7 +337,8 @@ Si elle échoue, l’équivalence de contraction admise prouve qu’aucune augme
 
 ### Question 21 · Itération d’Edmonds
 
-**Indication.** Le lemme de Berge fournit la condition d’arrêt exacte.
+> [!INDICATION]
+> Le lemme de Berge fournit la condition d’arrêt exacte.
 
 #### Solution
 
@@ -305,7 +357,8 @@ let edmonds graphe =
 
 ### Question 22 · Index d’une matrice linéarisée
 
-**Indication.** Chaque ligne occupe n cases contiguës et les indices commencent à zéro.
+> [!INDICATION]
+> Chaque ligne occupe n cases contiguës et les indices commencent à zéro.
 
 #### Solution
 
@@ -322,7 +375,8 @@ void write_sqmatrix(int n, int *A, int i, int j, int val) {
 
 ### Question 23 · Graphe pondéré d’une matrice
 
-**Indication.** La ligne indique l’origine de l’arc, la colonne sa destination.
+> [!INDICATION]
+> La ligne indique l’origine de l’arc, la colonne sa destination.
 
 #### Solution
 
@@ -332,7 +386,8 @@ Les sommets 0 et 1 portent des boucles de poids respectifs 2 et 1. L’arc $0\to
 
 ### Question 24 · Marche de tête 1 et de longueur 3
 
-**Indication.** Partir du plus petit sommet qui sera visité et le retrouver seulement à la fin.
+> [!INDICATION]
+> Partir du plus petit sommet qui sera visité et le retrouver seulement à la fin.
 
 #### Solution
 
@@ -340,7 +395,8 @@ La marche $1\to3\to2\to1$ utilise trois arcs du dessin. Les sommets intermédiai
 
 ### Question 25 · Lister les marches puis les suites
 
-**Indication.** Une boucle peut répéter un sommet intérieur, mais la tête d’une marche ne doit jamais être intérieure.
+> [!INDICATION]
+> Une boucle peut répéter un sommet intérieur, mais la tête d’une marche ne doit jamais être intérieure.
 
 #### Solution
 
@@ -357,19 +413,20 @@ Pour une suite, la longueur totale doit être exactement 3 et les têtes doivent
 
 ### Question 26 · Cinq arcs à ajouter sur la figure
 
-**Indication.** Vérifier tour à tour les arcs d’initialisation, d’extension, de changement de tête et de sortie.
+> [!INDICATION]
+> Vérifier tour à tour les arcs d’initialisation, d’extension, de changement de tête et de sortie.
 
 #### Solution
 
-En notant $[p,h,u,i]$ les quadruplets de la planche, il manque exactement :
+En notant $\langle p,h,u,i\rangle$ les quadruplets de la planche comme dans le sujet (parenthèses sur la figure), il manque exactement :
 
 | Origine | Destination | Poids |
 |---|---|---:|
-| $s$ | $[0,0,0,0]$ | $1$ |
-| $[0,0,0,0]$ | $[0,0,1,1]$ | $3$ |
-| $[0,0,0,0]$ | $[1,1,1,1]$ | $2$ |
-| $[0,0,1,1]$ | $t_1$ | $-2$ |
-| $[1,1,1,1]$ | $t_0$ | $1$ |
+| $s$ | $\langle 0,0,0,0\rangle$ | $1$ |
+| $\langle 0,0,0,0\rangle$ | $\langle 0,0,1,1\rangle$ | $3$ |
+| $\langle 0,0,0,0\rangle$ | $\langle 1,1,1,1\rangle$ | $2$ |
+| $\langle 0,0,1,1\rangle$ | $t_1$ | $-2$ |
+| $\langle 1,1,1,1\rangle$ | $t_0$ | $1$ |
 
 En particulier, le troisième arc ferme la boucle en 0 puis commence à la tête 1. Les chemins de poids $2$ vers $t_0$ et $-6$ vers $t_1$ donnent bien $2-(-6)=8$, le déterminant de la matrice de Q23.
 
@@ -377,21 +434,23 @@ En particulier, le troisième arc ferme la boucle en 0 puis commence à la tête
 
 ### Question 27 · D’une suite positive à un chemin vers t₀
 
-**Indication.** Distinguer la continuation d’une marche et sa fermeture sur sa tête.
+> [!INDICATION]
+> Distinguer la continuation d’une marche et sa fermeture sur sa tête.
 
 #### Solution
 
-Dans $C=h,u_1,\dots,u_m,h$, chaque $u_j$ est strictement supérieur à $h$, et chaque arc utilisé a un coefficient non nul. Les transitions de type (2) relient donc successivement $[p,h,h,i]$ à $[p,h,u_1,i+1]$, puis jusqu’à $[p,h,u_m,i+m]$, sans modifier $p$. Les indices de couche satisfont les bornes de l’énoncé. Pour une boucle ($m=0$), ce segment ne comporte aucun arc.
+Dans $C=h,u_1,\dots,u_m,h$, chaque $u_j$ est strictement supérieur à $h$, et chaque arc utilisé a un coefficient non nul. Les transitions de type (2) relient donc successivement $\langle p,h,h,i\rangle$ à $\langle p,h,u_1,i+1\rangle$, puis jusqu’à $\langle p,h,u_m,i+m\rangle$, sans modifier $p$. Ces $m$ arcs partent des couches $i,\dots,i+m-1$, toutes au plus égales à $n-2$ puisque $i\leq n-1-m$ : la condition « couche de départ $<n-1$ » des arcs de type (2) est remplie. Pour une boucle ($m=0$), ce segment ne comporte aucun arc.
 
-Pour une suite à $k$ marches, partir de $s$ par l’arc de type (1) vers sa première tête, avec $p=n\bmod2$. Entre marches successives, l’arc final $u_m\to h$ existe et la tête suivante est strictement supérieure : la transition (3) ferme la marche, change de tête et inverse la parité. Après $n-1$ arcs consommés, il reste exactement la fermeture de la dernière marche par (4), qui inverse une dernière fois la parité. L’indice de la sortie est $(n+k)\bmod2$, donc 0 pour une suite positive. Le produit des poids est conservé, l’unique arc supplémentaire depuis $s$ ayant poids 1.
+Pour une suite à $k$ marches, partir de $s$ par l’arc de type (1) vers sa première tête, avec $p=n\bmod2$. Entre marches successives, l’arc final $u_m\to h$ existe et la tête suivante est strictement supérieure : la transition (3) ferme la marche, change de tête et inverse la parité. Elle part d’une couche au plus égale à $n-2$, car la marche suivante a encore au moins un arc à parcourir. Après $n-1$ arcs consommés, il reste exactement la fermeture de la dernière marche par (4), qui inverse une dernière fois la parité. L’indice de la sortie est $(n+k)\bmod2$, donc 0 pour une suite positive. Le produit des poids est conservé, l’unique arc supplémentaire depuis $s$ ayant poids 1.
 
 ### Question 28 · Sommes de chemins par couche
 
-**Indication.** L’arrivée sur une tête et l’arrivée strictement au-dessus de cette tête correspondent à deux types d’arcs disjoints.
+> [!INDICATION]
+> L’arrivée sur une tête et l’arrivée strictement au-dessus de cette tête correspondent à deux types d’arcs disjoints.
 
 #### Solution
 
-Écrire $F_i(p,h,v)=F_A([p,h,v,i])$. Pour $i\geq1$ et $v>h$,
+Écrire $F_i(p,h,v)=F_A(\langle p,h,v,i\rangle)$. Pour $i\geq1$ et $v>h$,
 
 $$
 F_i(p,h,v)=\sum_{w=h}^{n-1}F_{i-1}(p,h,w)A_{wv}.
@@ -403,15 +462,19 @@ $$
 F_i(p,h,h)=\sum_{h'=0}^{h-1}\sum_{w=h'}^{n-1}F_{i-1}(1-p,h',w)A_{wh'}.
 $$
 
-Le cas $w=h'$ est indispensable pour fermer une boucle de longueur 1. Les coefficients nuls peuvent rester dans les sommes. On additionne des produits, car chaque chemin s’obtient de façon unique en ajoutant son dernier arc à un chemin de la couche précédente.
+Le cas $w=h'$ est indispensable pour fermer une boucle de longueur 1 : la règle (3) du sujet autorise $u=h$. Le rapport du jury écrit cette seconde somme avec $w>h'$, ce qui semble être une coquille. Les coefficients nuls peuvent rester dans les sommes. On additionne des produits, car chaque chemin s’obtient de façon unique en ajoutant son dernier arc à un chemin de la couche précédente.
+
+> [!PIEGE]
+> Deux formules, selon que $v=h$ ou $v>h$. Les poids se multiplient le long d’un chemin et s’additionnent entre chemins. Le rapport 2025 note qu’une formule unique à fonctions indicatrices est généralement fausse.
 
 ### Question 29 · Initialiser la couche zéro
 
-**Indication.** Une seule parité peut être atteinte depuis la source.
+> [!INDICATION]
+> Une seule parité peut être atteinte depuis la source.
 
 #### Solution
 
-La fonction `create` fournit une table nulle. Les seuls arcs de la source ont poids 1 et conduisent aux sommets $[n\bmod2,h,h,0]$. La création en $O(n^3)$ domine les $n$ écritures.
+La fonction `create` fournit une table nulle. Les seuls arcs de la source ont poids 1 et conduisent aux sommets $\langle n\bmod2,h,h,0\rangle$. La création en $O(n^3)$ domine les $n$ écritures.
 
 ```c
 Fourtable *initialise(int n) {
@@ -422,9 +485,13 @@ Fourtable *initialise(int n) {
 }
 ```
 
+> [!JURY]
+> Erreurs relevées par le rapport 2025 : oubli de la parité $n \bmod 2$, mise à 1 de trop de cases de la couche 0 par une double boucle sur $(h,u)$ au lieu des seuls sommets $(h,h)$, ordre des paramètres de `write`.
+
 ### Question 30 · Remplir la table sans construire le graphe
 
-**Indication.** Au début d’une tête h, un accumulateur contient déjà la somme des fermetures depuis les têtes inférieures.
+> [!INDICATION]
+> Au début d’une tête h, un accumulateur contient déjà la somme des fermetures depuis les têtes inférieures.
 
 #### Solution
 
@@ -456,13 +523,20 @@ Fourtable *remplit(int n, int *A) {
 }
 ```
 
+> [!METHODE]
+> Quand une somme ne diffère de la précédente que par quelques termes, la tenir à jour dans un accumulateur plutôt que la recalculer : ici la somme sur $h'<h$ gagne un facteur $n$.
+
+> [!JURY]
+> La justification de complexité compte dans la note et a parfois été oubliée. Le rapport 2025 relève aussi un ordre de boucles invalide, une somme écrasée au lieu d’être accumulée, et une boucle qui repart de la couche 0 déjà initialisée.
+
 ### Question 31 · Fermer la dernière marche et calculer le déterminant
 
-**Indication.** La parité de la couche terminale est celle d’avant l’ultime fermeture.
+> [!INDICATION]
+> La parité de la couche terminale est celle d’avant l’ultime fermeture.
 
 #### Solution
 
-Le poids vers $t_0$ provient de $p=1$, et celui vers $t_1$ de $p=0$. Multiplier par $A_{vh}$ pour fermer la marche, puis soustraire les contributions vers $t_1$. Les $O(n^2)$ termes terminaux et la libération de la table s’ajoutent au coût $O(n^4)$ du remplissage. Pour $n=1$, on retrouve $A_{00}$. Les calculs numériques de la partie C supposent que coefficients et intermédiaires sont représentables, comme dans le modèle arithmétique de l’épreuve.
+Le poids vers $t_0$ provient de $p=1$, et celui vers $t_1$ de $p=0$. Multiplier par $A_{vh}$ pour fermer la marche, puis soustraire les contributions vers $t_1$. Les $O(n^2)$ termes terminaux et la libération de la table s’ajoutent au coût $O(n^4)$ du remplissage. Pour $n=1$, on retrouve $A_{00}$. Les calculs en C des parties II et III supposent que coefficients et intermédiaires sont représentables par un `int`, comme dans le modèle arithmétique de l’épreuve.
 
 ```c
 int determinant(int n, int *A) {
@@ -478,11 +552,15 @@ int determinant(int n, int *A) {
 }
 ```
 
+> [!JURY]
+> Erreurs courantes d’après le rapport 2025 : oubli des poids de la matrice à la fermeture, oubli du signe des suites, oubli de `free`.
+
 ## III · Test probabiliste des couplages parfaits
 
 ### Question 32 · Évaluer la matrice de Tutte
 
-**Indication.** Une variable symbolique appartient à une paire non ordonnée, donc ne doit être tirée qu’une fois.
+> [!INDICATION]
+> Une variable symbolique appartient à une paire non ordonnée, donc ne doit être tirée qu’une fois.
 
 #### Solution
 
@@ -507,55 +585,46 @@ int tirage_tutte(int n, int *A) {
 }
 ```
 
+> [!JURY]
+> La matrice de Tutte est antisymétrique : un seul tirage par arête, son opposé dans la case symétrique. Le rapport 2025 pénalise deux tirages indépendants, la modification du tableau `A` reçu et l’oubli de renvoyer le déterminant.
+
 ### Question 33 · Borner strictement l’erreur du test
 
-**Indication.** Le lemme de Schwartz–Zippel utilise le degré total et le cardinal de l’ensemble de tirage, pas le nombre de variables.
+> [!INDICATION]
+> Le lemme de Schwartz–Zippel utilise le degré total et le cardinal de l’ensemble de tirage, pas le nombre de variables.
 
 #### Solution
 
 Si le graphe n’a aucun couplage parfait, le polynôme de Tutte est identiquement nul et chaque essai renvoie zéro. Sinon, c’est un polynôme non nul de degré total au plus $n$ par la formule des permutations. Pour $n\geq2$, la probabilité d’un zéro accidentel est au plus $n/(n^2+1)<1/n$. Avec $r$ essais indépendants, la probabilité d’une réponse fausse est donc strictement inférieure à $n^{-r}$. Un seul essai non nul certifie la réponse positive. Pour $n$ impair, répondre immédiatement faux.
 
-Pour $p\geq1$, prendre $b=\lfloor\log_2 n\rfloor$ et $r=\lceil p/b\rceil$ donne $n^{-r}\leq2^{-p}$. La solution usuelle répète simplement Q32, en temps $O(n^4\lceil p/b\rceil)$. Le plafond compte si $p$ peut rester petit et $n$ croître : pour obtenir uniformément la borne demandée $O(pn^4/\log_2 n)$ avec les deux paramètres, le code emploie un seul déterminant cubique lorsque $p<b$. Dans cette branche un seul tirage suffit et $n^3=O(pn^4/\log_2 n)$. Pour $p\geq b$, $r\leq2p/b$ et Q32 convient. L’option $p=0$ effectue encore un essai et satisfait la borne probabiliste stricte.
+Prendre $b=\lfloor\log_2 n\rfloor\geq1$ et $r=\max(1,\lceil p/b\rceil)$ essais, chacun étant un appel à `tirage_tutte`. Comme $n\geq2^b$, on a $n^{-r}\leq2^{-br}\leq2^{-p}$ : la probabilité d’erreur est strictement inférieure à $2^{-p}$. L’erreur n’est possible que dans un sens : la réponse « vrai » est toujours exacte.
 
-Le test cubique utilise l’élimination entière de Bareiss : à chaque pivot non nul, l’identité des mineurs donne le nouveau coefficient $(a_{kk}a_{ij}-a_{ik}a_{kj})/d$, où $d$ est le pivot précédent, initialement 1. La division est exacte. Un échange de lignes permet de choisir un pivot ; son effet sur le signe est indifférent au test de non-nullité. Une colonne sans pivot prouve la singularité. En C à entiers bornés, l’arithmétique exacte de l’exercice demanderait des entiers de précision adaptée pour de grandes matrices.
+Chaque essai coûte $O(n^4)$ par Q32, le calcul de $b$ coûte $O(\log n)$. Comme $b\geq\frac12\log_2 n$, on a $r\leq1+p/b\leq1+2p/\log_2 n$, d’où un temps $O\big(n^4(1+p/\log_2 n)\big)$, soit $O(pn^4/\log_2 n)$ dès que $p\geq\log_2 n$. Pour $p<\log_2 n$, un seul essai suffit et coûte $O(n^4)$ : la borne de l’énoncé se lit alors à un essai près. Une élimination de Gauss sans fraction (algorithme de Bareiss), en $O(n^3)$, donnerait la borne pour tout $p\geq1$, mais elle est hors programme et n’est pas attendue ici.
 
 ```c
-/* Test de non-nullité par élimination entière de Bareiss.
-   Les opérations sont exactes dans le modèle de l'énoncé. */
-bool tirage_rapide(int n, int *A) {
-    int t[n*n];
-    remplir_tutte(n, A, t);
-    int precedent = 1;
-    for (int k = 0; k < n-1; ++k) {
-        int r = k;
-        while (r < n && t[r*n+k] == 0) ++r;
-        if (r == n) return false;
-        if (r != k)
-            for (int j = k; j < n; ++j) {
-                int temporaire = t[k*n+j];
-                t[k*n+j] = t[r*n+j];
-                t[r*n+j] = temporaire;
-            }
-        int pivot = t[k*n+k];
-        for (int i = k+1; i < n; ++i)
-            for (int j = k+1; j < n; ++j)
-                t[i*n+j] = (pivot*t[i*n+j] - t[i*n+k]*t[k*n+j])
-                            / precedent;
-        precedent = pivot;
-    }
-    return t[(n-1)*n+n-1] != 0;
-}
-
 bool parfait(int n, int *A, int p) {
-    if (n % 2 != 0) return false;
-    int bits = 0;
+    if (n % 2 != 0) return false;   /* nombre impair de sommets */
+    int bits = 0;                   /* partie entière de log2(n) */
     for (int v = n; v > 1; v /= 2) ++bits;
-    /* n est non nul par hypothèse, donc ici n >= 2. */
-    if (p < bits) return tirage_rapide(n, A);
+    /* n est pair et non nul, donc n >= 2 et bits >= 1. */
     int repetitions = p/bits + (p%bits != 0);
     if (repetitions == 0) repetitions = 1;
     for (int r = 0; r < repetitions; ++r)
-        if (tirage_tutte(n,A) != 0) return true;
+        if (tirage_tutte(n, A) != 0) return true;
     return false;
 }
 ```
+
+> [!METHODE]
+> Amplification : un test à erreur unilatérale bornée par $q<1$ sur un essai, répété $r$ fois de façon indépendante, a une erreur au plus $q^r$. On choisit $r$ d’après la précision voulue.
+
+> [!JURY]
+> La note se partage entre le code, la justification de l’erreur et la complexité. Le rapport 2025 relève des confusions sur l’origine de l’aléa (ici les tirages, non le graphe) et signale des boucles sans condition d’arrêt correcte et des fonctions qui renvoient la négation du résultat.
+
+## Bilan
+
+- Lemme de Berge : un couplage est de cardinal maximum si et seulement s’il n’admet aucun chemin d’augmentation ; l’algorithme en découle par itération, avec au plus $\lfloor |V|/2\rfloor$ augmentations.
+- Une forêt alternée enracinée aux sommets libres donne un chemin d’augmentation dès que deux sommets pairs d’arbres distincts sont voisins ; dans un même arbre, on contracte le bourgeon et on recommence.
+- Le déterminant s’écrit comme une somme signée de suites de marches fermées ; un graphe en couches et une programmation dynamique le calculent sans division en $O(n^4)$.
+- Un test d’identité polynomiale se ramène à des évaluations aléatoires : Schwartz-Zippel borne l’erreur d’un essai, la répétition indépendante la rend exponentiellement petite, et l’erreur est unilatérale.
+- En OCaml comme en C, tester le code sur des entrées à un ou deux éléments, et relire le préambule pour les fonctions autorisées.

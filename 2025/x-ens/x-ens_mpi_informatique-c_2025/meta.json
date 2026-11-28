@@ -32,6 +32,7 @@
       "legende": "Les cinq arcs à ajouter sont en rouge. Les autres figurent déjà sur la planche. Certaines sources de la dernière couche figurent sans chemin depuis s."
     }
   ],
+  "date_revision": "2026-11-28",
   "contributions": [
     {
       "phase": "redaction",
@@ -43,6 +44,18 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 33 questions sur Edmonds, le déterminant de Mahajan–Vinay et le test de Tutte, avec lecture du sujet et du rapport officiels. Trois figures originales, contrôle des arêtes du fac-similé, exécution du code OCaml et C extrait des deux éditions, comparaison de couplages et de déterminants à des oracles indépendants. Précision sur la borne uniforme de Q33 et la possibilité de fermer une boucle en Q28."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Seconde relecture des 33 questions contre le sujet et le rapport officiels. Q33 : réponse ramenée à la répétition de tirage_tutte, l'élimination de Bareiss devient une remarque hors programme ; code C extrait des deux éditions et exécuté (20 000 déterminants, 20 000 graphes, aucun faux positif). Q8 : parité de la longueur du chemin établie. Q27 : bornes de couches justifiées. Q28 : écart d'indice avec le rapport signalé. Q31 : mention des parties II et III. Q26 : notation du sujet et figure redessinée (pointes visibles). Q23 : figure redessinée, boucles et poids rattachés. Guidé remis au gabarit : présentation, 33 indications en encadrés, encadrés jury, piège et méthode appuyés sur le rapport 2025, bilan."
     }
   ],
   "couverture": {
