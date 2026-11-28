@@ -79,6 +79,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions (28 questions) à partir du sujet et de son diagramme lus en image et du rapport du jury ; valeurs lues sur le diagramme avec leur origine, applications numériques refaites par calcul, trois figures tracées, encadrés du jury relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des quatre défauts mineurs de la relecture indépendante, chacun vérifié contre le sujet ou le rapport. Question 1 (guidé) : citation du rapport rétablie mot pour mot dans l'encadré du jury. Question 15 (brut et guidé) : isotherme 70 °C relue à 467 kJ/kg sur le palier haut (page 6/6 à 600 dpi), fourchette 67 à 68 °C indiquée, valeur retenue 68 °C inchangée. Question 19 (brut et guidé) : accord qualitatif chiffré (pente 1/(rT) en baisse de 21 % entre les états 1 et 2). Question 28 (guidé) : mention du nombre de Biot retirée. Les 14 encadrés du jury du guidé recontrôlés contre les pages 4 à 6 du rapport."
     }
   ]
 }

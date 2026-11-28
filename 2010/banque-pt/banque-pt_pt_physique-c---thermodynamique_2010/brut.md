@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, calculatrice autorisée : étude d'une pompe à chaleur air/eau au fluide R410A, en 28 questions numérotées de 1 à 28 et réparties en quatre parties (coefficient de performance, principe de fonctionnement, étude du cycle, transfert thermique avec l'échangeur extérieur). Les 28 questions sont traitées. Le cycle est tracé sur le diagramme $(\ln P, h)$ du R410A fourni en annexe (page 6/6 du sujet) : toutes les valeurs numériques des parties II et III en sont lues, et le corrigé indique pour chacune où elle est lue. Convention : $w_i$ et $q$ sont des grandeurs massiques reçues par le fluide, comptées algébriquement.
 
 **Valeurs lues sur le diagramme de l'annexe** (détail des lectures aux questions 10, 15, 16 et 17) :
@@ -345,7 +347,7 @@ Pour $1{,}7\ \mathrm{kW}$ payés, l'habitation reçoit $8\ \mathrm{kW}$ : les $6
 
 **État en sortie de compresseur.** Le point 2 est à droite de la courbe de rosée : le fluide est une **vapeur sèche (surchauffée)**, à $24\ \mathrm{bar}$.
 
-**Température.** Dans le domaine de la vapeur, les isothermes sont les courbes qui descendent vers la droite ; elles sont tracées de $10$ en $10\ ^\circ\mathrm{C}$ et cotées à leur extrémité inférieure (ligne « Température en °C »). On les identifie en partant de la courbe de rosée : l'isotherme $40\ ^\circ\mathrm{C}$ quitte la courbe de rosée sur le palier supérieur du cycle, celle de $50\ ^\circ\mathrm{C}$ plus haut, etc. Sur l'isobare $24\ \mathrm{bar}$, l'isotherme $60\ ^\circ\mathrm{C}$ passe à $h \approx 456\ \mathrm{kJ\cdot kg^{-1}}$ et l'isotherme $70\ ^\circ\mathrm{C}$ à $h \approx 466\ \mathrm{kJ\cdot kg^{-1}}$. Le point 2 ($h_2 \approx 464$) est entre les deux, plus près de la seconde :
+**Température.** Dans le domaine de la vapeur, les isothermes sont les courbes qui descendent vers la droite ; elles sont tracées de $10$ en $10\ ^\circ\mathrm{C}$ et cotées à leur extrémité inférieure (ligne « Température en °C »). On les identifie en partant de la courbe de rosée : l'isotherme $40\ ^\circ\mathrm{C}$ quitte la courbe de rosée sur le palier supérieur du cycle, celle de $50\ ^\circ\mathrm{C}$ plus haut, etc. Sur l'isobare $24\ \mathrm{bar}$, l'isotherme $60\ ^\circ\mathrm{C}$ passe à $h \approx 456\ \mathrm{kJ\cdot kg^{-1}}$ et l'isotherme $70\ ^\circ\mathrm{C}$ à $h \approx 467\ \mathrm{kJ\cdot kg^{-1}}$. Le point 2 ($h_2 \approx 464$) est entre les deux, plus près de la seconde, soit $67$ à $68\ ^\circ\mathrm{C}$ ; on retient
 
 $$\boxed{\theta_2 \approx 68\ ^\circ\mathrm{C}}$$
 
@@ -461,7 +463,7 @@ $$\left(\frac{\partial \ln P}{\partial h}\right)_s = \frac{1}{Pv} = \frac{1}{rT}
 
 Elle est d'autant plus faible que la température est élevée.
 
-**Accord avec le diagramme.** Les isentropes tracées dans le domaine de la vapeur (cotées $s = 1{,}75$ à $2{,}50$) sont bien des courbes croissantes, concaves, de moins en moins pentues quand on se déplace vers les hautes températures (vers la droite) : l'accord est **qualitativement** bon. Il n'est pas quantitatif près de la courbe de saturation et à haute pression : les isothermes n'y sont pas verticales (question 15), le fluide n'y est donc pas un gaz parfait. Par ailleurs, le segment $1 \to 2$ est tracé en ligne droite par l'énoncé : c'est une approximation de l'isentrope voisine de $s = 1{,}85\ \mathrm{kJ\cdot kg^{-1}\cdot K^{-1}}$, dont la courbure est faible sur cet intervalle.
+**Accord avec le diagramme.** Les isentropes tracées dans le domaine de la vapeur (cotées $s = 1{,}75$ à $2{,}50$) sont bien des courbes croissantes, concaves, de moins en moins pentues quand on se déplace vers les hautes températures (vers la droite) : l'accord est **qualitativement** bon. Il n'est pas quantitatif près de la courbe de saturation et à haute pression : les isothermes n'y sont pas verticales (question 15), le fluide n'y est donc pas un gaz parfait. Par ailleurs, le segment $1 \to 2$ est tracé en ligne droite par l'énoncé : c'est une approximation de l'isentrope voisine de $s = 1{,}85\ \mathrm{kJ\cdot kg^{-1}\cdot K^{-1}}$, dont la courbure est faible sur cet intervalle. Pour un gaz parfait, la pente $1/(rT)$ diminuerait de $21\ \%$ entre l'état 1 et l'état 2 ($T_1/T_2 = 268/341 \approx 0{,}79$) : le segment droit de l'énoncé ne rend pas cette courbure, ce qui confirme que l'accord n'est que qualitatif.
 
 ### Question 20 — Ce cycle peut-il être celui d'un climatiseur ?
 
