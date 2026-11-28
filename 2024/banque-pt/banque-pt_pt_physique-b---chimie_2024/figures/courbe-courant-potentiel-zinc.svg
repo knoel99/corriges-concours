@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 460" font-family="sans-serif" font-size="16">
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="700" height="460" fill="#ffffff"/>
+<line x1="40" y1="200" x2="670" y2="200" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<line x1="520" y1="440" x2="520" y2="25" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<text x="535" y="35" font-style="italic">i</text>
+<text x="590" y="225" font-style="italic">E / ESH</text>
+<text x="527" y="218" font-size="13">0</text>
+<path d="M80,430 C82,340 100,300 160,298 L250,298 C320,298 345,270 360,200 C368,160 372,100 374,30" fill="none" stroke="#1f4e9c" stroke-width="3"/>
+<line x1="250" y1="298" x2="520" y2="298" stroke="#555555" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="530" y="303" font-style="italic">i</text><text x="536" y="308" font-size="12">lim</text>
+<circle cx="360" cy="200" r="4" fill="#b03030"/>
+<text x="368" y="222" fill="#b03030">E₁ = −0,79 V</text>
+<text x="385" y="70" fill="#1f4e9c" font-size="14">oxydation de l'électrode</text>
+<text x="385" y="90" fill="#1f4e9c" font-size="14">Zn(s) → Zn²⁺ + 2 e⁻</text>
+<text x="385" y="110" font-size="12">(pas de palier)</text>
+<text x="60" y="255" fill="#1f4e9c">réduction Zn²⁺ + 2 e⁻ → Zn(s)</text>
+<text x="60" y="277" font-size="13">palier : diffusion de Zn²⁺ limitante</text>
+<text x="100" y="390" fill="#1f4e9c">réduction du solvant</text>
+<text x="100" y="412" fill="#1f4e9c">2 H⁺ + 2 e⁻ → H₂(g)</text>
+<text x="45" y="190" font-size="13">i &lt; 0 : réductions</text>
+<text x="545" y="150" font-size="13">i &gt; 0 : oxydation</text>
+</svg>
