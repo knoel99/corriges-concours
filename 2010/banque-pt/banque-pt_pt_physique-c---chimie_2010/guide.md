@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le cuivre et ses minerais, entièrement en solution aqueuse. L'épreuve dure 2 heures, **calculatrice autorisée**, et comporte 29 questions repérées de I.1.1 à III.2.4, réparties en trois parties indépendantes dont l'énoncé donne le poids. Une feuille annexe est à rendre avec la copie : le diagramme potentiel-pH simplifié du cobalt et du manganèse, sur lequel on trace le diagramme du cuivre, la droite du couple $\mathrm{H^+/H_2}$ et les frontières de l'élément chlore. Les résultats numériques sont demandés avec trois chiffres significatifs.
@@ -229,7 +231,9 @@ $$\boxed{E = 1{,}73 - 0{,}06\,\mathrm{pH}\quad(\mathrm{V})}$$
 
 Points de tracé : $(2\ ;\ 1{,}44\ \mathrm{V})$, $(7{,}5\ ;\ 1{,}28\ \mathrm{V})$ et $(14\ ;\ 0{,}89\ \mathrm{V})$. Les deux droites se raccordent à $\mathrm{pH} = 7{,}5$ ($1{,}50 - 0{,}225 = 1{,}275\ \mathrm{V}$ et $1{,}73 - 0{,}45 = 1{,}28\ \mathrm{V}$), ce qui confirme la cohérence des données : $E^\circ(\mathrm{ClO^-/Cl^-}) = E^\circ(\mathrm{HClO/Cl^-}) + 0{,}03\,\mathrm{p}K_a$.
 
-![Figure 2 — Annexe complétée : diagrammes du cobalt et du manganèse, du cuivre, droite du couple H+/H2 et frontières de l'élément chlore pour un pH supérieur à 2](figures/diagramme-e-ph-superposition.svg)
+![Figure 2 — Annexe complétée : diagrammes du cobalt et du manganèse, du cuivre, droite du couple H+/H2 et frontières de l'élément chlore pour un pH supérieur à 2, avec la zone de pH de l'oxydation sélective du manganèse (réponse à la question I.2.2.5). Au-delà de pH 7,6 et 8,6, les pentes sont reconstruites par le calcul (−0,06 V par unité de pH) et diffèrent du tracé approximatif de l'annexe du sujet](figures/diagramme-e-ph-superposition.svg)
+
+Sur la figure 2, les segments du cobalt et du manganèse situés au-delà de pH 7,6 et 8,6 sont retracés avec leur pente théorique de $-0{,}06$ V par unité de pH ; l'annexe de l'énoncé les dessine un peu moins inclinés (environ $-0{,}05$ V par unité de pH), sans conséquence sur les conclusions. La bande colorée entre pH 2 et pH 3,40 anticipe la réponse à la question I.2.2.5, où elle est établie.
 
 > [!METHODE]
 > Quand deux frontières obliques se rejoignent sur une verticale acido-basique, la rupture de pente vaut $0{,}06 \times (\text{nombre de protons échangés})/(\text{nombre d'électrons})$ : ici on passe de $-0{,}03$ à $-0{,}06$ V par unité de pH.
@@ -313,7 +317,7 @@ La solution résiduelle contient $\mathrm{Co^{2+}}$ et $\mathrm{Mn^{2+}}$ en mil
 
 $$E = 1{,}80 + 0{,}06\,\log\frac{10^{-40{,}5}\,h^3}{10^{-42} \times 10^{-2}} = 2{,}01 - 0{,}18\,\mathrm{pH}\quad(\mathrm{V})$$
 
-Cette droite part bien du point $(1{,}17\ ;\ 1{,}80\ \mathrm{V})$ et arrive à $0{,}64\ \mathrm{V}$ à $\mathrm{pH} = 7{,}6$, comme sur l'annexe. Elle coupe la frontière du chlore pour
+Cette droite part bien du point $(1{,}17\ ;\ 1{,}80\ \mathrm{V})$ et arrive à $0{,}64\ \mathrm{V}$ à $\mathrm{pH} = 7{,}6$, en accord avec l'annexe à la précision du tracé (on y lit environ $0{,}67\ \mathrm{V}$). Elle coupe la frontière du chlore pour
 
 $$1{,}50 - 0{,}03\,\mathrm{pH} = 2{,}01 - 0{,}18\,\mathrm{pH} \iff \mathrm{pH} = \frac{0{,}51}{0{,}15} = 3{,}40$$
 
@@ -384,13 +388,13 @@ $$\mathrm{NH_3 + H_2O = NH_4^+ + HO^-} \qquad K_b = \frac{K_e}{K_a} = 10^{-4{,}8
 
 En supposant la base peu protonée ($[\mathrm{NH_4^+}] = [\mathrm{HO^-}] = \omega \ll c$) et l'autoprotolyse de l'eau négligeable :
 
-$$\omega = \sqrt{K_b\,c} = \sqrt{10^{-4{,}8} \times 0{,}500} = 2{,}81\cdot10^{-3}\ \mathrm{mol\cdot L^{-1}}$$
+$$\omega = \sqrt{K_b\,c} = \sqrt{10^{-4{,}8} \times 0{,}500} = 2{,}82\cdot10^{-3}\ \mathrm{mol\cdot L^{-1}}$$
 
 $$\mathrm{pH} = 7 + \frac12\,\mathrm{p}K_a + \frac12\log c = 7 + 4{,}6 - 0{,}15$$
 
 $$\boxed{\mathrm{pH} \approx 11{,}4}$$
 
-(valeur calculée 11,45). Vérification : $\omega/c = 0{,}56\ \%$, la base est bien très peu protonée, et $\mathrm{pH} > \mathrm{p}K_a + 1$ ; $\omega \gg 10^{-7}$, l'autoprotolyse est négligeable. La résolution exacte de $\omega^2 = K_b\,(c - \omega)$ donne le même résultat.
+(valeur calculée 11,449, soit 11,4 avec trois chiffres significatifs). Vérification : $\omega/c = 0{,}56\ \%$, la base est bien très peu protonée, et $\mathrm{pH} > \mathrm{p}K_a + 1$ ; $\omega \gg 10^{-7}$, l'autoprotolyse est négligeable. La résolution exacte de $\omega^2 = K_b\,(c - \omega)$ donne le même résultat.
 
 > [!JURY]
 > Le rapport note que la concentration d'ammoniac ($0{,}5\ \mathrm{mol\cdot L^{-1}}$) faisait, en toute rigueur, sortir quelque peu du cadre des approximations classiques, mais que rien n'était précisé à ce sujet et que le calcul pouvait être mené comme d'habitude. Il observe que très peu de candidats sont capables de calculer le pH d'une solution de base faible.
@@ -433,7 +437,7 @@ $$\boxed{Q_{r,i} = 0 < K = 10^{12{,}3}}$$
 L'affinité est positive (elle tend vers $+\infty$) : le système évolue spontanément dans le **sens direct**, celui de la formation du complexe.
 
 > [!JURY]
-> D'après le rapport, la définition de l'affinité chimique est bien écrite dans nombre de copies, et le sens de déplacement de l'équilibre est traité plutôt correctement, ces notions de seconde année étant sans doute plus fraîches dans la mémoire des étudiants.
+> D'après le rapport, la définition de l'affinité chimique est bien écrite dans nombre de copies, et le sens de déplacement de l'équilibre est traité plutôt correctement, ces notions de seconde année étant peut-être plus fraîches dans la mémoire des étudiants.
 
 ### Question II.1.3
 
@@ -458,7 +462,7 @@ La constante est très grande et l'ammoniac en très large excès (il en faudrai
 
 $$\boxed{x_{eq} = [\mathrm{Cu(NH_3)_4^{2+}}]_{eq} \approx 9{,}00\cdot10^{-4}\ \mathrm{mol\cdot L^{-1}}}$$
 
-Il reste $[\mathrm{NH_3}]_{eq} = 0{,}500 - 3{,}6\cdot10^{-3} = 0{,}496\ \mathrm{mol\cdot L^{-1}}$ : l'ammoniac est à peine consommé, et le pH calculé à la question II.1.1 n'est pratiquement pas modifié.
+Il reste $[\mathrm{NH_3}]_{eq} = 0{,}500 - 3{,}6\cdot10^{-3} = 0{,}4964 \approx 0{,}496\ \mathrm{mol\cdot L^{-1}}$ : l'ammoniac est à peine consommé, et le pH calculé à la question II.1.1 n'est pratiquement pas modifié.
 
 > [!JURY]
 > Le rapport indique qu'il fallait effectuer un bilan de matière et résoudre une équation en mettant en évidence une simplification classique ; de nombreuses erreurs ont été relevées dans cet exercice.
@@ -472,13 +476,13 @@ Il reste $[\mathrm{NH_3}]_{eq} = 0{,}500 - 3{,}6\cdot10^{-3} = 0{,}496\ \mathrm{
 
 La concentration résiduelle se déduit de la constante, les autres concentrations étant connues :
 
-$$[\mathrm{Cu^{2+}}]_{eq} = \frac{x_{eq}}{K\,[\mathrm{NH_3}]_{eq}^4} = \frac{9{,}00\cdot10^{-4}}{10^{12{,}3} \times (0{,}496)^4}$$
+$$[\mathrm{Cu^{2+}}]_{eq} = \frac{x_{eq}}{K\,[\mathrm{NH_3}]_{eq}^4} = \frac{9{,}00\cdot10^{-4}}{10^{12{,}3} \times (0{,}4964)^4}$$
 
 $$\boxed{[\mathrm{Cu^{2+}}]_{eq} = 7{,}43\cdot10^{-15}\ \mathrm{mol\cdot L^{-1}}}$$
 
 L'hypothèse de réaction quasi totale est validée : la fraction de cuivre non complexée vaut $[\mathrm{Cu^{2+}}]_{eq}/[\mathrm{Cu^{2+}}]_0 \approx 8\cdot10^{-12}$.
 
-**Conclusion.** En présence d'ammoniac en excès, il n'existe pratiquement plus d'ions cuivre(II) « libres » : tout le cuivre(II) est engagé dans le complexe. C'est aussi pourquoi l'hydroxyde ne précipite pas malgré le pH de 11,4 : $[\mathrm{Cu^{2+}}]\,[\mathrm{HO^-}]^2 = 7{,}43\cdot10^{-15} \times (2{,}81\cdot10^{-3})^2 \approx 6\cdot10^{-20}$, inférieur à $K_s = 10^{-18{,}8} \approx 1{,}6\cdot10^{-19}$.
+**Conclusion.** En présence d'ammoniac en excès, il n'existe pratiquement plus d'ions cuivre(II) « libres » : tout le cuivre(II) est engagé dans le complexe. C'est aussi pourquoi l'hydroxyde ne précipite pas malgré le pH de 11,4 : $[\mathrm{Cu^{2+}}]\,[\mathrm{HO^-}]^2 = 7{,}43\cdot10^{-15} \times (2{,}82\cdot10^{-3})^2 \approx 6\cdot10^{-20}$, inférieur à $K_s = 10^{-18{,}8} \approx 1{,}6\cdot10^{-19}$.
 
 > [!METHODE]
 > Réaction quasi totale : on détermine d'abord les concentrations des espèces majoritaires par le bilan, puis celle de l'espèce ultra-minoritaire par la constante d'équilibre. On n'écrit jamais qu'elle est nulle.
@@ -629,6 +633,8 @@ Selon l'hypothèse de l'énoncé, la concentration d'ammoniac disponible est
 
 $$[\mathrm{NH_3}] = \frac{0{,}200}{0{,}400} = 0{,}500\ \mathrm{mol\cdot L^{-1}}$$
 
+C'est une hypothèse de l'énoncé : d'après la question II.2.5, seuls $0{,}020\ \mathrm{mol}$ (soit $0{,}050\ \mathrm{mol\cdot L^{-1}}$) sont réellement sous forme $\mathrm{NH_3}$. La conclusion n'en dépend pas : même avec cette valeur, $K\,[\mathrm{NH_3}]^4 \approx 1{,}2\cdot10^{7}$ et la complexation reste quantitative.
+
 La complexation étant quantitative (question II.1.4), la concentration du complexe est pratiquement égale à la concentration totale des ions cuivre(II) restés en solution. La coloration est visible si $[\mathrm{Cu(NH_3)_4^{2+}}] \geqslant 10^{-5}\ \mathrm{mol\cdot L^{-1}}$ : la plus petite concentration d'ions cuivre(II) détectable est donc
 
 $$\boxed{[\mathrm{Cu^{2+}}]_{\min} = 1{,}00\cdot10^{-5}\ \mathrm{mol\cdot L^{-1}}}$$
@@ -685,7 +691,7 @@ On le traite comme un diacide fort, hypothèse que l'énoncé admet dans sa prem
 
 $$\boxed{\mathrm{pH} = -\log(2c) = -\log 0{,}180 = 0{,}745}$$
 
-(En tenant compte de la seconde acidité réelle de l'acide sulfurique, qui n'est pas forte, on trouverait un pH voisin de 1 ; la conclusion est la même.)
+(En tenant compte de la seconde acidité réelle de l'acide sulfurique, qui n'est pas forte, et des ions sulfate apportés par le sulfate de cuivre, qui captent une partie des protons, on trouverait un pH plus élevé, compris entre 1 et 2 ; la conclusion est la même.)
 
 **Pourquoi un milieu acide.** Pour éviter la précipitation de l'hydroxyde de cuivre $\mathrm{Cu(OH)_2}$, très peu soluble ($K_s = 10^{-18{,}6}$) : en milieu acide, la concentration en ions hydroxyde est trop faible pour que le produit $[\mathrm{Cu^{2+}}]\,[\mathrm{HO^-}]^2$ atteigne $K_s$, et la solution se conserve limpide.
 

@@ -59,7 +59,7 @@
     {
       "fichier": "figures/diagramme-e-ph-superposition.svg",
       "question": "I.2.2.2",
-      "legende": "Annexe complétée : diagrammes du cobalt et du manganèse, du cuivre, droite du couple H+/H2 et frontières de l'élément chlore pour un pH supérieur à 2, avec la zone de pH de l'oxydation sélective du manganèse."
+      "legende": "Annexe complétée : diagrammes du cobalt et du manganèse, du cuivre, droite du couple H+/H2 et frontières de l'élément chlore pour un pH supérieur à 2, avec la zone de pH de l'oxydation sélective du manganèse (réponse à la question I.2.2.5). Au-delà de pH 7,6 et 8,6, les pentes sont reconstruites par le calcul (−0,06 V par unité de pH) et diffèrent du tracé approximatif de l'annexe du sujet."
     }
   ],
   "date_revision": "2026-11-28",
@@ -75,6 +75,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 29 questions et de deux figures, à partir du sujet, de sa feuille annexe et du rapport du jury ; applications numériques recalculées, valeurs de l'annexe recoupées par le calcul, encadrés JURY relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application, dans le brut et le guidé, des sept défauts mineurs d'une relecture indépendante, chacun revérifié : II.1.3 et II.1.4 (concentration d'ammoniac écrite 0,4964 pour que la formule affichée redonne 7,43·10⁻¹⁵) ; II.1.1 et II.1.4 (2,82·10⁻³ au lieu de 2,81·10⁻³, valeur calculée du pH 11,449) ; I.2.2.2 et I.2.2.5 (figure 2 : texte alternatif et légende accordés, pentes reconstruites par le calcul au-delà de pH 7,6 et 8,6 signalées, renvoi à la question I.2.2.5 pour la bande de pH, ordonnée lue sur l'annexe environ 0,67 V) ; III.1.2 (pH compris entre 1 et 2 en comptant les ions sulfate du sulfate de cuivre) ; II.2.6 (articulation avec les 0,050 mol/L de la question II.2.5) ; encadré JURY de II.1.2 du guidé (« peut-être »). Les 17 encadrés JURY du guidé relus contre le rapport, aucun requalifié. Figures SVG non modifiées."
     }
   ]
 }
