@@ -1,0 +1,45 @@
+{
+  "slug": "banque-pt_pt_physique-c---thermodynamique_2007",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Thermodynamique",
+    "annee": 2007
+  },
+  "questions": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2007/phys_c_2007.pdf",
+    "sujet_sha256": "3604505bc84c1ffd52d73c1ca1003a959a815e5c3c8faf4b8a97799044c9938f",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_phys_c_ecrit_2007.pdf",
+    "rapport_sha256": "1c563e54b564b1b5c1d997db0a48c13920a2d25063357739b182a01ac9442a8d",
+    "precision": "Le fichier phys_c_2007.pdf (12 pages PDF numérotées 1/12 à 12/12, pages numérisées sans couche de texte, SHA-256 3604505bc84c1ffd52d73c1ca1003a959a815e5c3c8faf4b8a97799044c9938f) réunit les deux parties de Physique C dans un seul fascicule. La garde commune (page 1/12, « Epreuve de Physique C ») annonce un problème de chimie et un problème de thermodynamique ; la partie thermodynamique, identifiée par son titre « THERMODYNAMIQUE » en tête de la page 7/12, occupe les pages 7/12 à 12/12 (barème par partie, schéma de l'installation, diagramme de Watt du cycle, notations, données, schéma du turbocompresseur, questions 1 à 12). Elle ne comporte ni document réponse ni feuillet à rendre, et son diagramme de Watt n'est pas gradué. Les pages 2/12 à 6/12 relèvent de la chimie et ne sont pas traitées ici. Le rapport rapport_phys_c_ecrit_2007.pdf (4 pages PDF, paginées 21 à 24) est commun à Physique C : la partie « Sujet de Physique » va du bas de la page 22 à la page 23, la page 24 portant l'histogramme des notes de l'épreuve entière. Empreintes du sujet et du rapport identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2004-2007.tsv ; pages 7 à 12 conformes à campagnes/x-ens/bilans/feuillets-physique-c-banque-pt-2005-2007.tsv."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+    "precision": "Fascicule de 12 pages PDF lues en image ; partie thermodynamique sur la garde 1/12 et les pages 7/12 à 12/12. 12 questions numérotées de 1 à 12, en six parties, toutes traitées. Rapport commun à Physique C de 4 pages PDF, partie physique lue sur les pages PDF 2 et 3. Aucune valeur n'est lue sur une figure : le diagramme de Watt du sujet n'est pas gradué. Applications numériques refaites par calcul avec les valeurs imposées par l'énoncé (Ma = 4,1 g, Mt = 4,4 g, Mc = 0,28 g) et contrôlées par l'équation d'état (états 2 et 5), par la seconde forme du travail isobare et par le rapport des puissances. Points signalés dans le texte : aux questions 4 à 6, la masse des états 3, 4 et 5 est Mt + Mc, comme l'indique le rapport, et l'échauffement 2-3 est écrit (Mt + Mc) cv (T3 - T2) = Q2-3, lecture de l'hypothèse de l'énoncé retenue par le corrigé ; l'arrondi Mt = 4,4 g imposé par l'énoncé (valeur calculée 4,39 g) laisse un écart de 0,3 % entre les deux façons d'obtenir P3 ; à la question 12, le débit volumique est évalué pour l'air ambiant à 293 K sous 1 bar, hypothèse du corrigé ; ordres de grandeur réels (rendement, température de combustion) ajoutés par le corrigé."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q5-cycle-sabathe-diagramme-watt.svg",
+      "question": "5",
+      "legende": "Cycle de Sabathé suralimenté (points 0 à 7) dans le diagramme de Watt, pression en échelle logarithmique, tracé à partir des valeurs calculées aux questions 1 à 8 ; pressions, températures et volumes des états 1 à 5."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (12 questions) à partir du fascicule lu en image et du rapport du jury ; applications numériques refaites par calcul, une figure tracée à partir des valeurs calculées, encadrés du jury relus contre le rapport."
+    }
+  ]
+}
