@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" font-family="sans-serif" font-size="14">
+<rect width="760" height="520" fill="#ffffff"/>
+<line x1="70" y1="460" x2="740" y2="460" stroke="#222" stroke-width="1.5"/>
+<line x1="70" y1="460" x2="70" y2="25" stroke="#222" stroke-width="1.5"/>
+<line x1="70.0" y1="460" x2="70.0" y2="466" stroke="#222"/><text x="70.0" y="482" text-anchor="middle">0</text>
+<line x1="202.0" y1="460" x2="202.0" y2="466" stroke="#222"/><text x="202.0" y="482" text-anchor="middle">2</text>
+<line x1="334.0" y1="460" x2="334.0" y2="466" stroke="#222"/><text x="334.0" y="482" text-anchor="middle">4</text>
+<line x1="466.0" y1="460" x2="466.0" y2="466" stroke="#222"/><text x="466.0" y="482" text-anchor="middle">6</text>
+<line x1="598.0" y1="460" x2="598.0" y2="466" stroke="#222"/><text x="598.0" y="482" text-anchor="middle">8</text>
+<line x1="730.0" y1="460" x2="730.0" y2="466" stroke="#222"/><text x="730.0" y="482" text-anchor="middle">10</text>
+<line x1="64" y1="460.0" x2="70" y2="460.0" stroke="#222"/><text x="60" y="465.0" text-anchor="end">0</text>
+<line x1="64" y1="390.0" x2="70" y2="390.0" stroke="#222"/><text x="60" y="395.0" text-anchor="end">50</text>
+<line x1="64" y1="320.0" x2="70" y2="320.0" stroke="#222"/><text x="60" y="325.0" text-anchor="end">100</text>
+<line x1="64" y1="250.0" x2="70" y2="250.0" stroke="#222"/><text x="60" y="255.0" text-anchor="end">150</text>
+<line x1="64" y1="180.0" x2="70" y2="180.0" stroke="#222"/><text x="60" y="185.0" text-anchor="end">200</text>
+<line x1="64" y1="110.0" x2="70" y2="110.0" stroke="#222"/><text x="60" y="115.0" text-anchor="end">250</text>
+<line x1="64" y1="40.0" x2="70" y2="40.0" stroke="#222"/><text x="60" y="45.0" text-anchor="end">300</text>
+<text x="740" y="504" text-anchor="end">s (kJ/(kg.K))</text>
+<text x="30" y="18">t (°C)</text>
+<path d="M70.0,460.0 C76.9,449.7 92.1,431.1 111.3,398.4 C130.4,365.7 165.1,302.5 184.8,264.0 C204.5,225.5 215.9,197.5 229.4,167.4 C242.9,137.3 259.8,97.4 265.8,83.4" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<path d="M674.4,460.0 C663.7,449.7 634.7,431.1 610.2,398.4 C585.6,365.7 547.3,302.5 527.3,264.0 C507.2,225.5 500.7,197.5 489.8,167.4 C478.9,137.3 466.5,97.4 461.9,83.4" fill="none" stroke="#b03a2e" stroke-width="2"/>
+<text x="109.6" y="110.0" fill="#1f5fa8">liquide saturant</text>
+<text x="555.1" y="250.0" fill="#b03a2e">vapeur saturante sèche</text>
+<line x1="265.8" y1="83.4" x2="461.9" y2="83.4" stroke="#333" stroke-width="2.5"/>
+<text x="363.9" y="76.4" text-anchor="middle" font-size="13">269 °C ; 54,2 bar</text>
+<line x1="229.4" y1="167.4" x2="461.9" y2="167.4" stroke="#333" stroke-width="2.5"/>
+<line x1="461.9" y1="167.4" x2="489.8" y2="167.4" stroke="#999" stroke-dasharray="5 4"/>
+<text x="345.6" y="160.4" text-anchor="middle" font-size="13">209 °C ; 18,7 bar</text>
+<line x1="184.8" y1="264.0" x2="461.9" y2="264.0" stroke="#333" stroke-width="2.5"/>
+<line x1="461.9" y1="264.0" x2="527.3" y2="264.0" stroke="#999" stroke-dasharray="5 4"/>
+<text x="323.3" y="257.0" text-anchor="middle" font-size="13">140 °C ; 3,61 bar</text>
+<line x1="111.3" y1="398.4" x2="461.9" y2="398.4" stroke="#333" stroke-width="2.5"/>
+<line x1="461.9" y1="398.4" x2="610.2" y2="398.4" stroke="#999" stroke-dasharray="5 4"/>
+<text x="286.6" y="391.4" text-anchor="middle" font-size="13">44 °C ; 0,091 bar</text>
+<line x1="461.9" y1="83.4" x2="461.9" y2="398.4" stroke="#333" stroke-width="2.5"/>
+<circle cx="461.9" cy="83.4" r="4.5" fill="#111"/><text x="469.9" y="75.4" font-weight="bold" text-anchor="start">3</text>
+<circle cx="461.9" cy="167.4" r="4.5" fill="#111"/><text x="469.9" y="183.4" font-weight="bold" text-anchor="start">7</text>
+<circle cx="461.9" cy="264.0" r="4.5" fill="#111"/><text x="469.9" y="280.0" font-weight="bold" text-anchor="start">5</text>
+<circle cx="461.9" cy="398.4" r="4.5" fill="#111"/><text x="469.9" y="390.4" font-weight="bold" text-anchor="start">4</text>
+<circle cx="111.3" cy="398.4" r="4.5" fill="#111"/><text x="117.3" y="418.4" font-weight="bold" text-anchor="start">1 et 2</text>
+<circle cx="184.8" cy="264.0" r="4.5" fill="#111"/><text x="170.8" y="258.0" font-weight="bold" text-anchor="end">6</text>
+<circle cx="229.4" cy="167.4" r="4.5" fill="#111"/><text x="215.4" y="161.4" font-weight="bold" text-anchor="end">8</text>
+<text x="521.9" y="320.0" font-size="13">détente isentropique</text><text x="521.9" y="337.0" font-size="13">s = 5,9375 kJ/(kg.K)</text>
+<line x1="517.9" y1="322.0" x2="464.9" y2="327.0" stroke="#333"/>
+</svg>

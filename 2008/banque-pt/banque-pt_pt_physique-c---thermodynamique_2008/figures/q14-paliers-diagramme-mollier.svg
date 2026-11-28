@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" font-family="sans-serif" font-size="14">
+<rect width="760" height="520" fill="#ffffff"/>
+<line x1="80" y1="460" x2="740" y2="460" stroke="#222" stroke-width="1.5"/>
+<line x1="80" y1="460" x2="80" y2="25" stroke="#222" stroke-width="1.5"/>
+<line x1="80.0" y1="460" x2="80.0" y2="466" stroke="#222"/><text x="80.0" y="482" text-anchor="middle">0</text>
+<line x1="210.0" y1="460" x2="210.0" y2="466" stroke="#222"/><text x="210.0" y="482" text-anchor="middle">2</text>
+<line x1="340.0" y1="460" x2="340.0" y2="466" stroke="#222"/><text x="340.0" y="482" text-anchor="middle">4</text>
+<line x1="470.0" y1="460" x2="470.0" y2="466" stroke="#222"/><text x="470.0" y="482" text-anchor="middle">6</text>
+<line x1="600.0" y1="460" x2="600.0" y2="466" stroke="#222"/><text x="600.0" y="482" text-anchor="middle">8</text>
+<line x1="730.0" y1="460" x2="730.0" y2="466" stroke="#222"/><text x="730.0" y="482" text-anchor="middle">10</text>
+<line x1="74" y1="460.0" x2="80" y2="460.0" stroke="#222"/><text x="70" y="465.0" text-anchor="end">0</text>
+<line x1="74" y1="390.0" x2="80" y2="390.0" stroke="#222"/><text x="70" y="395.0" text-anchor="end">500</text>
+<line x1="74" y1="320.0" x2="80" y2="320.0" stroke="#222"/><text x="70" y="325.0" text-anchor="end">1000</text>
+<line x1="74" y1="250.0" x2="80" y2="250.0" stroke="#222"/><text x="70" y="255.0" text-anchor="end">1500</text>
+<line x1="74" y1="180.0" x2="80" y2="180.0" stroke="#222"/><text x="70" y="185.0" text-anchor="end">2000</text>
+<line x1="74" y1="110.0" x2="80" y2="110.0" stroke="#222"/><text x="70" y="115.0" text-anchor="end">2500</text>
+<line x1="74" y1="40.0" x2="80" y2="40.0" stroke="#222"/><text x="70" y="45.0" text-anchor="end">3000</text>
+<text x="740" y="504" text-anchor="end">s (kJ/(kg.K))</text>
+<text x="30" y="18">h (kJ/kg)</text>
+<path d="M80.0,460.0 C86.8,455.7 101.8,448.0 120.6,434.2 C139.5,420.5 173.6,394.1 193.0,377.5 C212.4,361.0 223.7,348.7 237.0,335.0 C250.3,321.2 266.9,301.5 272.9,294.8" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<path d="M675.2,109.8 C664.7,107.9 636.1,104.0 612.0,98.6 C587.8,93.2 550.1,82.4 530.3,77.4 C510.6,72.4 504.2,69.9 493.5,68.6 C482.7,67.3 470.5,69.2 465.9,69.3" fill="none" stroke="#b03a2e" stroke-width="2"/>
+<text x="99.5" y="250.0" fill="#1f5fa8">liquide saturant</text>
+<text x="723.5" y="68.0" fill="#b03a2e" text-anchor="end">vapeur saturante sèche</text>
+<line x1="272.9" y1="294.8" x2="465.9" y2="69.3" stroke="#333" stroke-width="1.8"/>
+<line x1="237.0" y1="335.0" x2="493.5" y2="68.6" stroke="#333" stroke-width="1.8"/>
+<line x1="193.0" y1="377.5" x2="530.3" y2="77.4" stroke="#333" stroke-width="1.8"/>
+<line x1="120.6" y1="434.2" x2="612.0" y2="98.6" stroke="#333" stroke-width="1.8"/>
+<text x="444.0" y="306.0" font-size="13">Paliers liquide-vapeur : segments de droite</text>
+<text x="444.0" y="324.0" font-size="13">de pente T. De haut en bas :</text>
+<text x="444.0" y="342.0" font-size="13">269 °C (542 K), 209 °C (482 K),</text>
+<text x="444.0" y="360.0" font-size="13">140 °C (413 K), 44 °C (317 K).</text>
+<text x="444.0" y="378.0" font-size="13">Verticale 3-7-5-4 : détente isentropique.</text>
+<line x1="465.9" y1="69.3" x2="465.9" y2="198.3" stroke="#111" stroke-width="3"/>
+<circle cx="465.9" cy="69.3" r="4.5" fill="#111"/><text x="473.9" y="61.3" text-anchor="start">3 : 2790,6</text>
+<circle cx="465.9" cy="97.2" r="4.5" fill="#111"/><text x="473.9" y="102.2" text-anchor="start">7 : 2591,5</text>
+<circle cx="465.9" cy="134.7" r="4.5" fill="#111"/><text x="473.9" y="139.7" text-anchor="start">5 : 2323,7</text>
+<circle cx="465.9" cy="198.3" r="4.5" fill="#111"/><text x="473.9" y="203.3" text-anchor="start">4 : 1868,9</text>
+<circle cx="120.6" cy="434.2" r="4.5" fill="#111"/><text x="130.6" y="448.2" text-anchor="start">1 et 2 : 184,17</text>
+<circle cx="193.0" cy="377.5" r="4.5" fill="#111"/><text x="183.0" y="371.5" text-anchor="end">6 : 589,10</text>
+<circle cx="237.0" cy="335.0" r="4.5" fill="#111"/><text x="227.0" y="329.0" text-anchor="end">8 : 893,17</text>
+</svg>

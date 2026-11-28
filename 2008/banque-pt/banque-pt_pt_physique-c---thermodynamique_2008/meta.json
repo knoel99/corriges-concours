@@ -1,0 +1,50 @@
+{
+  "slug": "banque-pt_pt_physique-c---thermodynamique_2008",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Thermodynamique",
+    "annee": 2008
+  },
+  "questions": 17,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2008/phys_c_2008.zip",
+    "sujet_sha256": "e4292968a8652504f926582cae967a9bbfae933ab30981c30d8e2852620c3f0f",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_phys_c_ecrit_2008.pdf",
+    "rapport_sha256": "a5e713c0d1c843e63772b1491ea9e23772a0ef5f8403d3af398c5f18b2d7e1f7",
+    "precision": "L'archive phys_c_2008.zip (SHA-256 e4292968a8652504f926582cae967a9bbfae933ab30981c30d8e2852620c3f0f) réunit les deux parties de Physique C dans un seul fascicule, sans archive interne : fichier interne phys_c_2008_sujet.pdf (20 pages PDF, SHA-256 9050ed172721ed3cd1998f9bd5fb0ac6a68e96996db6eb79665beca79c1ea307) et document réponse phys_c_2008_doc_reponse.pdf (2 pages PDF, SHA-256 273dc3655252cc722ef75fe0d32fbd6a5592f1af236112e387dc0a0f6ba9e780). La garde commune (page 1/17, « Epreuve de Physique C ») annonce un problème de chimie et un problème de thermodynamique ; la partie thermodynamique, identifiée par son titre « THERMODYNAMIQUE » en tête de la page 9/17, occupe les pages 9/17 à 17/17 du fascicule (énoncé, schémas n°1 à n°5, table de la vapeur d'eau saturée), et son annexe est la seconde page du document réponse (« Feuillet mobile n° 2 à rendre avec la copie de thermodynamique », tableau n°6). Les pages 2/17 à 8/17 et la première page du document réponse relèvent de la chimie et ne sont pas traitées ici. Empreintes de l'archive, des deux fichiers internes et du rapport identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv. Aucun fichier campagnes/x-ens/bilans/constat-*.tsv ne porte sur cette épreuve."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"],
+    "precision": "Fascicule de 20 pages PDF lues en image (17 pages numérotées, puis trois pages sans contenu) ; partie thermodynamique sur la garde 1/17 et les pages 9/17 à 17/17 ; document réponse de 2 pages PDF, dont la seconde (tableau n°6) concerne la thermodynamique. 17 questions numérotées de 1 à 17, toutes traitées. Rapport commun à Physique C de 5 pages PDF, partie physique sur les pages PDF 3 à 5, lues en image. Valeurs numériques (questions 1, 14, 16 et 17) lues dans la table de la vapeur d'eau saturée de la page 17/17, relue sur un rendu à 300 points par pouce, sur les lignes 44 °C, 140 °C, 209 °C et 269 °C, sans interpolation et avec la précision d'affichage de la table ; les lignes 0,01 °C à 269 °C servent aussi au tracé des figures. Les schémas n°1 à n°5 du sujet ne sont pas gradués : aucune valeur n'y est lue. Applications numériques refaites par calcul (titres, enthalpies, masses soutirées, rendements, contrôle par les formes non simplifiées et par le rendement de Carnot). Points signalés dans le texte : le feuillet mobile arrondit à 54,2 et 0,091 bar les pressions 54,202 et 0,09100 bar de la table ; l'énoncé de la question 4 appelle « débit massique » la masse x1 ; titre 0 attribué par le corrigé aux liquides comprimés des points 2, 6 et 8 ; ordre de grandeur du travail de la pompe (question 1), remarque sur le rendement de Carnot (question 13) et notation indexée de la question 13 ajoutés par le corrigé."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q14-paliers-diagramme-mollier.svg",
+      "question": "14",
+      "legende": "Paliers liquide-vapeur à 44 °C, 140 °C, 209 °C et 269 °C et détente isentropique 3-7-5-4 dans le diagramme de Mollier (h, s), tracés à partir des valeurs de la table du sujet ; enthalpies des points 1 à 8 en kJ/kg."
+    },
+    {
+      "fichier": "figures/q16-cycle-diagramme-entropique.svg",
+      "question": "16",
+      "legende": "Points 1 à 8 des cycles dans le diagramme (T, s), avec les paliers et les pressions du tableau n°6 ; courbes de saturation tracées à partir de la table du sujet et arrêtées à 269 °C."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (17 questions) à partir du fascicule et du feuillet mobile lus en image et du rapport du jury ; valeurs de la table relues sur un rendu agrandi, applications numériques refaites par calcul, deux figures tracées à partir des valeurs de la table, encadrés du jury relus contre le rapport."
+    }
+  ]
+}
