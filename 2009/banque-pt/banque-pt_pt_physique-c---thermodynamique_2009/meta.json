@@ -1,0 +1,84 @@
+{
+  "slug": "banque-pt_pt_physique-c---thermodynamique_2009",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Thermodynamique",
+    "annee": 2009
+  },
+  "questions": 28,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2009/phys_c_2009.zip",
+    "sujet_sha256": "2316dd00db25e6b1d5523eb9c87f29688205d278259a73ad1173a7a95724b997",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2009/rapport_phys_c_ecrit_2009.pdf",
+    "rapport_sha256": "5503d73c1ce9bacaf00a0c24bfed1b83d4d708422ac9007f44f641ca8ffc0dde",
+    "precision": "L'archive phys_c_2009.zip (SHA-256 2316dd00db25e6b1d5523eb9c87f29688205d278259a73ad1173a7a95724b997) réunit les deux parties de Physique C, sans archive interne ni annexe : deux fichiers à la racine, Phys_c_Chimie.PDF (8 pages PDF, SHA-256 c52170293bedaf204282e0a807b974c6c17502ac4e1ec074513dc2412a153c3a, partie chimie, non traitée ici) et Phys_c_Thermo.pdf (8 pages PDF, SHA-256 7552b906e3cf422d666e6e2a7750240b4c7c7dc5dc871b77d6a8aef9079da41b). Partie thermodynamique identifiée par sa page de garde « Epreuve de Physique C - Thermodynamique », durée 2 h : fichier interne Phys_c_Thermo.pdf. Empreintes de l'archive, des deux fichiers internes et du rapport identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv. Aucun fichier campagnes/x-ens/bilans/constat-*.tsv ne porte sur cette épreuve."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "precision": "Sujet de 8 pages PDF lues en image (document numérisé, sans couche texte) : page de garde, énoncé sur les pages numérotées 2 à 6 sur 6, puis deux pages sans contenu ; aucune annexe ni document réponse. 28 questions numérotées de 1 à 28, toutes traitées. Rapport commun à Physique C de 5 pages PDF, partie thermodynamique sur les pages imprimées 25 à 27, lue en texte. Le sujet ne contient aucun diagramme gradué ; les valeurs lues sont celles du tableau 1 (trois lignes : 74 bar et 290 °C, 11 bar et 185 °C, 0,05 bar et 35 °C ; s', s'', h', h'') et de la ligne du point 4 du tableau 2, reprises avec tous les chiffres imprimés. Applications numériques (questions 1, 2, 3, 19, 22 à 28) refaites par calcul. Valeurs que l'énoncé ne donne pas, signalées dans le texte comme valeurs de cours ou choix du corrigé : point triple et point critique de l'eau (questions 4, 6 et 21), volume massique de l'eau liquide (question 22), position de M sur le palier (question 7), exemple de quatre générateurs de vapeur (question 20), nom 5' du point de fin de détente sans surchauffe (question 25). Incohérences de l'énoncé signalées à leur place : question 19, les débits, c et les pincements de la partie III imposent une puissance échangée d'environ 190 MW, incompatible avec les 4143 MW de la question 2 (le corrigé retient S = Pth/(h ΔTml) avec la puissance de la question 2, soit environ 2,8 × 10⁴ m², et donne aussi la valeur 1,3 × 10³ m² issue de la formule de la question 17) ; question 21, la ligne 74 bar du tableau 1 ne vérifie pas h'' − h' = T (s'' − s'), la valeur de s' (3,611) étant sans effet sur les résultats demandés ; question 28, puissances de la partie IV (1,75 GW sur l'arbre, 5,2 GW thermiques) supérieures à celles de la partie I. Question 24 : avec les valeurs du tableau, le taux d'humidité vaut 15,3 % au point 3 et 17,1 % au point 5 ; le corrigé conclut que la limite de 15 % n'est strictement respectée en sortie d'aucun des deux corps. Figures 1 et 2 : schémas de principe sans échelle ; figure 3 : points et paliers à l'échelle d'après les tableaux, courbe de saturation interpolée entre les trois lignes du tableau 1 (allure seulement)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q04-diagramme-p-t-eau.svg",
+      "question": "4",
+      "legende": "Diagramme d'état (P, T) de l'eau, schéma sans échelle : domaines du solide, du liquide et de la vapeur, point triple Y, point critique C, points M (345 °C, 155 bar) et N (330 °C, 155 bar) des questions 4 à 6."
+    },
+    {
+      "fichier": "figures/q07-diagramme-p-v-eau.svg",
+      "question": "7",
+      "legende": "Diagramme de Clapeyron (P, V) de l'eau, schéma sans échelle : courbe de saturation, isothermes 345 °C et 330 °C avec leurs paliers à 155 bar et 129 bar, points M et N."
+    },
+    {
+      "fichier": "figures/q21-cycle-secondaire-t-s.svg",
+      "question": "21",
+      "legende": "Cycle de l'eau du circuit secondaire dans le diagramme (T, s) : points 1 à 6 et paliers placés à l'échelle avec les valeurs des tableaux 1 et 2, courbe de saturation interpolée (allure)."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (28 questions) à partir du sujet lu en image et du rapport du jury ; applications numériques refaites par calcul, trois figures (deux schémas de principe, un diagramme entropique à l'échelle des tableaux), encadrés du jury relus contre le rapport, trois incohérences de l'énoncé signalées."
+    }
+  ]
+}
