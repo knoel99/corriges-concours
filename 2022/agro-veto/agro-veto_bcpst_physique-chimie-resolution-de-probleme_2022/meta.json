@@ -1,0 +1,109 @@
+{
+  "slug": "agro-veto_bcpst_physique-chimie-resolution-de-probleme_2022",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Physique-chimie, résolution de problème",
+    "annee": 2022
+  },
+  "questions": 49,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_rdp_chimie_2022-2_1.pdf",
+    "sujet_sha256": "076e66f837b68a56ae7517e82854b520d58c35e9c85bfc594854f1c469a91d78",
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_a-bcpst_physique-chimie_resolution_de_probleme_2022_1.pdf",
+    "rapport_sha256": "7f539f002887ddbf8984bc921936508a445144f6ff6ef0e99a7c6253543a23a2"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49"
+    ],
+    "precision": "Sujet de 10 pages et rapport de 6 pages lus en entier. Les 49 questions sont traitées dans les deux éditions. Les mécanismes sont décrits étape par étape sans flèches courbes ; la stéréochimie des composés bicycliques N à X n’est pas représentée sur les figures. L’énoncé donne deux attributions différentes des températures d’ébullition de l’éthanol et de l’ETBE (tableau 3 et texte de la question 32), sans incidence sur les réponses."
+  },
+  "figures": [
+    {
+      "fichier": "figures/profil-protonation-isobutene.svg",
+      "question": "4",
+      "legende": "Profil réactionnel du début du mécanisme : les deux protonations concurrentes de l’isobutène, puis l’attaque de l’eau sur le carbocation tertiaire."
+    },
+    {
+      "fichier": "figures/binaire-etbe-ethanol.svg",
+      "question": "32",
+      "legende": "Allure du diagramme binaire isobare liquide-vapeur ETBE / éthanol sous 1 bar, avec azéotrope à minimum de température."
+    },
+    {
+      "fichier": "figures/bicycle-protection-reduction.svg",
+      "question": "42",
+      "legende": "Formules topologiques de la dione L et des composés N, O et P, la stéréochimie n’étant pas représentée."
+    },
+    {
+      "fichier": "figures/bicycle-chaine-laterale.svg",
+      "question": "49",
+      "legende": "Formules topologiques des composés Q, T, U et X, la stéréochimie n’étant pas représentée."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 49 questions dans les deux éditions à partir du sujet officiel et du rapport du jury. Applications numériques des questions 19, 21, 24, 28 à 30 et 33 recalculées, lecture de la figure 3, descripteurs CIP de la question 36 contrôlés par calcul, quatre figures originales."
+    }
+  ]
+}

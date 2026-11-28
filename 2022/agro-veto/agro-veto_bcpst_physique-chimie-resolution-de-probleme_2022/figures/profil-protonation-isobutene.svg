@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" font-family="sans-serif" font-size="14">
+<rect width="700" height="440" fill="#ffffff"/>
+<line x1="70.0" y1="400.0" x2="70.0" y2="30.0" stroke="#111" stroke-width="1.6"/>
+<line x1="70.0" y1="400.0" x2="670.0" y2="400.0" stroke="#111" stroke-width="1.6"/>
+<path d="M70 30 l-5 10 h10 z" fill="#111"/><path d="M670 400 l-10 -5 v10 z" fill="#111"/>
+<text x="80.0" y="40.0" text-anchor="start" fill="#111" font-style="italic">E<tspan baseline-shift="sub" font-size="10">p</tspan></text>
+<text x="665.0" y="425.0" text-anchor="end" fill="#111" font-style="italic">C.R.</text>
+<path d="M90 330 C 170 330, 190 150, 250 150 C 310 150, 320 215, 380 215 C 430 215, 440 180, 485 180 C 530 180, 545 265, 600 265 L 640 265" fill="none" stroke="#1f5fa8" stroke-width="2.4"/>
+<path d="M90 330 C 170 330, 200 70, 265 70 C 330 70, 335 120, 390 120 L 420 120" fill="none" stroke="#b03a2e" stroke-width="2.4" stroke-dasharray="7 4"/>
+<line x1="90.0" y1="330.0" x2="160.0" y2="330.0" stroke="#555" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="92.0" y="350.0" text-anchor="start" font-size="13" fill="#111">A + H₃O⁺</text>
+<text x="250.0" y="170.0" text-anchor="middle" font-size="13" fill="#1f5fa8">ET₁ (III)</text>
+<text x="265.0" y="62.0" text-anchor="middle" font-size="13" fill="#b03a2e">ET₁′ (I)</text>
+<text x="380.0" y="235.0" text-anchor="middle" font-size="13" fill="#1f5fa8">carbocation tertiaire</text>
+<text x="380.0" y="251.0" text-anchor="middle" font-size="13" fill="#1f5fa8">(CH₃)₃C⁺</text>
+<text x="428.0" y="125.0" text-anchor="start" font-size="13" fill="#b03a2e">carbocation primaire</text>
+<text x="428.0" y="141.0" text-anchor="start" font-size="13" fill="#b03a2e">(CH₃)₂CH–CH₂⁺</text>
+<text x="487.0" y="172.0" text-anchor="middle" font-size="13" fill="#1f5fa8">ET₂</text>
+<text x="640.0" y="285.0" text-anchor="end" font-size="13" fill="#1f5fa8">ion oxonium</text>
+<text x="640.0" y="301.0" text-anchor="end" font-size="13" fill="#1f5fa8">(CH₃)₃C–OH₂⁺</text>
+<line x1="160.0" y1="150.0" x2="250.0" y2="150.0" stroke="#1f5fa8" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="185.0" y1="330.0" x2="185.0" y2="150.0" stroke="#1f5fa8" stroke-width="1.2"/>
+<path d="M185 150 l-4 8 h8 z" fill="#1f5fa8"/><path d="M185 330 l-4 -8 h8 z" fill="#1f5fa8"/>
+<text x="191.0" y="250.0" text-anchor="start" font-size="13" fill="#1f5fa8">Eₐ(III)</text>
+<line x1="120.0" y1="70.0" x2="265.0" y2="70.0" stroke="#b03a2e" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="130.0" y1="330.0" x2="130.0" y2="70.0" stroke="#b03a2e" stroke-width="1.2"/>
+<path d="M130 70 l-4 8 h8 z" fill="#b03a2e"/><path d="M130 330 l-4 -8 h8 z" fill="#b03a2e"/>
+<text x="136.0" y="110.0" text-anchor="start" font-size="13" fill="#b03a2e">Eₐ(I)</text>
+<text x="350.0" y="425.0" text-anchor="middle" font-size="12" fill="#444">étape 1 : protonation (lente)   ·   étape 2 : attaque de l’eau (rapide)</text>
+</svg>
