@@ -12,6 +12,8 @@
 
 **Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 5)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 4 heures, calculatrice interdite. Notations du sujet :
 
 - $\langle x|y\rangle=\sum_i x_i\overline{y_i}$, linéaire à gauche et semi-linéaire à droite, et $\|x\|=\sqrt{\langle x|x\rangle}$ ;
@@ -510,7 +512,7 @@ Donc $4\vert\!\vert\!\vert A\vert\!\vert\!\vert \le8\,r(A)$.
 
 $$\boxed{\tfrac12\vert\!\vert\!\vert A\vert\!\vert\!\vert \le r(A)\le\vert\!\vert\!\vert A\vert\!\vert\!\vert }$$
 
-Les deux constantes sont atteintes. Pour la matrice $N$ de la question 21, $N(x_1,x_2)=(x_2,0)$ donne $\|N\|_{\mathrm{op}}=1$ (prendre $x=e_2$), tandis que son disque numérique a pour rayon $1/2$. Pour $A=I_n$, chaque vecteur unitaire donne $\langle Ax|x\rangle=1$ et $r(A)=\|A\|_{\mathrm{op}}=1$. Ici $\|\cdot\|_{\mathrm{op}}$ désigne la norme subordonnée du sujet.
+Les deux inégalités peuvent être des égalités. Pour $n=2$ et la matrice $N$ de la question 21, $N(x_1,x_2)=(x_2,0)$ donne $\vert\!\vert\!\vert N\vert\!\vert\!\vert =1$ (prendre $x=e_2$), tandis que $r(N)=\frac12$ : c'est l'égalité à gauche. Pour $A=I_n$, chaque vecteur unitaire donne $\langle Ax|x\rangle=1$, donc $r(A)=\vert\!\vert\!\vert A\vert\!\vert\!\vert =1$ : c'est l'égalité à droite.
 
 ### Question 24
 
@@ -548,7 +550,9 @@ Les polynômes $\prod_\ell(1-\omega_k^\ell X)$ et $1-X^k$ coïncident sur l'ense
 
 $$\boxed{1-X^k=\prod_{\ell=1}^k(1-\omega_k^\ell X)}$$
 
-*Seconde identité.* Posons $Q_j=\prod_{\ell\ne j}(1-\omega_k^\ell X)$. Par la première identité et la formule de la somme géométrique, les deux polynômes $Q_j$ et $\sum_{m=0}^{k-1}\omega_k^{jm}X^m$ donnent $1-X^k$ après multiplication par $1-\omega_k^jX$. Ce facteur étant un polynôme non nul, on peut le simplifier dans $\mathbb C[X]$. Ainsi
+*Seconde identité.* Posons $Q_j=\prod_{\ell\ne j}(1-\omega_k^\ell X)$. D'une part $(1-\omega_k^jX)\,Q_j=1-X^k$ par la première identité. D'autre part, par télescopage et puisque $\omega_k^{jk}=1$,
+$$(1-\omega_k^jX)\sum_{m=0}^{k-1}\omega_k^{jm}X^m=1-\omega_k^{jk}X^k=1-X^k.$$
+L'anneau $\mathbb C[X]$ est intègre et $1-\omega_k^jX\neq0$ : on simplifie, d'où $Q_j=\sum_{m=0}^{k-1}\omega_k^{jm}X^m$. En faisant la moyenne sur $j$,
 $$
 \frac1k\sum_{j=1}^k Q_j
 =\sum_{m=0}^{k-1}\left(\frac1k\sum_{j=1}^k\omega_k^{jm}\right)X^m.
@@ -676,7 +680,7 @@ $$\boxed{\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le2\,\|p\|_{\mathbb D(0,r(
 
 ### Question 30-b
 
-Soit $\mathbb D(c,\delta)$ un disque fermé contenant $\mathcal H(A)$, de bord $\mathcal C=\partial\mathbb D(c,\delta)$.
+Soit un disque de centre $c$ et de rayon $\delta$ contenant $\mathcal H(A)$, de bord le cercle $\mathcal C=\partial\mathbb D(c,\delta)$. Qu'il soit ouvert ou fermé, il est inclus dans le disque fermé $\mathbb D(c,\delta)$, qui contient donc $\mathcal H(A)$ et a le même bord. On raisonne avec ce disque fermé.
 
 *Translation.* Soit $B=A-cI_n$. Pour $x\in\mathbb S$, $\langle Bx|x\rangle=\langle Ax|x\rangle-c$. Donc $\mathcal H(B)=\mathcal H(A)-c\subset\mathbb D(0,\delta)$ et $r(B)\le\delta$.
 

@@ -55,7 +55,7 @@
     "sha256_sujet": "cb90a488f30167da22937e503e01cd55e9078bcbaa6e1a62123c46bc56b5b665",
     "sha256_rapport": "41e25c9b6561c3749a5498949f29e525f7f19f4e5aa91f0d68f8809ae1b51ab4"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-28",
   "revision": {
     "date": "2026-11-22",
     "modele": "OpenAI Codex (famille GPT-6)",
@@ -142,6 +142,18 @@
       ],
       "modifications": true,
       "perimetre": "34 réponses comparées au sujet et au rapport. Cas d’égalité des deux bornes du rayon numérique et preuve de la seconde identité polynomiale de 26-a par les sommes géométriques des racines de l’unité."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 5,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application d'une seconde relecture indépendante des 34 réponses, brut et guidé. Q23 : cas d'égalité notés avec la norme subordonnée du sujet, exemple précisé pour n = 2. Q26-a : identité télescopique et simplification dans C[X] écrites. Q30-b : disque ouvert ou fermé ramené au disque fermé. Guidé : dépendances entre parties et ligne du bilan sur les racines de l'unité mises en accord avec les solutions."
     }
   ],
   "couverture": {
