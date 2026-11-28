@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Sur les 32 questions du sujet, 27 sont entièrement traitées et cinq le sont en partie : pour les questions 28 à 32 (avant-projet de conception), les solutions sont choisies, justifiées et représentées par deux coupes de principe originales, mais le tracé à l’échelle sur le calque A3 du sujet n’est pas reproduit. Les autres réponses graphiques (grafcet de la question 1, codeur de la question 3, schéma de la question 7, épure des questions 10 et 11, croquis de la question 21, sous-phase de la question 27) sont données par des figures originales ; le tableau des questions 11 et 12 et les fiches de la question 24 sont rendus par des tableaux.
 
 Sujet : machine de cambrage-pliage de fil. Épreuve de six heures, sans calculatrice ni document ; l’énoncé impose $\pi\approx3$ dans les applications numériques. [Sujet officiel](https://www.banquept.fr/documents/2013/si_c_2013_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_si_c_ecrit_2013.pdf)
@@ -234,9 +236,9 @@ où $\delta_k$ est la distance de $A$ à la droite d’action $(B_kC_k)$. Sur l�
 | $\delta_k$ (mm) | 47,7 | 46,1 | 40,0 | 29,2 | 21,8 |
 | Couple moteur $C_m$ (N·m) | 75 | 97 | 120 | 118 | 75 |
 
-Aux instants $t_0$ et $t_4$, $A$ et $J_k$ sont à la même distance de la droite d’action : le couple est égal à $M_f$. Entre les deux, il passe par un maximum voisin de 120 N·m, vers le pliage à $90^\circ$.
+Aux instants $t_0$ et $t_4$, $A$ et $J_k$ sont à la même distance de la droite d’action : le couple est égal à $M_f$. Entre les deux, il passe par un maximum : 120 N·m parmi les cinq positions étudiées, environ 124 N·m par le calcul continu, pour un pliage voisin de $110^\circ$.
 
-**Conclusion.** $C_{m,max}\approx120\ \mathrm{N\,m}<C_{max}=500\ \mathrm{N\,m}$ : le moteur de la tête convient pour plier le fil de 10 mm, avec un coefficient de sécurité d’environ 4. Cette marge couvre les frottements négligés, l’écrouissage du fil et les phases d’accélération.
+**Conclusion.** $C_{m,max}\approx125\ \mathrm{N\,m}<C_{max}=500\ \mathrm{N\,m}$ : le moteur de la tête convient pour plier le fil de 10 mm, avec un coefficient de sécurité d’environ 4. Cette marge couvre les frottements négligés, l’écrouissage du fil et les phases d’accélération.
 
 ## Partie III — Performances du dispositif d’amenage
 
@@ -295,7 +297,7 @@ $$z(5/54)=z(5/4)-z(54/4)=-2-(-10)$$
 
 $$\boxed{z(5/54)=+8\ \mathrm{mm}}$$
 
-Vérification : $z(5/54)=z(8/7)=-p_8\,\theta/2\pi=-2\times(-4)=+8\ \mathrm{mm}$. Le motoréducteur descend de 10 mm pendant que le bloc supérieur ne descend que de 2 mm : c’est le déplacement de 10 mm que relève le capteur inductif 60.
+Vérification : $z(5/54)=z(8/7)=-p_8\,\theta/2\pi=-2\times(-4)=+8\ \mathrm{mm}$. Le motoréducteur descend de 10 mm pendant que le bloc supérieur ne descend que de 2 mm. Le capteur inductif 60 relève le déplacement vertical du motoréducteur : 10 mm par rapport au bloc inférieur, 8 mm par rapport au bloc supérieur, selon la pièce qui porte le capteur.
 
 ### Question 16 — Liaison équivalente à deux pivots glissants parallèles
 
@@ -526,7 +528,7 @@ Les questions 28 à 32 se traitent sur le calque A3 (échelle 1:2). Les solution
 
 ![Figure 7 — Coupe de principe de l’arbre intermédiaire : galet, pignon et roulements, repères 1 à 17](figures/q30-arbre-intermediaire.svg)
 
-Repères de la figure 7 : 1 galet 21 ; 2 clavette parallèle ; 3 rondelle et vis en bout d’arbre ; 4 entretoise ; 5 joint à lèvre ; 6 roulement à rouleaux cylindriques ; 7 anneaux élastiques pour alésage ; 8 arbre intermédiaire ; 9 roulement à deux rangées de billes à contact oblique ; 10 cale de réglage ; 11 couvercle ; 12 cales sous le couvercle ; 13 joint à lèvre ; 14 entretoise ; 15 pignon 14 ; 16 clavette parallèle ; 17 rondelle et vis en bout d’arbre.
+Repères de la figure 7 : 1 galet 21 ; 2 clavette parallèle ; 3 rondelle et vis en bout d’arbre ; 4 entretoise ; 5 joint à lèvre ; 6 roulement à rouleaux cylindriques ; 7 anneaux élastiques pour alésage ; 8 arbre intermédiaire ; 9 roulement à deux rangées de billes à contact oblique ; 10 cale de réglage ; 11 couvercle, bague plate logée dans le lamage ; 12 cales sous le couvercle ; 13 passage étroit entre le couvercle et le moyeu du pignon ; 14 moyeu étagé du pignon ; 15 pignon 14 ; 16 clavette parallèle ; 17 rondelle et vis en bout d’arbre.
 
 **Solution pour le galet.**
 
@@ -538,13 +540,13 @@ L’empilage serré (rondelle, galet, entretoise, bague intérieure, épaulement
 
 ### Question 29 — Encastrement de l’arbre intermédiaire et du pignon 14
 
-Solution symétrique de celle du galet, à l’autre bout de l’arbre (figure 7, repères 14 à 17) :
+Même principe que pour le galet, à l’autre bout de l’arbre (figure 7, repères 14 à 17), avec le pignon 14 tel que le calque l’impose : sa face est presque au ras de la face F et son moyeu étagé (environ Ø80 sur 5 mm, puis environ Ø55 sur 5 mm de plus, alésage voisin de Ø40) pénètre dans le lamage.
 
-- *Mise en position.* Centrage long du pignon sur l’arbre, ajustement **Ø35 H7/h6** (ou H7/k6, le pignon étant rarement démonté et la concentricité de la denture importante), et appui plan du moyeu contre l’entretoise 14, en appui sur la bague intérieure du roulement 9.
+- *Mise en position.* Centrage long du pignon sur l’arbre, dans le prolongement de la portée du roulement 9, ajustement **Ø40 H7/h6** (ou H7/k6, le pignon étant rarement démonté et la concentricité de la denture importante), et appui plan du petit étage du moyeu (14) directement contre la bague intérieure du roulement 9, sans entretoise (ou par une rondelle d’épaisseur ajustée).
 - *Arrêt en rotation.* Clavette parallèle 16.
-- *Maintien en position.* Rondelle et vis en bout d’arbre 17. La même vis serre l’empilage pignon, entretoise 14 et bague intérieure du roulement 9 contre l’épaulement de l’arbre.
+- *Maintien en position.* Rondelle et vis en bout d’arbre 17. La même vis serre le pignon et la bague intérieure du roulement 9 contre l’épaulement de l’arbre ; le bout d’arbre reste en retrait du moyeu.
 
-Le pignon est évidé du côté du bloc pour laisser la place du couvercle 11 et de ses têtes de vis.
+Le pignon ne laisse aucune place entre lui et la face F : le couvercle 11 du roulement doit tenir tout entier dans le lamage, profond de 8 à 9 mm. C’est une bague plate, alésée pour laisser passer le moyeu, fixée par des vis à tête fraisée noyées.
 
 ### Question 30 — Guidage en rotation de l’arbre intermédiaire
 
@@ -557,15 +559,15 @@ Le pignon est évidé du côté du bloc pour laisser la place du couvercle 11 et
 
 **Arrêts axiaux.**
 
-- Bagues intérieures : chacune est prise entre l’épaulement central de l’arbre et l’entretoise voisine (4 ou 14), serrée par la vis en bout d’arbre.
-- Bague extérieure du palier fixe 9 : prise entre l’épaulement de l’alésage (passage de Ø90 à Ø82), par l’intermédiaire de la cale 10, et le couvercle 11, centré dans le lamage de la face F et fixé par les vis prévues autour de l’alésage.
+- Bagues intérieures : chacune est prise entre l’épaulement central de l’arbre et la pièce voisine (entretoise 4 côté galet, moyeu du pignon côté F), serrée par la vis en bout d’arbre.
+- Bague extérieure du palier fixe 9 : prise entre l’épaulement de l’alésage (passage de Ø90 à Ø82), par l’intermédiaire de la cale 10, et le couvercle 11, bague plate centrée dans le lamage de la face F, qui ne dépasse pas de F et se fixe par des vis à tête fraisée dans les taraudages prévus autour de l’alésage.
 - Bague extérieure du palier libre 6 : arrêtée des deux côtés par deux anneaux élastiques pour alésage 7, le jeu axial étant donné par le roulement lui-même.
 
-**Réglage axial.** La position de l’arbre, donc du plan médian du galet, est fixée par l’épaisseur de la cale 10. On la modifie en faisant passer de l’épaisseur de la cale 10 aux cales 12 placées sous la collerette du couvercle, ou inversement (cales pelables) : la somme reste constante, la bague extérieure reste serrée sans jeu et l’arbre se décale de la quantité voulue. Le réglage porte sur une bague montée glissante, il reste donc possible après montage.
+**Réglage axial.** La position de l’arbre, donc du plan médian du galet, est fixée par l’épaisseur de la cale 10. On la modifie en ajoutant, ou en retirant, la même épaisseur à la cale 10 et aux cales 12 placées sous le couvercle, au fond du lamage (cales pelables) : la bague extérieure et le couvercle se déplacent ensemble, la différence des deux épaisseurs reste constante, la bague reste serrée sans jeu entre la cale 10 et le couvercle, et l’arbre se décale de la quantité voulue. Le réglage porte sur une bague montée glissante, il reste donc possible après montage.
 
-**Étanchéité et lubrification.** Graissage à vie ; joint à lèvre 13 dans le couvercle et joint à lèvre 5 dans l’alésage Ø80, frottant sur les entretoises rectifiées.
+**Étanchéité et lubrification.** Graissage à vie ; joint à lèvre 5 dans l’alésage Ø80, frottant sur l’entretoise 4 rectifiée ; côté F, passage étroit (13) entre l’alésage du couvercle et la portée Ø80 du moyeu du pignon.
 
-**Montage.** Anneau élastique intérieur, bague extérieure et rouleaux du roulement 6, second anneau, joint 5 ; bague intérieure du roulement 6 et roulement 9 emmanchés à la presse sur l’arbre ; cale 10 ; introduction de l’arbre par la face F (le roulement NU est séparable) ; cales 12, couvercle 11 et ses vis ; puis, de chaque côté, entretoise, clavette, pignon ou galet, rondelle et vis. Le démontage se fait dans l’ordre inverse.
+**Montage.** Anneau élastique intérieur, bague extérieure et rouleaux du roulement 6, second anneau, joint 5 ; bague intérieure du roulement 6 et roulement 9 emmanchés à la presse sur l’arbre ; cale 10 ; introduction de l’arbre par la face F (le roulement NU est séparable) ; cales 12, couvercle 11 et ses vis ; puis, côté F, clavette, pignon, rondelle et vis et, côté galet, entretoise, clavette, galet, rondelle et vis. Le démontage se fait dans l’ordre inverse.
 
 ### Question 31 — Guidage en translation du bloc supérieur sur le bloc inférieur
 
@@ -575,7 +577,7 @@ Repères de la figure 8 : 1 vis de bridage 7 ; 2 couvercle formant butée ; 3 é
 
 Le guidage reprend le modèle de la question 16 : **deux colonnes cylindriques 16 parallèles**, donc deux pivots glissants dont l’association donne la glissière de direction $\vec z$. Aucune forme prismatique, clavette ou cannelure n’est nécessaire.
 
-- *Liaison colonne – bloc inférieur 4.* Chaque colonne est encastrée dans un alésage Ø65 H7 du bloc 4 (ressource 10, perpendicularité Ø0,02 par rapport à D) : ajustement **Ø65 H7/m6**, légèrement serré mais démontable, arrêt axial par un épaulement ou, comme sur la figure, par une rondelle et une vis en bout de colonne.
+- *Liaison colonne – bloc inférieur 4.* Chaque colonne est encastrée dans un alésage Ø65 H7 du bloc 4 (ressource 10, perpendicularité Ø0,02 par rapport à D) : ajustement **Ø65 H7/m6**, légèrement serré mais démontable, arrêt axial par un épaulement ou, comme sur la figure, par une rondelle et une vis en bout de colonne ; le calque dessine d’ailleurs une plaque rapportée sous le bloc 4, au droit de l’axe de la colonne, qui peut fermer l’alésage et servir d’arrêt axial.
 - *Liaison colonne – bloc supérieur 5.* La colonne coulisse dans deux **bagues en bronze** épaulées (8), emmanchées serrées dans le bloc 5, **H7/p6**, et ajustées glissantes sur la colonne, **Ø65 H7/f7**. Les deux bagues sont placées aux extrémités de l’alésage : la longueur de guidage est supérieure à 1,5 fois le diamètre, ce qui limite le risque d’arc-boutement.
 - *Matériaux et lubrification.* Colonnes en acier trempé et rectifié, bagues en bronze avec rainures de graissage.
 

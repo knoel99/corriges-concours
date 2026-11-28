@@ -53,7 +53,7 @@
       "32"
     ],
     "questions_non_traitees": [],
-    "precision": "Sujet de 41 pages lu en entier, page par page en image (texte, douze documents ressources, cahier réponses, calque réponse A3), et rapport du jury de 3 pages. 32 questions : 7 en partie I, 5 en partie II, 6 en partie III, 2 en partie IV, 7 en partie V, 5 en partie VI. Les questions 28 à 32 sont partielles : les solutions de conception sont choisies, justifiées et représentées par deux coupes de principe originales, sans tracé à l’échelle sur le calque A3 du sujet. Les réponses graphiques des questions 1, 3, 7, 10, 11, 21 et 27 sont des figures originales ; les tableaux des questions 11, 12 et 24 sont rendus en tableaux."
+    "precision": "Sujet de 41 pages lu en entier, page par page en image (texte, douze documents ressources, cahier réponses, calque réponse A3), et rapport du jury de 3 pages. 32 questions : 7 en partie I, 5 en partie II, 6 en partie III, 2 en partie IV, 7 en partie V, 5 en partie VI. Les questions 28 à 32 sont partielles : les solutions de conception sont choisies, justifiées et représentées par deux coupes de principe originales, sans tracé à l’échelle sur le calque A3 du sujet ; les coupes de principe ne reprennent pas tous les éléments pré-dessinés du calque : le pignon 14 au ras de F et son moyeu étagé sont repris sans échelle sur la figure 7, la plaque sous le bloc 4 n’est que citée. Les réponses graphiques des questions 1, 3, 7, 10, 11, 21 et 27 sont des figures originales ; les tableaux des questions 11, 12 et 24 sont rendus en tableaux."
   },
   "figures": [
     {
@@ -110,6 +110,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions pour les 32 questions à partir du sujet de 41 pages et du rapport du jury ; applications numériques et épure du pliage recalculées, huit figures originales dessinées et contrôlées au rendu. Les questions 28 à 32 restent partielles faute de tracé sur le calque A3."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Corrections de la relecture indépendante, chacune vérifiée sur le sujet, le calque et le rapport. Guidé : liens du sujet et du rapport rétablis dans la présentation. Question 7 : sens de rotation des deux galets corrigé sur la figure 3. Question 8 (guidé) : remarque sur la table 6-b reformulée. Question 12 : maximum du couple recalculé, environ 124 N·m pour un pliage voisin de 110°. Question 15 : lecture du capteur 60 nuancée. Question 22 (guidé) : citation du rapport rendue littérale. Question 27 : sens du mouvement d’avance de la fraise corrigé sur la figure 6. Questions 28 à 30 : figure 7 redessinée (pignon 14 du calque au ras de F, moyeu étagé dans le lamage, couvercle plat à vis noyées, bouts d’arbre en retrait des moyeux), texte de la question 29 et du montage mis en accord, réglage axial de la question 30 corrigé (cales 10 et 12 variant dans le même sens). Question 31 : plaque du calque sous le bloc 4 citée. Les 22 encadrés du jury relus sur le rapport. Couverture inchangée, partielle pour 28 à 32."
     }
   ]
 }
