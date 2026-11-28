@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, sur la chimie de l'azote et quelques-unes de ses applications industrielles : 41 questions en cinq parties indépendantes de même poids (20 % chacune). Les 41 questions sont traitées. Les valeurs lues sur le diagramme potentiel-pH et sur la courbe de titrage du sujet sont signalées à l'endroit où elles servent. Les applications numériques emploient les données de l'énoncé.
 
 [Sujet officiel](https://www.banquept.fr/documents/2020/ph_b_ch_2020_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_phys_b_ecrit_2020.pdf)
@@ -191,7 +193,7 @@ Ce schéma est un diagramme primitif : d'après la question 13, $\mathrm{HNO_2}$
 
 $$\boxed{\text{(I)} : \mathrm{NO_3^-}_{(aq)} \qquad \text{(II)} : \mathrm{NO_{(g)}} \qquad \text{(III)} : \mathrm{NO_2^-}_{(aq)}}$$
 
-Le domaine (III) se referme en coin : à gauche du point de concours des trois frontières, lu vers $\mathrm{pH} \approx 5$ et $E \approx 0{,}55$ V sur le graphique du sujet, le degré $+\mathrm{III}$ se dismute (question 13) et la frontière unique est celle du couple $\mathrm{NO_3^-/NO}$.
+Le domaine (III) se referme en coin : à gauche du point de concours des trois frontières, lu vers $\mathrm{pH} \approx 5$ et $E \approx 0{,}55$ V sur le graphique du sujet, le degré $+\mathrm{III}$ se dismute (question 13) et la frontière unique est celle du couple $\mathrm{NO_3^-/NO}$. (Avec les potentiels arrondis des données, $0{,}96 - 0{,}08\,\mathrm{pH} = 0{,}84 - 0{,}06\,\mathrm{pH}$ donnerait $\mathrm{pH} \approx 6$ et $E \approx 0{,}48$ V : on s'en tient à la lecture du graphique fourni.)
 
 ![Figure 3 — Diagramme potentiel-pH de l'azote reproduit d'après celui du sujet, avec les espèces attribuées aux zones I, II et III et le couple de chaque frontière](figures/diagramme-e-ph-azote.svg)
 
@@ -495,7 +497,7 @@ Au gramme près, les deux masses coïncident : l'indication du fabricant est cor
 
 $$\frac{m(\mathrm N)}{m_{\mathrm{engrais}}} = \frac{1{,}96}{6{,}00} \approx 32{,}7\ \%$$
 
-soit un écart relatif d'environ 5 % avec les 34,4 % annoncés, par défaut. Cet écart est de l'ordre de l'incertitude d'un titrage dont le volume équivalent est repéré graphiquement sur un saut peu marqué (0,5 mL sur 14 mL représente déjà 3,6 %). On conclut que l'indication est **vérifiée aux incertitudes de mesure près**, la teneur mesurée étant légèrement inférieure à la teneur annoncée.
+soit un écart relatif d'environ 5 % avec les 34,4 % annoncés, par défaut. Pour retrouver 34,4 %, il faudrait un volume équivalent $V_E = \dfrac{2{,}064}{2\times 14{,}0}\times\dfrac{10{,}0}{250}\times\dfrac{1}{0{,}200} \approx 14{,}7$ mL, soit 0,7 mL de plus que la valeur mesurée. Cet écart dépasse un peu ce qu'explique la seule lecture graphique du volume équivalent sur un saut peu marqué (0,5 mL sur 14 mL représente 3,6 %). On conclut que l'indication est **vérifiée au gramme près, comme le demande l'énoncé**, la teneur mesurée (32,7 %) restant légèrement inférieure à la teneur annoncée.
 
 ## Partie 5 — Pollution par les nitrates : dosage indirect
 
@@ -521,7 +523,7 @@ $$\log K^\circ = \frac{3\,(0{,}96 - 0{,}77)}{0{,}06} = 9{,}5$$
 
 $$K^\circ \approx 3\cdot 10^{9} \gg 1$$
 
-La réaction est donc thermodynamiquement très favorable. Les conditions opératoires la rendent en outre complète : ions $\mathrm{Fe^{2+}}$ et $\mathrm{H^+}$ en large excès (acide sulfurique concentré), et dégagement du monoxyde d'azote gazeux. Le chauffage de 45 minutes au bain-marie sert à l'accélérer, car elle est lente à température ambiante.
+La réaction est donc thermodynamiquement très favorable. Les conditions opératoires la rendent en outre complète : ions $\mathrm{H^+}$ en très large excès (10 mL d'acide sulfurique à $5\ \mathrm{mol\cdot L^{-1}}$, soit de l'ordre de $0{,}1$ mol de protons pour environ $1\cdot 10^{-4}$ mol consommée), ions $\mathrm{Fe^{2+}}$ en excès modéré ($1{,}00\cdot 10^{-4}$ mol introduite dont le titrage de la question 39 retrouve $5\,c_2 V = 1{,}65\cdot 10^{-5}$ mol : il n'en reste que 16,5 %, le reste, $8{,}35\cdot 10^{-5}$ mol, ayant été consommé), et dégagement du monoxyde d'azote gazeux. Le chauffage de 45 minutes au bain-marie sert à l'accélérer, car elle est lente à température ambiante.
 
 ### Question 37 — Quantité d'ions fer(II) restants
 

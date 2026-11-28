@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** La chimie de l'azote et quelques applications industrielles. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 41 questions réparties en cinq parties indépendantes, chacune comptant pour 20 % de la note.
@@ -16,12 +18,12 @@
 
 **Notions mobilisées.** Loi de Hess, entropie standard de réaction, relation entre enthalpie libre standard et constante d'équilibre, quotient de réaction, loi de Van't Hoff, catalyse, schémas de Lewis de radicaux, acides forts et faibles, relation de Nernst, diagrammes potentiel-pH, dismutation, tableau d'avancement, loi de Faraday, structures cristallines, titrages direct et indirect.
 
-**Difficulté.** Le sujet est très proche du cours et balaie les deux années. Les questions sont courtes et nombreuses : les points se gagnent sur la justification (exigée explicitement aux questions 6 et 7), sur les unités et sur des calculs simples menés à la main. D'après le rapport, les passages les plus discriminants sont les représentations de Lewis (question 9), l'acide fort (question 11), le bilan de matière et le gaz dégagé (questions 18 et 19), la description des sites octaédriques et la masse volumique (questions 21 à 23), la discussion finale sur la taille du site (questions 26 et 27) et l'écriture de la réaction de titrage (question 30).
+**Difficulté.** Le sujet est très proche du cours et balaie les deux années. Les questions sont courtes et nombreuses : les points se gagnent sur la justification (exigée explicitement aux questions 6 et 7), sur les unités et sur des calculs simples menés à la main. D'après le rapport, les passages les moins réussis sont les représentations de Lewis (question 9), l'acide fort (question 11), le bilan de matière et le gaz dégagé (questions 18 et 19), la description des sites octaédriques et la masse volumique (questions 21 à 23), la discussion finale sur la taille du site (questions 26 et 27) et l'écriture de la réaction de titrage (question 30).
 
-**Gestion du temps.** Les cinq parties ayant le même poids, viser un peu plus de 20 minutes par partie. La partie 5, placée en fin d'énoncé, a été délaissée par manque de temps alors qu'elle est simple et que deux résultats numériques y sont fournis : ne pas hésiter à la traiter avant une partie jugée plus difficile.
+**Gestion du temps.** Les cinq parties ayant le même poids, viser un peu plus de 20 minutes par partie. La partie 5, placée en fin d'énoncé, a été moins traitée, « probablement par manque de temps » selon le rapport, alors qu'elle est simple et que deux résultats numériques y sont fournis : ne pas hésiter à la traiter avant une partie jugée plus difficile.
 
 > [!JURY]
-> Le rapport 2020 rappelle que seule une réponse justifiée et argumentée reçoit tous les points, et qu'une valeur numérique sans unité n'est pas créditée. Il salue le soin de la présentation mais déplore de nombreuses fautes d'orthographe et de syntaxe, et demande une attention particulière aux calculs d'ordre de grandeur. La première partie a été globalement bien traitée ; la quatrième, pourtant issue de notions du lycée, l'a été avec peu de rigueur ; la cinquième a été peu abordée, mais correctement par ceux qui l'ont traitée.
+> Le rapport 2020 rappelle que seule une réponse justifiée et argumentée reçoit tous les points, et qu'une valeur numérique sans unité n'est pas créditée. Il salue le soin de la présentation mais déplore de nombreuses fautes d'orthographe et de syntaxe, et demande une attention particulière aux calculs d'ordre de grandeur. La première partie a été globalement bien traitée ; la quatrième, pourtant issue de notions du lycée, l'a été avec peu de rigueur ; la cinquième a été moins traitée, mais correctement par ceux qui y ont répondu.
 
 [Sujet officiel](https://www.banquept.fr/documents/2020/ph_b_ch_2020_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_phys_b_ecrit_2020.pdf)
 
@@ -41,7 +43,7 @@ Pour une mole de diazote :
 $$\boxed{\mathrm{N_{2(g)}} + 3\,\mathrm{H_{2(g)}} = 2\,\mathrm{NH_{3(g)}} \qquad (1)}$$
 
 > [!JURY]
-> Le rapport signale que des candidats peu attentifs n'ont pas écrit la réaction pour une mole de diazote, ce qui a faussé toutes les grandeurs de réaction calculées ensuite.
+> Le rapport signale que des candidats peu attentifs n'ont pas respecté la consigne d'écrire la réaction pour une mole de diazote, ce qui a pesé sur les réponses suivantes.
 
 ### Question 2
 
@@ -152,8 +154,11 @@ $$\boxed{\text{Une augmentation de pression déplace l'équilibre dans le sens d
 
 C'est le sens de la diminution de la quantité de gaz ($4 \to 2$ moles), conformément à la loi de modération de Le Chatelier. Industriellement, on travaille donc sous forte pression (quelques centaines de bars).
 
+> [!PIEGE]
+> L'énoncé demande une justification rigoureuse : citer seulement la loi de Le Chatelier risque de ne pas suffire. Comparer $Q_r$ à $K^\circ$ juste après la perturbation donne une justification complète.
+
 > [!JURY]
-> L'énoncé demande une justification rigoureuse : citer seulement la loi de Le Chatelier ne suffit pas. Le rapport rappelle que seule une réponse argumentée reçoit tous les points ; le raisonnement attendu compare $Q_r$ à $K^\circ$.
+> Le rapport rappelle, de façon générale, que « seule une réponse justifiée et argumentée est récompensée par l'intégralité des points associés à la question ».
 
 ### Question 7
 
@@ -216,7 +221,10 @@ Vérification pour $\mathrm{NO_2}$ : 3 doublets liants (6 électrons), 5 doublet
 ![Figure 1 — Représentations de Lewis de l'ammoniac, du monoxyde d'azote et du dioxyde d'azote, avec l'électron célibataire porté par l'azote dans les deux oxydes](figures/lewis-nh3-no-no2.svg)
 
 > [!JURY]
-> Le rapport juge les représentations de Lewis « assez fantaisistes », y compris pour la molécule sans difficulté (l'ammoniac). Faire apparaître tous les doublets non liants, l'électron célibataire et les charges formelles.
+> Selon le rapport, l'écriture des représentations de Lewis « reste assez fantaisiste, même pour une molécule ne posant aucune difficulté particulière ».
+
+> [!PIEGE]
+> Le rapport ne dit pas en quoi les schémas étaient fautifs. Les oublis à surveiller ici : un doublet non liant, l'électron célibataire des deux oxydes, les charges formelles du dioxyde d'azote.
 
 > [!METHODE]
 > Toujours commencer par le décompte des électrons de valence. Un total impair annonce un radical : inutile de chercher une structure où tous les électrons sont appariés.
@@ -257,7 +265,7 @@ Sa mise en solution est une réaction totale :
 $$\boxed{\mathrm{HNO_3} + \mathrm{H_2O} \longrightarrow \mathrm{NO_3^-}_{(aq)} + \mathrm{H_3O^+}_{(aq)}}$$
 
 > [!JURY]
-> D'après le rapport, la notion d'acide fort et sa traduction sur la valeur du p$K_a$ sont peu connues. Le lien à énoncer : p$K_a$ négatif, donc dissociation totale dans l'eau, d'où la flèche simple.
+> D'après le rapport, la notion d'acide fort et sa traduction sur la valeur du p$K_a$ sont peu connues. Conseil : énoncer le lien, p$K_a$ négatif, donc dissociation totale dans l'eau, d'où la flèche simple.
 
 ### Question 12
 
@@ -299,7 +307,7 @@ $$\log K^\circ = \frac{2\,(0{,}99 - 0{,}94)}{0{,}06} \approx 1{,}7$$
 soit $K^\circ \approx 50 > 1$ : la dismutation est favorable. Conséquence : $\mathrm{HNO_2}$ n'a pas de domaine dans le diagramme, et en milieu acide la frontière à considérer est celle du couple $\mathrm{NO_3^-/NO}$.
 
 > [!JURY]
-> Le rapport note que beaucoup de candidats ont bien reconnu la dismutation. Il faut la nommer et l'écrire avec une équation ajustée en azote, en oxygène et en charge.
+> Le rapport note que beaucoup de candidats ont bien reconnu la dismutation. Conseil : la nommer et l'écrire avec une équation ajustée en azote, en oxygène et en charge.
 
 ### Question 14
 
@@ -465,7 +473,7 @@ $$\boxed{n(\mathrm{Cu^{2+}}) = 0{,}200\ \mathrm{mol} \quad n(\mathrm{NO}) = 0{,}
 Contrôle par l'électroneutralité de la solution : $2\times 0{,}200 + 0{,}067 = 0{,}467$ mol de charges positives, pour $0{,}467$ mol d'ions nitrate.
 
 > [!JURY]
-> Selon le rapport, peu de candidats ont su calculer les quantités de matière des produits. Un tableau d'avancement, même rapide, sécurise ces quatre soustractions ; chaque valeur doit porter son unité.
+> Selon le rapport, peu de candidats ont su calculer les quantités de matière des produits. Conseil : un tableau d'avancement, même rapide, sécurise ces quatre soustractions ; chaque valeur doit porter son unité.
 
 ### Question 19
 
@@ -488,7 +496,7 @@ Application numérique, avec $V_m = 22{,}4\ \mathrm{L\cdot mol^{-1}}$ :
 $$V_{\mathrm{gaz}} = 2\,\xi_f\,V_m = 0{,}133\times 22{,}4 \approx 3{,}0\ \mathrm L$$
 
 > [!JURY]
-> Le rapport relève que le gaz dégagé a rarement été identifié. Il suffit de lire le couple utilisé : c'est $\mathrm{NO}$, et non $\mathrm{H_2}$ ni $\mathrm{NO_2}$.
+> Le rapport relève que peu de candidats ont réussi à identifier le gaz dégagé. Conseil : il suffit de lire le couple utilisé à la question 17, le gaz est $\mathrm{NO}$.
 
 ### Question 20
 
@@ -531,7 +539,7 @@ $$\boxed{N_{\mathrm{octa}} = 4 \text{ sites octaédriques par maille}}$$
 ![Figure 4 — Maille du nitrure de titane : atomes de titane aux sommets et aux centres des faces, atomes d'azote dans les sites octaédriques au centre du cube et aux milieux des arêtes](figures/maille-nitrure-titane.svg)
 
 > [!JURY]
-> Le rapport indique que la maille est connue mais que les sites octaédriques sont souvent mal décrits. Il faut donner leur position (centre du cube, milieux des arêtes), leur partage entre mailles et leur nombre.
+> Le rapport indique que la maille est connue mais que les sites octaédriques sont souvent mal décrits. Conseil : donner leur position (centre du cube, milieux des arêtes), leur partage entre mailles et leur nombre.
 
 ### Question 22
 
@@ -560,7 +568,7 @@ $$\boxed{\text{coordinence Ti/N} = 6 \qquad \text{coordinence N/Ti} = 6}$$
 La structure est du type chlorure de sodium.
 
 > [!JURY]
-> Le rapport signale des confusions entre coordinence (nombre de plus proches voisins) et compacité (fraction du volume occupée). Ici on attend deux entiers, pas un pourcentage.
+> Le rapport signale que les candidats confondent les notions de compacité et de coordinence. Conseil : la coordinence est un nombre de plus proches voisins, la compacité une fraction du volume occupée ; ici on attend deux entiers, pas un pourcentage.
 
 ### Question 23
 
@@ -587,7 +595,7 @@ $$\boxed{\rho \approx 5{,}4\ \mathrm{g\cdot cm^{-3}} = 5{,}4\cdot 10^{3}\ \mathr
 L'ordre de grandeur, quelques tonnes par mètre cube, est celui d'un solide métallique ou céramique dense (le titane pur est à $4{,}5\cdot 10^{3}\ \mathrm{kg\cdot m^{-3}}$) : le résultat est plausible.
 
 > [!JURY]
-> Le calcul de la masse volumique a été peu réussi, et le rapport regrette l'absence presque générale de regard critique sur le résultat. Une masse volumique de solide se situe entre $10^{3}$ et $2\cdot 10^{4}\ \mathrm{kg\cdot m^{-3}}$ : hors de cet intervalle, reprendre les conversions.
+> D'après le rapport, le calcul de la masse volumique a été peu réussi, et une évaluation qualitative critique des résultats obtenus a été rarement produite. Conseil : une masse volumique de solide se situe entre $10^{3}$ et $2\cdot 10^{4}\ \mathrm{kg\cdot m^{-3}}$ : hors de cet intervalle, reprendre les conversions.
 
 > [!METHODE]
 > Sans calculatrice : $4{,}25^{2} \approx 18$, puis $18\times 4{,}25 \approx 77$. L'énoncé ne demande qu'un ordre de grandeur, un seul chiffre significatif suffit ($5\cdot 10^{3}\ \mathrm{kg\cdot m^{-3}}$).
@@ -672,7 +680,7 @@ $$\boxed{\text{L'azote occupe les sites octaédriques en dilatant légèrement l
 Le modèle des sphères dures tangentes entre titane et azote rend donc bien compte du paramètre de maille mesuré.
 
 > [!JURY]
-> D'après le rapport, relativement peu de candidats ont obtenu une taille correcte du site octaédrique et discuté la possibilité pour l'azote de l'occuper. La conclusion attendue confronte 65 pm à 60 pm, puis revient au paramètre de maille.
+> D'après le rapport, relativement peu de candidats ont obtenu une taille correcte du site octaédrique et discuté la possibilité pour l'azote de l'occuper. Conseil : conclure en confrontant 65 pm à 60 pm, puis revenir au paramètre de maille.
 
 ## Partie 4 — Teneur en élément azote d'un engrais
 
@@ -718,7 +726,7 @@ $$K^\circ = \frac{K_a}{K_e} = 10^{14 - 9{,}2} = 10^{4{,}8}$$
 La réaction est quantitative (et rapide), comme l'exige un titrage.
 
 > [!JURY]
-> Le rapport est sévère sur cette partie : l'écriture de la réaction de dosage acido-basique n'est pas maîtrisée, alors qu'elle relève du lycée. Pas d'ion spectateur dans l'équation, pas de $\mathrm{NaOH}$ moléculaire, et une flèche simple puisque la réaction est quantitative.
+> D'après le rapport, cette partie, qui se réfère pourtant à des notions de l'enseignement secondaire, a été généralement traitée de façon peu rigoureuse ; en particulier, « l'écriture du dosage acido-basique n'est pas maîtrisée ». Conseil : pas d'ion spectateur dans l'équation, pas de $\mathrm{NaOH}$ moléculaire, et une flèche simple puisque la réaction est quantitative.
 
 ### Question 31
 
@@ -816,7 +824,7 @@ Au gramme près, les deux masses coïncident : l'indication du fabricant est cor
 
 $$\frac{m(\mathrm N)}{m_{\mathrm{engrais}}} = \frac{1{,}96}{6{,}00} \approx 32{,}7\ \%$$
 
-soit un écart relatif d'environ 5 % avec les 34,4 % annoncés, par défaut. Cet écart est de l'ordre de l'incertitude d'un titrage dont le volume équivalent est repéré graphiquement sur un saut peu marqué (0,5 mL sur 14 mL représente déjà 3,6 %). On conclut que l'indication est **vérifiée aux incertitudes de mesure près**, la teneur mesurée étant légèrement inférieure à la teneur annoncée.
+soit un écart relatif d'environ 5 % avec les 34,4 % annoncés, par défaut. Pour retrouver 34,4 %, il faudrait un volume équivalent $V_E = \dfrac{2{,}064}{2\times 14{,}0}\times\dfrac{10{,}0}{250}\times\dfrac{1}{0{,}200} \approx 14{,}7$ mL, soit 0,7 mL de plus que la valeur mesurée. Cet écart dépasse un peu ce qu'explique la seule lecture graphique du volume équivalent sur un saut peu marqué (0,5 mL sur 14 mL représente 3,6 %). On conclut que l'indication est **vérifiée au gramme près, comme le demande l'énoncé**, la teneur mesurée (32,7 %) restant légèrement inférieure à la teneur annoncée.
 
 > [!PIEGE]
 > Oublier le facteur 2 donne 0,98 g d'azote, soit 16 % : la moitié de la valeur annoncée. Un tel écart doit alerter et faire relire la formule $\mathrm{NH_4NO_3}$.
@@ -861,7 +869,7 @@ $$\log K^\circ = \frac{3\,(0{,}96 - 0{,}77)}{0{,}06} = 9{,}5$$
 
 $$K^\circ \approx 3\cdot 10^{9} \gg 1$$
 
-La réaction est donc thermodynamiquement très favorable. Les conditions opératoires la rendent en outre complète : ions $\mathrm{Fe^{2+}}$ et $\mathrm{H^+}$ en large excès (acide sulfurique concentré), et dégagement du monoxyde d'azote gazeux. Le chauffage de 45 minutes au bain-marie sert à l'accélérer, car elle est lente à température ambiante.
+La réaction est donc thermodynamiquement très favorable. Les conditions opératoires la rendent en outre complète : ions $\mathrm{H^+}$ en très large excès (10 mL d'acide sulfurique à $5\ \mathrm{mol\cdot L^{-1}}$, soit de l'ordre de $0{,}1$ mol de protons pour environ $1\cdot 10^{-4}$ mol consommée), ions $\mathrm{Fe^{2+}}$ en excès modéré ($1{,}00\cdot 10^{-4}$ mol introduite dont le titrage de la question 39 retrouve $5\,c_2 V = 1{,}65\cdot 10^{-5}$ mol : il n'en reste que 16,5 %, le reste, $8{,}35\cdot 10^{-5}$ mol, ayant été consommé), et dégagement du monoxyde d'azote gazeux. Le chauffage de 45 minutes au bain-marie sert à l'accélérer, car elle est lente à température ambiante.
 
 ### Question 37
 
@@ -976,6 +984,6 @@ Ce volume dépasse largement la consommation quotidienne d'un enfant (de l'ordre
 
 **Résultats numériques.** $\Delta_r H^\circ = -92\ \mathrm{kJ\cdot mol^{-1}}$ ; $\Delta_r S^\circ = -196\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}$ ; $\ln K^\circ(300\ \mathrm K) \approx 13{,}3$ ; frontière I/III : $E \approx 0{,}84 - 0{,}06\,\mathrm{pH}$ ; $\xi_f \approx 6{,}67\cdot 10^{-2}$ mol, $n(\mathrm{NO}) \approx 0{,}133$ mol, soit environ 3,0 L ; $Q \approx 3{,}86\cdot 10^{4}$ C ; $\rho \approx 5{,}4\cdot 10^{3}\ \mathrm{kg\cdot m^{-3}}$ ; $r_O \approx 60$ pm ; point d'équivalence (14,0 mL ; pH voisin de 11,1) ; $m(\mathrm N) \approx 2$ g (32,7 %) ; $C_m \approx 34{,}5\ \mathrm{mg\cdot L^{-1}}$ ; $V_{\max} \approx 3{,}7$ L par jour.
 
-**Erreurs les plus coûteuses d'après le jury.** Ne pas écrire la réaction (1) pour une mole de diazote ; dessiner des schémas de Lewis sans doublets non liants ni électron célibataire ; ignorer qu'un p$K_a$ négatif caractérise un acide fort ; ne pas calculer les quantités de produits ni identifier le gaz ; mal décrire les sites octaédriques ; confondre coordinence et compacité ; donner une masse volumique sans regard critique ; écrire une équation de titrage incorrecte ; oublier une unité.
+**Erreurs les plus coûteuses d'après le jury.** Ne pas écrire la réaction (1) pour une mole de diazote ; dessiner des schémas de Lewis fantaisistes, même pour une molécule simple ; méconnaître la notion d'acide fort et ce qu'elle implique pour le p$K_a$ ; ne pas calculer les quantités de produits ni identifier le gaz ; mal décrire les sites octaédriques ; confondre coordinence et compacité ; donner une masse volumique sans regard critique ; écrire une équation de titrage incorrecte ; oublier une unité.
 
 **Pour s'entraîner.** Refaire sans aide les questions 6 et 7 (rédaction complète), 13 à 16, 17 et 18, puis 23 à 27, et enfin l'enchaînement 35 à 41 en moins de vingt minutes.
