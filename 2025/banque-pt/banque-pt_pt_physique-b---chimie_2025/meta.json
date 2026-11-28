@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_physique-b---chimie_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Chimie",
+    "annee": 2025
+  },
+  "questions": 32,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/ph_b_ch_2025_pt.pdf",
+    "sujet_sha256": "1c0a90dda46c47d8f3591383eb90edb0d0db10c16dd7b40cf6ecfe7f7a7b5a36",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_phys_b_ecrit_2025.pdf",
+    "rapport_sha256": "88126375c671d63fcba8180e307bc9f34402e8727271a6adc9a48e96c1b04506"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "precision": "Sujet de 12 pages PDF lu en entier (énoncé p. 1 à 6, annexe 1 p. 9, annexe 2 p. 10, autres pages blanches ou barrées) ; 32 questions numérotées de 1 à 32, toutes traitées. Rapport commun à Physique B de 6 pages, partie chimie p. 1 à 3. Les annexes à rendre (questions 9, 26 et 29) sont restituées par les figures 2 et 3. Lectures graphiques : pH = 2,6 (question 7), droite de régression du sujet (question 20), potentiels à 10 A/dm² lus à 0,05 V près (question 31). Question 32 traitée avec l'intensité de 10 A donnée par l'énoncé."
+  },
+  "figures": [
+    {
+      "fichier": "figures/maille-uranite.svg",
+      "question": "4",
+      "legende": "Maille conventionnelle de l'uranite : ions uranium aux sommets et aux centres des faces, ions oxyde dans les huit sites tétraédriques."
+    },
+    {
+      "fichier": "figures/diagramme-e-ph-uranium.svg",
+      "question": "6",
+      "legende": "Diagramme E-pH de l'uranium avec les espèces attribuées, la frontière du couple du fer à 0,77 V et la verticale pH = 1."
+    },
+    {
+      "fichier": "figures/courbes-i-e-difluor.svg",
+      "question": "26",
+      "legende": "Courbes i-E légendées, couples de l'eau à pH = 0 et lecture des potentiels à 10 A/dm²."
+    },
+    {
+      "fichier": "figures/electrolyseur-difluor.svg",
+      "question": "27",
+      "legende": "Schéma de l'électrolyseur : branchements du générateur, sens du courant et des électrons, réactions aux électrodes."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 32 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées et lectures des annexes contrôlées sur le PDF."
+    }
+  ]
+}
