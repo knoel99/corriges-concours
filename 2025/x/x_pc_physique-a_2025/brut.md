@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 **Miroirs à retournement temporel.** On adopte la convention harmonique du sujet et on suppose des milieux réciproques sans dissipation quand le film de propagation est inversé.
 
 ## Particule et renversement du temps
@@ -22,11 +24,11 @@ Avec $\boldsymbol F=-K\boldsymbol v$ et $K>0$, on obtient $m\dot v=-Kv$, $v(0)=v
 
 ### Question 4 — Échec du renversement avec frottement
 
-La transformation simultanée donne $x(-t;-v_0)=v_0\tau_f(e^{t/\tau_f}-1)$, différent de $x(t;v_0)$. La solution retournée demanderait une vitesse dont le module croît avec le temps, ce que le frottement au repos du fluide ambiant ne produit pas.
+La transformation simultanée donne $x(-t;-v_0)=v_0\tau_f(e^{t/\tau_f}-1)$, différent de $x(t;v_0)$. La solution retournée demanderait une vitesse dont le module croît avec le temps, ce qu’un frottement, qui ne fait que freiner la particule, ne peut pas produire.
 
 ### Question 5 — Rôle de la parité des forces
 
-Dans $m\ddot x=F(x,\dot x)$, remplacer $x(t)$ par $x(-t)$ conserve le signe de l’accélération et inverse celui de la vitesse. Une force électrostatique constante satisfait donc la même équation transformée. Le frottement linéaire change de signe et dissipe l’énergie à raison de $dE_c/dt=-Kv^2$. Dans l’équation différentielle, la dérivée temporelle première est impaire et la dérivée seconde est paire sous ce changement.
+Dans $m\ddot x=F(x,\dot x)$, remplacer $x(t)$ par $x(-t)$ conserve le signe de l’accélération et inverse celui de la vitesse. Une force électrostatique constante satisfait donc la même équation transformée. Le frottement linéaire change de signe et dissipe l’énergie à raison de $dE_c/dt=-Kv^2$. La force électrique est conservative : elle dérive d’une énergie potentielle, ici $-qE_0x$, et le resterait dans un champ électrostatique non uniforme. Le frottement est dissipatif : là est la différence physique. Dans l’équation différentielle, la dérivée temporelle première est impaire et la dérivée seconde est paire sous ce changement.
 
 ## Solutions causales et anti-causales
 
@@ -84,7 +86,7 @@ Le champ en $x\le x_0$ est la réémission retardée de $(x_0-x)/c_0$. On obtien
 
 ### Question 17 — Signal revenu à la source
 
-À l’origine on retrouve $s_{\rm RT}(t)=s(2T-t)$. Le dernier événement du signal initial devient le premier événement reçu. C’est ce que montre l’illustration d’ouverture aux deux extrémités de l’expérience, sous la forme de signaux miroirs sur l’axe temporel.
+À l’origine on retrouve $s_{\rm RT}(t)=s(2T-t)$. Le dernier événement du signal initial devient le premier événement reçu. Sur l’illustration d’ouverture, le mot « HELLO » part vers le miroir avec le H en tête, puis revient vers le personnage avec le O en tête : la dernière lettre émise arrive la première, le message est entendu à l’envers.
 
 ### Question 18 — Superposition des deux miroirs
 
@@ -98,7 +100,7 @@ Pour une impulsion brève centrée au temps zéro de $s$, les centres des paquet
 
 ### Question 20 — Supprimer le champ divergent
 
-Il faut retirer les ondes au foyer pendant leur arrivée. Dans le modèle idéal, on installe à la source un puits d’onde adapté aux deux directions, ou un système actif dont le champ sortant annule par opposition de phase le prolongement divergent. Un obstacle réfléchissant renverrait une onde. Une simple déclaration d’absorption doit préciser que la réflexion du dispositif est négligeable et que l’absorption agit pendant la focalisation.
+Il faut retirer les ondes au foyer pendant leur arrivée. Dans le modèle idéal, la source doit elle-même émettre le signal retourné changé de signe, $-s(2T-t)$ : elle crée le champ $-s(2T-t+|x|/c_0)$, qui annule exactement la partie divergente et laisse $u=s(2T-t-|x|/c_0)$, nul après le passage de l’impulsion. La source joue alors le rôle d’un puits d’onde. Un obstacle réfléchissant renverrait une onde. Une simple déclaration d’absorption doit préciser que la réflexion du dispositif est négligeable et que l’absorption agit pendant la focalisation.
 
 ## Focalisation sphérique et diffraction
 
@@ -112,7 +114,7 @@ Dans la convention $u(r,t)=\Re[U(r,\omega)e^{-i\omega t}]$, la dérivée seconde
 
 ### Question 23 — Ondes sphériques entrante et sortante
 
-Les deux solutions sont $u_c(r,\omega)=U_c e^{-ikr}/r$ et $u_d(r,\omega)=U_d e^{ikr}/r$. Pour le terme divergent, la phase $kr-\omega t$ imposée constante donne $dr/dt=c_0$. Pour le terme convergent, $-kr-\omega t$ donne $dr/dt=-c_0$. L’amplitude en $1/r$ garantit un flux fini à travers les sphères de grande surface.
+Les deux solutions sont $u_c(r,\omega)=U_c e^{-ikr}/r$ et $u_d(r,\omega)=U_d e^{ikr}/r$. Pour le terme divergent, la phase $kr-\omega t$ imposée constante donne $dr/dt=c_0$. Pour le terme convergent, $-kr-\omega t$ donne $dr/dt=-c_0$. L’amplitude en $1/r$ assure que la puissance traversant une sphère de rayon $r$, proportionnelle à $|u|^2\times4\pi r^2$, ne dépend pas de $r$.
 
 ### Question 24 — Régularité au centre
 
@@ -146,7 +148,7 @@ Pour $s(t)=\exp[-t^2/(2\tau^2)]$, le premier maximum est à $t_d$, d’amplitude
 
 ### Question 30 — Réémission après retournement
 
-Les coefficients sont réels et le système réciproque présente la même réponse en transmission au retour. Si $a_n=bq^n$ et $t_n=t_d+n\Delta$, l’onde retournée puis propagée donne $$s_{\rm RT}(t)=\sum_{n,m\ge0}a_na_m\,s(2T-t+t_m-t_n).$$ En groupant $k=m-n$, $$s_{\rm RT}(t)=\frac{b^2}{1-q^2}\sum_{k\in\mathbb Z}q^{|k|}s(2T-t+k\Delta).$$ Cette formule prend la limite d’un enregistrement long. Dans une expérience finie, les coefficients sont tronqués. Pour une gaussienne brève on voit un pic central à $2T$ et des pics latéraux espacés de $\Delta$. On retrouve un pic retourné au centre accompagné de répliques.
+Les coefficients sont réels et le système réciproque présente la même réponse en transmission au retour. Si $a_n=bq^n$ et $t_n=t_d+n\Delta$, l’onde retournée puis propagée donne $$s_{\rm RT}(t)=\sum_{n,m\ge0}a_na_m\,s(2T-t+t_m-t_n).$$ En groupant $k=m-n$, $$s_{\rm RT}(t)=\frac{b^2}{1-q^2}\sum_{k\in\mathbb Z}q^{|k|}s(2T-t+k\Delta).$$ Cette formule prend la limite d’un enregistrement long. Dans une expérience finie, les coefficients sont tronqués. Pour une gaussienne brève on voit un pic central à $2T$ et des pics latéraux espacés de $\Delta$. On ne retrouve donc pas le signal émis : le pic central à $2T$, d’amplitude $b^2/(1-q^2)=t_{12}^2t_{21}^2/(1-r_{21}^4)$, est accompagné de répliques à $2T+k\Delta$ d’amplitude relative $r_{21}^{2|k|}$.
 
 ![Figure 6 — Après enregistrement et réémission, les pics sont distribués de part et d’autre du foyer temporel. Les amplitudes sont normalisées au maximum.](figures/echos-retournes.svg)
 
@@ -170,11 +172,11 @@ Notons $t_n=t_0+n\tau$, $n=0,\ldots,N_t$, et $a_n$ les amplitudes réelles. Au r
 
 ### Question 35 — Amplitude au foyer temporel
 
-Pour une impulsion assez brève pour que $s(k\tau)$ soit négligeable si $k\ne0$, seuls les termes diagonaux subsistent à $2T$ : $$s_{\rm RT}(2T)\simeq s(0)\sum_{n=0}^{N_t}a_n^2.$$ Si les amplitudes indépendantes ont une variance commune $\sigma_a^2$ et une moyenne nulle, l’espérance du maximum vaut $(N_t+1)\sigma_a^2 s(0)$. Le signe de chaque trajet est perdu dans le carré, d’où l’accumulation cohérente du pic. Pour une impulsion dont les queues se recouvrent, cette dernière expression reste exacte en espérance.
+L’énoncé espace les échos de la durée $\tau$ de l’impulsion : on admet, comme il le sous-entend, que deux impulsions décalées de $\tau$ ne se recouvrent pas, soit $s(k\tau)\approx0$ pour $k\neq0$. Seuls les termes diagonaux subsistent alors à $2T$ : $$s_{\rm RT}(2T)\simeq s(0)\sum_{n=0}^{N_t}a_n^2.$$ Si les amplitudes indépendantes ont une variance commune $\sigma_a^2$ et une moyenne nulle, l’espérance du maximum vaut $(N_t+1)\sigma_a^2 s(0)$. Si l’on lit « comprise entre $-1$ et $1$ » comme une loi uniforme sur $[-1,1]$, alors $\sigma_a^2=1/3$ et le pic vaudrait en moyenne $(N_t+1)s(0)/3$. Le signe de chaque trajet est perdu dans le carré, d’où l’accumulation cohérente du pic. Pour une impulsion dont les queues se recouvrent, cette dernière expression reste exacte en espérance.
 
 ### Question 36 — Valeurs hors du foyer
 
-À $t=2T+k\tau$ et pour des pics séparés, les couples dominants vérifient $m-n=k$. Avec $l=|k|\le N_t$, $$s_{\rm RT}(2T+k\tau)\simeq s(0)\sum_{n=0}^{N_t-l} a_n a_{n+l}.$$ Pour $k\ne0$, la moyenne est nulle par indépendance. Une réalisation garde toutefois des fluctuations. Si les variances sont identiques, leur écart type vaut $|s(0)|\sigma_a^2\sqrt{N_t+1-l}$. Les covariances croisées sont nulles, même lorsque deux produits partagent une seule amplitude, grâce aux autres facteurs centrés. Pour $l>N_t$ aucune paire d’échos ne se superpose. Si les queues de l’impulsion sont significatives, le profil moyen complet est $(N_t+1)\sigma_a^2s(2T-t)$.
+À $t=2T+k\tau$ et sous la même hypothèse d’impulsions qui ne se recouvrent pas, les couples dominants vérifient $m-n=k$. Avec $l=|k|\le N_t$, $$s_{\rm RT}(2T+k\tau)\simeq s(0)\sum_{n=0}^{N_t-l} a_n a_{n+l}.$$ Pour $k\ne0$, la moyenne est nulle par indépendance. Une réalisation garde toutefois des fluctuations. Si les variances sont identiques, leur écart type vaut $|s(0)|\sigma_a^2\sqrt{N_t+1-l}$. Les covariances croisées sont nulles, même lorsque deux produits partagent une seule amplitude, grâce aux autres facteurs centrés. Pour $l>N_t$ aucune paire d’échos ne se superpose. Si les queues de l’impulsion sont significatives, le profil moyen complet est $(N_t+1)\sigma_a^2s(2T-t)$.
 
 ### Question 37 — Rôle de la diversité des trajets
 

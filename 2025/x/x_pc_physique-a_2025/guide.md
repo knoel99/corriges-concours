@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 **Miroirs à retournement temporel.** On adopte la convention harmonique du sujet et on suppose des milieux réciproques sans dissipation quand le film de propagation est inversé.
 
 Le rapport du jury insiste sur les retards de propagation et sur le sens de lecture du signal. Les figures distinguent les instants où un miroir reçoit et ceux où il émet, puis montrent comment les échos se recombinent au retour.
@@ -18,6 +20,9 @@ Le rapport du jury insiste sur les retards de propagation et sur le sens de lect
 #### Solution
 
 La deuxième loi de Newton donne $m\ddot x=qE_0$ et $\ddot y=\ddot z=0$. Avec la position initiale nulle et la vitesse $v_0\boldsymbol e_x$, l’intégration donne $$\boldsymbol r(t)=\left(v_0t+\frac{qE_0}{2m}t^2\right)\boldsymbol e_x.$$ Le signe de l’accélération dépend du produit $qE_0$.
+
+> [!JURY]
+> D’après le rapport 2025, plus de la moitié des copies ajoutent une force de gravité que l’énoncé ne mentionne pas. En Q3, le frottement remplace le champ électrique, il ne s’y ajoute pas.
 
 ### Question 2 — Temps inversé et vitesse inversée
 
@@ -44,7 +49,7 @@ Avec $\boldsymbol F=-K\boldsymbol v$ et $K>0$, on obtient $m\dot v=-Kv$, $v(0)=v
 
 #### Solution
 
-La transformation simultanée donne $x(-t;-v_0)=v_0\tau_f(e^{t/\tau_f}-1)$, différent de $x(t;v_0)$. La solution retournée demanderait une vitesse dont le module croît avec le temps, ce que le frottement au repos du fluide ambiant ne produit pas.
+La transformation simultanée donne $x(-t;-v_0)=v_0\tau_f(e^{t/\tau_f}-1)$, différent de $x(t;v_0)$. La solution retournée demanderait une vitesse dont le module croît avec le temps, ce qu’un frottement, qui ne fait que freiner la particule, ne peut pas produire.
 
 ### Question 5 — Rôle de la parité des forces
 
@@ -53,7 +58,7 @@ La transformation simultanée donne $x(-t;-v_0)=v_0\tau_f(e^{t/\tau_f}-1)$, diff
 
 #### Solution
 
-Dans $m\ddot x=F(x,\dot x)$, remplacer $x(t)$ par $x(-t)$ conserve le signe de l’accélération et inverse celui de la vitesse. Une force électrostatique constante satisfait donc la même équation transformée. Le frottement linéaire change de signe et dissipe l’énergie à raison de $dE_c/dt=-Kv^2$. Dans l’équation différentielle, la dérivée temporelle première est impaire et la dérivée seconde est paire sous ce changement.
+Dans $m\ddot x=F(x,\dot x)$, remplacer $x(t)$ par $x(-t)$ conserve le signe de l’accélération et inverse celui de la vitesse. Une force électrostatique constante satisfait donc la même équation transformée. Le frottement linéaire change de signe et dissipe l’énergie à raison de $dE_c/dt=-Kv^2$. La force électrique est conservative : elle dérive d’une énergie potentielle, ici $-qE_0x$, et le resterait dans un champ électrostatique non uniforme. Le frottement est dissipatif : là est la différence physique. Dans l’équation différentielle, la dérivée temporelle première est impaire et la dérivée seconde est paire sous ce changement.
 
 ## Solutions causales et anti-causales
 
@@ -135,6 +140,9 @@ Superposons les deux problèmes de diffusion. Côté gauche les contributions so
 
 Le miroir situé en $x_0>0$ reçoit le champ après le temps $t_d=x_0/c_0$. Il enregistre donc $R(t)=s(t-t_d)$. Un événement émis à $t_e$ est enregistré à $t_e+t_d$.
 
+> [!PIEGE]
+> Écrire $R(t)=s(t+x_0/c_0)$ : en $t=x_0/c_0$ le miroir recevrait alors $s(2x_0/c_0)$ au lieu du début $s(0)$ du signal. Le rapport 2025 note que ce test suffit à écarter l’erreur, qui fausse sinon les questions suivantes.
+
 ### Question 14 — Lecture du ruban à l’envers
 
 > [!INDICATION]
@@ -145,6 +153,9 @@ Le miroir situé en $x_0>0$ reçoit le champ après le temps $t_d=x_0/c_0$. Il e
 Sur $0\le t\le T$, l’enregistrement est une copie retardée du signal source. Sur $T\le t\le2T$, le miroir relit les échantillons en sens inverse. Un échantillon précédemment reçu à $t_r$ ressort à $2T-t_r$. Sur le schéma, deux lobes successifs de hauteurs différentes permettent de visualiser cette inversion.
 
 ![Figure 2 — L’enregistrement reproduit le double lobe après une propagation. Après T, le lobe le moins élevé ressort le premier.](figures/chronologie.svg)
+
+> [!JURY]
+> Le rapport 2025 relève qu’un signal périodique, ou symétrique, ne montre pas clairement le retournement. Il salue les signaux dont on distingue le début et la fin.
 
 ### Question 15 — Expression du signal réémis
 
@@ -167,11 +178,11 @@ Le champ en $x\le x_0$ est la réémission retardée de $(x_0-x)/c_0$. On obtien
 ### Question 17 — Signal revenu à la source
 
 > [!INDICATION]
-> Insérez $x=0$ et comparez l’ordre des événements visibles dans les courbes.
+> Insérez $x=0$, puis regardez quelle lettre du mot arrive en premier sur le dessin d’ouverture.
 
 #### Solution
 
-À l’origine on retrouve $s_{\rm RT}(t)=s(2T-t)$. Le dernier événement du signal initial devient le premier événement reçu. C’est ce que montre l’illustration d’ouverture aux deux extrémités de l’expérience, sous la forme de signaux miroirs sur l’axe temporel.
+À l’origine on retrouve $s_{\rm RT}(t)=s(2T-t)$. Le dernier événement du signal initial devient le premier événement reçu. Sur l’illustration d’ouverture, le mot « HELLO » part vers le miroir avec le H en tête, puis revient vers le personnage avec le O en tête : la dernière lettre émise arrive la première, le message est entendu à l’envers.
 
 ### Question 18 — Superposition des deux miroirs
 
@@ -200,7 +211,7 @@ Pour une impulsion brève centrée au temps zéro de $s$, les centres des paquet
 
 #### Solution
 
-Il faut retirer les ondes au foyer pendant leur arrivée. Dans le modèle idéal, on installe à la source un puits d’onde adapté aux deux directions, ou un système actif dont le champ sortant annule par opposition de phase le prolongement divergent. Un obstacle réfléchissant renverrait une onde. Une simple déclaration d’absorption doit préciser que la réflexion du dispositif est négligeable et que l’absorption agit pendant la focalisation.
+Il faut retirer les ondes au foyer pendant leur arrivée. Dans le modèle idéal, la source doit elle-même émettre le signal retourné changé de signe, $-s(2T-t)$ : elle crée le champ $-s(2T-t+|x|/c_0)$, qui annule exactement la partie divergente et laisse $u=s(2T-t-|x|/c_0)$, nul après le passage de l’impulsion. La source joue alors le rôle d’un puits d’onde. Un obstacle réfléchissant renverrait une onde. Une simple déclaration d’absorption doit préciser que la réflexion du dispositif est négligeable et que l’absorption agit pendant la focalisation.
 
 ## Focalisation sphérique et diffraction
 
@@ -229,7 +240,7 @@ Dans la convention $u(r,t)=\Re[U(r,\omega)e^{-i\omega t}]$, la dérivée seconde
 
 #### Solution
 
-Les deux solutions sont $u_c(r,\omega)=U_c e^{-ikr}/r$ et $u_d(r,\omega)=U_d e^{ikr}/r$. Pour le terme divergent, la phase $kr-\omega t$ imposée constante donne $dr/dt=c_0$. Pour le terme convergent, $-kr-\omega t$ donne $dr/dt=-c_0$. L’amplitude en $1/r$ garantit un flux fini à travers les sphères de grande surface.
+Les deux solutions sont $u_c(r,\omega)=U_c e^{-ikr}/r$ et $u_d(r,\omega)=U_d e^{ikr}/r$. Pour le terme divergent, la phase $kr-\omega t$ imposée constante donne $dr/dt=c_0$. Pour le terme convergent, $-kr-\omega t$ donne $dr/dt=-c_0$. L’amplitude en $1/r$ assure que la puissance traversant une sphère de rayon $r$, proportionnelle à $|u|^2\times4\pi r^2$, ne dépend pas de $r$.
 
 ### Question 24 — Régularité au centre
 
@@ -251,6 +262,9 @@ Le module normalisé vaut $|U(r)|/|U(0)|=|\sin(kr)/(kr)|$. Il vaut 1 au centre, 
 
 ![Figure 4 — Le premier zéro est à une demi-longueur d’onde du centre. Le graphe porte sur le module du champ.](figures/tache-spherique.svg)
 
+> [!PIEGE]
+> Un module ne prend pas de valeurs négatives, et $\sin(kr)/(kr)$ vaut 1 en $r=0$. Le rapport 2025 regrette aussi que très peu de copies rapportent la longueur caractéristique à la longueur d’onde $\lambda$.
+
 ### Question 26 — Limite de résolution
 
 > [!INDICATION]
@@ -268,6 +282,9 @@ Le regroupement d’ondes propagatives de longueur d’onde $\lambda$ donne une 
 #### Solution
 
 La surface de rayon $10\lambda$ vaut $4\pi(10\lambda)^2$. Chaque élément échantillonne une surface $\lambda^2/4$. Il faut donc au moins $\lceil1600\pi\rceil=5027$ capteurs dans ce simple comptage de surface, soit environ **cinq mille**. L’agencement discret réel peut demander davantage d’éléments.
+
+> [!JURY]
+> Le rapport 2025 ne compte pas « 1600π+1 » comme une application numérique. Sans calculatrice, $1600\times3{,}14\approx5\,000$.
 
 ## Cavité Fabry-Pérot
 
@@ -298,7 +315,7 @@ Pour $s(t)=\exp[-t^2/(2\tau^2)]$, le premier maximum est à $t_d$, d’amplitude
 
 #### Solution
 
-Les coefficients sont réels et le système réciproque présente la même réponse en transmission au retour. Si $a_n=bq^n$ et $t_n=t_d+n\Delta$, l’onde retournée puis propagée donne $$s_{\rm RT}(t)=\sum_{n,m\ge0}a_na_m\,s(2T-t+t_m-t_n).$$ En groupant $k=m-n$, $$s_{\rm RT}(t)=\frac{b^2}{1-q^2}\sum_{k\in\mathbb Z}q^{|k|}s(2T-t+k\Delta).$$ Cette formule prend la limite d’un enregistrement long. Dans une expérience finie, les coefficients sont tronqués. Pour une gaussienne brève on voit un pic central à $2T$ et des pics latéraux espacés de $\Delta$. On retrouve un pic retourné au centre accompagné de répliques.
+Les coefficients sont réels et le système réciproque présente la même réponse en transmission au retour. Si $a_n=bq^n$ et $t_n=t_d+n\Delta$, l’onde retournée puis propagée donne $$s_{\rm RT}(t)=\sum_{n,m\ge0}a_na_m\,s(2T-t+t_m-t_n).$$ En groupant $k=m-n$, $$s_{\rm RT}(t)=\frac{b^2}{1-q^2}\sum_{k\in\mathbb Z}q^{|k|}s(2T-t+k\Delta).$$ Cette formule prend la limite d’un enregistrement long. Dans une expérience finie, les coefficients sont tronqués. Pour une gaussienne brève on voit un pic central à $2T$ et des pics latéraux espacés de $\Delta$. On ne retrouve donc pas le signal émis : le pic central à $2T$, d’amplitude $b^2/(1-q^2)=t_{12}^2t_{21}^2/(1-r_{21}^4)$, est accompagné de répliques à $2T+k\Delta$ d’amplitude relative $r_{21}^{2|k|}$.
 
 ![Figure 6 — Après enregistrement et réémission, les pics sont distribués de part et d’autre du foyer temporel. Les amplitudes sont normalisées au maximum.](figures/echos-retournes.svg)
 
@@ -319,6 +336,9 @@ Avec la convention $e^{-i\omega t}$, un retard $t_n$ multiplie l’amplitude par
 #### Solution
 
 On a $|1-qe^{i\omega\Delta}|^2=(1-q)^2+2q[1-\cos(\omega\Delta)]$, avec $q=r_{21}^2\geq0$. Pour $0<q<1$, les maxima de transmission correspondent à $\omega\Delta=2\pi p$, soit $f_p=pc_2/(4L)$. Avec $\lambda_2=c_2/f_p$, **$2L=p\lambda_2/2$**. Le dénominateur est minimal et vaut $1-q$. Pour des interfaces adaptées ($q=0$), le contraste de résonance disparaît.
+
+> [!METHODE]
+> Une résonance est un maximum du module de la réponse, donc un minimum du module du dénominateur. Il n’a pas besoin de s’annuler, et ne s’annule pas ici puisque $q<1$.
 
 ### Question 33 — Pourquoi le signal n’est pas reconstruit exactement
 
@@ -347,7 +367,10 @@ Notons $t_n=t_0+n\tau$, $n=0,\ldots,N_t$, et $a_n$ les amplitudes réelles. Au r
 
 #### Solution
 
-Pour une impulsion assez brève pour que $s(k\tau)$ soit négligeable si $k\ne0$, seuls les termes diagonaux subsistent à $2T$ : $$s_{\rm RT}(2T)\simeq s(0)\sum_{n=0}^{N_t}a_n^2.$$ Si les amplitudes indépendantes ont une variance commune $\sigma_a^2$ et une moyenne nulle, l’espérance du maximum vaut $(N_t+1)\sigma_a^2 s(0)$. Le signe de chaque trajet est perdu dans le carré, d’où l’accumulation cohérente du pic. Pour une impulsion dont les queues se recouvrent, cette dernière expression reste exacte en espérance.
+L’énoncé espace les échos de la durée $\tau$ de l’impulsion : on admet, comme il le sous-entend, que deux impulsions décalées de $\tau$ ne se recouvrent pas, soit $s(k\tau)\approx0$ pour $k\neq0$. Seuls les termes diagonaux subsistent alors à $2T$ : $$s_{\rm RT}(2T)\simeq s(0)\sum_{n=0}^{N_t}a_n^2.$$ Si les amplitudes indépendantes ont une variance commune $\sigma_a^2$ et une moyenne nulle, l’espérance du maximum vaut $(N_t+1)\sigma_a^2 s(0)$. Si l’on lit « comprise entre $-1$ et $1$ » comme une loi uniforme sur $[-1,1]$, alors $\sigma_a^2=1/3$ et le pic vaudrait en moyenne $(N_t+1)s(0)/3$. Le signe de chaque trajet est perdu dans le carré, d’où l’accumulation cohérente du pic. Pour une impulsion dont les queues se recouvrent, cette dernière expression reste exacte en espérance.
+
+> [!JURY]
+> Selon le rapport 2025, la double somme de Q34 a rarement été écrite correctement, et peu de copies ont vu que les termes en $a_n^2$ ne sont pas nuls en moyenne. Ce sont eux qui construisent le pic à $2T$.
 
 ### Question 36 — Valeurs hors du foyer
 
@@ -356,7 +379,7 @@ Pour une impulsion assez brève pour que $s(k\tau)$ soit négligeable si $k\ne0$
 
 #### Solution
 
-À $t=2T+k\tau$ et pour des pics séparés, les couples dominants vérifient $m-n=k$. Avec $l=|k|\le N_t$, $$s_{\rm RT}(2T+k\tau)\simeq s(0)\sum_{n=0}^{N_t-l} a_n a_{n+l}.$$ Pour $k\ne0$, la moyenne est nulle par indépendance. Une réalisation garde toutefois des fluctuations. Si les variances sont identiques, leur écart type vaut $|s(0)|\sigma_a^2\sqrt{N_t+1-l}$. Les covariances croisées sont nulles, même lorsque deux produits partagent une seule amplitude, grâce aux autres facteurs centrés. Pour $l>N_t$ aucune paire d’échos ne se superpose. Si les queues de l’impulsion sont significatives, le profil moyen complet est $(N_t+1)\sigma_a^2s(2T-t)$.
+À $t=2T+k\tau$ et sous la même hypothèse d’impulsions qui ne se recouvrent pas, les couples dominants vérifient $m-n=k$. Avec $l=|k|\le N_t$, $$s_{\rm RT}(2T+k\tau)\simeq s(0)\sum_{n=0}^{N_t-l} a_n a_{n+l}.$$ Pour $k\ne0$, la moyenne est nulle par indépendance. Une réalisation garde toutefois des fluctuations. Si les variances sont identiques, leur écart type vaut $|s(0)|\sigma_a^2\sqrt{N_t+1-l}$. Les covariances croisées sont nulles, même lorsque deux produits partagent une seule amplitude, grâce aux autres facteurs centrés. Pour $l>N_t$ aucune paire d’échos ne se superpose. Si les queues de l’impulsion sont significatives, le profil moyen complet est $(N_t+1)\sigma_a^2s(2T-t)$.
 
 ### Question 37 — Rôle de la diversité des trajets
 
@@ -366,5 +389,14 @@ Pour une impulsion assez brève pour que $s(k\tau)$ soit négligeable si $k\ne0$
 #### Solution
 
 Au centre, le signal croît comme le nombre de contributions indépendantes $N_t+1$. Aux instants décalés, les contributions de signes variés fluctuent comme sa racine carrée. Le rapport typique entre l’amplitude du pic et le fond augmente donc comme $\sqrt{N_t+1}$. Un capteur unique dans une cavité réciproque où l’on enregistre longtemps profite des multiples trajets. Dans la cavité Fabry-Pérot, les amplitudes et les délais sont au contraire fortement corrélés et produisent des échos latéraux systématiques.
+
+## Bilan
+
+- **Tester le renversement du temps** : remplacer $t$ par $-t$ dans l’équation et regarder la parité de chaque terme. Une dérivée seconde est inchangée, une dérivée première change de signe (Q2, Q4 à Q6).
+- **Écrire un retard** : un signal reçu après un trajet de durée $t_d$ est $s(t-t_d)$, ce qui se contrôle à l’instant d’arrivée du début du signal (Q7, Q13, Q16, Q28). Le lire à l’envers autour de $T$ revient à remplacer $t$ par $2T-t$ (Q15).
+- **Onde sphérique** : l’équation porte sur $ru$, les solutions sont en $e^{\pm ikr}/r$ et le sens de propagation se lit sur la phase, avec la convention $e^{-i\omega t}$ de l’énoncé (Q21 à Q23). La régularité au centre donne $\sin(kr)/r$ et une tache de largeur $\lambda$, la limite de diffraction (Q24 à Q26).
+- **Échos multiples** : une suite géométrique en temps (Q28) devient une série géométrique en fréquence (Q31). Les résonances sont les minima du module du dénominateur (Q32).
+- **Sommes aléatoires** : les $N_t+1$ carrés s’ajoutent, les produits croisés de moyenne nulle ne fluctuent que comme $\sqrt{N_t+1}$ (Q35 à Q37). Le même raisonnement sert pour la marche aléatoire et l’addition de sources incohérentes.
+- **À revoir** : coefficients de réflexion et de transmission en amplitude à incidence normale (Q12), laplacien d’un champ à symétrie sphérique (Q21).
 
 [Énoncé de 2025](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Physique%20A%20PC%20sujet.pdf) · [Rapport du jury de physique A](https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2025/PC_PHYSIQUE_X_1_2025.rapport.pdf)
