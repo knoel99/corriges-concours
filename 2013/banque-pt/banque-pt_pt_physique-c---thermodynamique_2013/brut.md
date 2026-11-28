@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
-Épreuve de 2 heures, sans calculatrice : étude d'un congélateur, en 30 questions numérotées de 1 à 30 et réparties en deux parties (échanges énergétiques, puis cycle du fluide R134a). Les 30 questions sont traitées. Les applications numériques sont menées à la main, avec un ou deux chiffres significatifs comme le demande l'énoncé. Les valeurs lues viennent de l'annexe 1 (diagramme de l'air humide, questions 7 et 8) et de l'annexe 2 (table de saturation du R134a, questions 4, 5 et 17 à 30) ; la ligne ou la courbe utilisée est précisée à chaque lecture. Trois choix d'interprétation sont signalés à leur place : le système retenu à la question 11, la puissance prise à la question 15, et le calcul du travail de compression à la question 24.
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
+Épreuve de 2 heures, sans calculatrice : étude d'un congélateur, en 30 questions numérotées de 1 à 30 et réparties en deux parties (échanges énergétiques, puis cycle du fluide R134a). Les 30 questions sont traitées. Les applications numériques sont menées à la main, avec un ou deux chiffres significatifs comme le demande l'énoncé. Les valeurs lues viennent de l'annexe 1 (diagramme de l'air humide, questions 7 et 8) et de l'annexe 2 (table de saturation du R134a, questions 4, 5 et 17 à 30) ; la ligne ou la courbe utilisée est précisée à chaque lecture. Trois choix d'interprétation sont signalés à leur place : le système retenu à la question 11, la puissance du compresseur, que l'énoncé ne chiffre pas et que le corrigé choisit à la question 15, et le calcul du travail de compression à la question 24.
 
 [Sujet officiel](https://www.banquept.fr/documents/2013/ph_c_th_2013_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_phys_c_ecrit_2013.pdf)
 
@@ -148,7 +150,7 @@ $$P_{cond} = \frac{m\,c_{cong}\,\Delta T}{\tau} = \frac{20 \times 1500 \times 10
 
 $$\boxed{P_{cond} \approx 14\ \mathrm{W}}$$
 
-*Choix du système.* On ne compte ici que les aliments, comme le suggère l'énoncé qui parle de maintenir « la température de 20 kg d'aliments ». Avec la capacité $C = 5\times 10^{5}\ \mathrm{J\cdot K^{-1}}$ du congélateur et de son contenu, introduite seulement à la question 14, on trouverait $230\ \mathrm{W}$, valeur supérieure à elle seule aux $200\ \mathrm{W}$ que l'énoncé retient pour la puissance frigorifique totale.
+*Choix du système.* On ne compte ici que les aliments, comme le suggère l'énoncé qui parle de maintenir « la température de 20 kg d'aliments ». Avec la capacité $C = 5\times 10^{5}\ \mathrm{J\cdot K^{-1}}$ du congélateur et de son contenu, introduite seulement à la question 14, on trouverait $230\ \mathrm{W}$, valeur supérieure à elle seule aux $200\ \mathrm{W}$ que l'énoncé retient pour la puissance frigorifique totale. Avec $14\ \mathrm{W}$, la somme de la question 13 vaut $1{,}7\times 10^{2}\ \mathrm{W}$, soit $2\times 10^{2}\ \mathrm{W}$ à un chiffre significatif : c'est la lecture cohérente avec l'énoncé.
 
 ### Question 12 — Puissance de congélation
 
@@ -220,13 +222,13 @@ $$\boxed{\Delta t = \frac{C}{P}\left[T_{ext}\ln\frac{T_i}{T_f} - (T_i - T_f)\rig
 
 $$T_{ext}\ln\frac{T_i}{T_f} - (T_i - T_f) = 303 \times 0{,}04 - 10 \approx 12{,}1 - 10 = 2{,}1\ \mathrm{K}$$
 
-Avec $C = 5\times 10^{5}\ \mathrm{J\cdot K^{-1}}$ et $P = 200\ \mathrm{W}$, valeur que l'énoncé demande de prendre pour la suite :
+*Choix de la puissance.* L'énoncé ne chiffre pas la puissance $P$ du compresseur. La seule puissance qu'il fournit est la valeur de $200\ \mathrm{W}$ retenue après la question 13, et c'est une puissance frigorifique, non celle du compresseur. Faute d'autre donnée, ce corrigé choisit de la prendre comme valeur de $P$ : c'est une hypothèse du corrigé, pas une consigne de l'énoncé. Avec $C = 5\times 10^{5}\ \mathrm{J\cdot K^{-1}}$, on a $P\,\Delta t = 5\times 10^{5} \times 2{,}1 \approx 1{,}1\times 10^{6}\ \mathrm{J}$, d'où, pour $P = 200\ \mathrm{W}$ :
 
 $$\Delta t = \frac{5\times 10^{5} \times 2{,}1}{200}$$
 
 $$\boxed{\Delta t \approx 5\times 10^{3}\ \mathrm{s} \approx 1{,}5\ \mathrm{h}}$$
 
-*Remarques.* Le travail nécessaire, $P\,\Delta t \approx 1\times 10^{6}\ \mathrm{J}$, est bien inférieur à la chaleur extraite, $C\,(T_i - T_f) = 5\times 10^{6}\ \mathrm{J}$ : la machine réversible a un COP moyen voisin de 5. Le résultat est la différence de deux nombres proches ($12{,}1$ et $10$) : il est très sensible à l'arrondi du logarithme. Avec $\ln(273/263) = 0{,}0373$, on trouverait $1{,}3\ \mathrm{K}$ et $\Delta t \approx 3\times 10^{3}\ \mathrm{s}$, un peu moins d'une heure. Enfin, une machine réelle, irréversible, mettrait plus longtemps.
+*Remarques.* Le travail nécessaire, $P\,\Delta t \approx 1\times 10^{6}\ \mathrm{J}$, est bien inférieur à la chaleur extraite, $C\,(T_i - T_f) = 5\times 10^{6}\ \mathrm{J}$ : la machine réversible a un COP moyen voisin de 5. Le résultat est la différence de deux nombres proches ($12{,}1$ et $10$) : il est très sensible à l'arrondi du logarithme. Avec $\ln(273/263) = 0{,}0373$, on trouverait $1{,}3\ \mathrm{K}$ et $\Delta t \approx 3\times 10^{3}\ \mathrm{s}$, un peu moins d'une heure. Une machine réelle, irréversible, mettrait plus longtemps. Enfin, la valeur de $P$ choisie ici n'est pas cohérente avec la suite : à la question 30, le compresseur du cycle étudié ne fournit qu'environ $90\ \mathrm{W}$ pour une puissance frigorifique de $200\ \mathrm{W}$. La durée étant inversement proportionnelle à $P$, on trouverait avec $90\ \mathrm{W}$ environ $1{,}2\times 10^{4}\ \mathrm{s}$, un peu plus de trois heures.
 
 ## Partie II — Étude du cycle thermodynamique
 
@@ -426,9 +428,9 @@ $q_{cond} < 0$ : le fluide cède cette chaleur à l'air extérieur. La liquéfac
 
 $$\boxed{s_3 - s_2 = c_p\,\ln\frac{T_{cond}}{T_2} - \frac{l_v(T_{cond})}{T_{cond}} + s_l(T_3) - s_l(T_{cond})}$$
 
-$$s_3 - s_2 \approx 0{,}8 \times \ln\frac{313}{333} - \frac{162{,}4}{313} + (1{,}141 - 1{,}187) \approx -0{,}05 - 0{,}52 - 0{,}05$$
+$$s_3 - s_2 \approx 0{,}8 \times \ln\frac{313}{333} - \frac{162{,}4}{313} + (1{,}141 - 1{,}187) \approx -0{,}050 - 0{,}519 - 0{,}046$$
 
-$$s_3 - s_2 \approx -0{,}62\ \mathrm{kJ\cdot kg^{-1}\cdot K^{-1}}$$
+$$s_3 - s_2 \approx -0{,}61\ \mathrm{kJ\cdot kg^{-1}\cdot K^{-1}}$$
 
 L'entropie du fluide diminue, ce qui est permis : le fluide n'est pas isolé, il cède de la chaleur.
 
@@ -450,7 +452,7 @@ $$s_4 - s_3 \approx +0{,}03\ \mathrm{kJ\cdot kg^{-1}\cdot K^{-1}}$$
 
 $$\boxed{s_4 - s_3 = s_{créée} > 0}$$
 
-*Contrôle.* Sur le cycle, la somme des variations d'entropie est nulle : $0{,}59 + 0 - 0{,}62 + 0{,}03 = 0$.
+*Contrôle.* Sur le cycle, la somme des variations d'entropie doit être nulle : $0{,}59 + 0 - 0{,}61 + 0{,}03 = 0{,}01\ \mathrm{kJ\cdot kg^{-1}\cdot K^{-1}}$, nul à la précision des arrondis (l'écart vient de $T_2$, pris égal à $60\ ^\circ\mathrm{C}$ au lieu des $61\ ^\circ\mathrm{C}$ de la question 23).
 
 ### Question 27 — COP du réfrigérateur et comparaison au cycle de Carnot
 
@@ -522,6 +524,6 @@ $$D_m = \frac{200}{146\times 10^{3}}$$
 
 $$\boxed{D_m \approx 1{,}4\times 10^{-3}\ \mathrm{kg\cdot s^{-1}} \approx 1{,}4\ \mathrm{g\cdot s^{-1}}}$$
 
-Soit environ $5\ \mathrm{kg}$ de fluide par heure. Le compresseur fournit alors $D_m\,w_i \approx 1{,}4\times 10^{-3} \times 64\times 10^{3} \approx 90\ \mathrm{W}$, soit $P_f/\mathrm{COP}$.
+Soit environ $5\ \mathrm{kg}$ de fluide par heure. Le compresseur fournit alors $D_m\,w_i \approx 1{,}4\times 10^{-3} \times 64\times 10^{3} \approx 90\ \mathrm{W}$, soit $P_f/\mathrm{COP}$. Cette puissance est plus de deux fois plus faible que les $200\ \mathrm{W}$ pris pour le compresseur à la question 15, faute de donnée : voir la remarque de cette question.
 
 *Remarque.* Les $200\ \mathrm{W}$ comprennent la congélation des aliments. Si l'on ne retient que les pertes proprement dites, $P_{eau} + P_{cond} \approx 15\ \mathrm{W}$, qui suffisent à maintenir à $-10\ ^\circ\mathrm{C}$ des aliments déjà congelés, le débit moyen tombe à environ $0{,}1\ \mathrm{g\cdot s^{-1}}$ : en pratique, le compresseur fonctionne alors par intermittence.

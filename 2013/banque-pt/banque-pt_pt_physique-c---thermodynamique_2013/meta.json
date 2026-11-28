@@ -48,7 +48,7 @@
       "29",
       "30"
     ],
-    "precision": "Sujet de 8 pages PDF (page de garde, énoncé p. 2 à 5, annexe 1 p. 6, annexe 2 p. 7, dernière page vide), lues en image ; 30 questions numérotées de 1 à 30, toutes traitées. Rapport commun à Physique C de 6 pages, partie thermodynamique sur les pages imprimées 14 à 17. Annexe 1 (diagramme de l'air humide) : lecture de 16 g/kg à 30 °C sur la courbe 60 % (question 7) et d'un point de rosée d'environ 21 °C sur la courbe 100 % (question 8). Annexe 2 (table de saturation du R134a) : lignes -25 °C, 30 °C et 40 °C pour les questions 21 à 28, lignes 25 °C et 30 °C pour les ordres de grandeur des questions 5 et 28. Choix d'interprétation signalés dans le texte : question 11, seuls les 20 kg d'aliments sont pris comme système ; question 15, puissance du compresseur prise égale aux 200 W imposés par l'énoncé ; question 24, travail calculé avec le modèle du gaz parfait (64 kJ/kg), la valeur tirée de la table (47 kJ/kg) étant donnée en remarque ; question 30, débit calculé pour 200 W."
+    "precision": "Sujet de 8 pages PDF (page de garde, énoncé p. 2 à 5, annexe 1 p. 6, annexe 2 p. 7, dernière page vide), lues en image ; 30 questions numérotées de 1 à 30, toutes traitées. Rapport commun à Physique C de 6 pages, partie thermodynamique sur les pages imprimées 14 à 17. Annexe 1 (diagramme de l'air humide) : lecture de 16 g/kg à 30 °C sur la courbe 60 % (question 7) et d'un point de rosée d'environ 21 °C sur la courbe 100 % (question 8). Annexe 2 (table de saturation du R134a) : lignes -25 °C, 30 °C et 40 °C pour les questions 21 à 28, lignes 25 °C et 30 °C pour les ordres de grandeur des questions 5 et 28. Choix d'interprétation signalés dans le texte : question 11, seuls les 20 kg d'aliments sont pris comme système ; question 15, l'énoncé ne chiffrant pas la puissance du compresseur, le corrigé choisit de la prendre égale aux 200 W de puissance frigorifique retenus après la question 13 (la question 30 donne environ 90 W) ; question 24, travail calculé avec le modèle du gaz parfait (64 kJ/kg), la valeur tirée de la table (47 kJ/kg) étant donnée en remarque ; question 30, débit calculé pour 200 W."
   },
   "figures": [
     {
@@ -70,6 +70,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions (30 questions) à partir du sujet lu en image et du rapport du jury ; applications numériques refaites par calcul, lectures des annexes 1 et 2 localisées, une figure créée à partir de la table de saturation, encadrés du jury relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Corrections de la relecture indépendante, vérifiées contre le sujet et le rapport (page imprimée 15 relue en image). Question 15 (brut et guidé) : les 200 W sont présentés comme un choix du corrigé, l'énoncé ne chiffrant pas la puissance du compresseur, et l'écart avec les 90 W de la question 30 est signalé aux questions 15 et 30. Question 11 : argument de la somme des puissances ajouté. Questions 25 et 26 : variation d'entropie du condenseur ramenée à -0,61 et contrôle du cycle refait. Guidé : encadré du jury ajouté à la question 24, valeurs obtenues avec la table (47 kJ/kg, COP 3,1) portées en remarque du bilan, retouches de fidélité des encadrés du jury (présentation, questions 1, 5 et 10), les 21 encadrés relus contre le rapport. Figure : ergot au-dessus du point 2 supprimé, étiquette du point critique déplacée, flèche ajoutée sur la détente."
     }
   ]
 }
