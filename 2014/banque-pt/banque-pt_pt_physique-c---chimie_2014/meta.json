@@ -1,0 +1,101 @@
+{
+  "slug": "banque-pt_pt_physique-c---chimie_2014",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Chimie",
+    "annee": 2014
+  },
+  "questions": 45,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2014/ph_c_2014_pt.zip",
+    "sujet_sha256": "9a89a6069b575f603fc255fde7da7bd8adc0b823440fe615852474e2b477ff6c",
+    "precision": "Le sujet est publié dans une archive ZIP qui réunit les deux parties de Physique C. Archive ph_c_2014_pt.zip : SHA-256 09e3301c49cefc6f4255213e78b06a4d848e41bad34dde3082a268e30a897569. Fichier interne lu, identifié par sa garde « Epreuve de Physique C - Chimie » : ph_c_2014_pt_ch.pdf, 10 pages, SHA-256 9a89a6069b575f603fc255fde7da7bd8adc0b823440fe615852474e2b477ff6c (valeur portée dans sujet_sha256). L'autre fichier de l'archive, ph_c_2014_pt_th.pdf, est la partie thermodynamique, traitée à part. Les deux empreintes sont identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv.",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_phys_c_ecrit_2014.pdf",
+    "rapport_sha256": "8c9105961b425e35e51d5492d029f6c2995feffe7de45c6498a4e266ef8167ec"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "precision": "Partie chimie du sujet, 10 pages PDF lues en entier en image (garde p. 1, énoncé p. 2 à 7, page blanche p. 8, en-tête du document-réponse p. 9, annexe du diagramme potentiel-pH simplifié du manganèse p. 10) ; 45 questions numérotées de Q1 à Q45, toutes traitées. Rapport du jury de Physique C de 5 pages, partie chimie p. 1 et 2. Lectures graphiques : frontières de l'annexe mesurées sur le quadrillage (pH 2,8 et 8,7 ; 1,50 V, 0,43 V et −1,23 V) pour les questions 7 à 10 et 14 ; temps de demi-réaction d'environ 7 min sur les cinq courbes de la question 22. La question 24 demande une expression littérale, la valeur de 43 kJ/mol étant fournie ; la question 44 de même, la température de 633 °C étant fournie. Le document-réponse est reproduit, complété, par la figure 2."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lewis-oxygene-soufre.svg",
+      "question": "5",
+      "legende": "Représentations de Lewis du dioxygène, du radical anion superoxyde, de l'ozone, du dioxyde de soufre et du trioxyde de soufre, avec doublets non liants, électron célibataire et charges formelles."
+    },
+    {
+      "fichier": "figures/diagramme-e-ph-manganese-eau.svg",
+      "question": "7",
+      "legende": "Diagramme potentiel-pH simplifié du manganèse reconstruit d'après l'annexe, domaines attribués, superposé aux deux droites des couples de l'eau (questions 7, 12 et 14)."
+    },
+    {
+      "fichier": "figures/taux-conversion-temperature.svg",
+      "question": "42",
+      "legende": "Taux de conversion du dioxyde de soufre en fonction de la température pour un débit très faible et pour un débit plus important, d'après les deux tableaux de l'énoncé."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 45 questions et de trois figures, à partir de la partie chimie du sujet et du rapport du jury ; applications numériques recalculées, lectures de l'annexe et des courbes cinétiques contrôlées par mesure sur le PDF, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
