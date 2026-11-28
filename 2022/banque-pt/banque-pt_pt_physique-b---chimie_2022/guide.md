@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le baryum, de l'atome à ses composés. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 43 questions réparties en quatre parties indépendantes. Aucun document n'est à rendre : la maille (question 9), le schéma de pile (question 13), la courbe de titrage (question 37) et le diagramme potentiel-pH (question 40) se tracent sur la copie.
@@ -15,7 +17,7 @@
 
 **Notions mobilisées.** Règle de Klechkowski, classification périodique, cristaux ioniques, piles et courbes intensité-potentiel, relation entre tension à vide et enthalpie libre, loi de Hess, loi d'action des masses, variance, déplacement et rupture d'équilibre, schéma de Lewis, produit de solubilité, conductimétrie, relation de Nernst, diagrammes potentiel-pH, titrages direct et indirect.
 
-**Difficulté.** Le sujet balaie les deux années et reste proche du cours. D'après le rapport, la cristallographie et la thermochimie sont bien réussies, tandis que la pile de Volta (partie B) et les titrages (fin de la partie D) départagent les candidats. Les questions les plus discriminantes sont les questions 11, 14, 15, 18, 19, 37, 42 et 43. Les applications numériques sont toutes faisables à la main.
+**Difficulté.** Le sujet balaie les deux années et reste proche du cours. D'après le rapport, la cristallographie et la thermochimie sont assez bien maîtrisées, tandis que l'oxydoréduction, sa cinétique et la chimie des solutions (dont les titrages) semblent poser plus de difficultés : la pile de Volta (partie B) et les titrages (fin de la partie D) sont donc les passages les plus sélectifs. Les questions les plus discriminantes sont les questions 11, 14, 15, 18, 19, 37, 42 et 43. Les applications numériques sont toutes faisables à la main.
 
 **Gestion du temps.** Environ 20 minutes pour la partie A, 40 pour la partie B, 25 pour la partie C et 35 pour la partie D. Les questions de cours rapides (1 à 6, 23, 33 à 35, 39) se traitent en premier ; les parties étant indépendantes, ne pas rester bloqué sur la pile.
 
@@ -45,7 +47,7 @@ $$\boxed{\mathrm{Ba} : 1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2\,3d^{10}\,4p^6\,5s^2\,
 soit $[\mathrm{Xe}]\,6s^2$. Contrôle : $2+2+6+2+6+2+10+6+2+10+6+2 = 56$.
 
 > [!JURY]
-> Le rapport note que la configuration est en général juste et les règles assez bien justifiées : citer les règles utilisées et vérifier le total des électrons suffit.
+> Le rapport note que la configuration est en général juste et les règles assez bien justifiées. Conseil : citer les règles utilisées et vérifier le total des électrons.
 
 ### Question 2
 
@@ -138,7 +140,7 @@ $$\boxed{N_O = 1 + 12\times\frac14 = 4}$$
 Il y a donc, par maille, 8 sites T et 4 sites O, soit deux sites T et un site O par anion.
 
 > [!JURY]
-> Le rapport indique que les nombres de sites sont bien connus mais que leur localisation est souvent mal expliquée. La justification demandée, c'est la position des sites et les coefficients de partage, pas le seul résultat.
+> Le rapport indique que les nombres de sites sont bien connus mais que leur localisation n'a pas toujours été bien expliquée. Conseil : justifier par la position des sites et les coefficients de partage, sans se limiter au résultat.
 
 ### Question 8
 
@@ -223,7 +225,7 @@ $$2\,\mathrm{H^+(aq)} + 2\,e^- = \mathrm{H_2(g)}$$
 $$\boxed{\mathrm{Zn(s)} + 2\,\mathrm{H^+(aq)} = \mathrm{Zn^{2+}(aq)} + \mathrm{H_2(g)}}$$
 
 > [!JURY]
-> C'est la partie la moins bien comprise d'après le rapport : la plupart des candidats n'ont pas dressé d'échelle d'oxydoréduction et ont confondu la pile de Volta avec la pile Daniell. Il fallait voir que seuls les protons (ou l'eau) peuvent être réduits, puisque aucun ion cuivre(II) n'est présent. Le jury attend aussi les équations écrites, pas la seule mention « oxydation » et « réduction ».
+> D'après le rapport, cette partie a été peu comprise et traitée de manière peu rigoureuse : la majorité des candidats n'a pas dressé d'échelle d'oxydoréduction, et beaucoup ont confondu la pile de Volta avec la pile Daniell. Il fallait comprendre que seuls les protons (ou l'eau) pouvaient être réduits, aucun ion cuivre(II) n'étant présent. Le rapport note aussi que beaucoup de candidats ont mentionné des réactions d'oxydation et de réduction de manière générale, sans écrire les équations associées.
 
 ### Question 12
 
@@ -268,7 +270,7 @@ Par convention, un courant positif correspond à une oxydation (branche anodique
 **Électrode de zinc (courbe de gauche).** Elle coupe l'axe vers $-0{,}74\ \mathrm V$ (lecture), valeur proche de $E^\circ(\mathrm{Zn^{2+}/Zn}) = -0{,}76\ \mathrm V$.
 
 - A (courant positif) : oxydation du zinc, $\mathrm{Zn(s)} \rightarrow \mathrm{Zn^{2+}(aq)} + 2\,e^-$.
-- B (courant négatif) : réduction des ions zinc, $\mathrm{Zn^{2+}(aq)} + 2\,e^- \rightarrow \mathrm{Zn(s)}$, possible seulement si la solution contient des ions $\mathrm{Zn^{2+}}$.
+- B (courant négatif) : réduction des ions zinc, $\mathrm{Zn^{2+}(aq)} + 2\,e^- \rightarrow \mathrm{Zn(s)}$, possible seulement si la solution contient des ions $\mathrm{Zn^{2+}}$ ; en milieu acide, la réduction des ions $\mathrm{H^+}$ en dihydrogène, $2\,\mathrm{H^+(aq)} + 2\,e^- \rightarrow \mathrm{H_2(g)}$, peut s'y ajouter, mais elle est très lente sur le zinc.
 
 **Électrode de cuivre (courbe de droite).**
 
@@ -301,7 +303,7 @@ Dans la pile en fonctionnement, seules les branches A (sur le zinc) et D (sur le
 - $\mathrm{Cu^{2+}/Cu}$ sur cuivre : l'oxydation démarre au voisinage de $0{,}34\ \mathrm V$, sans surtension notable. **Système rapide** (il ne joue pas de rôle dans la pile).
 
 > [!JURY]
-> Le rapport juge la définition d'un système rapide peu maîtrisée et souvent formulée maladroitement. Éviter « la réaction va vite » : parler de surtension et de courant au voisinage du potentiel d'équilibre.
+> Le rapport juge la définition d'un système rapide peu maîtrisée et souvent exprimée maladroitement. Conseil : ne pas se contenter de dire que la réaction est rapide, mais parler de surtension et de courant au voisinage du potentiel d'équilibre.
 
 ### Question 16
 
@@ -369,9 +371,11 @@ $$e_1' \approx E_{\text{seuil}}(\mathrm{H^+/H_2\ sur\ Cu}) - E(\mathrm{Zn^{2+}/Z
 
 $$e_1' \approx -0{,}24 - (-0{,}76) = 0{,}52\ \mathrm V$$
 
+La valeur $-0{,}24\ \mathrm V$ n'est pas une lecture précise de la courbe : c'est le seuil qu'il faut admettre pour retrouver $0{,}52\ \mathrm V$ par élément avec $E^\circ(\mathrm{Zn^{2+}/Zn}) = -0{,}76\ \mathrm V$. Elle tombe bien dans la zone où la branche D décolle de l'axe.
+
 $$\boxed{e' = 10\times 0{,}52 = 5{,}2\ \mathrm V}$$
 
-Les $2{,}4\ \mathrm V$ manquants par rapport à la valeur thermodynamique ($7{,}6\ \mathrm V$) représentent dix fois la surtension cathodique seuil du dihydrogène sur le cuivre, soit $0{,}24\ \mathrm V$ par élément. Cette valeur est compatible avec la courbe, dont le courant cathodique devient perceptible entre $-0{,}2$ et $-0{,}3\ \mathrm V$.
+Les $2{,}4\ \mathrm V$ manquants par rapport à la valeur thermodynamique ($7{,}6\ \mathrm V$) représentent dix fois la surtension cathodique seuil du dihydrogène sur le cuivre, soit $0{,}24\ \mathrm V$ par élément. Cette valeur déduite est compatible avec la courbe, dont le courant cathodique devient perceptible entre $-0{,}2$ et $-0{,}3\ \mathrm V$.
 
 > [!METHODE]
 > Devant un écart entre tension mesurée et tension de Nernst, diviser par le nombre d'éléments, puis chercher sur les courbes le décalage (surtension) qui en rend compte.
@@ -586,7 +590,7 @@ $$\boxed{P_{\mathrm{CO_2},\,\text{éq}} = 5\cdot 10^{-39}\ \mathrm{bar}}$$
 Cette pression est infime : à 298 K, les deux solides ne coexistent qu'en présence de traces indétectables de dioxyde de carbone.
 
 > [!JURY]
-> Le rapport attire l'attention sur l'unité de la pression dans la constante d'équilibre : c'est le rapport $P/P^\circ$ qui y figure, avec $P^\circ = 1$ bar, et le résultat s'exprime donc en bar. Une valeur sans unité n'est pas créditée.
+> Le rapport attire l'attention sur l'unité de la pression dans l'expression de la constante d'équilibre, et rappelle qu'une valeur numérique sans unité ne peut pas être créditée. Conseil : c'est le rapport $P/P^\circ$ qui figure dans $K^\circ$, avec $P^\circ = 1$ bar ; la pression d'équilibre s'exprime donc en bar.
 
 ### Question 29
 
@@ -680,14 +684,14 @@ $$N_e = 7 + 3\times 6 + 1 = 26$$
 
 soit 13 doublets.
 
-**Schéma de Lewis.** L'iode est l'atome central. Une écriture qui minimise les charges formelles : deux liaisons doubles $\mathrm{I{=}O}$ (chaque oxygène portant deux doublets non liants), une liaison simple $\mathrm{I{-}O}$ vers un oxygène porteur de trois doublets non liants et de la charge négative, et un doublet non liant sur l'iode. Décompte : $4 + 1 + 1 + 4 + 3 = 13$ doublets. L'iode, élément de la cinquième période, peut dépasser l'octet (hypervalence). Les trois oxygènes sont équivalents par mésomérie. L'écriture à trois liaisons simples, qui respecte l'octet avec une charge formelle $+2$ sur l'iode et $-1$ sur chaque oxygène, est également recevable.
+**Schéma de Lewis.** L'iode est l'atome central. Une écriture qui minimise les charges formelles : deux liaisons doubles $\mathrm{I{=}O}$ (chaque oxygène portant deux doublets non liants), une liaison simple $\mathrm{I{-}O}$ vers un oxygène porteur de trois doublets non liants et de la charge négative, et un doublet non liant sur l'iode. Décompte : $4 + 1 + 1 + 4 + 3 = 13$ doublets. L'iode, élément de la cinquième période, peut dépasser l'octet (hypervalence). Les trois oxygènes jouent en réalité le même rôle : la liaison simple et la charge peuvent être placées sur n'importe lequel d'entre eux (remarque hors programme, non exigée). L'écriture à trois liaisons simples, qui respecte l'octet avec une charge formelle $+2$ sur l'iode et $-1$ sur chaque oxygène, est également recevable.
 
 ![Figure 5 — Schéma de Lewis de l'ion iodate et géométrie pyramidale à base triangulaire](figures/lewis-ion-iodate.svg)
 
 **Géométrie.** L'iode est entouré de quatre directions de doublets (trois liaisons et un doublet non liant) qui se repoussent et s'orientent vers les sommets d'un tétraèdre. L'ion est donc **pyramidal à base triangulaire** (type $\mathrm{AX_3E_1}$), l'iode au sommet, avec des angles $\mathrm{O{-}I{-}O}$ un peu inférieurs à $109{,}5^\circ$ du fait de la répulsion plus forte du doublet non liant.
 
 > [!JURY]
-> Le rapport qualifie certaines formules de Lewis de l'ion iodate de très fantaisistes. Commencer par le décompte des électrons de valence et vérifier à la fin le nombre de doublets et la charge totale évite l'essentiel des erreurs.
+> Le rapport qualifie certaines formules de Lewis de l'ion iodate de très fantaisistes. Conseil : commencer par le décompte des électrons de valence et vérifier à la fin le nombre de doublets et la charge totale évite l'essentiel des erreurs.
 
 > [!PIEGE]
 > Oublier le doublet non liant de l'iode conduit à une géométrie plane triangulaire, fausse.
@@ -778,7 +782,7 @@ $G$ **croît nettement**, avec une pente environ neuf fois plus forte en valeur 
 La courbe est formée de deux segments de droite, le premier légèrement descendant, le second fortement ascendant ; l'abscisse de leur intersection est le volume équivalent. En notant $n_0$ la quantité initiale d'ions baryum, la conductivité est proportionnelle à $27\,n_0$ au départ, $24\,n_0$ à l'équivalence et $50\,n_0$ pour $V = 2V_{\text{éq}}$.
 
 > [!JURY]
-> Le rapport juge le dosage globalement compris mais le tracé insuffisamment expliqué. L'explication attendue est le bilan ionique chiffré avant et après l'équivalence, avec les conductivités molaires fournies, pas un simple « ça descend puis ça monte ».
+> Le rapport juge le dosage globalement compris mais les explications du tracé insuffisantes. Conseil : donner le bilan ionique chiffré avant et après l'équivalence, avec les conductivités molaires fournies, plutôt qu'une simple description du sens de variation.
 
 > [!PIEGE]
 > Ne pas oublier les ions $\mathrm{Na^+}$ apportés avec le sulfate : sans eux, on prévoirait une chute bien plus forte avant l'équivalence.
@@ -929,7 +933,7 @@ $$\boxed{n(\mathrm{IO_3^-})_0 = \frac{C'\,V'_{\text{éq}}}{6}}$$
 
 La concentration en iodate du filtrat s'en déduit avec la prise d'essai $V_0' = 20\ \mathrm{mL}$ : $[\mathrm{IO_3^-}] = \dfrac{C'\,V'_{\text{éq}}}{6\,V_0'}$. On vérifie ensuite la cohérence des deux dosages par la relation $[\mathrm{IO_3^-}] = 2\,[\mathrm{Ba^{2+}}] = 2s$.
 
-Remarque : avec la valeur de la question 38, on attendrait $[\mathrm{IO_3^-}] = 2{,}20\cdot 10^{-2}\ \mathrm{mol\cdot L^{-1}}$, soit $4{,}4\cdot 10^{-4}$ mol dans 20 mL et un volume équivalent de 264 mL, peu réaliste avec une burette : en pratique il faudrait diluer le filtrat ou employer un thiosulfate plus concentré. L'énoncé ne demande pas cette valeur.
+Remarque : avec la valeur de la question 38, on attendrait $[\mathrm{IO_3^-}] = 2{,}20\cdot 10^{-2}\ \mathrm{mol\cdot L^{-1}}$, soit $4{,}4\cdot 10^{-4}$ mol dans 20 mL et un volume équivalent de 264 mL, peu réaliste avec une burette. Ce volume découle des données numériques de l'énoncé (équivalence à 11,0 mL au premier dosage, prise de 20 mL de filtrat, thiosulfate à $10^{-2}\ \mathrm{mol\cdot L^{-1}}$), non d'une erreur de calcul ; en pratique il faudrait diluer le filtrat ou employer un thiosulfate plus concentré. L'énoncé ne demande pas cette valeur.
 
 > [!JURY]
 > D'après le rapport, l'exploitation de ce dosage indirect a été très peu abordée. Elle tient pourtant en deux relations de stœchiométrie enchaînées (facteur 3, puis facteur 2), accessibles même sans avoir traité le reste de la partie.
@@ -948,6 +952,8 @@ Remarque : avec la valeur de la question 38, on attendrait $[\mathrm{IO_3^-}] = 
 
 **Résultats numériques.** $r(\mathrm{Ba^{2+}}) = 0{,}137$ nm ; tension à vide thermodynamique $7{,}6$ V, mesurée $5{,}2$ V (surtension seuil de $0{,}24$ V par élément) ; tension sous 100 mA d'environ $1{,}7$ V et puissance d'environ $0{,}17$ W ; $\Delta_r H^\circ = -270\ \mathrm{kJ\cdot mol^{-1}}$ ; $\Delta_r S^\circ = -171\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}$ ; $\Delta_r G^\circ(298\ \mathrm K) \approx -219\ \mathrm{kJ\cdot mol^{-1}}$ ; $P_{\mathrm{CO_2},\,\text{éq}} = 5\cdot 10^{-39}$ bar ; $V_{\lim} \approx 5\cdot 10^{36}\ \mathrm{m^3}$ ; $[\mathrm{Ba^{2+}}] = 1{,}10\cdot 10^{-2}\ \mathrm{mol\cdot L^{-1}}$ ; $E_{23} = 0{,}65$ V ; $K^\circ \approx 10^{48}$ pour la formation du diiode ; $n(\mathrm{IO_3^-})_0 = C'V'_{\text{éq}}/6$.
 
-**Erreurs les plus coûteuses d'après le jury.** Nommer la colonne du baryum de façon fantaisiste ; traiter la pile de Volta comme une pile Daniell en faisant intervenir des ions cuivre(II) absents ; rendre un schéma de pile sans polarités ni sens du courant ; définir un système rapide sans parler de surtension ; confondre endothermique et exothermique ; oublier $P^\circ$ et l'unité de la pression ; proposer une formule de Lewis sans décompte des électrons ; inverser oxydant et réducteur dans la relation de Nernst ; tracer la courbe de conductimétrie sans l'expliquer.
+**Erreurs relevées par le rapport du jury.** Nommer la colonne du baryum de façon fantaisiste ; ne pas dresser d'échelle d'oxydoréduction et confondre la pile de Volta avec la pile Daniell, alors qu'aucun ion cuivre(II) n'est présent ; rendre un schéma de pile sans anode ni cathode repérées, sans leur signe ni le sens du courant ; mentionner oxydation et réduction sans écrire les équations ; définir maladroitement un système rapide ; confondre endothermique et exothermique ; se tromper sur l'unité de la pression dans la constante d'équilibre ; proposer une formule de Lewis fantaisiste pour l'ion iodate ; inverser les activités de l'oxydant et du réducteur dans la relation de Nernst ; tracer la courbe de conductimétrie sans l'expliquer suffisamment.
+
+**Conseils du corrigé (ils ne figurent pas dans le rapport).** Définir un système rapide par l'absence de surtension notable au voisinage du potentiel d'équilibre ; écrire $P/P^\circ$ dans la constante d'équilibre ; commencer une formule de Lewis par le décompte des électrons de valence.
 
 **Pour s'entraîner.** Refaire sans aide l'enchaînement 11, 14, 16, 18 et 19 (pile et courbes), puis les questions 31, 37, 42 et 43, en terminant chaque application numérique à la main.

@@ -113,6 +113,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 43 questions et de sept figures, à partir du sujet et du rapport du jury ; applications numériques recalculées et lectures des courbes contrôlées sur le PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des corrections d'une relecture indépendante, chaque défaut vérifié contre le sujet et le rapport. Guidé : Bilan ramené aux erreurs que le rapport relève, conseils du corrigé présentés à part ; les 14 encadrés du jury contrôlés un par un, ceux des questions 1, 7, 11, 15, 28, 32 et 37 reformulés (constat du rapport sans durcissement, conseils séparés, guillemets non tirés du rapport supprimés) ; phrase de difficulté de la présentation alignée sur le rapport. Brut et guidé : question 14 (réduction de H+ sur le zinc citée pour la branche B), question 18 (-0,24 V présenté comme déduit et non lu), question 32 (mot mésomérie retiré), question 43 (les 264 mL découlent des données de l'énoncé). Figures : pH 7,5 et pentes par unité de pH (question 40), légende de la figure de Lewis, texte déplacé hors du pointillé (question 31), étiquette décalée (question 14), rayons des ions rapprochés (question 9)."
     }
   ]
 }

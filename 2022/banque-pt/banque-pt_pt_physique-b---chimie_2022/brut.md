@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, autour du baryum : 43 questions en quatre parties indépendantes (atome et cristal d'oxyde de baryum, pile de Volta, carbonatation de l'oxyde de baryum, solubilité de l'iodate de baryum). Les 43 questions sont traitées. Les valeurs lues sur les courbes densité de courant-potentiel (questions 14, 18 et 19) et sur le diagramme potentiel-pH (questions 40 et 41) sont signalées à l'endroit où elles servent.
 
 [Sujet officiel](https://www.banquept.fr/documents/2022/ph_b_ch_2022_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_phys_b_ecrit_2022.pdf)
@@ -144,7 +146,7 @@ Par convention, un courant positif correspond à une oxydation (branche anodique
 **Électrode de zinc (courbe de gauche).** Elle coupe l'axe vers $-0{,}74\ \mathrm V$ (lecture), valeur proche de $E^\circ(\mathrm{Zn^{2+}/Zn}) = -0{,}76\ \mathrm V$.
 
 - A (courant positif) : oxydation du zinc, $\mathrm{Zn(s)} \rightarrow \mathrm{Zn^{2+}(aq)} + 2\,e^-$.
-- B (courant négatif) : réduction des ions zinc, $\mathrm{Zn^{2+}(aq)} + 2\,e^- \rightarrow \mathrm{Zn(s)}$, possible seulement si la solution contient des ions $\mathrm{Zn^{2+}}$.
+- B (courant négatif) : réduction des ions zinc, $\mathrm{Zn^{2+}(aq)} + 2\,e^- \rightarrow \mathrm{Zn(s)}$, possible seulement si la solution contient des ions $\mathrm{Zn^{2+}}$ ; en milieu acide, la réduction des ions $\mathrm{H^+}$ en dihydrogène, $2\,\mathrm{H^+(aq)} + 2\,e^- \rightarrow \mathrm{H_2(g)}$, peut s'y ajouter, mais elle est très lente sur le zinc.
 
 **Électrode de cuivre (courbe de droite).**
 
@@ -207,9 +209,11 @@ $$e_1' \approx E_{\text{seuil}}(\mathrm{H^+/H_2\ sur\ Cu}) - E(\mathrm{Zn^{2+}/Z
 
 $$e_1' \approx -0{,}24 - (-0{,}76) = 0{,}52\ \mathrm V$$
 
+La valeur $-0{,}24\ \mathrm V$ n'est pas une lecture précise de la courbe : c'est le seuil qu'il faut admettre pour retrouver $0{,}52\ \mathrm V$ par élément avec $E^\circ(\mathrm{Zn^{2+}/Zn}) = -0{,}76\ \mathrm V$. Elle tombe bien dans la zone où la branche D décolle de l'axe.
+
 $$\boxed{e' = 10\times 0{,}52 = 5{,}2\ \mathrm V}$$
 
-Les $2{,}4\ \mathrm V$ manquants par rapport à la valeur thermodynamique ($7{,}6\ \mathrm V$) représentent dix fois la surtension cathodique seuil du dihydrogène sur le cuivre, soit $0{,}24\ \mathrm V$ par élément. Cette valeur est compatible avec la courbe, dont le courant cathodique devient perceptible entre $-0{,}2$ et $-0{,}3\ \mathrm V$.
+Les $2{,}4\ \mathrm V$ manquants par rapport à la valeur thermodynamique ($7{,}6\ \mathrm V$) représentent dix fois la surtension cathodique seuil du dihydrogène sur le cuivre, soit $0{,}24\ \mathrm V$ par élément. Cette valeur déduite est compatible avec la courbe, dont le courant cathodique devient perceptible entre $-0{,}2$ et $-0{,}3\ \mathrm V$.
 
 ### Question 19 — Tension aux bornes sous 100 mA
 
@@ -409,7 +413,7 @@ $$N_e = 7 + 3\times 6 + 1 = 26$$
 
 soit 13 doublets.
 
-**Schéma de Lewis.** L'iode est l'atome central. Une écriture qui minimise les charges formelles : deux liaisons doubles $\mathrm{I{=}O}$ (chaque oxygène portant deux doublets non liants), une liaison simple $\mathrm{I{-}O}$ vers un oxygène porteur de trois doublets non liants et de la charge négative, et un doublet non liant sur l'iode. Décompte : $4 + 1 + 1 + 4 + 3 = 13$ doublets. L'iode, élément de la cinquième période, peut dépasser l'octet (hypervalence). Les trois oxygènes sont équivalents par mésomérie. L'écriture à trois liaisons simples, qui respecte l'octet avec une charge formelle $+2$ sur l'iode et $-1$ sur chaque oxygène, est également recevable.
+**Schéma de Lewis.** L'iode est l'atome central. Une écriture qui minimise les charges formelles : deux liaisons doubles $\mathrm{I{=}O}$ (chaque oxygène portant deux doublets non liants), une liaison simple $\mathrm{I{-}O}$ vers un oxygène porteur de trois doublets non liants et de la charge négative, et un doublet non liant sur l'iode. Décompte : $4 + 1 + 1 + 4 + 3 = 13$ doublets. L'iode, élément de la cinquième période, peut dépasser l'octet (hypervalence). Les trois oxygènes jouent en réalité le même rôle : la liaison simple et la charge peuvent être placées sur n'importe lequel d'entre eux (remarque hors programme, non exigée). L'écriture à trois liaisons simples, qui respecte l'octet avec une charge formelle $+2$ sur l'iode et $-1$ sur chaque oxygène, est également recevable.
 
 ![Figure 5 — Schéma de Lewis de l'ion iodate et géométrie pyramidale à base triangulaire](figures/lewis-ion-iodate.svg)
 
@@ -567,4 +571,4 @@ $$\boxed{n(\mathrm{IO_3^-})_0 = \frac{C'\,V'_{\text{éq}}}{6}}$$
 
 La concentration en iodate du filtrat s'en déduit avec la prise d'essai $V_0' = 20\ \mathrm{mL}$ : $[\mathrm{IO_3^-}] = \dfrac{C'\,V'_{\text{éq}}}{6\,V_0'}$. On vérifie ensuite la cohérence des deux dosages par la relation $[\mathrm{IO_3^-}] = 2\,[\mathrm{Ba^{2+}}] = 2s$.
 
-Remarque : avec la valeur de la question 38, on attendrait $[\mathrm{IO_3^-}] = 2{,}20\cdot 10^{-2}\ \mathrm{mol\cdot L^{-1}}$, soit $4{,}4\cdot 10^{-4}$ mol dans 20 mL et un volume équivalent de 264 mL, peu réaliste avec une burette : en pratique il faudrait diluer le filtrat ou employer un thiosulfate plus concentré. L'énoncé ne demande pas cette valeur.
+Remarque : avec la valeur de la question 38, on attendrait $[\mathrm{IO_3^-}] = 2{,}20\cdot 10^{-2}\ \mathrm{mol\cdot L^{-1}}$, soit $4{,}4\cdot 10^{-4}$ mol dans 20 mL et un volume équivalent de 264 mL, peu réaliste avec une burette. Ce volume découle des données numériques de l'énoncé (équivalence à 11,0 mL au premier dosage, prise de 20 mL de filtrat, thiosulfate à $10^{-2}\ \mathrm{mol\cdot L^{-1}}$), non d'une erreur de calcul ; en pratique il faudrait diluer le filtrat ou employer un thiosulfate plus concentré. L'énoncé ne demande pas cette valeur.
