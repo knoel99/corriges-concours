@@ -134,6 +134,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Résolution des 54 questions et rédaction des deux éditions après lecture en image du sujet, des annexes, du cahier réponse et du rapport du jury ; applications numériques et marges de stabilité recalculées, neuf figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des neuf défauts mineurs de la relecture indépendante, chacun vérifié contre le sujet, dans le brut et le guidé : remarque sur l'écart entre les pôles de l'énoncé et les données de l'annexe 5 (questions 42 à 44, racines recalculées), remarque sur le signe de la valeur initiale de la simulation (question 32), vocabulaire du torseur cinématique (question 5), direction du moment hyperstatique (question 7), origine de la valeur de l'amortissement (question 46), erreur de traînage (question 53) ; figures retouchées : entrée V(p) du schéma de la question 40, axe de phase et légende du diagramme des questions 50 à 53, espaces après les indices dans la figure de la question 6 et dans celles des questions 14, 31, 44, 45 et 48. Les onze encadrés du jury ont été contrôlés contre le rapport."
     }
   ]
 }

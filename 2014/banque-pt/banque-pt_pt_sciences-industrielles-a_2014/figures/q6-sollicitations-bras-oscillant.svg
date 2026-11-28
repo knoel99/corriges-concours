@@ -22,16 +22,16 @@
 <text x="294.1" y="308.7" font-family="sans-serif" font-size="12" fill="#c0392b" text-anchor="start">F (sol → roue → bras)</text>
 <line x1="199.7" y1="87.2" x2="199.7" y2="184.2" stroke="#1f5fa8" stroke-width="2.2"/>
 <polygon points="199.7,189.2 203.3,180.2 196.1,180.2" fill="#1f5fa8"/>
-<text x="207.7" y="102.2" font-family="sans-serif" font-size="12" fill="#1f5fa8" text-anchor="start">F<tspan font-size="75%" dy="3.5">C</tspan><tspan dy="-3.5"> = F·(a+b)/a  (vérin)</tspan></text>
+<text x="207.7" y="102.2" font-family="sans-serif" font-size="12" fill="#1f5fa8" text-anchor="start">F<tspan font-size="75%" dy="3.5">C</tspan><tspan dx="3.4" dy="-3.5">= F·(a+b)/a  (vérin)</tspan></text>
 <line x1="70.0" y1="220.0" x2="70.0" y2="163.0" stroke="#2e7d32" stroke-width="2.2"/>
 <polygon points="70.0,158.0 66.4,167.0 73.6,167.0" fill="#2e7d32"/>
-<text x="64.0" y="238.0" font-family="sans-serif" font-size="12" fill="#2e7d32" text-anchor="start">F<tspan font-size="75%" dy="3.5">A</tspan><tspan dy="-3.5"> = F·b/a  (pivot)</tspan></text>
+<text x="64.0" y="238.0" font-family="sans-serif" font-size="12" fill="#2e7d32" text-anchor="start">F<tspan font-size="75%" dy="3.5">A</tspan><tspan dx="3.4" dy="-3.5">= F·b/a  (pivot)</tspan></text>
 <text x="20.0" y="345.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">Trois forces parallèles : poutre sur deux appuis en porte-à-faux.</text>
-<text x="20.0" y="363.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">Flexion autour de y, maximale en C : M<tspan font-size="75%" dy="3.5">f</tspan><tspan dy="-3.5"> = F·b·cos α.</tspan></text>
-<text x="20.0" y="381.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">Composantes suivant x<tspan font-size="75%" dy="3.5">3</tspan><tspan dy="-3.5"> : effort normal F·sin α (traction-compression).</tspan></text>
-<text x="20.0" y="399.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">Composantes suivant z<tspan font-size="75%" dy="3.5">3</tspan><tspan dy="-3.5"> : effort tranchant.</tspan></text>
+<text x="20.0" y="363.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">Flexion autour de y, maximale en C : M<tspan font-size="75%" dy="3.5">f</tspan><tspan dx="3.4" dy="-3.5">= F·b·cos α.</tspan></text>
+<text x="20.0" y="381.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">Composantes suivant x<tspan font-size="75%" dy="3.5">3</tspan><tspan dx="3.4" dy="-3.5">: effort normal F·sin α (traction-compression).</tspan></text>
+<text x="20.0" y="399.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">Composantes suivant z<tspan font-size="75%" dy="3.5">3</tspan><tspan dx="3.4" dy="-3.5">: effort tranchant.</tspan></text>
 <line x1="420.0" y1="10.0" x2="420.0" y2="420.0" stroke="#888888" stroke-width="0.8" stroke-dasharray="3 3"/>
-<text x="440.0" y="24.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Vue suivant z<tspan font-size="75%" dy="3.5">3</tspan><tspan dy="-3.5"> : plan (x</tspan><tspan font-size="75%" dy="3.5">3</tspan><tspan dy="-3.5">, y)</tspan></text>
+<text x="440.0" y="24.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Vue suivant z<tspan font-size="75%" dy="3.5">3</tspan><tspan dx="3.9" dy="-3.5">: plan (x</tspan><tspan font-size="75%" dy="3.5">3</tspan><tspan dy="-3.5">, y)</tspan></text>
 <rect x="460.0" y="161.0" width="230.0" height="18.0" fill="#dddddd" stroke="#222222" stroke-width="1.4"/>
 <rect x="450.0" y="136.0" width="22.0" height="68.0" fill="#bbbbbb" stroke="#222222" stroke-width="1.4"/>
 <text x="460.0" y="128.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">palier A</text>
@@ -54,7 +54,7 @@
 <line x1="711.0" y1="245.0" x2="721.0" y2="245.0" stroke="#222222" stroke-width="0.9"/>
 <text x="722.0" y="212.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="start">δ</text>
 <text x="440.0" y="345.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">F est déportée de δ suivant y :</text>
-<text x="440.0" y="363.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">torsion du bras, M<tspan font-size="75%" dy="3.5">t</tspan><tspan dy="-3.5"> = F·δ·cos α, autour de x</tspan><tspan font-size="75%" dy="3.5">3</tspan><tspan dy="-3.5">,</tspan></text>
-<text x="440.0" y="381.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">et flexion autour de z<tspan font-size="75%" dy="3.5">3</tspan><tspan dy="-3.5"> si un effort latéral</tspan></text>
+<text x="440.0" y="363.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">torsion du bras, M<tspan font-size="75%" dy="3.5">t</tspan><tspan dx="3.4" dy="-3.5">= F·δ·cos α, autour de x</tspan><tspan font-size="75%" dy="3.5">3</tspan><tspan dy="-3.5">,</tspan></text>
+<text x="440.0" y="381.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">et flexion autour de z<tspan font-size="75%" dy="3.5">3</tspan><tspan dx="3.4" dy="-3.5">si un effort latéral</tspan></text>
 <text x="440.0" y="399.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">(dérapage, vent) s'exerce sur la roue.</text>
 </svg>

@@ -52,7 +52,7 @@
 <polygon points="175.1,73.3 171.5,82.3 178.7,82.3" fill="#c0392b"/>
 <line x1="175.1" y1="73.3" x2="175.1" y2="157.5" stroke="#c0392b" stroke-width="1.2"/>
 <polygon points="175.1,162.5 178.7,153.5 171.5,153.5" fill="#c0392b"/>
-<text x="181.1" y="117.5" font-family="sans-serif" font-size="12" fill="#c0392b" text-anchor="start">D<tspan font-size="75%" dy="3.5">1</tspan><tspan dy="-3.5"> ≈ 0,48</tspan></text>
+<text x="181.1" y="117.5" font-family="sans-serif" font-size="12" fill="#c0392b" text-anchor="start">D<tspan font-size="75%" dy="3.5">1</tspan><tspan dx="3.4" dy="-3.5">≈ 0,48</tspan></text>
 <line x1="145.1" y1="73.3" x2="145.1" y2="303.1" stroke="#2e7d32" stroke-width="1.0" stroke-dasharray="4 3"/>
 <line x1="295.4" y1="142.3" x2="295.4" y2="303.1" stroke="#2e7d32" stroke-width="1.0" stroke-dasharray="4 3"/>
 <line x1="145.1" y1="293.8" x2="290.4" y2="293.8" stroke="#2e7d32" stroke-width="1.2"/>
@@ -60,8 +60,8 @@
 <line x1="295.4" y1="293.8" x2="150.1" y2="293.8" stroke="#2e7d32" stroke-width="1.2"/>
 <polygon points="145.1,293.8 154.1,297.4 154.1,290.1" fill="#2e7d32"/>
 <text x="220.3" y="310.8" font-family="sans-serif" font-size="12" fill="#2e7d32" text-anchor="middle">pseudo-période T ≈ 1,78 − 0,60 ≈ 1,18 s</text>
-<text x="402.8" y="233.8" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">Abaque du dépassement : D<tspan font-size="75%" dy="3.5">1</tspan><tspan dy="-3.5"> ≈ 0,48 donne ξ</tspan><tspan font-size="75%" dy="3.5">Z</tspan><tspan dy="-3.5"> ≈ 0,23.</tspan></text>
+<text x="402.8" y="233.8" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">Abaque du dépassement : D<tspan font-size="75%" dy="3.5">1</tspan><tspan dx="3.4" dy="-3.5">≈ 0,48 donne ξ</tspan><tspan font-size="75%" dy="3.5">Z</tspan><tspan dx="3.4" dy="-3.5">≈ 0,23.</tspan></text>
 <text x="402.8" y="256.2" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">Abaque de la pseudo-période (courbe ξ = 0,25) :</text>
-<text x="402.8" y="275.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">T ≈ 1,18 s donne ω<tspan font-size="75%" dy="3.5">Z</tspan><tspan dy="-3.5"> ≈ 5,5 rad/s.</tspan></text>
-<text x="70.0" y="22.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="start" font-weight="bold">Réponse indicielle du modèle du second ordre identifié (ξ<tspan font-size="75%" dy="3.5">Z</tspan><tspan dy="-3.5"> = 0,23 ; ω</tspan><tspan font-size="75%" dy="3.5">Z</tspan><tspan dy="-3.5"> = 5,5 rad/s)</tspan></text>
+<text x="402.8" y="275.0" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">T ≈ 1,18 s donne ω<tspan font-size="75%" dy="3.5">Z</tspan><tspan dx="3.4" dy="-3.5">≈ 5,5 rad/s.</tspan></text>
+<text x="70.0" y="22.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="start" font-weight="bold">Réponse indicielle du modèle du second ordre identifié (ξ<tspan font-size="75%" dy="3.5">Z</tspan><tspan dx="3.6" dy="-3.5">= 0,23 ; ω</tspan><tspan font-size="75%" dy="3.5">Z</tspan><tspan dx="3.6" dy="-3.5">= 5,5 rad/s)</tspan></text>
 </svg>

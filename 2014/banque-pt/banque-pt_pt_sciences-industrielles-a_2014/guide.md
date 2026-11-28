@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Support.** Le train d'atterrissage principal d'un hélicoptère de transport de la classe des dix tonnes. Lors d'un atterrissage dur, le choc sur le train principal fait vibrer le pylône de queue sur son premier mode de flexion. Le sujet construit un modèle du fuselage, du pylône et du train, montre que le train passif ne tient pas le cahier des charges, puis étudie un amortisseur semi-actif piloté par une servovalve et règle son correcteur.
@@ -146,8 +148,8 @@ Contrôle par la statique : $h = m + I_s - 6(N_S - 1) = 2 + 24 - 24 = 2$. Le mê
 
 Dans la fermeture cinématique de la chaîne 1–3–4–5, deux équations scalaires sont identiquement vérifiées :
 
-- la résultante des vitesses suivant $\vec y$, puisque tous les mouvements sont dans le plan $(\vec x,\vec z)$ ;
-- le moment des vitesses de rotation suivant la direction du plan perpendiculaire à l'axe du vérin, notée $\vec x_5$, puisque les rotations se font autour de $\vec y$ ou de $\vec z_5$.
+- l'équation des vitesses (moment du torseur cinématique) en projection sur $\vec y$, puisque tous les points se déplacent dans le plan $(\vec x,\vec z)$ ;
+- l'équation des vitesses de rotation (résultante du torseur cinématique) en projection sur $\vec x_5$, direction du plan $(\vec x,\vec z)$ perpendiculaire à l'axe du vérin, puisque les rotations se font autour de $\vec y$ ou de $\vec z_5$.
 
 Les deux inconnues hyperstatiques sont donc un effort suivant $\vec y$ et un moment autour de $\vec x_5$. Elles traduisent deux conditions géométriques : les axes des pivots en A, C et D doivent être parallèles, et les chapes doivent être alignées suivant $\vec y$.
 
@@ -191,7 +193,7 @@ Le bras 3 reçoit l'action de la roue en B (charge du sol, verticale, notée $F$
 
 Non : un modèle totalement isostatique ne serait pas judicieux ici. L'hyperstatisme a un coût (parallélisme des axes en A, C et D, alignement des chapes), mais il apporte de la rigidité à un guidage très chargé.
 
-Le moment hyperstatique autour de $\vec x_5$, direction voisine de $\vec x_3$, est précisément celui qui permet au vérin, par ses chapes d'axe $\vec y$ en C et en D, de reprendre une partie de la torsion du bras due au déport de la roue. Sans lui, toute la torsion passerait par le seul pivot en A, et le bras se vrillerait davantage.
+Le moment hyperstatique autour de $\vec x_5$, qui se projette en grande partie sur $\vec x_3$ (les deux directions font l'angle $\alpha-\beta$, 45° au plus), est précisément celui qui permet au vérin, par ses chapes d'axe $\vec y$ en C et en D, de reprendre une partie de la torsion du bras due au déport de la roue. Sans lui, toute la torsion passerait par le seul pivot en A, et le bras se vrillerait davantage.
 
 **Il est préférable de conserver le degré d'hyperstatisme en rotation (moment autour de l'axe du plan perpendiculaire au vérin) et de relâcher seulement la translation suivant $\vec y$**, par exemple avec un jeu axial ou un pivot glissant d'axe $\vec y$ en C. Le modèle devient hyperstatique d'ordre 1 : la seule contrainte de fabrication qui reste est le parallélisme des axes d'articulation, et le positionnement axial des chapes n'a plus à être ajusté.
 
@@ -690,6 +692,8 @@ Lecture de la courbe du cahier réponse (page 15 du cahier, vitesse d'impact de 
 
 **Critère 2.** Le pic d'accélération angulaire vaut environ $10{,}7\ \mathrm{rad\cdot s^{-2}}$ en valeur absolue, plus de trois fois la limite de $3\ \mathrm{rad\cdot s^{-2}}$ (flexibilité $0{,}2$) : **le critère n'est pas respecté**.
 
+Remarque. Le signe de la valeur initiale surprend. À $t = 0^+$, les équations ❶ et ❸ donnent $L\,\ddot\theta = \ddot z$ et $m_1\,\ddot z = \dfrac{a}{a+b}\,\lambda_{eq}V_0 - \left(m_1+m_2\right)g$, soit $\ddot\theta^*(0^+)\approx\dfrac{216\,000-71\,600}{6700\times4}\approx+5{,}4\ \mathrm{rad\cdot s^{-2}}$ : la cabine est freinée ($\ddot z>0$) et l'accélération angulaire initiale est positive. La courbe du cahier part au contraire d'environ $-10{,}7\ \mathrm{rad\cdot s^{-2}}$, valeur que l'on retrouve en changeant le signe du terme d'amortissement : $-(216\,000+71\,600)/(6700\times4)\approx-10{,}7$. Il s'agit vraisemblablement d'une anomalie de la simulation de l'énoncé, dont on ne peut pas établir l'origine avec certitude. Les conclusions n'en dépendent pas : avec l'une ou l'autre valeur le pic dépasse $3\ \mathrm{rad\cdot s^{-2}}$, et la pseudo-période reste celle du mode propre du pylône.
+
 **Critère 3.** La pseudo-période vaut $(0{,}335-0{,}06)/2\approx0{,}14\ \mathrm s$, soit une pulsation d'environ $46\ \mathrm{rad\cdot s^{-1}}$ (7,3 Hz). C'est la pulsation propre du pylône ($2\pi\times7\approx44\ \mathrm{rad\cdot s^{-1}}$) : la queue est excitée sur son propre mode de flexion, alors que le cahier des charges exige une pulsation forcée strictement inférieure. **Le critère 3 n'est pas respecté non plus.**
 
 Le seul critère 1 est tenu, puisque la simulation est faite à 4 m/s. **Le train passif ne satisfait pas le cahier des charges** : il faut maîtriser la décélération de la cabine, objet des parties D et E.
@@ -887,6 +891,8 @@ En revanche les deux modes sont peu amortis : pour $p_{3,4}$, $\omega\approx5{,}
 
 **Justification.** Les zéros $z_{1,2} = -6{,}25\pm44\,j$ sont très proches des pôles $p_{1,2} = -6{,}9\pm45{,}9\,j$ : leurs effets se compensent presque exactement. De plus les pôles $p_{3,4}$, cinq à six fois plus proches de l'axe imaginaire, sont dominants. On conserve donc le facteur $p^2$ du numérateur et le seul mode $p_{3,4}$ : c'est un second ordre de pulsation $\omega_Z = |p_3|\approx5{,}4\ \mathrm{rad\cdot s^{-1}}$ et d'amortissement $\xi_Z\approx0{,}23$.
 
+Remarque. Les pôles donnés par l'énoncé ne sont pas ceux que l'on calcule avec les valeurs de l'annexe 5. Avec $\lambda = 15\cdot10^4\ \mathrm{N\cdot s\cdot m^{-1}}$ et $k_\theta = 20\cdot10^6\ \mathrm{N\cdot m\cdot rad^{-1}}$, le dénominateur de $H_Z$ tiré des équations ❶ et ❸ a pour racines $-7{,}1\pm47{,}1\,j$ et $-3{,}7\pm4{,}0\,j$ : le mode lent garde le même module ($5{,}4\ \mathrm{rad\cdot s^{-1}}$), mais son coefficient d'amortissement vaudrait $0{,}68$ au lieu de $0{,}23$. Les pôles et les zéros de l'énoncé se retrouvent en revanche, à la précision donnée, avec $\lambda = 5\cdot10^4\ \mathrm{N\cdot s\cdot m^{-1}}$ (la valeur notée $\lambda_u$ en partie D) et $k_\theta\approx1{,}9\cdot10^7\ \mathrm{N\cdot m\cdot rad^{-1}}$ (question 15). L'énoncé ne dit pas avec quelles valeurs ses pôles ont été calculés. On s'en tient à ceux qu'il donne pour les questions 42 à 44 : ce sont eux que confirme la réponse indicielle de la question 44 (dépassement de 48 %, alors qu'un coefficient d'amortissement de $0{,}68$ donnerait environ 5 %).
+
 **Gain.** Quand $p\to0$, l'expression complète est équivalente à $\dfrac{k_\theta}{q_0}\,p^2$ et le modèle simplifié à $K_Z\,p^2$.
 
 $$\boxed{K_Z = \dfrac{k_\theta}{q_0} = \dfrac{(a+b)^2}{a^2\,k}}$$
@@ -963,7 +969,7 @@ Forme canonique : dérivateur de gain $K_Z$ et second ordre de pulsation propre 
 
 $$\xi_F = \xi_Z + \dfrac{\lambda_a\,K_Z\,\omega_Z}{2}$$
 
-Avec $\lambda_a = \lambda_u\,a^2/(a+b)^2 = 1{,}8\cdot10^4\ \mathrm{N\cdot s\cdot m^{-1}}$ (question 41), $\lambda_aK_Z\approx0{,}083\ \mathrm s$ et $\xi_F\approx0{,}23+0{,}23\approx0{,}45$ : l'amortisseur passif double l'amortissement du mode.
+La partie E ne donne pas la valeur de $\lambda_a$. On la déduit de la question 41 : avec $\lambda_a = \lambda_u\,a^2/(a+b)^2 = 1{,}8\cdot10^4\ \mathrm{N\cdot s\cdot m^{-1}}$, on obtient $\lambda_aK_Z\approx0{,}083\ \mathrm s$ et $\xi_F\approx0{,}23+0{,}23\approx0{,}45$ : l'amortisseur passif double l'amortissement du mode. Le diagramme fourni pour la question 48 est cohérent avec cette déduction (phase de $+80°$ à $1\ \mathrm{rad\cdot s^{-1}}$, maximum de gain vers $-91\ \mathrm{dB}$).
 
 ### Question 47
 
@@ -1098,7 +1104,7 @@ $$\boxed{K_P\approx3}$$
 
 ![Figure 9 — Boucle ouverte corrigée : double intégration seule puis avec avance de phase, marges de stabilité repérées](figures/q50-q53-bode-boucle-ouverte-corrigee.svg)
 
-**Précision.** Le terme d'avance de phase a un gain statique fini $K_P$ et ne change pas la classe : la boucle ouverte corrigée reste de classe 1 ($p^{-2}$ du correcteur, $p$ du train). **L'erreur statique est nulle, le critère de précision est validé.** Pendant la rampe de consigne subsiste une erreur de traînage constante, égale à $A_0/(K_P\,K_S\,K_Z)$, qui disparaît sur le palier.
+**Précision.** Le terme d'avance de phase a un gain statique fini $K_P$ et ne change pas la classe : la boucle ouverte corrigée reste de classe 1 ($p^{-2}$ du correcteur, $p$ du train). **L'erreur statique est nulle, le critère de précision est validé.** Pendant la rampe de consigne, l'écart tend vers l'erreur de traînage $A_0/(K_P\,K_S\,K_Z)$, soit environ $7\ \mathrm{m\cdot s^{-1}}$ : la rampe, qui ne dure que $0{,}33\ \mathrm s$, est trop courte pour que cette valeur asymptotique soit atteinte, et l'écart s'annule ensuite sur le palier.
 
 ### Question 54
 
