@@ -1,0 +1,98 @@
+{
+  "slug": "banque-pt_pt_physique-c---chimie_2008",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Chimie",
+    "annee": 2008
+  },
+  "questions": 42,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2008/phys_c_2008.zip",
+    "sujet_sha256": "e4292968a8652504f926582cae967a9bbfae933ab30981c30d8e2852620c3f0f",
+    "precision": "L'adresse est celle de l'archive commune aux deux problèmes de Physique C (chimie et thermodynamique), SHA-256 e4292968a8652504f926582cae967a9bbfae933ab30981c30d8e2852620c3f0f. L'archive contient deux fichiers, sans archive interne. Énoncé : phys_c_2008_sujet.pdf, 20 pages, SHA-256 9050ed172721ed3cd1998f9bd5fb0ac6a68e96996db6eb79665beca79c1ea307 ; il réunit les deux problèmes sous une garde commune « Epreuve de Physique C » (p. 1), le problème de chimie, identifié par son titre « SUJET DE CHIMIE », occupant les pages 2 à 8 (annexe des droites log K en p. 8), le problème de thermodynamique commençant p. 9. Document-réponse : phys_c_2008_doc_reponse.pdf, 2 pages, SHA-256 273dc3655252cc722ef75fe0d32fbd6a5592f1af236112e387dc0a0f6ba9e780 ; sa page 1 est le feuillet mobile n° 1 du problème de chimie (diagramme potentiel-pH partiel), sa page 2 le feuillet de thermodynamique. Les trois empreintes sont identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv, et la répartition des pages à celle de campagnes/x-ens/bilans/feuillets-physique-c-banque-pt-2008.tsv. Le rapport du jury est commun aux deux problèmes de Physique C ; son empreinte est aussi celle du même fichier. Aucun fichier campagnes/x-ens/bilans/constat-*.tsv ne porte sur cette épreuve.",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_phys_c_ecrit_2008.pdf",
+    "rapport_sha256": "a5e713c0d1c843e63772b1491ea9e23772a0ef5f8403d3af398c5f18b2d7e1f7"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.1",
+      "I.1.2",
+      "I.2.1",
+      "I.2.2",
+      "I.2.3",
+      "II.1.1",
+      "II.1.2",
+      "II.1.3",
+      "II.1.4",
+      "II.1.5",
+      "II.1.6",
+      "II.2",
+      "II.2.1",
+      "II.2.2",
+      "II.2.3",
+      "II.2.4",
+      "II.2.5",
+      "II.2.6",
+      "II.2.7",
+      "II.2.8",
+      "II.2.9",
+      "II.2.10",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "IV.1",
+      "IV.2.1",
+      "IV.2.2",
+      "IV.2.3",
+      "IV.3.1",
+      "IV.3.2",
+      "IV.3.3",
+      "IV.3.4",
+      "IV.4.1",
+      "IV.4.2",
+      "IV.4.3",
+      "IV.4.4"
+    ],
+    "precision": "Énoncé numérisé lu en image : garde commune p. 1, problème de chimie p. 2 à 8 du PDF de 20 pages (annexe p. 8), et feuillet mobile n° 1 (p. 1 du document-réponse) ; les pages du problème de thermodynamique ne sont pas traitées ici. 42 questions, toutes traitées, repérées par le numéro de partie suivi du numéro de l'énoncé ; deux questions sans sous-numéro dans l'énoncé : l'écriture des cinq demi-équations en tête de la section II.2 (repère II.2) et la question IV.1. Rapport du jury de Physique C de 5 pages, chimie p. 1 à 3. Question I.1.1 : l'énoncé ne donne pas les masses isotopiques ; le corrigé assimile la masse molaire de chaque isotope à son nombre de masse, choix signalé à sa place. Lectures sur le feuillet mobile (verticale vers pH 4, sommet du triangle vers pH 5,5 et −0,45 V) et sur l'annexe (croisement des droites (2) et (3) vers 1,17) recoupées par le calcul. Partie III : l'énoncé donne des lois log K pour des équations écrites avec 1, 3, 3 et 2 moles de dihydrogène mais fait lire l'annexe comme si son ordonnée, log(P(H2O)/P(H2)), se comparait directement à log K ; l'incohérence est signalée aux questions III.4 et III.7, et la question III.7 donne les deux valeurs du rapport maximal (0,341 avec l'équation telle qu'écrite, 0,117 avec la lecture directe de la droite). Le feuillet complété est reproduit par la figure 2."
+  },
+  "figures": [
+    {
+      "fichier": "figures/maille-cubique-centree.svg",
+      "question": "I.2.1",
+      "legende": "Maille cubique centrée du tungstène : atomes aux sommets et au centre, contact le long de la grande diagonale."
+    },
+    {
+      "fichier": "figures/diagramme-e-ph-tungstene.svg",
+      "question": "II.2.7",
+      "legende": "Diagramme potentiel-pH du tungstène complété : frontières ajoutées, domaines des espèces, droites des couples de l'eau, domaines d'immunité, de corrosion et de passivation."
+    },
+    {
+      "fichier": "figures/droites-log-k-reduction.svg",
+      "question": "III.5",
+      "legende": "Droites log K de l'annexe en fonction de 1000/T, domaines des espèces du tungstène, verticale T = 900 K et croisement des droites (2) et (3)."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 42 questions et de trois figures, à partir de l'énoncé, du feuillet mobile, de l'annexe et du rapport du jury ; applications numériques recalculées, lectures du feuillet et de l'annexe recoupées par le calcul, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
