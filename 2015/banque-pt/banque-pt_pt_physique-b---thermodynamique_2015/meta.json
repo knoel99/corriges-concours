@@ -1,0 +1,74 @@
+{
+  "slug": "banque-pt_pt_physique-b---thermodynamique_2015",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Thermodynamique",
+    "annee": 2015
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2015/ph_b_th_2015_pt.pdf",
+    "sujet_sha256": "fe2229bcfcf7d3d54cbff10bb826fa1b0c37a887d286b87077b652b791b4ce5a",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_phys_b_ecrit_2015.pdf",
+    "rapport_sha256": "e40090e318c3ccafb2f1d44353ef4730ab01e4a473502582ddc07d947da5802d"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "precision": "Sujet de 5 pages PDF (numérisées, lues en image) : page de garde puis énoncé p. 2 à 5 ; 24 questions numérotées de 1 à 24, toutes traitées. Rapport commun à Physique B de 4 pages, partie thermodynamique p. 2 à 4. Les figures 1 à 5 du sujet sont des schémas de principe sans valeur à lire ; il n'y a ni diagramme thermodynamique ni document-réponse. Question 7 : valeurs numériques choisies par le rédacteur (ordres de grandeur). Question 14 : perte de charge linéique tirée de la mesure, étendue au tuyau de 1 km de la question 15. Question 21 : puissance du ventilateur réduite au débit d'énergie cinétique, seule grandeur calculable avec les données."
+  },
+  "figures": [
+    {
+      "fichier": "figures/mur-bicouche.svg",
+      "question": "5",
+      "legende": "Profil de température dans le mur à deux couches en régime permanent, tracé dans le cas où la résistance du matériau 1 est très inférieure à celle du matériau 2."
+    },
+    {
+      "fichier": "figures/dephaseur-front-thermique.svg",
+      "question": "20",
+      "legende": "Front thermique dans le déphaseur : eau déjà réchauffée côté entrée, eau encore froide côté sortie, air sortant à 15 °C."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (24 questions) à partir du sujet lu en image et du rapport du jury ; applications numériques refaites, deux figures créées, encadrés du jury relus contre le rapport."
+    }
+  ]
+}
