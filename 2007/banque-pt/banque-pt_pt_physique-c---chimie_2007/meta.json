@@ -67,6 +67,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 21 questions du problème de chimie et de deux figures, à partir de l'énoncé et du rapport du jury ; applications numériques recalculées, encadrés JURY relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application de six remarques mineures d'une relecture indépendante, revérifiées contre l'énoncé et recalculées, dans le brut et le guidé : II-2-c (seuil arrondi à 419 K, soit 146 °C), III-1 (ion sulfate écarté parce que l'énoncé le dit indifférent), III-4 (fourchette chiffrée de pKs tabulé retirée), III-6 (ordre des titrages justifié en comparant K1 à la racine de K2) ; figure 2 : libellé « V (mL) » déplacé sous l'axe. III-5 et I-2-c relues sans changement."
     }
   ]
 }

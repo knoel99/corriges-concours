@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Problème de chimie de l'épreuve de Physique C (4 heures pour les deux problèmes, chimie et thermodynamique, de même barème ; calculatrice autorisée), consacré au nickel : 21 questions en trois parties indépendantes (atome et cristal, décomposition thermique du nickel carbonyle, dosage conductimétrique). Les 21 questions sont traitées, sous les repères de l'énoncé. Les données numériques sont celles de la fin du sujet ; le produit ionique de l'eau, qui n'y figure pas, est pris égal à $10^{-14}$ (question III-4).
 
 [Sujet officiel](https://www.banquept.fr/documents/2007/phys_c_2007.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_phys_c_ecrit_2007.pdf)
@@ -198,7 +200,7 @@ $$T_2 = \frac{158\cdot10^{3}}{413 - 8{,}314 \times \ln(73{,}1)} = \frac{158\cdot
 
 $$\boxed{T_2 \approx 419\ \mathrm{K}\ (\text{environ } 146\ ^\circ\mathrm{C})}$$
 
-Les deux températures sont supérieures à la température d'ébullition (316 K), comme le suppose l'énoncé, et encadrent la température d'inversion (383 K). La décomposition, négligeable au-dessous de $T_1$, devient quasi totale au-dessus de $T_2$ : **pour déposer le nickel sous 1 bar, il faut opérer à $T \geqslant T_2 \approx 420\ \mathrm{K}$**, soit au-delà de 150 °C environ ; entre $T_1$ et $T_2$ (un intervalle d'environ 80 K seulement) la décomposition n'est que partielle.
+Les deux températures sont supérieures à la température d'ébullition (316 K), comme le suppose l'énoncé, et encadrent la température d'inversion (383 K). La décomposition, négligeable au-dessous de $T_1$, devient quasi totale au-dessus de $T_2$ : **pour déposer le nickel sous 1 bar, il faut opérer à $T \geqslant T_2 \approx 419\ \mathrm{K}$**, soit au-dessus de 146 °C environ ; entre $T_1$ et $T_2$ (un intervalle d'environ 80 K seulement) la décomposition n'est que partielle.
 
 *Prévision sans calcul.* La réaction (1) est endothermique ($\Delta_r H_1^\circ > 0$). D'après la loi de Van't Hoff,
 
@@ -280,7 +282,7 @@ Dans le mélange M, les ions nickel et hydroxyde ont précipité : $\mathrm{Ni^{
 
 ![Figure 2 — Allure de la conductance en fonction du volume d'acide éthanoïque versé, avec les deux volumes équivalents et l'interprétation des trois domaines](figures/courbe-conductimetrique-nickel.svg)
 
-La courbe commence par une branche nettement **décroissante**. Or l'ajout d'acide éthanoïque, molécule non chargée, ne peut faire baisser la conductance que s'il remplace un ion très mobile par un ion de même signe moins mobile. D'après les données, le seul candidat est l'ion hydroxyde ($\lambda = 198\ \mathrm{S\cdot cm^2\cdot mol^{-1}}$), remplacé par l'ion éthanoate ($\lambda = 40$) : il faut donc des ions $\mathrm{HO^-}$ libres en solution au départ.
+La courbe commence par une branche nettement **décroissante**. Or l'ajout d'acide éthanoïque, molécule non chargée, ne peut faire baisser la conductance que s'il remplace un ion très mobile par un ion de même signe moins mobile. Le seul anion basique très conducteur est l'ion hydroxyde ($\lambda = 198\ \mathrm{S\cdot cm^2\cdot mol^{-1}}$), remplacé par l'ion éthanoate ($\lambda = 40$) ; l'ion sulfate, indifférent sur le plan acido-basique d'après l'énoncé, ne réagit pas : il faut donc des ions $\mathrm{HO^-}$ libres en solution au départ.
 
 À l'inverse, si la soude n'était pas en excès, la solution ne contiendrait initialement que $\mathrm{Na^+}$, $\mathrm{SO_4^{2-}}$ et éventuellement $\mathrm{Ni^{2+}}$ : l'acide attaquerait d'emblée le précipité en créant des ions ($\mathrm{Ni^{2+}}$ et $\mathrm{AcO^-}$), et la conductance augmenterait dès le début. La présence de deux ruptures de pente, donc de deux titrages successifs, confirme l'existence de deux bases : $\mathrm{HO^-}$ en excès, puis $\mathrm{Ni(OH)_2}$.
 
@@ -356,7 +358,7 @@ $$K_s = [\mathrm{Ni^{2+}}]\,[\mathrm{HO^-}]^2 = 1{,}63\cdot10^{-2} \times \left(
 
 $$\boxed{K_s \approx 1{,}0\cdot10^{-14} \quad\text{soit}\quad \mathrm{p}K_s \approx 14{,}0}$$
 
-*Commentaire.* $K_s$ est très petit : l'hydroxyde de nickel est très peu soluble, comme l'annonce l'énoncé. Dans le mélange M, où $[\mathrm{HO^-}]_{libre} = 3{,}0/80 \approx 3{,}8\cdot10^{-2}\ \mathrm{mol\cdot L^{-1}}$, la concentration résiduelle en nickel vaut $K_s/[\mathrm{HO^-}]^2 \approx 7\cdot10^{-12}\ \mathrm{mol\cdot L^{-1}}$ : la précipitation initiale est bien totale, ce qui justifie le raisonnement de la question III-3. La valeur n'est qu'un ordre de grandeur : elle repose sur une seule mesure de pH, et une incertitude de 0,1 unité de pH change $K_s$ d'un facteur 1,6 (les tables donnent des valeurs de $\mathrm{p}K_s$ un peu supérieures, de l'ordre de 15 à 16).
+*Commentaire.* $K_s$ est très petit : l'hydroxyde de nickel est très peu soluble, comme l'annonce l'énoncé. Dans le mélange M, où $[\mathrm{HO^-}]_{libre} = 3{,}0/80 \approx 3{,}8\cdot10^{-2}\ \mathrm{mol\cdot L^{-1}}$, la concentration résiduelle en nickel vaut $K_s/[\mathrm{HO^-}]^2 \approx 7\cdot10^{-12}\ \mathrm{mol\cdot L^{-1}}$ : la précipitation initiale est bien totale, ce qui justifie le raisonnement de la question III-3. La valeur n'est qu'un ordre de grandeur : elle repose sur une seule mesure de pH, et une incertitude de 0,1 unité de pH change $K_s$ d'un facteur 1,6 (les valeurs tabulées de $\mathrm{p}K_s$ sont en général un peu supérieures et varient selon l'état du précipité, frais ou vieilli).
 
 ### Question III-5 — Constante d'acidité du couple de l'acide éthanoïque
 
@@ -390,4 +392,4 @@ $$K_2 = \frac{[\mathrm{Ni^{2+}}]\,[\mathrm{AcO^-}]^2}{[\mathrm{AcOH}]^2} = K_s\l
 
 $$\boxed{K_2 \approx 10^{4{,}54} \approx 3{,}5\cdot10^{4}}$$
 
-*Conclusion.* Les deux constantes sont très supérieures à 1 : les deux réactions sont quantitatives, ce qui valide l'hypothèse de la question III-3 et l'exploitation des volumes équivalents. De plus $K_1 \gg K_2$ (rapport de l'ordre de $5\cdot10^{4}$) : les ions hydroxyde libres sont titrés avant le précipité et les deux titrages sont bien successifs, d'où deux ruptures de pente nettes. La seconde réaction, moins favorable, reste suffisamment avancée pour que la rupture à $V_{e2}$ soit exploitable.
+*Conclusion.* Les deux constantes sont très supérieures à 1 : les deux réactions sont quantitatives, ce qui valide l'hypothèse de la question III-3 et l'exploitation des volumes équivalents. De plus, rapportée à une mole d'acide, la seconde réaction a pour constante $\sqrt{K_2} \approx 1{,}9\cdot10^{2}$, très inférieure à $K_1 \approx 1{,}9\cdot10^{9}$ : les ions hydroxyde libres sont titrés avant le précipité (qui ne peut se dissoudre tant que $[\mathrm{HO^-}]$ reste élevée) et les deux titrages sont bien successifs, d'où deux ruptures de pente nettes. La seconde réaction, moins favorable, reste suffisamment avancée pour que la rupture à $V_{e2}$ soit exploitable.
