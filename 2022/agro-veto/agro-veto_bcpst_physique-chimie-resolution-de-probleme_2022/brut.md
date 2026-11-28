@@ -6,6 +6,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
 
+**Révision (tour 3)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Sujet de chimie « Quelques aspects de la chimie des alcènes », 49 questions, toutes traitées. Les mécanismes sont décrits étape par étape, le mouvement des doublets étant indiqué en toutes lettres ; les formules topologiques des composés bicycliques figurent sur les figures 4 et 5.
 
 ## Partie I — L’isobutène, molécule clé des carburants biosourcés · A. Mécanismes de formation

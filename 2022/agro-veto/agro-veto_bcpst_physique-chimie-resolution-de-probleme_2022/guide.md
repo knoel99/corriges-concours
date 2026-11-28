@@ -6,6 +6,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
 
+**Révision (tour 3)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 Épreuve de 3 heures, calculatrice autorisée, entièrement consacrée à la chimie sous le titre « Quelques aspects de la chimie des alcènes » : 49 questions réparties en deux parties indépendantes.
@@ -113,7 +115,7 @@ Lecture du profil : les intermédiaires (carbocations) sont des minima locaux d�
 > Un intermédiaire réactionnel n’est pas un état de transition. Placer le carbocation au sommet d’une bosse, ou ne tracer que la voie du carbocation tertiaire sans la comparer à l’autre, ne répond pas à la question.
 
 > [!JURY]
-> Le rapport insiste : la plupart des copies oublient de justifier la sélectivité et ne tracent qu’une voie ; des croisements de courbes contraires au postulat de Hammond ont été sanctionnés.
+> Le rapport insiste : la plupart des copies oublient de justifier la sélectivité et ne tracent qu’une voie ; des croisements de courbes contraires au postulat de Hammond sont observés dans quelques copies.
 
 ### Question 5 — Formation de l’ETBE et origine du TBA
 
@@ -304,7 +306,7 @@ Le dégagement de $\mathrm{CO_2}$ (auquel s’ajoutent les vapeurs de diéthylé
 Pour l’éviter, on agite d’abord doucement, ampoule ouverte, tant que l’effervescence est vive ; puis, une fois l’ampoule bouchée, on la retourne en maintenant le bouchon, robinet dirigé vers le haut et à l’écart de tout visage, et l’on **dégaze** en ouvrant le robinet après chaque agitation, aussi souvent que nécessaire. Le port de lunettes et de gants et le travail sous hotte, loin de toute flamme, complètent ces précautions.
 
 > [!JURY]
-> Le rapport précise qu’une surpression dans une ampoule à décanter conduit rarement à une explosion : parler de projections et de bouchon expulsé est plus juste.
+> Le rapport précise qu’une surpression dans une ampoule à décanter conduit rarement à une explosion. Parler de projections et de bouchon expulsé est plus juste.
 
 ### Question 17 — Vérifier la composition du mélange
 
@@ -355,7 +357,7 @@ Les deux voies passent par les **mêmes intermédiaires** et conduisent donc aux
 Bilan de cette voie : $2\,\mathrm{(CH_3)_3COH} \longrightarrow \mathrm{C_8H_{16}} + 2\,\mathrm{H_2O}$. À titre de vérification, 157 mmol d’alcool peuvent fournir au plus 78,5 mmol de dimères, soit $78,5\times10^{-3}\times112,2=8,8$ g ; les 3,4 g isolés correspondent à un rendement d’environ 39 %.
 
 > [!JURY]
-> Dire que « les mêmes intermédiaires se forment » ne suffit pas : le rapport exige les étapes du mécanisme écrites à partir du 2-méthylpropan-2-ol.
+> Dire qu’il se forme les mêmes intermédiaires ne suffit pas : le rapport exige les étapes du mécanisme écrites à partir du 2-méthylpropan-2-ol.
 
 ### Question 20 — Règle prévoyant le produit majoritaire
 
@@ -748,7 +750,7 @@ $$\mathrm{{>}\overset{+}{C}{-}C(CH_3){=}CH_2 \ \longleftrightarrow\ {>}C{=}C(CH_
 La charge est délocalisée sur deux atomes de carbone : le carbocation est stabilisé par mésomérie. Le solvant, polaire et protique, favorise en outre sa formation, ainsi que le chauffage.
 
 > [!JURY]
-> « Carbocation tertiaire, donc stable » ne suffit pas : le rapport attend l’écriture de la forme mésomère obtenue par basculement du doublet de la double liaison voisine.
+> Invoquer la stabilité du carbocation tertiaire ne suffit pas : le rapport attend l’écriture de la forme mésomère obtenue par basculement du doublet de la double liaison voisine.
 
 ### Question 38 — Fermeture du cycle à sept chaînons et fin du mécanisme
 
@@ -1008,4 +1010,4 @@ Ce sujet balaie l’essentiel de la réactivité des alcènes au programme : add
 - un azéotrope à minimum part en tête de distillation : la composition de la charge par rapport à l’azéotrope décide du corps pur récupérable dans le résidu ;
 - en synthèse, les $\mathrm{p}K_A$ dictent l’ordre des événements (déprotonation sélective par le carbonate, organolithien consommé par l’alcyne vrai, LDA sur l’ester), et chaque protection doit être justifiée par la réaction qu’elle rend possible.
 
-Les questions les plus discriminantes selon le rapport sont la 4 (profil et sélectivité), la 21, les 28 à 33 (taux de conversion, figure 3, distillation), la 36 (descripteurs stéréochimiques) et la 38 (cyclisation).
+Les questions que le rapport décrit comme difficiles, peu abordées ou souvent mal traitées sont la 4 (profil et sélectivité), la 21, les 28 à 33 (taux de conversion, figure 3, distillation), la 36 (descripteurs stéréochimiques) et la 38 (cyclisation).
