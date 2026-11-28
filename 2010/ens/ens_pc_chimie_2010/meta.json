@@ -108,6 +108,16 @@
       "legende": "Une même chaîne de N motifs en bon solvant (pelote gonflée), en solvant thêta (pelote idéale) et en mauvais solvant (globule) ; tracés obtenus par marches aléatoires, à valeur de schéma"
     },
     {
+      "fichier": "figures/modele-baton-staudinger.svg",
+      "question": "2.1.1",
+      "legende": "Modèle de Staudinger : N motifs sphériques de diamètre a alignés au contact, bâton de longueur L = Na"
+    },
+    {
+      "fichier": "figures/pmma-trois-motifs.svg",
+      "question": "5.2.1",
+      "legende": "Trois motifs du poly(méthacrylate de méthyle) enchaînés tête à queue, en formule semi-développée"
+    },
+    {
       "fichier": "figures/osmometrie-extrapolation-dilution-nulle.svg",
       "question": "5.3.1",
       "legende": "Extrapolation à dilution nulle des mesures du tableau du sujet dans le benzène et dans l'acétone ; les deux droites se rejoignent à l'origine, leurs pentes sont en 10⁻⁶ mol·L·g⁻²"
@@ -118,9 +128,24 @@
       "legende": "Structures des composés 3, 4, 5, 6, 8, 9, 10 et 11 de la partie 6 ; coins pleins vers l'avant, hachurés vers l'arrière"
     },
     {
+      "fichier": "figures/chlorure-diethylaluminium-lewis-adduit.svg",
+      "question": "6.3",
+      "legende": "À gauche, structure de Lewis du chlorure de diéthylaluminium (lacune sur l'aluminium) ; à droite, adduit avec l'oxygène du carbonyle de l'ester 3"
+    },
+    {
+      "fichier": "figures/ion-iodonium-ponte-mecanisme.svg",
+      "question": "7.1",
+      "legende": "Formation de l'ion iodonium ponté à partir de l'alcène 12 et du diiode ; flèches courbes a, b et c expliquées sous le schéma"
+    },
+    {
       "fichier": "figures/intermediaires-14-a-20.svg",
       "question": "7.3",
       "legende": "Structures des composés 14, 15, 16, 17, 18 et 20 des parties 7 et 8 ; coins pleins vers l'avant, hachurés vers l'arrière"
+    },
+    {
+      "fichier": "figures/diagramme-om-enolate-iodomethane-rempli.svg",
+      "question": "8.4",
+      "legende": "Diagramme d'orbitales moléculaires du sujet recopié et rempli : quatre électrons π pour l'énolate, deux électrons pour la liaison C–I ; lobes schématiques"
     },
     {
       "fichier": "figures/alkylation-enolate-orbitales-newman.svg",
@@ -146,6 +171,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction originale des deux éditions pour les 80 questions à partir du sujet et du rapport officiels. Calculs refaits numériquement (extrapolation osmométrique, rendement global), descripteurs stéréochimiques et formules brutes contrôlés par un modèle moléculaire informatique, six figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application de la relecture indépendante, chaque point revérifié contre le sujet et le rapport. Brut et guidé : 3.2.5 (résultat avec la convention non normalisée de l'encadré), 5.3.1 (intervalle des extrapolations dans l'acétone recalculé), 5.3.2 (pentes et rapport accordés à la figure, ajustement refait), 6.2 (diastéréo-isomère cité comme autre candidat pour 4′), 6.8 (voie par le sulfène mentionnée), 8.9 (préférence et non sélectivité totale), 9.9 (origine du proton de l'amine). Guidé seul : 6.5 (rang du départage CIP refait, quatrième rang) et trois encadrés du jury (1.1, 8.1, 9.3) où le conseil du corrigé est séparé du constat du rapport. Cinq figures ajoutées pour les dessins demandés par le sujet en 2.1.1, 5.2.1, 6.3, 7.1 et 8.4 ; figures renumérotées de 1 à 11."
     }
   ]
 }

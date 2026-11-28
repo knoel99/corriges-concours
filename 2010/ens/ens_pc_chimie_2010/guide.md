@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 Épreuve commune aux ENS de Paris, Lyon et Cachan, filière PC, d'une durée de cinq heures, **sans calculatrice**. Le sujet comporte deux parties indépendantes et 80 questions.
@@ -11,7 +13,7 @@
 - **Première partie, physico-chimie des polymères** (sous-parties 1 à 5, 39 questions). On suit l'histoire des modèles d'une chaîne en solution : bâton de Staudinger, chaîne idéale de Kuhn, marche aléatoire et loi gaussienne, entropie de configuration et élasticité entropique, champ moyen de Flory, puis osmométrie et qualité du solvant sur l'exemple du polyméthacrylate de méthyle. Les outils sont ceux du cours (potentiel chimique, mélange idéal, van der Waals, polymères) et un peu de dénombrement ; les formules utiles sont fournies.
 - **Deuxième partie, synthèse totale de la sténine** (sous-parties 6 à 10, 41 questions). Synthèse linéaire d'un alcaloïde tétracyclique : Diels-Alder intramoléculaire, hydroboration, mésylation et cyclisation, iodolactonisation et élimination, réduction, protection silylée, alkylation d'énolate interprétée par les orbitales frontières, Swern, Wittig, réduction conjuguée, lactamisation, coupure oxydante, dithioacétal.
 
-Les atomes sont repérés par la numérotation de la sténine donnée par le sujet ; le carbone du cycle A lié à l'azote, non numéroté par le sujet, est noté ici C9a. Les structures demandées sont décrites dans le texte et dessinées sur les figures 3, 4 et 6.
+Les atomes sont repérés par la numérotation de la sténine donnée par le sujet ; le carbone du cycle A lié à l'azote, non numéroté par le sujet, est noté ici C9a. Les structures demandées sont décrites dans le texte et dessinées sur les figures 5, 8 et 11.
 
 > [!JURY]
 > 551 candidats, moyenne 8,36, écart-type 3,67 ; 159 notes supérieures à 10. Le rapport explique que la bonne connaissance du cours et une technique correcte assuraient environ 9/20, qu'une réflexion sur les problèmes propres à chaque partie menait vers 14/20, et que le reste récompensait les interprétations plus poussées. La physico-chimie pèse en moyenne plus d'un tiers de la note. Le nombre réduit de questions signifiait que chaque réponse devait être construite et justifiée avec rigueur ; en chimie organique, l'exploitation des données spectroscopiques est jugée très satisfaisante, mais les justifications demandées sont trop rarement apportées.
@@ -32,7 +34,7 @@ Documents officiels : [sujet](https://www.ens.psl.eu/IMG/file/concours/2010/PC/p
 Une macromolécule linéaire flexible possède un très grand nombre de conformations, car chaque liaison simple du squelette peut tourner. En solution ou à l'état fondu, l'agitation thermique lui fait explorer ces conformations : la chaîne n'est pas étirée mais repliée au hasard sur elle-même. On appelle **pelote statistique** cet objet désordonné, sans forme fixe, dont la taille (distance entre extrémités, rayon) n'est définie qu'en moyenne sur les conformations ; en moyenne la pelote est sphérique et très peu dense, le solvant occupant l'essentiel de son volume. Sa représentation est une ligne brisée aléatoire inscrite dans une sphère (panneau central de la figure 1).
 
 > [!JURY]
-> Le rapport regrette que très peu de copies donnent ici des définitions et des exemples satisfaisants : une définition, un dessin, un exemple par question.
+> Le rapport regrette que très peu de copies donnent ici des définitions et des exemples satisfaisants. Conseil du corrigé : une définition, un dessin, un exemple par question.
 
 ### Question 1.2 — Bon solvant
 
@@ -81,6 +83,10 @@ En bon solvant la chaîne est une pelote étendue, largement pénétrée par le 
 Les $N$ motifs, sphères de diamètre $a$, sont alignés au contact les uns des autres le long d'un axe : la chaîne est un bâtonnet rigide de diamètre $a$ et de longueur
 
 $$\boxed{L = N a}$$
+
+La figure 2 représente ce bâton.
+
+![Figure 2 — Modèle de Staudinger : N motifs sphériques de diamètre a alignés au contact, bâton de longueur L = Na](figures/modele-baton-staudinger.svg)
 
 Argument en faveur de cette image : pour chaque liaison du squelette, la conformation décalée anti est la plus stable (elle minimise les répulsions stériques entre groupes voisins). Si toutes les liaisons adoptent cette conformation, la chaîne est un zigzag plan entièrement étiré, assimilable à un bâton. Les répulsions entre motifs non liés (stériques, ou électrostatiques pour une chaîne chargée) vont dans le même sens. Le modèle ignore l'agitation thermique, qui peuple aussi les conformations gauches, et donc l'entropie de conformation.
 
@@ -353,7 +359,7 @@ $$\overline{R^{2}}=\frac{4}{\sqrt\pi R_0^{3}}\int_0^{+\infty}r^{4}e^{-r^{2}/R_0^
 
 $$\boxed{\overline{R^{2}}=\frac32R_0^{2}=Na^{2}=R_K^{2}}$$
 
-On retrouve exactement le rayon de Kuhn. La trajectoire de la particule brownienne sur le réseau est une réalisation de la chaîne : chaque pas est un motif, le nombre de pas est le nombre de motifs, la position finale est le vecteur extension. La loi de diffusion (distance quadratique proportionnelle au nombre de pas, donc au temps) est la loi $R\propto\sqrt N$ de la chaîne idéale ; le modèle statistique redonne Kuhn et fournit en plus toute la distribution des extensions.
+On retrouve exactement le rayon de Kuhn. La trajectoire de la particule brownienne sur le réseau est une réalisation de la chaîne : chaque pas est un motif, le nombre de pas est le nombre de motifs, la position finale est le vecteur extension. La loi de diffusion (distance quadratique proportionnelle au nombre de pas, donc au temps) est la loi $R\propto\sqrt N$ de la chaîne idéale ; le modèle statistique redonne Kuhn et fournit en plus toute la distribution des extensions. (Avec le préfacteur non normalisé de l'encadré du sujet, $\int_0^\infty f_r\,\mathrm dr$ vaudrait 8 et l'on trouverait $\overline{R^{2}}=12R_0^{2}=8R_K^{2}$ : le rayon de Kuhn ne se retrouve qu'avec la densité normalisée, ce qui confirme le choix fait à la question 3.2.2.)
 
 ## Première partie · 4.1. Entropie de la chaîne fantôme
 
@@ -550,7 +556,9 @@ La polymérisation ouvre la double liaison $\mathrm{C{=}C}$ ; l'enchaînement es
 
 $$\mathrm{-CH_2-C(CH_3)(CO_2CH_3)-CH_2-C(CH_3)(CO_2CH_3)-CH_2-C(CH_3)(CO_2CH_3)-}$$
 
-Chaque motif, de formule $\mathrm{C_5H_8O_2}$ ($M_0=100\ \mathrm{g\,mol^{-1}}$), porte sur un carbone quaternaire un groupe méthyle et un groupe ester méthylique.
+Chaque motif, de formule $\mathrm{C_5H_8O_2}$ ($M_0=100\ \mathrm{g\,mol^{-1}}$), porte sur un carbone quaternaire un groupe méthyle et un groupe ester méthylique (figure 3).
+
+![Figure 3 — Trois motifs du poly(méthacrylate de méthyle) enchaînés tête à queue, en formule semi-développée](figures/pmma-trois-motifs.svg)
 
 > [!JURY]
 > Le rapport qualifie les réponses sur la formule du PMMA et sa synthèse de très imprécises, voire fantaisistes : écrire le motif exact, avec le carbone quaternaire.
@@ -620,7 +628,7 @@ Lecture du graphe du sujet (ordonnées en $10^{-6}\ \mathrm{mol\,g^{-1}}$) :
 | benzène | 8,9 | 10,2 | 12,3 | 14,6 |
 | acétone | 11,0 | 13,3 | 19,0 | 25,0 |
 
-Benzène : les quatre points sont alignés ; entre 5 et 30 g/L la pente est $(14{,}6-8{,}9)/25\approx0{,}23$, d'où une ordonnée à l'origine $8{,}9-5\times0{,}23\approx7{,}8$. Acétone : pente $(25{,}0-11{,}0)/25=0{,}56$, ordonnée à l'origine $11{,}0-5\times0{,}56\approx8{,}2$ ; les points sont moins bien alignés (selon les points retenus, l'extrapolation donne de 7,4 à 8,6). Prise seule, cette série serait peu précise ; jointe à celle du benzène, elle confirme la valeur. Les deux extrapolations concordent, aux incertitudes de mesure près, sur
+Benzène : les quatre points sont alignés ; entre 5 et 30 g/L la pente est $(14{,}6-8{,}9)/25\approx0{,}23$, d'où une ordonnée à l'origine $8{,}9-5\times0{,}23\approx7{,}8$. Acétone : pente $(25{,}0-11{,}0)/25=0{,}56$, ordonnée à l'origine $11{,}0-5\times0{,}56\approx8{,}2$ ; les points sont moins bien alignés (selon les points retenus, l'extrapolation donne de 7,1 à 8,6 avec les valeurs non arrondies tirées du tableau du sujet). Prise seule, cette série serait peu précise ; jointe à celle du benzène, elle confirme la valeur. Les deux extrapolations concordent, aux incertitudes de mesure près, sur
 
 $$\frac{1}{\bar M}\approx8\times10^{-6}\ \mathrm{mol\,g^{-1}}$$
 
@@ -628,7 +636,7 @@ $$\boxed{\bar M=\bar M_n\approx1{,}3\times10^{5}\ \mathrm{g\,mol^{-1}}}$$
 
 soit environ 1 300 motifs par chaîne. (Un ajustement affine des valeurs du tableau donne 7,85 et 7,89 pour les deux ordonnées à l'origine.) Le facteur $10^{6}$ de l'axe ne doit pas être oublié : une masse molaire inférieure à celle du monomère n'aurait aucun sens.
 
-![Figure 2 — Extrapolation à dilution nulle des mesures du tableau du sujet dans le benzène et dans l'acétone ; les deux droites se rejoignent à l'origine, leurs pentes sont en 10⁻⁶ mol·L·g⁻²](figures/osmometrie-extrapolation-dilution-nulle.svg)
+![Figure 4 — Extrapolation à dilution nulle des mesures du tableau du sujet dans le benzène et dans l'acétone ; les deux droites se rejoignent à l'origine, leurs pentes sont en 10⁻⁶ mol·L·g⁻²](figures/osmometrie-extrapolation-dilution-nulle.svg)
 
 > [!METHODE]
 > Extrapolation à dilution nulle : identifier ordonnée à l'origine et pente, exploiter toutes les séries disponibles, vérifier que la grandeur intrinsèque (ici la masse molaire) est la même pour toutes, puis convertir avec les unités de l'axe.
@@ -646,7 +654,7 @@ soit environ 1 300 motifs par chaîne. (Un ajustement affine des valeurs du tabl
 
 #### Solution
 
-Les pentes lues sont $A_2(\text{benzène})\approx0{,}23\times10^{-6}$ et $A_2(\text{acétone})\approx0{,}56\times10^{-6}\ \mathrm{mol\,L\,g^{-2}}$, de rapport 2,5, conforme à l'indication. Les deux coefficients sont positifs : les deux liquides sont de bons solvants. Le plus grand $A_2$ correspond aux interactions polymère–solvant les plus favorables : **le PMMA est mieux solvaté, donc plus soluble, dans l'acétone**.
+Les pentes lues sont $A_2(\text{benzène})\approx0{,}23\times10^{-6}$ et $A_2(\text{acétone})\approx0{,}56\times10^{-6}\ \mathrm{mol\,L\,g^{-2}}$, de rapport voisin de 2,5, conforme à l'indication : $0{,}56/0{,}23\approx2{,}4$ avec ces lectures entre points extrêmes, 2,5 avec l'ajustement affine des quatre points de chaque série, qui donne les pentes 0,22 et 0,56 portées sur la figure 4. Les deux coefficients sont positifs : les deux liquides sont de bons solvants. Le plus grand $A_2$ correspond aux interactions polymère–solvant les plus favorables : **le PMMA est mieux solvaté, donc plus soluble, dans l'acétone**.
 
 ### Question 5.3.3 — Résultat attendu ?
 
@@ -701,7 +709,7 @@ $$\mathrm{CH_2{=}CH{-}CH{=}CH{-}CO{-}O{-}CH_2{-}CH_2{-}CH{=}CH{-}CH{=}CH_2}$$
 
 Passer par l'alcoolate et le chlorure d'acyle rend la réaction totale et rapide à 0 °C, sans acide qui ferait polymériser les diènes.
 
-![Figure 3 — Structures des composés 3, 4, 5, 6, 8, 9, 10 et 11 de la partie 6 ; coins pleins vers l'avant, hachurés vers l'arrière](figures/intermediaires-3-a-11.svg)
+![Figure 5 — Structures des composés 3, 4, 5, 6, 8, 9, 10 et 11 de la partie 6 ; coins pleins vers l'avant, hachurés vers l'arrière](figures/intermediaires-3-a-11.svg)
 
 > [!JURY]
 > Pour toute la partie organique, le rapport insiste : un composé a souvent plusieurs réactivités, et le choix de l'une d'elles doit être justifié par le contexte ; les justifications demandées sont trop rarement données.
@@ -716,9 +724,9 @@ Passer par l'alcoolate et le chlorure d'acyle rend la réaction totale et rapide
 
 #### Solution
 
-**4** est un isomère de **3** ($\mathrm{C_{11}H_{14}O_2}$) contenant un cyclohexène : c'est le produit d'une **réaction de Diels-Alder intramoléculaire**, cycloaddition [4+2] concertée. Le diène est le motif buta-1,3-diénique de la partie alcool (C8=C9–C10=C11 dans la numérotation de la sténine), le diénophile est la double liaison $\alpha,\beta$ de l'ester, appauvrie en électrons. Les liaisons créées sont C8–C9a et C11–C12 ; la nouvelle double liaison est C9=C10. **4** est donc une lactone bicyclique : un cyclohexène accolé à une $\delta$-lactone (cycle à six chaînons C9a–CO–O–CH₂–CH₂–C8), le carbone C12 portant le groupe vinyle resté intact (figure 3). La structure de **6** confirme ce squelette : chaîne à deux carbones oxygénée sur C8, vinyle sur C12, carbone C9a porteur de l'ancien carbonyle.
+**4** est un isomère de **3** ($\mathrm{C_{11}H_{14}O_2}$) contenant un cyclohexène : c'est le produit d'une **réaction de Diels-Alder intramoléculaire**, cycloaddition [4+2] concertée. Le diène est le motif buta-1,3-diénique de la partie alcool (C8=C9–C10=C11 dans la numérotation de la sténine), le diénophile est la double liaison $\alpha,\beta$ de l'ester, appauvrie en électrons. Les liaisons créées sont C8–C9a et C11–C12 ; la nouvelle double liaison est C9=C10. **4** est donc une lactone bicyclique : un cyclohexène accolé à une $\delta$-lactone (cycle à six chaînons C9a–CO–O–CH₂–CH₂–C8), le carbone C12 portant le groupe vinyle resté intact (figure 5). La structure de **6** confirme ce squelette : chaîne à deux carbones oxygénée sur C8, vinyle sur C12, carbone C9a porteur de l'ancien carbonyle.
 
-Autre produit cyclique **4'** : celui d'une cycloaddition de régiochimie différente, où le diénophile serait la double liaison terminale $\gamma,\delta$ du diénoate (cyclohexène accolé à une lactone à huit chaînons), ou bien celui où les rôles sont échangés, le diénoate servant de diène et une double liaison de la partie alcool de diénophile. Ces voies sont défavorisées : cycle moyen tendu dans le premier cas, diénophile non activé dans le second.
+Autre produit cyclique **4'** : celui d'une cycloaddition de régiochimie différente, où le diénophile serait la double liaison terminale $\gamma,\delta$ du diénoate (cyclohexène accolé à une lactone à huit chaînons), ou bien celui où les rôles sont échangés, le diénoate servant de diène et une double liaison de la partie alcool de diénophile. Ces voies sont défavorisées : cycle moyen tendu dans le premier cas, diénophile non activé dans le second. On peut aussi citer le diastéréo-isomère de **4** (jonction de cycles de configuration relative opposée, issu de l'autre approche endo/exo), que la RMN du brut ne montre pas.
 
 Absence de produit en $\mathrm{C_{22}H_{28}O_4}$ : ce serait le dimère issu d'une cycloaddition **intermoléculaire** entre deux molécules de **3**. La réaction intramoléculaire est cinétiquement très favorisée (les deux partenaires sont maintenus à proximité, le coût entropique d'activation est bien moindre, et la formation de cycles à six chaînons est facile) ; la vitesse de la voie bimoléculaire, proportionnelle au carré de la concentration, est en outre réduite en travaillant en solution diluée.
 
@@ -741,6 +749,10 @@ Adduit : un doublet de l'oxygène du carbonyle de l'ester **3**, site le plus ba
 
 $$\mathrm{R{-}C(OR'){=}\overset{+}{O}{-}\overset{-}{Al}Et_2Cl}$$
 
+La figure 6 dessine les deux structures, doublets non liants et lacune compris ; R et R′ y désignent les deux chaînes diéniques de **3**.
+
+![Figure 6 — À gauche, structure de Lewis du chlorure de diéthylaluminium (lacune sur l'aluminium) ; à droite, adduit avec l'oxygène du carbonyle de l'ester 3](figures/chlorure-diethylaluminium-lewis-adduit.svg)
+
 Rôle : **catalyseur** (acide de Lewis). La complexation rend le système conjugué au carbonyle beaucoup plus pauvre en électrons : elle abaisse l'énergie de la BV du diénophile, réduit l'écart HO(diène)–BV(diénophile) et accélère la cycloaddition, qui se fait à température modérée ; elle renforce aussi la sélectivité (un seul diastéréo-isomère observé).
 
 ### Question 6.4 — Hydrazide 5
@@ -753,7 +765,7 @@ Rôle : **catalyseur** (acide de Lewis). La complexation rend le système conjug
 
 #### Solution
 
-L'hydrazine ouvre la lactone **4** : l'ester cyclique est transformé en hydrazide et libère sa fonction alcool, qui reste attachée à la molécule. **5** ($\mathrm{C_{11}H_{18}N_2O_2}$) est le cyclohexène portant sur C9a le groupe $\mathrm{-CO{-}NH{-}NH_2}$, sur C8 la chaîne $\mathrm{-CH_2CH_2OH}$ et sur C12 le vinyle (figure 3).
+L'hydrazine ouvre la lactone **4** : l'ester cyclique est transformé en hydrazide et libère sa fonction alcool, qui reste attachée à la molécule. **5** ($\mathrm{C_{11}H_{18}N_2O_2}$) est le cyclohexène portant sur C9a le groupe $\mathrm{-CO{-}NH{-}NH_2}$, sur C8 la chaîne $\mathrm{-CH_2CH_2OH}$ et sur C12 le vinyle (figure 5).
 
 Mécanisme en catalyse acide (addition–élimination) :
 
@@ -787,7 +799,7 @@ $$\boxed{(8R,\ 9aS,\ 12S)}$$
 > Règles de Cahn, Ingold et Prelog : comparer les atomes de rang 1, puis les triplets de rang 2, et ainsi de suite en suivant d'abord les branches prioritaires. Si l'atome de plus petite priorité pointe vers l'avant, inverser le sens de rotation lu.
 
 > [!PIEGE]
-> Au carbone lié à l'azote, les deux voisins carbonés du cycle ne se départagent qu'au troisième rang : s'arrêter trop tôt, ou conclure d'après la longueur des chaînes, donne le mauvais descripteur.
+> Au carbone lié à l'azote, les deux voisins carbonés du cycle ne se départagent qu'au quatrième rang (après deux égalités successives) : s'arrêter trop tôt, ou conclure d'après la longueur des chaînes, donne le mauvais descripteur.
 
 ### Question 6.6 — Hydroboration
 
@@ -817,7 +829,7 @@ Nom : **hydroboration**. Dans le THF, le borane, acide de Lewis (lacune sur le b
 
 #### Solution
 
-L'oxydation de l'alkylborane par l'eau oxygénée en milieu basique remplace la liaison C–B par une liaison C–OH, avec rétention. **8** est l'**alcool primaire** $\mathrm{R{-}CH_2{-}CH_2{-}OH}$ : le groupe vinyle de C12 est devenu une chaîne 2-hydroxyéthyle ; l'acétate, le carbamate, la double liaison C9=C10 et les configurations (8R, 9aS, 12S) sont conservés (figure 3). Le bilan est une hydratation anti-Markovnikov de la double liaison terminale.
+L'oxydation de l'alkylborane par l'eau oxygénée en milieu basique remplace la liaison C–B par une liaison C–OH, avec rétention. **8** est l'**alcool primaire** $\mathrm{R{-}CH_2{-}CH_2{-}OH}$ : le groupe vinyle de C12 est devenu une chaîne 2-hydroxyéthyle ; l'acétate, le carbamate, la double liaison C9=C10 et les configurations (8R, 9aS, 12S) sont conservés (figure 5). Le bilan est une hydratation anti-Markovnikov de la double liaison terminale.
 
 Avec l'acide sulfurique dilué, l'hydratation passe par le carbocation le plus stable (secondaire, sur C1) et suit la règle de Markovnikov : **8'** est l'**alcool secondaire** $\mathrm{R{-}CH(OH){-}CH_3}$, isomère de position de **8** (obtenu en mélange de deux épimères en C1). Ces conditions seraient d'ailleurs peu sélectives : hydratation concurrente de C9=C10, hydrolyse de l'acétate.
 
@@ -831,9 +843,9 @@ Avec l'acide sulfurique dilué, l'hydratation passe par le carbocation le plus s
 
 #### Solution
 
-**9** est le méthanesulfonate (mésylate) de l'alcool primaire : $\mathrm{R{-}CH_2{-}CH_2{-}O{-}SO_2{-}CH_3}$, le reste de la molécule étant inchangé (figure 3).
+**9** est le méthanesulfonate (mésylate) de l'alcool primaire : $\mathrm{R{-}CH_2{-}CH_2{-}O{-}SO_2{-}CH_3}$, le reste de la molécule étant inchangé (figure 5).
 
-Mécanisme, analogue à l'acylation d'un alcool par un chlorure d'acyle : l'oxygène de l'alcool attaque le soufre, très électrophile (lié à deux oxygènes et un chlore) ; l'ion chlorure est expulsé ; l'ion alkyloxonium formé est déprotoné par la triéthylamine. C'est un mécanisme d'**addition–élimination** (substitution nucléophile sur le soufre).
+Mécanisme, analogue à l'acylation d'un alcool par un chlorure d'acyle : l'oxygène de l'alcool attaque le soufre, très électrophile (lié à deux oxygènes et un chlore) ; l'ion chlorure est expulsé ; l'ion alkyloxonium formé est déprotoné par la triéthylamine. C'est un mécanisme d'**addition–élimination** (substitution nucléophile sur le soufre), la réponse attendue par analogie avec les chlorures d'acyle. En toute rigueur, avec le chlorure de mésyle et une amine tertiaire, la voie établie est une élimination–addition : la triéthylamine arrache un proton du méthyle, l'ion chlorure part et il se forme un sulfène $\mathrm{CH_2{=}SO_2}$, sur lequel l'alcool s'additionne ensuite. Le bilan et le rôle de base de la triéthylamine sont les mêmes.
 
 $$\mathrm{R'OH+CH_3SO_2Cl+NEt_3\longrightarrow R'OSO_2CH_3+Et_3NH^+Cl^-}$$
 
@@ -854,7 +866,7 @@ Rôle de la triéthylamine : **base** (amine tertiaire, $pK_a\approx11$ pour l'i
 
 Dans la soude, l'azote du carbamate, dont le proton est rendu acide par le carbonyle voisin, est déprotoné (équilibre déplacé par la cyclisation) et substitue le mésylate par une $\mathrm{S_N2}$ **intramoléculaire** : fermeture d'un cycle à cinq chaînons N–C2–C1–C12–C9a, le cycle B (pyrrolidine). Simultanément l'ester acétique est saponifié. **10** ($\mathrm{C_{12}H_{19}NO_3}$, formule vérifiée) est le bicycle cyclohexène–pyrrolidine dont l'azote porte $\mathrm{-CO_2CH_3}$ et dont C8 porte la chaîne $\mathrm{-CH_2CH_2OH}$.
 
-Le réactif de Jones oxyde l'alcool primaire en **acide carboxylique** : **11** ($\mathrm{C_{12}H_{17}NO_4}$) porte sur C8 le groupe $\mathrm{-CH_2{-}CO_2H}$ ; le singulet vers 12 ppm est le proton très déblindé de $\mathrm{CO_2H}$. La double liaison C9=C10 et le carbamate résistent à ces conditions (figure 3).
+Le réactif de Jones oxyde l'alcool primaire en **acide carboxylique** : **11** ($\mathrm{C_{12}H_{17}NO_4}$) porte sur C8 le groupe $\mathrm{-CH_2{-}CO_2H}$ ; le singulet vers 12 ppm est le proton très déblindé de $\mathrm{CO_2H}$. La double liaison C9=C10 et le carbamate résistent à ces conditions (figure 5).
 
 ## Deuxième partie · 7. Étape clé : la réaction d'iodolactonisation
 
@@ -867,7 +879,9 @@ Le réactif de Jones oxyde l'alcool primaire en **acide carboxylique** : **11** 
 
 Le diiode, polarisable, se polarise à l'approche de la double liaison riche en électrons. Les électrons $\pi$ de l'alcène attaquent un atome d'iode pendant que la liaison I–I se rompt de façon hétérolytique (départ d'un ion iodure) et qu'un doublet de ce même iode se rabat sur le second carbone : il se forme en une étape un cycle à trois chaînons, l'**ion iodonium ponté**, dans lequel l'iode porte la charge formelle $+$.
 
-Pour **12**, les deux carbones du pont sont le $\mathrm{CH}$ et le $\mathrm{CH_2}$ de l'ancien groupe vinyle, le premier portant le reste $\mathrm{-CH(CH_3){-}CH_2{-}CO_2H}$ ; l'ion iodure libéré est le contre-ion. L'étape est renversable ; l'intermédiaire est le même que dans la dihalogénation des alcènes.
+Pour **12**, les deux carbones du pont sont le $\mathrm{CH}$ et le $\mathrm{CH_2}$ de l'ancien groupe vinyle, le premier portant le reste $\mathrm{-CH(CH_3){-}CH_2{-}CO_2H}$ ; l'ion iodure libéré est le contre-ion. L'étape est renversable ; l'intermédiaire est le même que dans la dihalogénation des alcènes. La figure 7 donne la structure de l'ion et les trois flèches du mécanisme.
+
+![Figure 7 — Formation de l'ion iodonium ponté à partir de l'alcène 12 et du diiode ; flèches courbes a, b et c expliquées sous le schéma](figures/ion-iodonium-ponte-mecanisme.svg)
 
 ### Question 7.2 — Lactone 13 et produits concurrents
 
@@ -902,9 +916,9 @@ Argument en faveur de **13** et **13'** : la cyclisation est **intramoléculaire
 
 #### Solution
 
-Dans **11**, le carboxyle est porté par le $\mathrm{CH_2}$ fixé sur C8 et la double liaison est C9=C10. L'oxygène attaque C9, ce qui ferme une $\gamma$-lactone à cinq chaînons (O–C9–C8–CH₂–CO), l'attaque sur C10 conduisant à un cycle ponté moins favorable ; l'iode reste sur C10. **14** ($\mathrm{C_{12}H_{16}INO_4}$) est donc l'iodolactone tricyclique : lactone accolée au cycle A par la liaison C8–C9, nécessairement en jonction *cis* (l'oxygène arrive sur la face qui porte la chaîne de C8), et iode sur C10 en **trans** de la liaison C9–O (addition anti). Le cycle B et le carbamate sont inchangés (figure 4).
+Dans **11**, le carboxyle est porté par le $\mathrm{CH_2}$ fixé sur C8 et la double liaison est C9=C10. L'oxygène attaque C9, ce qui ferme une $\gamma$-lactone à cinq chaînons (O–C9–C8–CH₂–CO), l'attaque sur C10 conduisant à un cycle ponté moins favorable ; l'iode reste sur C10. **14** ($\mathrm{C_{12}H_{16}INO_4}$) est donc l'iodolactone tricyclique : lactone accolée au cycle A par la liaison C8–C9, nécessairement en jonction *cis* (l'oxygène arrive sur la face qui porte la chaîne de C8), et iode sur C10 en **trans** de la liaison C9–O (addition anti). Le cycle B et le carbamate sont inchangés (figure 8).
 
-![Figure 4 — Structures des composés 14, 15, 16, 17, 18 et 20 des parties 7 et 8 ; coins pleins vers l'avant, hachurés vers l'arrière](figures/intermediaires-14-a-20.svg)
+![Figure 8 — Structures des composés 14, 15, 16, 17, 18 et 20 des parties 7 et 8 ; coins pleins vers l'avant, hachurés vers l'arrière](figures/intermediaires-14-a-20.svg)
 
 ### Question 7.4 — Élimination par le DBU
 
@@ -918,7 +932,7 @@ Dans **11**, le carboxyle est porté par le $\mathrm{CH_2}$ fixé sur C8 et la d
 
 Le DBU, amidine encombrée, est une base forte et peu nucléophile (son acide conjugué, un ion amidinium, est stabilisé par mésomérie). Il provoque une **$\beta$-élimination E2** de HI : arrachement d'un proton en $\beta$ de l'iode, formation de la double liaison et départ de l'iodure, de façon concertée et **anti-périplanaire**. Deux positions $\beta$ existent. Sur C9, l'hydrogène est en *cis* de l'iode (puisque l'oxygène est en *trans*) : il ne peut pas se placer en anti. Sur C11, un des deux hydrogènes est en anti de l'iode : c'est lui qui part.
 
-**15** ($\mathrm{C_{12}H_{15}NO_4}$) est la lactone insaturée possédant la double liaison **C10=C11** : l'oxygène de la lactone, sur C9, est en position allylique (figure 4). Bilan des deux étapes : la double liaison a été déplacée de C9=C10 à C10=C11 et un oxygène a été installé sur C9, sur la même face que la chaîne de C8.
+**15** ($\mathrm{C_{12}H_{15}NO_4}$) est la lactone insaturée possédant la double liaison **C10=C11** : l'oxygène de la lactone, sur C9, est en position allylique (figure 8). Bilan des deux étapes : la double liaison a été déplacée de C9=C10 à C10=C11 et un oxygène a été installé sur C9, sur la même face que la chaîne de C8.
 
 Influence de l'halogène : l'étape exige un bon groupe partant. La liaison C–I est la plus longue, la plus faible et la plus polarisable des liaisons C–X, et l'ion iodure est le meilleur nucléofuge (base la plus faible) : la vitesse d'élimination décroît dans l'ordre I > Br > Cl. Avec le brome ou le chlore, il faudrait des conditions plus dures.
 
@@ -935,7 +949,7 @@ Influence de l'halogène : l'étape exige un bon groupe partant. La liaison C–
 
 #### Solution
 
-Le tétrahydruroaluminate de lithium réduit la lactone (ester cyclique) en **diol** : le carbone du carbonyle devient un alcool primaire, l'oxygène intracyclique un alcool secondaire. **16** ($\mathrm{C_{12}H_{19}NO_4}$) porte sur C8 la chaîne $\mathrm{-CH_2CH_2OH}$ et sur C9 un hydroxyle secondaire **allylique** (double liaison C10=C11), en *cis* de la chaîne ; le carbamate, moins électrophile, n'est pas touché à –78 °C (figure 4).
+Le tétrahydruroaluminate de lithium réduit la lactone (ester cyclique) en **diol** : le carbone du carbonyle devient un alcool primaire, l'oxygène intracyclique un alcool secondaire. **16** ($\mathrm{C_{12}H_{19}NO_4}$) porte sur C8 la chaîne $\mathrm{-CH_2CH_2OH}$ et sur C9 un hydroxyle secondaire **allylique** (double liaison C10=C11), en *cis* de la chaîne ; le carbamate, moins électrophile, n'est pas touché à –78 °C (figure 8).
 
 IR : la bande large et intense vers 3300 cm⁻¹ est la vibration d'élongation des liaisons O–H, élargie et abaissée par les liaisons hydrogène (alcools associés). La bande C=O de la lactone (vers 1770 cm⁻¹) a disparu, celle du carbamate (vers 1700 cm⁻¹) subsiste.
 
@@ -972,7 +986,7 @@ En milieu très acide, l'hydroxyle secondaire protoné part sous forme d'eau en 
 
 #### Solution
 
-La formule $\mathrm{C_{18}H_{33}NO_4Si}$ correspond à l'introduction d'un seul groupe *tert*-butyldiméthylsilyle ($\mathrm{C_{12}H_{19}NO_4}$ – H + $\mathrm{SiC_6H_{15}}$). La réaction étant très sensible à l'encombrement, c'est l'**alcool primaire**, le plus dégagé, qui réagit : **17** porte sur C8 la chaîne $\mathrm{-CH_2CH_2{-}O{-}Si(CH_3)_2C(CH_3)_3}$ et conserve l'hydroxyle secondaire allylique libre sur C9 (figure 4).
+La formule $\mathrm{C_{18}H_{33}NO_4Si}$ correspond à l'introduction d'un seul groupe *tert*-butyldiméthylsilyle ($\mathrm{C_{12}H_{19}NO_4}$ – H + $\mathrm{SiC_6H_{15}}$). La réaction étant très sensible à l'encombrement, c'est l'**alcool primaire**, le plus dégagé, qui réagit : **17** porte sur C8 la chaîne $\mathrm{-CH_2CH_2{-}O{-}Si(CH_3)_2C(CH_3)_3}$ et conserve l'hydroxyle secondaire allylique libre sur C9 (figure 8).
 
 Mécanisme : substitution nucléophile sur le silicium. L'oxygène de l'alcool attaque le silicium, électrophile et capable de devenir pentacoordiné ; l'ion chlorure part ; la triéthylamine arrache le proton de l'ion oxonium (ou assiste l'alcool pendant l'attaque).
 
@@ -1005,7 +1019,7 @@ $$\mathrm{{}^{-}CH{-}C({=}O){-}O{-}\ \longleftrightarrow\ CH{=}C(O^{-}){-}O{-}}$
 C'est la seconde, la plus représentative (charge sur l'atome le plus électronégatif), que l'on retient : C13 y est trigonal plan.
 
 > [!JURY]
-> Le rapport rappelle que la basicité et la nucléophilie du LDA devraient être connues : base très forte, encombrée, non nucléophile.
+> Le rapport rappelle que la basicité et la nucléophilie du LDA devraient être connues. À savoir : base très forte, encombrée, non nucléophile.
 
 ### Question 8.2 — Nombre d'équivalents de LDA
 
@@ -1026,7 +1040,7 @@ Il faut au moins **deux équivalents**. L'hydroxyle ($pK_a\approx16$) est beauco
 
 #### Solution
 
-L'énolate réagit par son carbone C13 sur l'iodure de méthyle ($\mathrm{S_N2}$) ; l'hydrolyse reprotone l'alcoolate. **20** ($\mathrm{C_{18}H_{27}NO_5}$) est la lactone $\alpha$-méthylée : C13 porte un groupe méthyle et un hydrogène, la fonction alcool primaire est intacte (figure 4).
+L'énolate réagit par son carbone C13 sur l'iodure de méthyle ($\mathrm{S_N2}$) ; l'hydrolyse reprotone l'alcoolate. **20** ($\mathrm{C_{18}H_{27}NO_5}$) est la lactone $\alpha$-méthylée : C13 porte un groupe méthyle et un hydrogène, la fonction alcool primaire est intacte (figure 8).
 
 C13 devient un nouveau centre stéréogène alors que les six autres sont fixés : **deux** isomères sont possibles, qui diffèrent par la configuration du seul C13. Ce sont des **diastéréo-isomères** (épimères), a priori formés en proportions inégales.
 
@@ -1041,7 +1055,9 @@ C13 devient un nouveau centre stéréogène alors que les six autres sont fixés
 
 Iodure de méthyle : en ne considérant que la liaison C–I, on a deux OM, (4) liante $\sigma$ et (5) antiliante $\sigma^{*}$, pour les **deux électrons** de la liaison. (4) est doublement occupée, (5) est vide.
 
-On remplit par énergie croissante en respectant le principe de Pauli (deux électrons de spins opposés par OM).
+On remplit par énergie croissante en respectant le principe de Pauli (deux électrons de spins opposés par OM). La figure 9 reprend le diagramme du sujet ainsi rempli.
+
+![Figure 9 — Diagramme d'orbitales moléculaires du sujet recopié et rempli : quatre électrons π pour l'énolate, deux électrons pour la liaison C–I ; lobes schématiques](figures/diagramme-om-enolate-iodomethane-rempli.svg)
 
 ### Question 8.5 — Orbitales frontières
 
@@ -1067,9 +1083,9 @@ L'interaction la plus stabilisante est celle des deux orbitales frontières les 
 
 #### Solution
 
-Dans la HO (2) de l'énolate, le coefficient le plus gros est sur le carbone terminal (avec un lobe de part et d'autre du plan de la molécule) : c'est lui qui réagit, d'où la C-alkylation. Dans la BV (5) de $\mathrm{CH_3I}$, le lobe le plus développé est sur le carbone, **à l'opposé de l'iode**. Le recouvrement est maximal lorsque ce lobe pointe vers un lobe de l'orbitale p du carbone de l'énolate, dans son axe : le carbone du méthyle arrive **perpendiculairement au plan de l'énolate**, à la verticale du carbone terminal, et les trois atomes C(énolate)···C–I sont **alignés**, l'iode du côté opposé. C'est la géométrie d'une $\mathrm{S_N2}$ avec attaque dorsale (figure 5, à gauche).
+Dans la HO (2) de l'énolate, le coefficient le plus gros est sur le carbone terminal (avec un lobe de part et d'autre du plan de la molécule) : c'est lui qui réagit, d'où la C-alkylation. Dans la BV (5) de $\mathrm{CH_3I}$, le lobe le plus développé est sur le carbone, **à l'opposé de l'iode**. Le recouvrement est maximal lorsque ce lobe pointe vers un lobe de l'orbitale p du carbone de l'énolate, dans son axe : le carbone du méthyle arrive **perpendiculairement au plan de l'énolate**, à la verticale du carbone terminal, et les trois atomes C(énolate)···C–I sont **alignés**, l'iode du côté opposé. C'est la géométrie d'une $\mathrm{S_N2}$ avec attaque dorsale (figure 10, à gauche).
 
-![Figure 5 — À gauche, approche de CH₃–I sur le carbone de l'énolate modèle (recouvrement HO–BV) ; à droite, projection de Newman de 19 selon C13–C11 et approche menant à 20](figures/alkylation-enolate-orbitales-newman.svg)
+![Figure 10 — À gauche, approche de CH₃–I sur le carbone de l'énolate modèle (recouvrement HO–BV) ; à droite, projection de Newman de 19 selon C13–C11 et approche menant à 20](figures/alkylation-enolate-orbitales-newman.svg)
 
 ### Question 8.7 — Projection de Newman de 19
 
@@ -1086,7 +1102,7 @@ On regarde de C13 (devant) vers C11 (derrière).
 - C13, trigonal, est au centre : ses deux substituants, le carbone de l'énolate (lié à $\mathrm{O^-}$ et à l'oxygène du cycle) et l'hydrogène, sont dans le plan du cycle C, qui contient aussi l'axe de visée ; en projection ils sont donc diamétralement opposés, sur la trace horizontale de ce plan. L'orbitale p de C13 est perpendiculaire à ce plan : ses deux lobes sont verticaux.
 - C11, tétragonal, est figuré par le cercle. C10 appartient au cycle plan : sa liaison est éclipsée avec celle du carbone de l'énolate. Les deux autres substituants sont à $\pm120^\circ$, de part et d'autre du plan du cycle : $\mathrm{R^{12}}$ d'un côté, l'hydrogène de l'autre.
 
-Avec la configuration dessinée par le sujet (liaison C11–C13 vers l'arrière, $\mathrm{R^{12}}$ dans le plan du dessin), en plaçant le carbone de l'énolate à gauche, $\mathrm{R^{12}}$ est en haut à droite et H en bas à droite (figure 5, à droite ; vérifié sur un modèle tridimensionnel).
+Avec la configuration dessinée par le sujet (liaison C11–C13 vers l'arrière, $\mathrm{R^{12}}$ dans le plan du dessin), en plaçant le carbone de l'énolate à gauche, $\mathrm{R^{12}}$ est en haut à droite et H en bas à droite (figure 10, à droite ; vérifié sur un modèle tridimensionnel).
 
 > [!METHODE]
 > Newman avec un carbone trigonal en avant : ses deux substituants apparaissent opposés, sur la trace du plan ; l'orbitale p est tracée perpendiculairement. Placer ensuite les trois substituants du carbone arrière, dont celui qui appartient au cycle, éclipsé.
@@ -1106,7 +1122,7 @@ Avec la configuration dessinée par le sujet (liaison C11–C13 vers l'arrière,
 
 D'après la question 8.6, l'iodure de méthyle aborde C13 perpendiculairement au plan du cycle C, par l'une ou l'autre face.
 
-- Approche par la face qui porte $\mathrm{R^{12}}$ (par le haut de la figure 5) : le méthyle entrant rencontre le substituant volumineux $\mathrm{R^{12}}$ (le cycle A et le cycle B). Elle conduit à l'épimère où $\mathrm{CH_3}$ et $\mathrm{R^{12}}$ sont en *cis*.
+- Approche par la face qui porte $\mathrm{R^{12}}$ (par le haut de la figure 10) : le méthyle entrant rencontre le substituant volumineux $\mathrm{R^{12}}$ (le cycle A et le cycle B). Elle conduit à l'épimère où $\mathrm{CH_3}$ et $\mathrm{R^{12}}$ sont en *cis*.
 - Approche par la face opposée (par le bas) : elle ne rencontre que l'hydrogène de C11. Elle conduit à l'épimère où $\mathrm{CH_3}$ est en **trans** de $\mathrm{R^{12}}$ (et en *cis* de H11).
 
 Sous contrôle cinétique, l'approche la moins encombrée a l'état de transition le plus bas : c'est la seconde. L'état de transition se dessine sur la même projection : C13 au centre, ses liaisons vers le carbone de l'énolate (à gauche) et vers H (à droite) encore proches de l'horizontale ; sous C13, à la verticale, la liaison partielle C13···$\mathrm{CH_3}$, prolongée par la liaison partielle $\mathrm{CH_3}$···I, les trois atomes alignés ; $\mathrm{R^{12}}$ en haut à droite, loin du réactif. Le produit **20** a donc son méthyle en trans de C12 : c'est bien la configuration de C13 dans la sténine (méthyle représenté en coin plein sur la figure 1 du sujet, la liaison C11–C13 étant vers l'arrière).
@@ -1121,7 +1137,7 @@ Sous contrôle cinétique, l'approche la moins encombrée a l'état de transitio
 
 #### Solution
 
-Le modèle prévoit une diastéréosélectivité totale en faveur de l'épimère à méthyle trans de $\mathrm{R^{12}}$ ; l'expérience donne un isomère unique, de la configuration voulue pour la sténine : le modèle, fondé sur le seul recouvrement frontalier principal et sur la gêne stérique du substituant voisin, est validé qualitativement. Il n'était pas nécessaire d'invoquer des recouvrements secondaires.
+Le modèle prévoit une nette préférence pour l'épimère à méthyle trans de $\mathrm{R^{12}}$ ; l'expérience donne un isomère unique, de la configuration voulue pour la sténine : le modèle, fondé sur le seul recouvrement frontalier principal et sur la gêne stérique du substituant voisin, est validé qualitativement. Il n'était pas nécessaire d'invoquer des recouvrements secondaires.
 
 Hypothèses discutables : la **planéité du cycle C** (un cycle à cinq chaînons accolé adopte une conformation enveloppe, qui modifie l'orientation de $\mathrm{R^{12}}$ et de $\mathrm{R^{9}}$ par rapport aux deux faces) ; le remplacement de l'énolate de lactone par celui de l'éthanal (l'oxygène intracyclique modifie les coefficients) ; l'oubli du cation lithium, des agrégats et de l'alcoolate voisin ; enfin le **contrôle cinétique** lui-même : le produit garde un hydrogène acide sur C13 et pourrait s'épimériser en présence de base, auquel cas la sélectivité observée refléterait la stabilité relative des épimères.
 
@@ -1137,11 +1153,11 @@ Hypothèses discutables : la **planéité du cycle C** (un cycle à cinq chaîno
 
 #### Solution
 
-L'oxydation de Swern transforme l'alcool primaire en **aldéhyde** sans aller plus loin : **21** ($\mathrm{C_{18}H_{25}NO_5}$) porte sur C8 la chaîne $\mathrm{-CH_2{-}CHO}$ ; lactone méthylée, groupe allyle et carbamate sont inchangés (figure 6).
+L'oxydation de Swern transforme l'alcool primaire en **aldéhyde** sans aller plus loin : **21** ($\mathrm{C_{18}H_{25}NO_5}$) porte sur C8 la chaîne $\mathrm{-CH_2{-}CHO}$ ; lactone méthylée, groupe allyle et carbamate sont inchangés (figure 11).
 
 RMN : le signal vers 10 ppm intégrant pour 1 H est le proton aldéhydique, très déblindé par l'anisotropie et l'effet attracteur du carbonyle (son couplage avec le $\mathrm{CH_2}$ voisin est faible, d'où l'aspect de singulet). L'absence de modification par $\mathrm{D_2O}$ montre que ce n'est pas un proton échangeable : il n'y a plus d'hydroxyle (l'alcool a été entièrement oxydé) ni de $\mathrm{CO_2H}$.
 
-![Figure 6 — Structures des composés 21, 23, 24, 26, 27 et 28 des parties 9 et 10 ; coins pleins vers l'avant, hachurés vers l'arrière](figures/intermediaires-21-a-28.svg)
+![Figure 11 — Structures des composés 21, 23, 24, 26, 27 et 28 des parties 9 et 10 ; coins pleins vers l'avant, hachurés vers l'arrière](figures/intermediaires-21-a-28.svg)
 
 ### Question 9.2 — Autre méthode d'oxydation
 
@@ -1166,7 +1182,7 @@ $$\mathrm{R{-}CH_2{-}CHO+H_2O\rightleftharpoons R{-}CH_2{-}CH(OH)_2}$$
 Cet hydrate possède, comme un alcool, un hydrogène sur le carbone porteur d'hydroxyle : l'oxydant l'oxyde par le même mécanisme qu'un alcool (formation d'un ester chromique, puis élimination) et le transforme en acide carboxylique **21'**. Bien que l'équilibre d'hydratation soit peu favorable, la consommation de l'hydrate le déplace continuellement : tout l'aldéhyde finit par être oxydé. En milieu anhydre, l'hydrate ne peut pas se former et l'oxydation s'arrête à l'aldéhyde.
 
 > [!JURY]
-> Le rapport note que l'action de l'eau sur les dérivés carbonylés a déstabilisé les candidats : l'hydrate d'aldéhyde est un diol géminé, oxydable comme un alcool.
+> Le rapport note que l'action de l'eau sur les dérivés carbonylés a déstabilisé les candidats. À retenir (le rapport ne le détaille pas) : l'hydrate d'aldéhyde est un diol géminé, oxydable comme un alcool.
 
 ### Question 9.4 — Préparation du réactif 22
 
@@ -1202,7 +1218,7 @@ L'ylure réagit sur l'aldéhyde **21** : c'est une **réaction de Wittig**, qui 
 
 $$\mathrm{R{-}CH_2{-}CHO+Ph_3P{=}CH{-}CO_2Et\longrightarrow R{-}CH_2{-}CH{=}CH{-}CO_2Et+Ph_3P{=}O}$$
 
-**23**, majoritaire, est l'isomère **E** (un ylure stabilisé conduit préférentiellement à l'alcène E, le plus stable) ; **23'**, minoritaire, est l'isomère **Z** (figure 6 pour **23**). Ils sont **diastéréo-isomères** (stéréo-isomères de configuration Z/E autour de la double liaison). Aucun autre centre n'est modifié : les conditions sont neutres.
+**23**, majoritaire, est l'isomère **E** (un ylure stabilisé conduit préférentiellement à l'alcène E, le plus stable) ; **23'**, minoritaire, est l'isomère **Z** (figure 11 pour **23**). Ils sont **diastéréo-isomères** (stéréo-isomères de configuration Z/E autour de la double liaison). Aucun autre centre n'est modifié : les conditions sont neutres.
 
 Distinction en RMN : la constante de couplage ${}^{3}J$ entre les deux protons éthyléniques vaut 15 à 16 Hz pour l'isomère E et 10 à 12 Hz pour l'isomère Z ; les déplacements chimiques diffèrent aussi (proton en $\beta$ vers 6,9 ppm pour E, vers 6,2 ppm pour Z). Le rapport 4:1 se lit sur les intégrations des signaux correspondants.
 
@@ -1216,7 +1232,7 @@ Distinction en RMN : la constante de couplage ${}^{3}J$ entre les deux protons �
 
 #### Solution
 
-La formule de **24**, $\mathrm{C_{22}H_{33}NO_6}$, compte deux hydrogènes de plus que **23**, et il ne reste que trois protons vinyliques, ceux du groupe allyle : la double liaison conjuguée à l'ester a été réduite, pas le carbonyle. **24** porte sur C8 la chaîne saturée $\mathrm{-CH_2{-}CH_2{-}CH_2{-}CO_2Et}$ (figure 6). Les deux isomères **23** et **23'** donnent le même produit, d'où la tache unique.
+La formule de **24**, $\mathrm{C_{22}H_{33}NO_6}$, compte deux hydrogènes de plus que **23**, et il ne reste que trois protons vinyliques, ceux du groupe allyle : la double liaison conjuguée à l'ester a été réduite, pas le carbonyle. **24** porte sur C8 la chaîne saturée $\mathrm{-CH_2{-}CH_2{-}CH_2{-}CO_2Et}$ (figure 11). Les deux isomères **23** et **23'** donnent le même produit, d'où la tache unique.
 
 C'est une **addition 1,4** (addition conjuguée, de type Michael) de l'ion hydrure. Mécanisme : l'hydrure attaque le carbone en $\beta$ de l'ester ; les électrons $\pi$ se délocalisent jusqu'à l'oxygène et il se forme un **énolate** d'ester ; à l'hydrolyse, l'énolate est protoné sur le carbone $\alpha$ (ou sur l'oxygène, l'énol se tautomérisant ensuite) et donne l'ester saturé.
 
@@ -1250,7 +1266,7 @@ Non. $\mathrm{LiAlH_4}$ est un donneur d'hydrure puissant et peu sélectif : il 
 
 #### Solution
 
-L'iodure de triméthylsilyle clive le carbamate de méthyle selon le schéma 4 : le silicium, oxophile, se fixe sur l'oxygène du carbonyle ; l'ion iodure attaque alors le méthyle par $\mathrm{S_N2}$ (départ d'iodométhane) ; le carbamate de silyle obtenu se décompose en perdant du dioxyde de carbone. **25** ($\mathrm{C_{20}H_{31}NO_4}$) est l'**amine secondaire** correspondante : l'azote du cycle B porte un hydrogène à la place de $\mathrm{-CO_2CH_3}$ ; l'ester éthylique, la lactone et le groupe allyle sont conservés.
+L'iodure de triméthylsilyle clive le carbamate de méthyle selon le schéma 4 : le silicium, oxophile, se fixe sur l'oxygène du carbonyle ; l'ion iodure attaque alors le méthyle par $\mathrm{S_N2}$ (départ d'iodométhane) ; le carbamate de silyle obtenu, $\mathrm{R_2N{-}CO{-}O{-}SiMe_3}$, est très fragile : la moindre source de protons (traces d'eau ou d'acide iodhydrique) le convertit en acide carbamique, qui perd aussitôt du dioxyde de carbone. Conformément au schéma 4, on écrit le produit sous la forme de l'amine libre. **25** ($\mathrm{C_{20}H_{31}NO_4}$) est l'**amine secondaire** correspondante : l'azote du cycle B porte un hydrogène à la place de $\mathrm{-CO_2CH_3}$ ; l'ester éthylique, la lactone et le groupe allyle sont conservés.
 
 ### Question 9.10 — Lactame 26
 
@@ -1262,7 +1278,7 @@ L'iodure de triméthylsilyle clive le carbamate de méthyle selon le schéma 4 :
 
 #### Solution
 
-À 90 °C, l'amine secondaire réagit sur l'ester éthylique placé au bout de la chaîne à quatre carbones de C8 : **amidification intramoléculaire** avec perte d'éthanol, qui ferme le cycle D à sept chaînons (N–CO–C5–C6–C7–C8–C9a). **26** ($\mathrm{C_{18}H_{25}NO_3}$) est le lactame tétracyclique : il possède les cycles A, B, C et D de la sténine, avec un carbonyle sur C4 et un groupe allyle sur C9 (figure 6).
+À 90 °C, l'amine secondaire réagit sur l'ester éthylique placé au bout de la chaîne à quatre carbones de C8 : **amidification intramoléculaire** avec perte d'éthanol, qui ferme le cycle D à sept chaînons (N–CO–C5–C6–C7–C8–C9a). **26** ($\mathrm{C_{18}H_{25}NO_3}$) est le lactame tétracyclique : il possède les cycles A, B, C et D de la sténine, avec un carbonyle sur C4 et un groupe allyle sur C9 (figure 11).
 
 Mécanisme (addition–élimination, catalyse acide) :
 
@@ -1298,7 +1314,7 @@ Le tétraoxyde d'osmium réalise la **syn-dihydroxylation** de la double liaison
 
 #### Solution
 
-Le periodate coupe la liaison C–C du diol **26'** : le carbone secondaire devient un aldéhyde, le carbone terminal part sous forme de méthanal. **27** ($\mathrm{C_{17}H_{23}NO_4}$) porte sur C9 la chaîne $\mathrm{-CH_2{-}CHO}$ (figure 6).
+Le periodate coupe la liaison C–C du diol **26'** : le carbone secondaire devient un aldéhyde, le carbone terminal part sous forme de méthanal. **27** ($\mathrm{C_{17}H_{23}NO_4}$) porte sur C9 la chaîne $\mathrm{-CH_2{-}CHO}$ (figure 11).
 
 $$\mathrm{R{-}CH_2{-}CH(OH){-}CH_2OH+IO_4^-\longrightarrow R{-}CH_2{-}CHO+HCHO+IO_3^-+H_2O}$$
 
@@ -1325,7 +1341,7 @@ L'**ozonolyse** : action de l'ozone à –78 °C dans le dichlorométhane, puis 
 
 #### Solution
 
-Par analogie avec l'acétalisation d'un aldéhyde par l'éthane-1,2-diol, l'aldéhyde **27** est transformé en **dithioacétal cyclique** (1,3-dithiolane) : dans **28** ($\mathrm{C_{19}H_{27}NO_3S_2}$), C9 porte $\mathrm{-CH_2{-}CH(S{-}CH_2{-}CH_2{-}S)}$, le carbone de l'ancien carbonyle étant inclus dans un cycle à cinq chaînons avec les deux soufres (figure 6). Le lactame et la lactone, bien moins électrophiles, ne réagissent pas.
+Par analogie avec l'acétalisation d'un aldéhyde par l'éthane-1,2-diol, l'aldéhyde **27** est transformé en **dithioacétal cyclique** (1,3-dithiolane) : dans **28** ($\mathrm{C_{19}H_{27}NO_3S_2}$), C9 porte $\mathrm{-CH_2{-}CH(S{-}CH_2{-}CH_2{-}S)}$, le carbone de l'ancien carbonyle étant inclus dans un cycle à cinq chaînons avec les deux soufres (figure 11). Le lactame et la lactone, bien moins électrophiles, ne réagissent pas.
 
 Mécanisme (catalyse par l'APTS) :
 
