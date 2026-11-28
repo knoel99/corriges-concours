@@ -1,0 +1,110 @@
+{
+  "slug": "banque-pt_pt_physique-b---chimie_2017",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Chimie",
+    "annee": 2017
+  },
+  "questions": 50,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2017/ph_b_ch_2017_pt.pdf",
+    "sujet_sha256": "91a56cc9a4859a5a00d3aa749e9767e71ec0b0fc746d0deaee676f681b3c417d",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_phys_b_ecrit_2017.pdf",
+    "rapport_sha256": "6340b32bac0aa6690c3b9741fdb047d0e662d0a59a57c91ba324ec240bc1a1eb"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A-1.a",
+      "A-1.b",
+      "A-1.c",
+      "A-2.a",
+      "A-2.b",
+      "A-2.c",
+      "A-3.a",
+      "A-3.b",
+      "A-3.c",
+      "A-3.d",
+      "A-4.a",
+      "A-4.b",
+      "A-4.c",
+      "A-4.d",
+      "A-4.e",
+      "B-1.a",
+      "B-1.b",
+      "B-1.c",
+      "B-1.d",
+      "B-1.e",
+      "B-1.f",
+      "B-1.g",
+      "B-2.a",
+      "B-2.b",
+      "B-2.c",
+      "B-2.d",
+      "B-2.e",
+      "B-2.f",
+      "B-2.g",
+      "B-2.h",
+      "B-2.i",
+      "B-2.j",
+      "B-2.k",
+      "B-3.a",
+      "B-3.b",
+      "B-3.c",
+      "B-3.d",
+      "C-1.a",
+      "C-1.b",
+      "C-2.a",
+      "C-2.b",
+      "C-2.c",
+      "C-2.d",
+      "C-2.e",
+      "C-3.a",
+      "C-3.b",
+      "C-3.c",
+      "C-3.d",
+      "C-3.e",
+      "C-3.f"
+    ],
+    "precision": "Sujet de 12 pages PDF lu en entier (page de garde, documents et énoncé p. 2 à 10, deux dernières pages blanches) ; 50 questions repérées de A-1.a à C-3.f (15 en partie A, 22 en partie B, 13 en partie C), toutes traitées. Rapport commun à Physique B de 5 pages, partie chimie p. 1. Lectures graphiques sur le document 4 : demi-vie de 13 h à une heure près (A-3.a), fractions 0,25 et 0,12 (A-3.b). Le paramètre de maille « 528 nm » de l'énoncé est lu 528 pm (B-1.e). La constante de Faraday (B-3.d), le produit ionique de l'eau (C-3.a) et la constante des gaz parfaits (ordre de grandeur en B-2.i) ne sont pas fournis par l'énoncé : valeurs usuelles signalées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/maille-cfc-cuivre.svg",
+      "question": "A-4.a",
+      "legende": "Maille cubique à faces centrées du cuivre et contact des atomes sur la diagonale d'une face."
+    },
+    {
+      "fichier": "figures/sites-tetraedriques-sulfure.svg",
+      "question": "B-1.c",
+      "legende": "Réseau cubique à faces centrées des ions sulfure et ses huit sites tétraédriques."
+    },
+    {
+      "fichier": "figures/courbes-j-e-raffinage.svg",
+      "question": "B-3.a",
+      "legende": "Courbes densité de courant-potentiel du raffinage, demi-réactions et points de fonctionnement des deux électrodes (tracé qualitatif)."
+    },
+    {
+      "fichier": "figures/echelle-potentiels-cuivre-iode.svg",
+      "question": "C-2.b",
+      "legende": "Échelle des potentiels standard des couples du cuivre, de l'iode et du thiosulfate."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 50 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées, lectures du document 4 contrôlées sur le PDF, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
