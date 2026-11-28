@@ -4,11 +4,13 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Les céramiques, des matériaux traditionnels à l'énergie du futur : chimie de trois oxydes (zircone, alumine, magnésie). L'épreuve dure 2 heures, **sans calculatrice**, et comporte 40 questions réparties en trois parties indépendantes, avec deux annexes à exploiter (elles ne sont pas à rendre) et un tableau périodique.
 
-- *Partie I (19 questions)* : pile à combustible à oxyde solide. Généralités (I.1.1 à I.1.7) : schémas de Lewis, électrodes, demi-équations, quantité de dihydrogène embarquée. Électrolyte (I.2.1 à I.2.11) : configurations électroniques du titane et du zirconium, maille cfc, sites tétraédriques, formule, coordinences et masse volumique de la zircone. Dopage à l'yttrium (I.3.1 à I.3.3) : électroneutralité et lacunes.
+- *Partie I (21 questions)* : pile à combustible à oxyde solide. Généralités (I.1.1 à I.1.7) : schémas de Lewis, électrodes, demi-équations, quantité de dihydrogène embarquée. Électrolyte (I.2.1 à I.2.11) : configurations électroniques du titane et du zirconium, maille cfc, sites tétraédriques, formule, coordinences et masse volumique de la zircone. Dopage à l'yttrium (I.3.1 à I.3.3) : électroneutralité et lacunes.
 - *Partie II (14 questions)* : obtention de l'aluminium. Voie sèche (II.1.1 à II.1.9) : approximation d'Ellingham, attribution de deux courbes $\Delta_r G^\circ(T)$, réduction de l'alumine par le carbone. Électrolyse (II.2.1 à II.2.5) : réactions aux électrodes, bilan, enthalpie libre standard.
 - *Partie III (5 questions)* : magnésium en solution aqueuse : diagramme potentiel-pH, potentiel standard, produit de solubilité, anode sacrificielle.
 
@@ -684,6 +686,8 @@ $$\Delta_r G^\circ = 12 \times 10^{5} \times 2{,}5 = 3{,}0\cdot 10^{6}\ \mathrm{
 $$\boxed{\Delta_r G^\circ(1230\ \mathrm K) \approx +3{,}0\cdot 10^{3}\ \mathrm{kJ\cdot mol^{-1}} \text{ pour } 2\,\mathrm{Al_2O_3} + 3\,\mathrm C = 4\,\mathrm{Al} + 3\,\mathrm{CO_2}}$$
 
 Rapportée à une mole d'alumine (6 électrons), cette valeur devient $+1{,}5\cdot 10^{3}\ \mathrm{kJ\cdot mol^{-1}}$. Le signe positif traduit une constante d'équilibre très inférieure à 1 : la réaction n'a lieu que si le générateur fournit l'énergie, sous une tension au moins égale à 2,5 V.
+
+Remarque sur l'ordre de grandeur : la même réaction s'obtient en combinant $\mathrm C + \mathrm{O_2} = \mathrm{CO_2}$ ($\Delta_r G^\circ \approx \Delta_f H^\circ(\mathrm{CO_2}) = -393\ \mathrm{kJ\cdot mol^{-1}}$, presque indépendant de $T$ puisque la quantité de gaz ne change pas) et la réaction (1), dont l'annexe 1 donne $\Delta_r G^\circ_1 \approx -855\ \mathrm{kJ\cdot mol^{-1}}$ à 1 230 K : $\Delta_r G^\circ \approx 3 \times (855 - 393) \approx 1{,}4\cdot 10^{3}\ \mathrm{kJ\cdot mol^{-1}}$, soit une différence de potentiels d'environ 1,2 V. La valeur de 2,5 V fournie par l'énoncé conduit donc à un résultat à peu près deux fois plus grand, sans que le sujet permette d'expliquer cet écart ; c'est elle qu'il faut utiliser ici, puisque la question demande d'en déduire $\Delta_r G^\circ$.
 
 > [!PIEGE]
 > La valeur de $\Delta_r G^\circ$ dépend de l'écriture de l'équation : toujours annoncer l'équation et le nombre d'électrons auxquels elle se rapporte.

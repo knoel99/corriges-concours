@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, sur les céramiques : 40 questions en trois parties indépendantes (pile à combustible à oxyde solide et zircone, obtention de l'aluminium à partir de l'alumine, magnésium en solution aqueuse). Les 40 questions sont traitées. Les valeurs lues sur les annexes 1 et 2 sont signalées à l'endroit où elles servent. Les applications numériques sont menées à la main, avec un ou deux chiffres significatifs comme le demande l'énoncé.
 
 [Sujet officiel](https://www.banquept.fr/documents/2015/ph_b_ch_2015_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_phys_b_ecrit_2015.pdf)
@@ -405,6 +407,8 @@ $$\Delta_r G^\circ = 12 \times 10^{5} \times 2{,}5 = 3{,}0\cdot 10^{6}\ \mathrm{
 $$\boxed{\Delta_r G^\circ(1230\ \mathrm K) \approx +3{,}0\cdot 10^{3}\ \mathrm{kJ\cdot mol^{-1}} \text{ pour } 2\,\mathrm{Al_2O_3} + 3\,\mathrm C = 4\,\mathrm{Al} + 3\,\mathrm{CO_2}}$$
 
 Rapportée à une mole d'alumine (6 électrons), cette valeur devient $+1{,}5\cdot 10^{3}\ \mathrm{kJ\cdot mol^{-1}}$. Le signe positif traduit une constante d'équilibre très inférieure à 1 : la réaction n'a lieu que si le générateur fournit l'énergie, sous une tension au moins égale à 2,5 V.
+
+Remarque sur l'ordre de grandeur : la même réaction s'obtient en combinant $\mathrm C + \mathrm{O_2} = \mathrm{CO_2}$ ($\Delta_r G^\circ \approx \Delta_f H^\circ(\mathrm{CO_2}) = -393\ \mathrm{kJ\cdot mol^{-1}}$, presque indépendant de $T$ puisque la quantité de gaz ne change pas) et la réaction (1), dont l'annexe 1 donne $\Delta_r G^\circ_1 \approx -855\ \mathrm{kJ\cdot mol^{-1}}$ à 1 230 K : $\Delta_r G^\circ \approx 3 \times (855 - 393) \approx 1{,}4\cdot 10^{3}\ \mathrm{kJ\cdot mol^{-1}}$, soit une différence de potentiels d'environ 1,2 V. La valeur de 2,5 V fournie par l'énoncé conduit donc à un résultat à peu près deux fois plus grand, sans que le sujet permette d'expliquer cet écart ; c'est elle qu'il faut utiliser ici, puisque la question demande d'en déduire $\Delta_r G^\circ$.
 
 ## Partie III — Magnésium en solution aqueuse
 

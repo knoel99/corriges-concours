@@ -95,6 +95,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 40 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées, lectures des annexes 1 et 2 contrôlées sur le PDF, encadrés JURY relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application de la seconde relecture, trois défauts mineurs revérifiés contre le sujet : décompte des questions de la partie I corrigé dans la présentation du guidé (21 et non 19) ; question II.2.5, brut et guidé, résultat inchangé et remarque ajoutée sur l'écart entre les 2,5 V de l'énoncé et l'estimation tirée de l'annexe 1 et des données (environ 1,2 V) ; figure du diagramme potentiel-pH du magnésium (question III.1), pente de la frontière oblique mise à −0,059 V par unité de pH. Dix encadrés JURY recontrôlés contre le rapport, sans requalification."
     }
   ]
 }
