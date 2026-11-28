@@ -1,0 +1,83 @@
+{
+  "slug": "banque-pt_pt_physique-c---thermodynamique_2011",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Thermodynamique",
+    "annee": 2011
+  },
+  "questions": 27,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2011/phys_c_pt_2011.zip",
+    "sujet_sha256": "afaa6b8f411a066aa96f5354572309b487df4aab5a8a178f3877bd5b23ad200a",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_phys_c_ecrit_2011.pdf",
+    "rapport_sha256": "9fe7757862877079293eea9db08ddd44bdcf012cca270b045e1e7247ffd92f17",
+    "precision": "L'archive phys_c_pt_2011.zip (SHA-256 afaa6b8f411a066aa96f5354572309b487df4aab5a8a178f3877bd5b23ad200a) réunit les deux parties de Physique C. Partie thermodynamique, identifiée par sa page de garde « Epreuve de Physique C - Thermodynamique » (repère 11PT20) : fichier interne ph_c_th_pt_2011/PH_C_THERMO_SUJET.PDF (4 pages PDF, SHA-256 bea88cb48cc6e822bb68fde622e072f1d9748aa756af6ec0f327d33daa3242e2), annexe 1 ph_c_th_pt_2011/PH_C_THERMO_ANNEXE_1.pdf (diagramme (log P, h) à joindre à la copie, 2 pages PDF, SHA-256 c9d280244a6832bdc9cdb980ff2077856be341cb72137bd5361d47e4e0d0154e), annexe 2 ph_c_th_pt_2011/PH_C_THERMO_ANNEXE_2.pdf (schéma du bloc détendeur-sonde, 1 page PDF, SHA-256 b5e8b85df32182a97242a2e4873d6ae9aa8357eeb8e0adb6d968e6ca554491b8) et document réponse ph_c_th_pt_2011/PH_C_THERMO_DR.PDF (garde de l'annexe 1 et même diagramme, 2 pages PDF, SHA-256 fa6b46e4156940021b946d2cf3301de9db52fc92e7ad6c42d028713f725db843). Les deux autres fichiers de l'archive (dossier ph_c_ch_pt_2011) appartiennent à la partie chimie et ne sont pas traités ici. Empreintes de l'archive, des quatre fichiers internes et du rapport identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv. Aucun fichier campagnes/x-ens/bilans/constat-*.tsv ne porte sur cette épreuve."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "precision": "Sujet de 4 pages PDF lues en image (page de garde, énoncé sur les pages numérotées 2 à 4) ; annexe 1 de 2 pages PDF (diagramme (log P, h) du R134a avec le cycle tracé, verso barré sans contenu) ; annexe 2 de 1 page ; document réponse de 2 pages (garde et même diagramme). 27 questions numérotées de 1 à 27, toutes traitées. Rapport commun à Physique C de 4 pages PDF, partie thermodynamique sur les pages 3 et 4, lues en image. Valeurs lues sur l'annexe 1 (image agrandie, axes étalonnés sur les graduations 140 et 560 kJ/kg et 1 et 10 bar), à environ 2 kJ/kg près : h1 ≈ 403, h2 ≈ 440, h3 = h4 ≈ 272 kJ/kg ; paliers à 0 °C (3 bar) et 50 °C (13 bar) ; T1 ≈ 5 °C (entre les isothermes 0 et 10 °C) ; T2 ≈ 60 °C (sur l'isotherme 60 °C) ; à 3 bar, liquide saturant à 200 kJ/kg et vapeur saturante à 398 kJ/kg ; titre en vapeur de l'état 4 ≈ 0,36 (entre les courbes 0,30 et 0,40) ; côté 1-2 le long de l'isentropique repérée s = 1,75 ; isothermes 0 °C et 20 °C à 0,5 bar vers 405 et 421 kJ/kg. Entropies de saturation prises dans la table de la question 20. Applications numériques refaites par calcul. Points signalés dans le texte : l'énoncé de la partie II appelle « transferts thermiques » le couple (w, q) alors que w est un travail ; les traits horizontaux du cycle tracé sont centrés vers 2,8 bar et 13,2 bar pour 3 bar et 13 bar annoncés (écart de l'ordre de l'épaisseur du trait) ; l'entropie des états 1 et 2 calculée avec la table et le modèle du gaz parfait (1,73 kJ/K/kg) diffère de 0,02 de l'isentropique lue (1,75). Choix du corrigé signalés à leur place : température extrême chaude du cycle prise égale à T2 = 60 °C à la question 14 (les variantes 50 °C et températures des sources sont données en remarque) ; proportionnalité entre consommation et puissance fournie par le moteur aux questions 16 et 27 ; air sortant de l'évaporateur à 20 °C et condensation de l'eau négligée à la question 26. La variation d'entropie de la question 20 (+15 J/K/kg) est une petite différence très sensible au titre lu : seuls son signe et son ordre de grandeur sont fiables. Les courbes de saturation des figures 2 et 3 du corrigé sont tracées dans leur allure, calées sur les points lus sur l'annexe 1 et sur la table."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-schema-principe.svg",
+      "question": "1",
+      "legende": "Schéma de principe de la climatisation : le fluide R134a reçoit un transfert thermique de la source froide (air pulsé) et un travail du compresseur, et cède un transfert thermique à la source chaude (air extérieur)."
+    },
+    {
+      "fichier": "figures/q09-cycle-pression-enthalpie.svg",
+      "question": "9",
+      "legende": "Cycle de la climatisation dans le diagramme (log P, h), à l'échelle des valeurs lues sur l'annexe 1 : états 1 à 4, sens de parcours antihoraire, organe traversé sur chaque côté, courbe de saturation dans son allure."
+    },
+    {
+      "fichier": "figures/q23-cycle-entropique.svg",
+      "question": "23",
+      "legende": "Cycle de la climatisation dans le diagramme entropique (T, s) : paliers à 0 °C et 50 °C, compression isentropique, détente irréversible en pointillés, surchauffe en sortie d'évaporateur ; courbe de saturation dans son allure."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (27 questions) à partir du sujet, des deux annexes et du document réponse lus en image et du rapport du jury ; valeurs lues sur le diagramme de l'annexe 1 après étalonnage des axes, applications numériques refaites par calcul, trois figures tracées, encadrés du jury relus contre le rapport."
+    }
+  ]
+}

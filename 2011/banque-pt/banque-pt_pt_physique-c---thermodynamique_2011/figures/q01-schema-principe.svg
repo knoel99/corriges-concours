@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" font-family="sans-serif" font-size="13">
+<rect width="720" height="430" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b3261e"/></marker><marker id="k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<rect x="230" y="20" width="300" height="62" rx="6" fill="#fbe9e7" stroke="#222" stroke-width="1.5"/>
+<text x="380.0" y="48.0" text-anchor="middle" font-size="15" font-weight="bold">Source chaude</text>
+<text x="380.0" y="67.0" text-anchor="middle" font-size="12">air extérieur, 35 °C</text>
+<rect x="280" y="180" width="200" height="70" rx="6" fill="#f3f6fa" stroke="#222" stroke-width="1.5"/>
+<text x="380.0" y="212.0" text-anchor="middle" font-size="15" font-weight="bold">Fluide R134a</text>
+<text x="380.0" y="231.0" text-anchor="middle" font-size="12">décrit le cycle</text>
+<rect x="230" y="348" width="300" height="62" rx="6" fill="#e3f0fb" stroke="#222" stroke-width="1.5"/>
+<text x="380.0" y="376.0" text-anchor="middle" font-size="15" font-weight="bold">Source froide</text>
+<text x="380.0" y="395.0" text-anchor="middle" font-size="12">air pulsé, air de l'habitacle à 20 °C</text>
+<rect x="30" y="185" width="150" height="60" rx="6" fill="#f3f6fa" stroke="#222" stroke-width="1.5"/>
+<text x="105.0" y="220.0" text-anchor="middle" font-size="15" font-weight="bold">Compresseur</text>
+<line x1="380" y1="180" x2="380" y2="86" stroke="#b3261e" stroke-width="3" marker-end="url(#a)"/>
+<line x1="380" y1="348" x2="380" y2="254" stroke="#b3261e" stroke-width="3" marker-end="url(#a)"/>
+<line x1="180" y1="215" x2="276" y2="215" stroke="#b3261e" stroke-width="3" marker-end="url(#a)"/>
+<text x="395" y="128" font-size="13">transfert thermique cédé par le fluide</text>
+<text x="395" y="145" font-size="13">dans le condenseur (q négatif pour le fluide)</text>
+<text x="395" y="296" font-size="13">transfert thermique reçu par le fluide</text>
+<text x="395" y="313" font-size="13">dans l'évaporateur (q positif pour le fluide)</text>
+<text x="228" y="180" text-anchor="middle" font-size="13">travail reçu</text>
+<text x="228" y="198" text-anchor="middle" font-size="13">w positif</text>
+</svg>
