@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2016",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Informatique et modélisation",
+    "annee": 2016
+  },
+  "questions": 37,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2016/info_mod_2016_pt.pdf",
+    "sujet_sha256": "0e9ada16ee2649c5dcefb1e131d4b753dd254e91bd0f79ba28775f3ca75948d5",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_info_model_ecrit_2016.pdf",
+    "rapport_sha256": "f06c1d2e8cb9514e16eb699d51b708884a955591461c049f4783f2e807cb9172"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37"
+    ],
+    "precision": "Sujet de 13 pages lu en entier (énoncé pages 2 à 12 avec l'annexe de documentation, page 13 blanche), rapport de 2 pages lu. 37 questions numérotées de 1 à 37, toutes traitées. Le modèle simplifié de la figure 3(b) est suivi tel que l'énoncé le dessine, avec la force F entière sur la demi-membrane ; la symétrie n'en attribuerait que la moitié, ce qui diviserait par deux les résultats des questions 3 à 5, 16 et 17 (signalé aux questions 1 et 17). Les seuils de stabilité de la question 22 sont lus sur la figure 7 du sujet. Aux questions 27 et 28, chaque maximum local est comparé au minimum local qui le suit, convention que l'énoncé ne fixe pas."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q5-deformation-jauges.svg",
+      "question": "5",
+      "legende": "Déformation de la peau supérieure le long de la membrane et position des quatre jauges"
+    },
+    {
+      "fichier": "figures/q14-pont-wheatstone.svg",
+      "question": "14",
+      "legende": "Pont de Wheatstone : place des quatre jauges et sens des tensions"
+    },
+    {
+      "fichier": "figures/q27-bosses-creux.svg",
+      "question": "27",
+      "legende": "Bosses et creux de la pression filtrée, sens de parcours des questions 27 et 28"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour les 37 questions et de trois schémas. Calculs littéraux vérifiés par calcul formel, applications numériques recalculées, tout le code Python et SQL exécuté et testé (réponse indicielle du filtre comparée à la solution exacte, extrema comparés à une recherche exhaustive, requêtes sur une base SQLite d'essai)."
+    }
+  ]
+}
