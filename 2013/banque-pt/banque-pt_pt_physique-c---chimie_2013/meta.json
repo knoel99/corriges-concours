@@ -1,0 +1,97 @@
+{
+  "slug": "banque-pt_pt_physique-c---chimie_2013",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Chimie",
+    "annee": 2013
+  },
+  "questions": 42,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2013/ph_c_ch_2013_pt.pdf",
+    "sujet_sha256": "bd059a259021279897d3745c09ade873988c850cdb836672b94f712b04e7deef",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_phys_c_ecrit_2013.pdf",
+    "rapport_sha256": "6bb656ac6e407c53900beb8e7b61ad69a7f680d6e151076952d751f3d74ba788"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "precision": "Sujet de 10 pages PDF lu en entier (garde p. 1, énoncé p. 2 à 7 avec données et aides numériques p. 7, page blanche p. 8, annexe de cristallographie et diagramme d'Ellingham p. 9, papier millimétré de la courbe d'étalonnage p. 10) ; 42 questions numérotées de 1 à 42, toutes traitées. Rapport du jury de Physique C de 6 pages, partie chimie p. 1 et 2. Lectures graphiques sur l'annexe : point de concours des trois droites du carbone vers 980 K (questions 22 et 23), ordonnées à 1273 K retenues parmi les valeurs proposées, −450, −345 et −410 kJ/mol (questions 24 et 28), croisement de la courbe ZnO/Zn avec la droite CO/C vers 1,2·10³ K (question 31). Absorbances des spectres 4 et 5 prises dans les tableaux de l'énoncé (question 41). Les deux documents-réponses sont reproduits par les figures."
+  },
+  "figures": [
+    {
+      "fichier": "figures/mailles-zno.svg",
+      "question": "10",
+      "legende": "Mailles conventionnelles de l'oxyde de zinc : structure cubique (anions aux sommets, cation au centre) et structure Rocksalt (anions en réseau cubique à faces centrées, cations dans les sites octaédriques)."
+    },
+    {
+      "fichier": "figures/ellingham-carbone-zinc.svg",
+      "question": "22",
+      "legende": "Diagramme d'Ellingham final du carbone et de ses oxydes, reconstruit d'après l'annexe, avec les domaines de C, CO et CO2, la courbe du couple ZnO/Zn et les valeurs lues à 1273 K."
+    },
+    {
+      "fichier": "figures/droite-etalonnage.svg",
+      "question": "40",
+      "legende": "Droite d'étalonnage du rapport des absorbances à 576,5 nm et 560,5 nm en fonction du pourcentage de CO, et lecture des échantillons des spectres 4 et 5."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 42 questions et de trois figures, à partir du sujet et du rapport du jury ; applications numériques recalculées, lectures du diagramme d'Ellingham contrôlées sur le PDF, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
