@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le cuivre, de l'atome à l'alliage. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 50 questions repérées par sous-partie et par lettre, réparties en trois parties indépendantes. Quatre documents (unité de masse atomique, isotopes, schéma de désintégration, courbe de décroissance du cuivre 64) accompagnent la première partie.
@@ -178,7 +180,7 @@ $$t_1 = 2\,t_{1/2} \approx 26\ \mathrm{h}$$
 
 $$t_2 = 3\,t_{1/2} \approx 39\ \mathrm{h}$$
 
-Lecture sur le document 4 : à 26 h, le point se situe au milieu de l'intervalle entre 0,2 et 0,3 ; à 39 h, la courbe passe juste au-dessus de 0,1.
+Lecture sur le document 4 : à 26 h, le point se situe pratiquement au milieu de l'intervalle entre 0,2 et 0,3 (à 0,24 environ, très légèrement en dessous) ; à 39 h, la courbe passe juste au-dessus de 0,1.
 
 $$\boxed{\text{fraction restante} \approx 0{,}25\ \text{à}\ t_1\ ;\qquad \approx 0{,}12\ \text{à}\ t_2}$$
 
@@ -739,7 +741,7 @@ Demi-réactions, dans le sens où elles se produisent :
 - troisième courbe, branche $j > 0$ : $\mathrm{Cu(s)} \rightarrow \mathrm{Cu^{2+}(aq)} + 2\,\mathrm e^-$ ; branche $j < 0$ : $\mathrm{Cu^{2+}(aq)} + 2\,\mathrm e^- \rightarrow \mathrm{Cu(s)}$ ;
 - quatrième courbe : $\mathrm{Ag(s)} \rightarrow \mathrm{Ag^+(aq)} + \mathrm e^-$.
 
-Potentiels à courant nul : les courbes partent de l'axe sans décalage notable (systèmes rapides), donc au voisinage des potentiels standard.
+Potentiels à courant nul : la courbe du cuivre traverse l'axe avec une pente non nulle (système rapide), au potentiel d'équilibre du couple. Pour le zinc, le fer et l'argent, dont l'oxydant est absent de la solution, on ne peut donner qu'un ordre de grandeur : la branche d'oxydation démarre au voisinage du potentiel standard du couple.
 
 $$\boxed{E_{j=0} \approx -0{,}8\ \mathrm V\ (\mathrm{Zn})\ ;\quad -0{,}4\ \mathrm V\ (\mathrm{Fe})\ ;\quad +0{,}3\ \mathrm V\ (\mathrm{Cu})\ ;\quad +0{,}8\ \mathrm V\ (\mathrm{Ag})}$$
 
@@ -773,7 +775,7 @@ $$\boxed{U = E_1 - E_2 > 0\ ;\qquad \text{l'électrode 1 est l'anode}}$$
 
 L'électrode 1 est reliée à la borne positive du générateur.
 
-**Rôle de la valeur de $U$.** Comme $E_1 - E_{\mathrm{eq}} < U < 0{,}4\ \mathrm V$, on a $E_1 < 0{,}74\ \mathrm V < E^\circ(\mathrm{Ag^+/Ag})$ : l'argent n'est pas oxydé. De même $E_2 > 0{,}34 - 0{,}4 = -0{,}06\ \mathrm V$, bien au-dessus de $-0{,}44\ \mathrm V$ et de $-0{,}76\ \mathrm V$ : les ions $\mathrm{Fe^{2+}}$ et $\mathrm{Zn^{2+}}$ passés en solution ne peuvent pas être réduits à la cathode. Seul le cuivre s'y dépose.
+**Rôle de la valeur de $U$.** Comme $E_1 - E_{\mathrm{eq}} < U < 0{,}4\ \mathrm V$, on a $E_1 < 0{,}74\ \mathrm V < E^\circ(\mathrm{Ag^+/Ag})$ : l'argent n'est pas oxydé. De même $E_2 > 0{,}34 - 0{,}4 = -0{,}06\ \mathrm V$, bien au-dessus de $-0{,}44\ \mathrm V$ et de $-0{,}76\ \mathrm V$ : les ions $\mathrm{Fe^{2+}}$ et $\mathrm{Zn^{2+}}$ passés en solution ne peuvent pas être réduits à la cathode. Cette borne est toutefois inférieure à $E^\circ(\mathrm{H^+/H_2}) = 0\ \mathrm V$ et n'exclut pas à elle seule la réduction des ions $\mathrm{H^+}$ du bain acidifié ; en pratique $E_2$ reste très proche de $0{,}34\ \mathrm V$ (système rapide, faible surtension), donc bien au-dessus de $0\ \mathrm V$, et les ions $\mathrm{H^+}$ ne sont pas réduits non plus. Seul le cuivre s'y dépose.
 
 > [!JURY]
 > Le rapport demande que les termes anode et cathode soient définis, et note que peu de candidats se sont intéressés à la valeur de la tension imposée.
@@ -1041,7 +1043,7 @@ $$\mathrm{pH} = 14 + \log\left(1{,}00\cdot 10^{-2}\right) = 14 - 2{,}00$$
 
 $$\boxed{\mathrm{pH} = 12{,}0}$$
 
-La valeur est bien supérieure à 7, comme il se doit pour une solution basique.
+La valeur est bien supérieure à 7, comme il se doit pour une solution basique. (La soude du mode opératoire, à $1\ \mathrm{mol\cdot L^{-1}}$, aurait un pH voisin de 14 ; la question porte sur une solution cent fois plus diluée.)
 
 > [!JURY]
 > Le rapport constate que le calcul du pH n'a pas été souvent abordé et que les résultats ne sont pas toujours justes.
@@ -1166,6 +1168,6 @@ On retrouve le pourcentage d'environ 70 % annoncé par l'énoncé. Le laiton ét
 
 **Résultats numériques.** $^{63}\mathrm{Cu}$ : 29 protons et 34 neutrons ; $N_A \approx 6{,}02\cdot 10^{23}\ \mathrm{mol^{-1}}$ ; $M_{\mathrm{Cu}} \approx 63{,}6\ \mathrm{g\cdot mol^{-1}}$ ; $t_{1/2} \approx 13$ h et $\lambda \approx 5\cdot 10^{-2}\ \mathrm{h^{-1}}$ ; $r = a\sqrt2/4 \approx 127$ pm ; compacité 0,74 ; chalcopyrite $\mathrm{CuFeS_2}$ avec $\mathrm{Cu^+}$ et $\mathrm{Fe^{3+}}$ ; $r_{\max} \approx 50$ pm ; $\Delta_r H^\circ_2 = -217\ \mathrm{kJ\cdot mol^{-1}}$ ; $\Delta_r S^\circ_2 = -12\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}$ ; $n_2 = K_2 n_1/(1 + K_2)$ ; environ 0,36 kg de cuivre par heure et par mètre carré ; $E^\circ(\mathrm{Cu^{2+}/CuI}) = 0{,}88$ V et $E^\circ(\mathrm{CuI/Cu}) = -0{,}20$ V ; pH = 12,0 ; $K^\circ \approx 10^{17{,}7}$ pour la réaction de dosage ; 70,5 % de cuivre dans le laiton.
 
-**Erreurs les plus coûteuses d'après le jury.** Se tromper sur le nombre de neutrons par lecture hâtive des documents ; ne pas voir que le temps de demi-réaction est indépendant des conditions initiales ; oublier la multiplicité de la maille ; omettre l'expression « état standard de référence » ; donner un sens de déplacement d'équilibre sans justification ; ne pas interpréter les courbes intensité-potentiel ni définir anode et cathode ; ajuster une équation d'oxydoréduction sans passer par les demi-équations ; ignorer que l'ion oxonium est un oxydant.
+**Erreurs relevées par le jury.** Se tromper sur le nombre de neutrons par lecture hâtive des documents ; ne pas voir que le temps de demi-réaction est indépendant des conditions initiales ; oublier la multiplicité de la maille ; omettre l'expression « état standard de référence » ; donner un sens de déplacement d'équilibre sans justification ; ne pas interpréter les courbes intensité-potentiel ni définir anode et cathode ; ajuster une équation d'oxydoréduction sans passer par les demi-équations ; ignorer que l'ion oxonium est un oxydant.
 
 **Pour s'entraîner.** Refaire sans aide les questions B-1.f, B-2.j et B-2.k, puis l'enchaînement B-3.a à B-3.c et la sous-partie C-2 en entier, en terminant chaque application numérique à la main.

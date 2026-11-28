@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, sur le cuivre : propriétés atomiques, passage du minerai au métal, dosage du cuivre dans un laiton. Le sujet compte 50 questions repérées par sous-partie et par lettre (de A-1.a à C-3.f), en trois parties indépendantes ; toutes sont traitées. Les valeurs lues sur la courbe de désintégration (document 4) sont signalées à l'endroit où elles servent. Les constantes usuelles que l'énoncé ne rappelle pas (constante de Faraday, produit ionique de l'eau, constante des gaz parfaits) sont signalées lorsqu'elles interviennent.
 
 [Sujet officiel](https://www.banquept.fr/documents/2017/ph_b_ch_2017_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_phys_b_ecrit_2017.pdf)
@@ -100,7 +102,7 @@ $$t_1 = 2\,t_{1/2} \approx 26\ \mathrm{h}$$
 
 $$t_2 = 3\,t_{1/2} \approx 39\ \mathrm{h}$$
 
-Lecture sur le document 4 : à 26 h, le point se situe au milieu de l'intervalle entre 0,2 et 0,3 ; à 39 h, la courbe passe juste au-dessus de 0,1.
+Lecture sur le document 4 : à 26 h, le point se situe pratiquement au milieu de l'intervalle entre 0,2 et 0,3 (à 0,24 environ, très légèrement en dessous) ; à 39 h, la courbe passe juste au-dessus de 0,1.
 
 $$\boxed{\text{fraction restante} \approx 0{,}25\ \text{à}\ t_1\ ;\qquad \approx 0{,}12\ \text{à}\ t_2}$$
 
@@ -432,7 +434,7 @@ Demi-réactions, dans le sens où elles se produisent :
 - troisième courbe, branche $j > 0$ : $\mathrm{Cu(s)} \rightarrow \mathrm{Cu^{2+}(aq)} + 2\,\mathrm e^-$ ; branche $j < 0$ : $\mathrm{Cu^{2+}(aq)} + 2\,\mathrm e^- \rightarrow \mathrm{Cu(s)}$ ;
 - quatrième courbe : $\mathrm{Ag(s)} \rightarrow \mathrm{Ag^+(aq)} + \mathrm e^-$.
 
-Potentiels à courant nul : les courbes partent de l'axe sans décalage notable (systèmes rapides), donc au voisinage des potentiels standard.
+Potentiels à courant nul : la courbe du cuivre traverse l'axe avec une pente non nulle (système rapide), au potentiel d'équilibre du couple. Pour le zinc, le fer et l'argent, dont l'oxydant est absent de la solution, on ne peut donner qu'un ordre de grandeur : la branche d'oxydation démarre au voisinage du potentiel standard du couple.
 
 $$\boxed{E_{j=0} \approx -0{,}8\ \mathrm V\ (\mathrm{Zn})\ ;\quad -0{,}4\ \mathrm V\ (\mathrm{Fe})\ ;\quad +0{,}3\ \mathrm V\ (\mathrm{Cu})\ ;\quad +0{,}8\ \mathrm V\ (\mathrm{Ag})}$$
 
@@ -452,7 +454,7 @@ $$\boxed{U = E_1 - E_2 > 0\ ;\qquad \text{l'électrode 1 est l'anode}}$$
 
 L'électrode 1 est reliée à la borne positive du générateur.
 
-**Rôle de la valeur de $U$.** Comme $E_1 - E_{\mathrm{eq}} < U < 0{,}4\ \mathrm V$, on a $E_1 < 0{,}74\ \mathrm V < E^\circ(\mathrm{Ag^+/Ag})$ : l'argent n'est pas oxydé. De même $E_2 > 0{,}34 - 0{,}4 = -0{,}06\ \mathrm V$, bien au-dessus de $-0{,}44\ \mathrm V$ et de $-0{,}76\ \mathrm V$ : les ions $\mathrm{Fe^{2+}}$ et $\mathrm{Zn^{2+}}$ passés en solution ne peuvent pas être réduits à la cathode. Seul le cuivre s'y dépose.
+**Rôle de la valeur de $U$.** Comme $E_1 - E_{\mathrm{eq}} < U < 0{,}4\ \mathrm V$, on a $E_1 < 0{,}74\ \mathrm V < E^\circ(\mathrm{Ag^+/Ag})$ : l'argent n'est pas oxydé. De même $E_2 > 0{,}34 - 0{,}4 = -0{,}06\ \mathrm V$, bien au-dessus de $-0{,}44\ \mathrm V$ et de $-0{,}76\ \mathrm V$ : les ions $\mathrm{Fe^{2+}}$ et $\mathrm{Zn^{2+}}$ passés en solution ne peuvent pas être réduits à la cathode. Cette borne est toutefois inférieure à $E^\circ(\mathrm{H^+/H_2}) = 0\ \mathrm V$ et n'exclut pas à elle seule la réduction des ions $\mathrm{H^+}$ du bain acidifié ; en pratique $E_2$ reste très proche de $0{,}34\ \mathrm V$ (système rapide, faible surtension), donc bien au-dessus de $0\ \mathrm V$, et les ions $\mathrm{H^+}$ ne sont pas réduits non plus. Seul le cuivre s'y dépose.
 
 ### Question B-3.c — Devenir du fer, du zinc et de l'argent
 
@@ -625,7 +627,7 @@ $$\mathrm{pH} = 14 + \log\left(1{,}00\cdot 10^{-2}\right) = 14 - 2{,}00$$
 
 $$\boxed{\mathrm{pH} = 12{,}0}$$
 
-La valeur est bien supérieure à 7, comme il se doit pour une solution basique.
+La valeur est bien supérieure à 7, comme il se doit pour une solution basique. (La soude du mode opératoire, à $1\ \mathrm{mol\cdot L^{-1}}$, aurait un pH voisin de 14 ; la question porte sur une solution cent fois plus diluée.)
 
 ### Question C-3.b — Réaction du thiosulfate avec le diiode
 
