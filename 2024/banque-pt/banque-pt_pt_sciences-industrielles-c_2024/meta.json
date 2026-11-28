@@ -1,0 +1,110 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2024",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2024
+  },
+  "questions": 42,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2024/si_c_2024_pt.pdf",
+    "sujet_sha256": "2cb8581b8d852ac2a6696f14093571848d244ab0eb31ffd52ae7b8e44a35029a",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_si_c_ecrit_2024.pdf",
+    "rapport_sha256": "9afe7a404681fde96e0a81b5a0e7eeca611b6fe9e619efb0c2b10543573ca18b"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11",
+      "III.12",
+      "III.13",
+      "III.14",
+      "III.15",
+      "III.16",
+      "III.17",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6"
+    ],
+    "questions_partiellement_traitees": [
+      "IV.7"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Sujet de 57 pages lu en entier, page par page en image (texte, quinze documents ressources, cahier réponse, dessin réponse A3), et rapport du jury de 5 pages. 42 questions : 7 en partie I, 11 en partie II, 17 en partie III, 7 en partie IV. La question IV.7 est partielle : les cinq fonctions sont conçues, justifiées et représentées par une coupe de principe originale, sans tracé à l’échelle sur le fond A3 du sujet. Les réponses graphiques II.6, III.3, III.7 et IV.1 sont des figures originales ; II.10, III.16 et IV.4 sont rendues par des tableaux ou une description."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q2-6-schema-isostatique.svg",
+      "question": "II.6",
+      "legende": "Schéma cinématique isostatique : vérin lié par deux rotules, pivot glissant entre corps et tige"
+    },
+    {
+      "fichier": "figures/q3-3-moulage-sable.svg",
+      "question": "III.3",
+      "legende": "Moulage en sable de la pièce de liaison : pièce couchée, axe dans le plan de joint, noyau, masselotte et système de coulée"
+    },
+    {
+      "fichier": "figures/q3-7-usinage-s1-s2-s3.svg",
+      "question": "III.7",
+      "legende": "Usinage du méplat S1, de l’alésage S2 et des trous taraudés S3 : outils, mouvements de coupe Mc et d’avance Mf"
+    },
+    {
+      "fichier": "figures/q4-1-frangibolt.svg",
+      "question": "IV.1",
+      "legende": "Montage du Frangibolt : goujon à collerette et gorge fusible, douille d’appui fixée au fuselage, capot de retenue"
+    },
+    {
+      "fichier": "figures/q4-7-verin-electrique.svg",
+      "question": "IV.7",
+      "legende": "Coupe de principe du vérin électrique de l’axe 1 et du palier de l’axe 2, repères 1 à 19"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour les 42 questions à partir du sujet de 57 pages et du rapport du jury ; applications numériques recalculées, cinq figures originales dessinées et contrôlées au rendu. La question IV.7 reste partielle faute de tracé sur le dessin réponse A3."
+    }
+  ]
+}
